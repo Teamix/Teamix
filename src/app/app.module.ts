@@ -6,12 +6,14 @@ import { HeaderComponent } from './header/header.component';
 import { LinksComponent } from './links/links.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material";
+import { ItemLayoutComponent } from './item-layout/item-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LinksComponent
+    LinksComponent,
+    ItemLayoutComponent
   ],
   imports: [
     BrowserModule,

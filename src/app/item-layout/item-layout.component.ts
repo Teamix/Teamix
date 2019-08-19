@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from 'src/services/item.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-item-layout',
@@ -8,15 +9,21 @@ import { ItemService } from 'src/services/item.service';
 })
 export class ItemLayoutComponent implements OnInit {
 
-  constructor(private itemService: ItemService) { }
+  public check = false;
+  public itemName:string;
+  public item:any;
+
+  constructor(private itemService: ItemService, private route: ActivatedRoute) {
+    this.itemName = route.snapshot.params['package'];
+   }
 
   ngOnInit() {
-    if(this.itemService.getSingleItem() != null){
+    this.itemService.setSingleItem(this.itemName); 
+    if(this.item != null || this.itemService.getSingleItem != null){
       this.check = true;
     }
   }
 
 
-  private check = false;
 
 }

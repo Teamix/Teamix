@@ -5,7 +5,8 @@ import { LinksComponent } from './links/links.component';
 
 const routes: Routes = [
   { path:'' , component: LinksComponent },
-  { path:'item' , component: ItemLayoutComponent }
+  { path:'item/:package' , component: ItemLayoutComponent },
+  { path:'**' , redirectTo: ''}
 ];
 
 @NgModule({

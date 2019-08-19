@@ -1,7 +1,10 @@
-<ul *ngFor="let item of numOfLinks" class="ul">
-    <mat-card class="main" [routerLink]="['/item']" routerLinkActive="router-link-active" (click)="singleItemChoice(item)">
-        <mat-card-content class="content">
-            <img src={{item.img}} class="img">
-        </mat-card-content>
-    </mat-card>
-</ul>
+<div id="parentDiv">
+    <ul *ngFor="let item of linksService.getItems()" class="ul">
+        <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active"
+            (click)="singleItemChoice(item)">
+            <mat-card-content class="content">
+                <img src={{item.img}} class="img">
+            </mat-card-content>
+        </mat-card>
+    </ul>
+</div>

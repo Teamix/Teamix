@@ -6,10 +6,17 @@ h2{
 #mainDiv{
     display: block;
     text-align: center;
-    margin: 0px;
+    margin: 20px;
     padding: 0px;
+    white-space: pre-line;
 }
 #secondDiv{
     text-align: center;
     color: aqua;
+    margin-top: 50px;
 }
+// #playlistSpan{
+//     display: flex;
+//     justify-content: center;
+//     text-align: left;
+// }

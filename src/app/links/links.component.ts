@@ -11,7 +11,7 @@ import { LinksService } from 'src/services/links.service';
 })
 export class LinksComponent implements OnInit {
 
-  constructor(private itemService: ItemService, private linksService: LinksService) { }
+  constructor(private itemService: ItemService, public linksService: LinksService) { }
 
   ngOnInit() {
   }  

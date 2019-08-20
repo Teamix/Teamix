@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'TeamixSite';
+
+  private title = 'TeamixSite';
+  public ionScroll;
+  public buttonFlag = false;
+  
+
+
+  public scrollUpNow(){
+    window.scroll(0,0);
+    this.buttonFlag = false;
+  }
+
+  @HostListener('window:scroll')
+  public checkFlag(){
+    if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+      this.buttonFlag = true;
+    }else{
+      this.buttonFlag = false;
+    }
+  }
+
+
 }

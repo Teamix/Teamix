@@ -6,14 +6,24 @@ h2{
 #mainDiv{
     display: block;
     text-align: center;
-    margin: 20px;
+    margin: 0px;
     padding: 0px;
-    white-space: pre-line;
 }
 #secondDiv{
     text-align: center;
     color: aqua;
-    margin-top: 50px;
+    margin: 0px;
+    padding: 0px;
+    white-space: pre-line;
+}
+#downloadButton{
+    width: 200px;
+    height: 50px;
+    border: solid silver;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
 }
 // #playlistSpan{
 //     display: flex;

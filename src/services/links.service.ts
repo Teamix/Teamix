@@ -1,27 +1,17 @@
 import { Injectable } from '@angular/core';
+import { ItemsPlaylistService } from './items-playlist.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LinksService {
 
-  constructor() { }
+  constructor(public itemsPlaylist: ItemsPlaylistService) { }
 
+  private teamixVol19 = "";
 
-  private teamixVol19 = "Exclusive :"
-    + "\nArthur Project - Akabee [Original Mix]"
-    + "\nArthur Project - Akabee [Radio Mix] Arthur Project - Akabee [Radio Vocal Mix]"
-    + "\nArthur Project - Akabee [Vocal Mix] Arthur Project - Touch and press Play (Extended Version)"
-    + "\nArthur Project - Touch and press Play Denis First & Reznikov & Bright Sparks - Shameless(Mike Tsoff & German Avny Remix)"
-    + "\nFetty Wap ft Nicki Minaj - Like A Star(RooBen Remix)"
-    + "\nJax Jones, Martin Solveig, Madison Beer - All Day And Night(German Avny & Mike Tsoff Remix)"
-    + "\nMahmood - Soldi(Aviel Mymon Transition) 100 - 128"
-    + "\nNetta X Bad Bunny, Ozuna, Nicky Jam - BassaBote(Aviel Mymon Edit) V2";
-
-  public numOfLinks = [{ packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 },
-  { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 },
-  { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }, { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 },
-  { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 },  { packName: "teamixVol19", img: "./assets/teamixVol19.jpg", playlist: this.teamixVol19 }];
+  public numOfLinks = [{ packName: "teamixVol18", img: "./assets/teamixVol18.jpeg", playlist: this.itemsPlaylist.getItemsPlaylist().teamixVol18 }, { packName: "teamixVol17", img: "./assets/teamixVol17.jpeg", playlist: this.itemsPlaylist.getItemsPlaylist().teamixVol17 }, { packName: "teamixVol16", img: "./assets/teamixVol16.jpeg", playlist: this.itemsPlaylist.getItemsPlaylist().teamixVol16 },
+  { packName: "teamixVol15", img: "./assets/teamixVol15.jpg", playlist: this.itemsPlaylist.getItemsPlaylist().teamixVol15 }];
 
 
   public getItems() {

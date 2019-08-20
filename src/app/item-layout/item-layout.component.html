@@ -1,9 +1,26 @@
+<br>
 <div id="mainDiv" *ngIf="check">
+    <br>
     <img src={{itemService.getSingleItem().img}} width="300px" height="300px">
+    <br>
+    <br>
+    <br>
+    <button id="downloadButton">Download/הורדה</button>
+    <br>
+    <br>
     <br>
     <div id="secondDiv">
         <span id="playlistSpan">{{itemService.getSingleItem().playlist}}</span>
     </div>
+
+    <br>
+    <br>
+    <button id="downloadButton">Download/הורדה</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
 </div>
 
 <h2 *ngIf="!check">Must Choose An Item First!</h2>

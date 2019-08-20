@@ -1,3 +1,9 @@
-<router-outlet><app-header></app-header></router-outlet>
-<br>
-<router-outlet></router-outlet>
+<div>
+    <router-outlet>
+        <app-header></app-header>
+    </router-outlet>
+    <br>
+    <router-outlet></router-outlet>
+
+    <div id="scrollUpButtonDiv" (click)="scrollUpNow()" *ngIf="buttonFlag"><img id="scrollUpButtonImg" src="./assets/arrowUpWhite48dp2x.png"></div>
+</div>

@@ -37,3 +37,8 @@ $TeamixSite-theme: mat-light-theme($TeamixSite-primary, $TeamixSite-accent, $Tea
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.links{
+  cursor: pointer;
+  
+}

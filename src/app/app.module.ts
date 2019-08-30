@@ -7,13 +7,23 @@ import { LinksComponent } from './links/links.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from "@angular/material";
 import { ItemLayoutComponent } from './item-layout/item-layout.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { StoreComponent } from './store/store.component';
+import { PoolComponent } from './pool/pool.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LinksComponent,
-    ItemLayoutComponent
+    ItemLayoutComponent,
+    HomePageComponent,
+    ContactComponent,
+    AboutComponent,
+    StoreComponent,
+    PoolComponent
   ],
   imports: [
     BrowserModule,

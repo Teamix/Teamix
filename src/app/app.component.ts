@@ -10,7 +10,7 @@ export class AppComponent {
   private title = 'TeamixSite';
   public ionScroll;
   public buttonFlag = false;
-  
+
 
 
   public scrollUpNow(){
@@ -24,6 +24,25 @@ export class AppComponent {
       this.buttonFlag = true;
     }else{
       this.buttonFlag = false;
+    }
+  }
+
+  private menuFlag = false;
+
+  public getMenuFlag(){
+    return this.menuFlag;
+  }
+
+
+  private menuClick() {
+    let menu = document.querySelector("#nav-icon3");
+    if (this.menuFlag === false) {
+      menu.classList.add("open");
+      this.menuFlag = true;
+    }
+    else {
+      menu.classList.remove("open");
+      this.menuFlag = false;
     }
   }
 

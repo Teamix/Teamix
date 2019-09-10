@@ -1,5 +1,5 @@
 <div id="parentDiv">
-    <ul *ngFor="let item of linksService.getItems()" class="ul">
+    <ul *ngFor="let item of linksService.getItems()" class="ul" >
         <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active"
             (click)="singleItemChoice(item)">
             <mat-card-content class="content">

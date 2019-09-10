@@ -7,10 +7,12 @@ import { StoreComponent } from './store/store.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PoolComponent } from './pool/pool.component';
+import { PacksMenuComponent } from './packs-menu/packs-menu.component';
 
 const routes: Routes = [
   { path:'' , component: HomePageComponent },
-  { path:'packs' , component: LinksComponent },
+  { path:'categories' , component: PacksMenuComponent },
+  { path:'packs/:packsType' , component: LinksComponent },
   { path:'item/:package' , component: ItemLayoutComponent },
   { path:'pool' , component: PoolComponent },
   { path: 'store' , component:StoreComponent },

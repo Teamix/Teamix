@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { StoreComponent } from './store/store.component';
 import { PoolComponent } from './pool/pool.component';
+import { FooterComponent } from './footer/footer.component';
+import { PacksMenuComponent } from './packs-menu/packs-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PoolComponent } from './pool/pool.component';
     ContactComponent,
     AboutComponent,
     StoreComponent,
-    PoolComponent
+    PoolComponent,
+    FooterComponent,
+    PacksMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -34,7 +34,7 @@ export class AppComponent {
   }
 
 
-  private menuClick() {
+  public menuClick() {
     let menu = document.querySelector("#nav-icon3");
     if (this.menuFlag === false) {
       menu.classList.add("open");

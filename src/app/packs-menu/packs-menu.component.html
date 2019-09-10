@@ -1,0 +1,9 @@
+<div id="parentDiv">
+    <ul *ngFor="let item of getPacks()" class="ul">
+        <mat-card class="main" [routerLink]="['/packs/' + item.packName]" routerLinkActive="router-link-active" >
+            <mat-card-content class="content">
+                <img src={{item.img}} class="img">
+            </mat-card-content>
+        </mat-card>
+    </ul>
+</div>

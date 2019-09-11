@@ -1,7 +1,8 @@
 <div style="z-index: 0;">
   <router-outlet>
     <app-header></app-header>
-    <div id="nav-icon3" style="display: block;" (click)="menuClick()">
+    <!-- menu clicker button set to off since using menu tab!!, if want to change it to on set ngif to true!! -->
+    <div id="nav-icon3" style="display: block;" (click)="menuClick()" *ngIf="false">
       <span></span>
       <span></span>
       <span></span>
@@ -9,7 +10,7 @@
     </div>
   </router-outlet>
 
-
+  <app-menu-tab id="menuTab"></app-menu-tab>
 
 
   <br>
@@ -55,20 +56,8 @@
       src="./assets/arrowUpWhite48dp2x.png">
   </div>
 
-  <div id="iconsDiv">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
-    <img class="icons" src="./assets/mediaIcons/youtubeIcon.png" width="30px" height="25px">
+  <app-icons-tab id="icon"></app-icons-tab>
 
-  </div>
   <app-footer id="footer"></app-footer>
 
 </div>

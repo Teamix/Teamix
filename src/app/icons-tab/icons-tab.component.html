@@ -1,0 +1,9 @@
+<div id="iconsDiv">
+    <ul *ngFor="let item of icons" class="ul" >
+        <mat-card class="main">
+            <mat-card-content class="content">
+                <a href="{{item.iconLink}}"><img src={{item.iconImage}} class="img"></a>
+            </mat-card-content>
+        </mat-card>
+    </ul>
+</div>

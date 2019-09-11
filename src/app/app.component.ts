@@ -12,7 +12,6 @@ export class AppComponent {
   public buttonFlag = false;
 
 
-
   public scrollUpNow(){
     window.scroll(0,0);
     this.buttonFlag = false;

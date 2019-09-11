@@ -14,6 +14,8 @@ import { StoreComponent } from './store/store.component';
 import { PoolComponent } from './pool/pool.component';
 import { FooterComponent } from './footer/footer.component';
 import { PacksMenuComponent } from './packs-menu/packs-menu.component';
+import { MenuTabComponent } from './menu-tab/menu-tab.component';
+import { IconsTabComponent } from './icons-tab/icons-tab.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { PacksMenuComponent } from './packs-menu/packs-menu.component';
     StoreComponent,
     PoolComponent,
     FooterComponent,
-    PacksMenuComponent
+    PacksMenuComponent,
+    MenuTabComponent,
+    IconsTabComponent
   ],
   imports: [
     BrowserModule,

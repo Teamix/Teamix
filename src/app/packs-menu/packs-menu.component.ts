@@ -15,7 +15,7 @@ export class PacksMenuComponent implements OnInit {
   private packs = [{packName: "all", img: "./assets/logos/OG-LOGO.jpg"},
   { packName: "main", img: "./assets/packsLogos/main.jpg" },
   { packName: "latin", img: "./assets/packsLogos/latin.jpg" },
-  { packName: "throwBack", img: "./assets/packsLogos/throwBack.jpg" },
+  { packName: "throwback", img: "./assets/packsLogos/throwback.jpg" },
   { packName: "dance", img: "./assets/packsLogos/dance.jpg" }];
 
   public getPacks() {

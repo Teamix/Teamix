@@ -1,3 +1,15 @@
-<div>
-  <h3>Welcome to TeaMix Site, The best music you can find!</h3>
+<div id="parentDiv">
+  <ul *ngFor="let item of linksService.getItems()" class="ul">
+    <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active">
+      <mat-card-content class="content">
+        <img src={{item.img}} class="img">
+      </mat-card-content>
+    </mat-card>
+  </ul>
+</div>
+
+<br>
+
+<div id="buttonDiv">
+  <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
 </div>

@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuTabComponent implements OnInit {
 
-  public menu = [{menuItem: 'Home'}, {menuItem: 'Categories'}, {menuItem: 'Store'}, {menuItem: 'About'}, {menuItem: 'Contact'}];
+  public menu = [{menuItem: 'Home', pageLink: 'home'}, {menuItem: 'Packs', pageLink: 'categories'},
+  {menuItem: 'Dj Mixes', pageLink: 'store'}, {menuItem: 'About', pageLink: 'about'}, {menuItem: 'Contact', pageLink: 'contact'}];
 
   constructor() { }
 

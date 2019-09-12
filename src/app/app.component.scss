@@ -10,7 +10,7 @@
 //   padding: 0px;
 // }
 
-#scrollUpButtonDiv {
+#scrollUpButtonDivCom {
   display: block;
   position: fixed;
   bottom: 20px;
@@ -25,9 +25,29 @@
   width: 40px;
   height: 40px;
 }
-#scrollUpButtonImg {
+#scrollUpButtonDivMobile {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: solid white;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+#scrollUpButtonImgCom {
   width: 40px;
   height: 40px;
+}
+#scrollUpButtonImgMobile {
+  width: 20px;
+  height: 20px;
 }
 
 #nav-icon3 {

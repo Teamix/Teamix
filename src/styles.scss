@@ -31,6 +31,14 @@ $TeamixSite-theme: mat-light-theme($TeamixSite-primary, $TeamixSite-accent, $Tea
     background-color: rgba(0, 0, 0, 0.925);
     margin: 0px;
     padding: 0px;
+    --image-width-mobile: 200px;
+    --image-height-mobile: 200px;
+    --image-width-com-normal: 300px;
+    --image-height-com-normal: 300px;
+    --image-width-com: 350px;
+    --image-height-com: 350px;
+    --font-color:rgba(255, 255, 255, 0.829);
+    --playlist-font-color: rgb(226, 226, 226);
 }
 :body{
     text-align: center;
@@ -40,5 +48,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .links{
   cursor: pointer;
-  
+
 }

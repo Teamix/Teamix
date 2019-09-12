@@ -1,21 +1,45 @@
 <br>
-<div id="mainDiv" *ngIf="check">
+<div id="mainDiv" *ngIf="check && !mobileCheckService.getIfMobile()">
     <br>
-    <img src={{itemService.getSingleItem().img}} width="300px" height="300px">
-    <br>
-    <br>
-    <br>
-    <button id="downloadButton">Download/הורדה</button>
+    <img src="{{itemService.getSingleItem().img}}" width="300px" height="300px">
     <br>
     <br>
     <br>
-    <div id="secondDiv">
+    <button id="downloadButtonCom">Download/הורדה</button>
+    <br>
+    <br>
+    <br>
+    <div id="secondDivCom">
         <span id="playlistSpan">{{itemService.getSingleItem().playlist}}</span>
     </div>
 
     <br>
     <br>
-    <button id="downloadButton">Download/הורדה</button>
+    <button id="downloadButtonCom">Download/הורדה</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
+
+<div id="mainDiv" *ngIf="check && mobileCheckService.getIfMobile()">
+    <br>
+    <img class="images" src={{itemService.getSingleItem().img}}>
+    <br>
+    <br>
+    <br>
+    <button id="downloadButtonMobile">Download/הורדה</button>
+    <br>
+    <br>
+    <br>
+    <div id="secondDivMobile">
+        <span id="playlistSpan">{{itemService.getSingleItem().playlist}}</span>
+    </div>
+
+    <br>
+    <br>
+    <button id="downloadButtonMobile">Download/הורדה</button>
     <br>
     <br>
     <br>

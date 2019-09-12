@@ -79,6 +79,10 @@ export class LinksService {
   }
 
   public getItems() {
+    if(this.tmp.length < 1)
+    {
+      return this.numOfLinks;
+    }
     return this.tmp;
   }
 

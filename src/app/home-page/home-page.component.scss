@@ -8,11 +8,17 @@
   margin: 0px;
   padding: 50px;
 }
-.main{
+.mainCom{
   margin: 0px 0px 0px 0px;
   padding: 0px;
-  width: 350px;
-  height: 300px;
+  width: var(--image-width-com);
+  height: var(--image-height-com);
+}
+.mainMobile{
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  width: var(--image-width-mobile);
+  height: var(--image-height-mobile);
 }
 .content{
   display: block;
@@ -26,10 +32,17 @@
   cursor: pointer;
 }
 
-#buttonDiv{
+#buttonDivCom{
   text-align: center;
   color: white;
   font-size: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#buttonDivMobile{
+  text-align: center;
+  color: white;
+  font-size: 20px;
   text-decoration: underline;
   cursor: pointer;
 }

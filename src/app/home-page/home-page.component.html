@@ -1,15 +1,29 @@
-<div id="parentDiv">
+<div id="parentDiv" *ngIf="!this.mobileCheckService.getIfMobile()">
   <ul *ngFor="let item of linksService.getItems()" class="ul">
-    <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active">
+    <mat-card class="mainCom" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active">
       <mat-card-content class="content">
         <img src={{item.img}} class="img">
       </mat-card-content>
     </mat-card>
   </ul>
+  <div id="buttonDivCom">
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
+  </div>
+</div>
+
+<div id="parentDiv" *ngIf="this.mobileCheckService.getIfMobile()">
+  <ul *ngFor="let item of linksService.getItems()" class="ul">
+    <mat-card class="mainMobile" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active">
+      <mat-card-content class="content">
+        <img src={{item.img}} class="img">
+      </mat-card-content>
+    </mat-card>
+  </ul>
+  <div id="buttonDivMobile">
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
+  </div>
 </div>
 
 <br>
 
-<div id="buttonDiv">
-  <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
-</div>
+

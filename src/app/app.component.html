@@ -2,7 +2,7 @@
   <router-outlet>
     <app-header></app-header>
     <!-- menu clicker button set to off since using menu tab!!, if want to change it to on set ngif to true!! -->
-    <div id="nav-icon3" style="display: block;" (click)="menuClick()" *ngIf="false">
+    <div id="nav-icon3" style="display: block;" (click)="menuClick()" *ngIf="this.mobileCheckService.getIfMobile()">
       <span></span>
       <span></span>
       <span></span>
@@ -10,33 +10,25 @@
     </div>
   </router-outlet>
 
-  <app-menu-tab id="menuTab"></app-menu-tab>
+  <app-menu-tab id="menuTab" *ngIf="!this.mobileCheckService.getIfMobile()"></app-menu-tab>
 
 
   <br>
   <router-outlet id="main">
     <div id="menu" *ngIf="getMenuFlag()">
-      <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active" (click)="menuClick()">Home</span>
+      <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">Home</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/store']" routerLinkActive="router-link-active"
-        (click)="menuClick()">Store</span>
+      <span class="links" [routerLink]="['/categories']" routerLinkActive="router-link-active">Packs</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/categories']" routerLinkActive="router-link-active" (click)="menuClick()">Music
-        Packs</span>
+      <span class="links" [routerLink]="['/pool']" routerLinkActive="router-link-active">Dj Mixes</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/pool']" routerLinkActive="router-link-active" (click)="menuClick()">Music
-        Pool</span>
+      <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active"
-        (click)="menuClick()">About</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active"
-        (click)="menuClick()">Contact</span>
+      <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">About</span>
       <br>
       <br>
     </div>
@@ -52,9 +44,13 @@
   <br>
 
 
-  <div id="scrollUpButtonDiv" (click)="scrollUpNow()" *ngIf="buttonFlag"><img id="scrollUpButtonImg"
-      src="./assets/arrowUpWhite48dp2x.png">
+  <div id="scrollUpButtonDivCom" (click)="scrollUpNow()" *ngIf="buttonFlag && !this.mobileCheckService.getIfMobile()">
+    <img id="scrollUpButtonImgCom" src="./assets/arrowUpWhite48dp2x.png">
   </div>
+
+  <div id="scrollUpButtonDivMobile" (click)="scrollUpNow()" *ngIf="buttonFlag && this.mobileCheckService.getIfMobile()">
+    <img id="scrollUpButtonImgMobile" src="./assets/arrowUpWhite48dp2x.png">
+</div>
 
   <app-icons-tab id="icon"></app-icons-tab>
 

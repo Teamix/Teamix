@@ -10,7 +10,7 @@
   padding: 20px;
 }
 .main{
-  color: white;
+  color: var(--font-color);
   background: transparent;
   margin: 0px 0px 0px 0px;
   padding: 0px;
@@ -25,7 +25,6 @@
 }
 .menuButtons{
   cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }

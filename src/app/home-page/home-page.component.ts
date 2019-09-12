@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LinksService } from 'src/services/links.service';
+import { MobileCheckService } from 'src/services/mobile-check.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,7 +9,7 @@ import { LinksService } from 'src/services/links.service';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor(public linksService: LinksService) { }
+  constructor(public linksService: LinksService, public mobileCheckService: MobileCheckService) { }
 
   ngOnInit() {
     this.linksService.setPacksValue();

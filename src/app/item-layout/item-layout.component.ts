@@ -14,7 +14,7 @@ export class ItemLayoutComponent implements OnInit {
   public itemName:string;
   public item:any;
 
-  constructor(private itemService: ItemService, private route: ActivatedRoute, private mobileCheckService: MobileCheckService) {
+  constructor(public itemService: ItemService, private route: ActivatedRoute, public mobileCheckService: MobileCheckService) {
     this.itemName = route.snapshot.params['package'];
    }
 

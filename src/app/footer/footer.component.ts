@@ -8,7 +8,7 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(private mobileCheckService: MobileCheckService) { }
+  constructor(public mobileCheckService: MobileCheckService) { }
 
   ngOnInit() {
   }

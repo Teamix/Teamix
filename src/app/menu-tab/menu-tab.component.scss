@@ -26,5 +26,9 @@
 .menuButtons{
   cursor: pointer;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
+}
+.menuButtons:hover{
+  color: rgba(134, 131, 131, 0.568);
+  font-weight: 800;
 }

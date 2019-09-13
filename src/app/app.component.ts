@@ -8,7 +8,7 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 })
 export class AppComponent {
 
-  constructor(private mobileCheckService: MobileCheckService){}
+  constructor(public mobileCheckService: MobileCheckService) { }
 
   private title = 'TeamixSite';
   public ionScroll;
@@ -30,6 +30,18 @@ export class AppComponent {
     }
   }
 
+  @HostListener('window:resize')
+  public resizewibdow() {
+    console.log(window.innerWidth);
+    if (window.innerWidth < this.mobileCheckService.getMobileWindowSize()) {
+      this.mobileCheckService.ifMobile();
+    }else if(window.innerWidth > this.mobileCheckService.getMobileWindowSize()+1 && window.innerWidth < this.mobileCheckService.getLandscapeWindowSize()) {
+      this.mobileCheckService.changeViewButtonOption(true);
+    }else{
+      this.mobileCheckService.ifMobile();
+    }
+  }
+
 
   private menuFlag = false;
 
@@ -38,14 +50,14 @@ export class AppComponent {
   }
 
   @HostListener('window:click')
-  public menuCloseCheck(){
+  public menuCloseCheck() {
     let menu = document.querySelector("#nav-icon3");
-    if(this.menuClickedFlag){
+    if (this.menuClickedFlag) {
       menu.classList.remove("open");
       this.menuFlag = false;
       this.menuClickedFlag = false;
     }
-    else if(this.menuFlag){
+    else if (this.menuFlag) {
       this.menuClickedFlag = true;
     }
   }

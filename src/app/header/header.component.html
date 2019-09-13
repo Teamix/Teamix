@@ -1,3 +1,4 @@
 <div id="mainDiv">
-    <img id="logoImage" src="./assets/logos/LOGO.png" [routerLink]="['/']" routerLinkActive="router-link-active" style="cursor: pointer" >
+    <img id="logoImageCom" *ngIf="!mobileCheckService.getIfMobile()" src="./assets/logos/LOGO.png" [routerLink]="['/']" routerLinkActive="router-link-active" style="cursor: pointer" >
+    <img id="logoImageMobile" *ngIf="mobileCheckService.getIfMobile()" src="./assets/logos/LOGO.png" [routerLink]="['/']" routerLinkActive="router-link-active" style="cursor: pointer" >
 </div>

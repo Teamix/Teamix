@@ -1,14 +1,7 @@
 <div>
 
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options"><p>Home</p></span>
-  <span class="options" (click)="changeMyView()"><p>{{mobileCheckService.getChangeView()}}</p></span>
-
+  <span class="options"><p>Home</p></span> <span class="options"><p>About</p></span>
+  <span class="options"><p>Packs</p></span> <span class="options"><p>Contact</p></span>
+  <span class="options"><p>DJ Mixes</p></span> <span class="options" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span>
 
 </div>

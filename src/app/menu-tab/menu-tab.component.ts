@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/services/language.service';
 
 @Component({
   selector: 'app-menu-tab',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuTabComponent implements OnInit {
 
-  public menu = [{menuItem: 'Home', pageLink: 'home'}, {menuItem: 'Packs', pageLink: 'categories'},
-  {menuItem: 'Dj Mixes', pageLink: 'store'}, {menuItem: 'About', pageLink: 'about'}, {menuItem: 'Contact', pageLink: 'contact'}];
+  public EnglishMenu = [
+    { menuItem: 'Home', pageLink: 'home' }, { menuItem: 'Packs', pageLink: 'categories' },
+    { menuItem: 'Dj Mixes', pageLink: 'store' }, { menuItem: 'About', pageLink: 'about' }, { menuItem: 'Contact', pageLink: 'contact' }
+  ];
 
-  constructor() { }
+  public HebrewMenu = [
+    { menuItem: 'צור קשר', pageLink: 'contact' }, { menuItem: 'אודות', pageLink: 'about' },
+    { menuItem: 'מיקסים', pageLink: 'store' }, { menuItem: 'חבילות', pageLink: 'categories' }, { menuItem: 'דף בית', pageLink: 'home' }
+  ];
+
+  constructor(public languageService: LanguageService) { }
 
   ngOnInit() {
   }

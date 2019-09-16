@@ -7,8 +7,8 @@
     </mat-card>
   </ul>
   <div id="buttonDivCom">
-    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
-  </div>
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" *ngIf="languageService.getLanguage() === 'Hebrew'">!למעבר לכל החבילות לחץ כאן</span>
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" *ngIf="languageService.getLanguage() === 'English'">For all Packs click here!</span>  </div>
 </div>
 
 <div id="parentDiv" *ngIf="this.mobileCheckService.getIfMobile()">
@@ -20,7 +20,8 @@
     </mat-card>
   </ul>
   <div id="buttonDivMobile">
-    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" >!למעבר לכל החבילות לחץ כאן</span>
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" *ngIf="languageService.getLanguage() === 'Hebrew'">!למעבר לכל החבילות לחץ כאן</span>
+    <span [routerLink]="['/packs/all']" routerLinkActive="router-link-active" *ngIf="languageService.getLanguage() === 'English'">For all Packs click here!</span>
   </div>
 </div>
 

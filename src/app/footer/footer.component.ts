@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MobileCheckService } from 'src/services/mobile-check.service';
+import { LanguageService } from 'src/services/language.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,7 +9,7 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 })
 export class FooterComponent implements OnInit {
 
-  constructor(public mobileCheckService: MobileCheckService) { }
+  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }
 
   ngOnInit() {
   }

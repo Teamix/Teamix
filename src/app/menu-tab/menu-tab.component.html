@@ -1,5 +1,5 @@
-<div id="menuDiv">
-    <ul *ngFor="let item of menu" class="ul" >
+<div id="menuDiv" *ngIf="languageService.getLanguage() === 'English'">
+    <ul *ngFor="let item of EnglishMenu" class="ul" >
         <mat-card class="main">
             <mat-card-content class="content">
               <span class="menuButtons" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
@@ -7,4 +7,15 @@
             </mat-card-content>
         </mat-card>
     </ul>
+</div>
+
+<div id="menuDiv" *ngIf="languageService.getLanguage() === 'Hebrew'">
+  <ul *ngFor="let item of HebrewMenu" class="ul" >
+      <mat-card class="main">
+          <mat-card-content class="content">
+            <span class="menuButtons" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
+            <span *ngIf="item.menuItem != 'דף בית'" style="margin-left: 35px">|</span>
+          </mat-card-content>
+      </mat-card>
+  </ul>
 </div>

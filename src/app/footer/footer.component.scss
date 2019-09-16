@@ -8,9 +8,14 @@ div{
   justify-content: center;
   row-gap: 5px;
 }
-.options{
+.optionsEn{
   display: flex;
   justify-content: left;
+  color: var(--font-color);
+}
+.optionsHeb{
+  display: flex;
+  justify-content: center;
   color: var(--font-color);
 }
 p{

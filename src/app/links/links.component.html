@@ -1,10 +1,23 @@
+<div id="searchMainDiv">
+
+  <input id="searchSecDiv" type="text" maxlength="20" onkeydown="console.log('hello')">
+    <!-- need to add ngmodel and show the right choice in the div -->
+    <select id="dropDownDiv">
+      <option selected="true" class="option">All</option>
+      <option class="option">Latin</option>
+      <option class="option">Throw</option>
+      <option class="option">Dance</option>
+    </select>
+  </div>
+
+
 <div id="parentDiv">
-    <ul *ngFor="let item of linksService.getItems()" class="ul" >
-        <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active"
-            (click)="singleItemChoice(item)">
-            <mat-card-content class="content">
-                <img src={{item.img}} class="img">
-            </mat-card-content>
-        </mat-card>
-    </ul>
+  <ul *ngFor="let item of linksService.getItems()" class="ul">
+    <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active"
+      (click)="singleItemChoice(item)">
+      <mat-card-content class="content">
+        <img src={{item.img}} class="img">
+      </mat-card-content>
+    </mat-card>
+  </ul>
 </div>

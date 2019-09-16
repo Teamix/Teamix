@@ -1,7 +1,15 @@
-<div>
+<div *ngIf="languageService.getLanguage() === 'English'">
 
-  <span class="options"><p>Home</p></span> <span class="options"><p>About</p></span>
-  <span class="options"><p>Packs</p></span> <span class="options"><p>Contact</p></span>
-  <span class="options"><p>DJ Mixes</p></span> <span class="options" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span>
+  <span class="optionsEn"><p>Home</p></span> <span class="optionsEn"><p>About</p></span>
+  <span class="optionsEn"><p>Packs</p></span> <span class="optionsEn"><p>Contact</p></span>
+  <span class="optionsEn"><p>DJ Mixes</p></span> <span class="optionsEn" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span>
+
+</div>
+
+<div *ngIf="languageService.getLanguage() === 'Hebrew'">
+
+  <span class="optionsHeb"><p>אודות</p></span> <span class="optionsHeb"><p>דף בית</p></span>
+  <span class="optionsHeb"><p>צור קשר</p></span> <span class="optionsHeb"><p>חבילות</p></span>
+  <span class="optionsHeb" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span> <span class="optionsHeb"><p>מיקסים</p></span>
 
 </div>

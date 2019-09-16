@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { MobileCheckService } from 'src/services/mobile-check.service';
+import { LanguageService } from 'src/services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 })
 export class AppComponent {
 
-  constructor(public mobileCheckService: MobileCheckService) { }
+  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }
 
   private title = 'TeamixSite';
   public ionScroll;
@@ -74,8 +75,6 @@ export class AppComponent {
       this.menuClickedFlag = true;
     }
   }
-
-
 
 
 }

@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@import '~@angular/material/theming';
+@import "~@angular/material/theming";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -19,7 +18,11 @@ $TeamixSite-accent: mat-palette($mat-pink, A200, A100, A400);
 $TeamixSite-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$TeamixSite-theme: mat-light-theme($TeamixSite-primary, $TeamixSite-accent, $TeamixSite-warn);
+$TeamixSite-theme: mat-light-theme(
+  $TeamixSite-primary,
+  $TeamixSite-accent,
+  $TeamixSite-warn
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -27,26 +30,36 @@ $TeamixSite-theme: mat-light-theme($TeamixSite-primary, $TeamixSite-accent, $Tea
 @include angular-material-theme($TeamixSite-theme);
 
 /* You can add global styles to this file, and also import other style files */
-:root{
-    background-color: rgba(0, 0, 0, 0.925);
-    margin: 0px;
-    padding: 0px;
-    --image-width-mobile: 200px;
-    --image-height-mobile: 200px;
-    --image-width-com-normal: 300px;
-    --image-height-com-normal: 300px;
-    --image-width-com: 350px;
-    --image-height-com: 350px;
-    --font-color:rgba(255, 255, 255, 0.829);
-    --playlist-font-color: rgb(226, 226, 226);
+:root {
+  background-color: rgba(0, 0, 0, 0.925);
+  margin: 0px;
+  padding: 0px;
+  --image-width-mobile: 200px;
+  --image-height-mobile: 200px;
+  --image-width-com-normal: 300px;
+  --image-height-com-normal: 300px;
+  --image-width-com: 350px;
+  --image-height-com: 350px;
+  --font-color: rgba(255, 255, 255, 0.829);
+  --playlist-font-color: rgb(226, 226, 226);
+  --search-boxs-color:  rgba(41, 41, 41, 0.226);
 }
-:body{
-    text-align: center;
+:body {
+  text-align: center;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+*:focus{
+  outline: 0;
+  outline: none;
+}
 
-.links{
+.links {
   cursor: pointer;
-
 }

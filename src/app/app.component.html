@@ -8,6 +8,12 @@
       <span></span>
       <span></span>
     </div>
+
+    <div id="langSelector">
+      <span class="langSpan" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
+      <br>
+      <span class="langSpan" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">Hebrew</span>
+    </div>
   </router-outlet>
 
   <app-menu-tab id="menuTab" *ngIf="!this.mobileCheckService.getIfMobile()"></app-menu-tab>
@@ -15,7 +21,7 @@
 
   <br>
   <router-outlet id="main">
-    <div id="menu" *ngIf="getMenuFlag()">
+    <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'English')">
       <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">Home</span>
       <br>
       <br>
@@ -29,6 +35,24 @@
       <br>
       <br>
       <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</span>
+      <br>
+      <br>
+    </div>
+
+    <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'Hebrew')">
+      <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">דף בית</span>
+      <br>
+      <br>
+      <span class="links" [routerLink]="['/categories']" routerLinkActive="router-link-active">חבילות</span>
+      <br>
+      <br>
+      <span class="links" [routerLink]="['/store']" routerLinkActive="router-link-active">מיקסים</span>
+      <br>
+      <br>
+      <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">אודות</span>
+      <br>
+      <br>
+      <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">צור קשר</span>
       <br>
       <br>
     </div>

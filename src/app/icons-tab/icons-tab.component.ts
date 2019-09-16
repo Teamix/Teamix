@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MobileCheckService } from 'src/services/mobile-check.service';
 
 @Component({
   selector: 'app-icons-tab',
@@ -17,7 +18,7 @@ export class IconsTabComponent implements OnInit {
     { iconImage: './assets/mediaIcons/youtubeIcon.png', iconLink: 'https://www.youtube.com' }
   ];
 
-  constructor() { }
+  constructor(public mobileCheckService: MobileCheckService) { }
 
   ngOnInit() {
   }

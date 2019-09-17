@@ -1,1 +1,78 @@
-<h3>Coming Soon!</h3>
+<div id="mainDivCom" *ngIf="!mobileCheckService.getIfMobile()">
+
+  <div class="secDivComEn" *ngIf="languageService.getLanguage()=== 'English'">
+    <p>{{messageEn}}</p>
+    <p>Contact Us :</p>
+
+  </div>
+
+  <br>
+
+  <div class="secDivComEn" *ngIf="languageService.getLanguage() === 'English'">
+    <a href="mailto:service.teamix@gmail.com">Email : {{email}}</a>
+    <br>
+    <br>
+    <a href="tel:+972515144104">Phone : {{phoneEn}}</a>
+    <br>
+    <br>
+    <a href="https://wa.me/972515144104">WhatsApp : {{whatsappEn}}</a>
+  </div>
+
+  <div class="secDivComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
+      <p>{{messageHeb}}</p>
+      <p>: צור קשר</p>
+    </div>
+
+    <br>
+
+  <div class="secDivComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
+    <a href="mailto:service.teamix@gmail.com">{{email}} : אימייל</a>
+    <br>
+    <br>
+    <a href="tel:+972515144104">{{phoneHeb}} : טלפון</a>
+    <br>
+    <br>
+    <a href="https://wa.me/972515144104">{{whatsappHeb}} : וואטסאפ</a>
+  </div>
+
+</div>
+
+
+<div id="mainDivMob" *ngIf="mobileCheckService.getIfMobile()">
+
+  <div class="secDivMobEn" *ngIf="languageService.getLanguage()=== 'English'">
+    <p>{{messageEn}}</p>
+    <p>Contact Us :</p>
+
+  </div>
+
+  <br>
+
+  <div class="secDivMobEn" *ngIf="languageService.getLanguage() === 'English'">
+    <a href="mailto:service.teamix@gmail.com">Email : {{email}}</a>
+    <br>
+    <br>
+    <a href="tel:+972515144104">Phone : {{phoneEn}}</a>
+    <br>
+    <br>
+    <a href="https://wa.me/972515144104">WhatsApp : {{whatsappEn}}</a>
+  </div>
+
+  <div class="secDivMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
+      <p>{{messageHeb}}</p>
+      <p>: צור קשר</p>
+    </div>
+
+    <br>
+
+  <div class="secDivMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
+    <a href="mailto:service.teamix@gmail.com">{{email}} : אימייל</a>
+    <br>
+    <br>
+    <a href="tel:+972515144104">{{phoneHeb}} : טלפון</a>
+    <br>
+    <br>
+    <a href="https://wa.me/972515144104">{{whatsappHeb}} : וואטסאפ</a>
+  </div>
+
+</div>

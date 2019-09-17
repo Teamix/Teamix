@@ -9,10 +9,15 @@
       <span></span>
     </div>
 
-    <div id="langSelector">
-      <span class="langSpan" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
-      <br>
-      <span class="langSpan" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">Hebrew</span>
+    <div id="langSelectorCom" *ngIf="!this.mobileCheckService.getIfMobile()">
+      <span class="langSpan" id="enOptionCom" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
+      <span> | </span>
+      <span class="langSpan" id="hebOptionCom" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
+    </div>
+    <div id="langSelectorMob" *ngIf="this.mobileCheckService.getIfMobile()">
+      <span class="langSpan" id="enOptionMob" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
+      <span id="spaceSpanMob"> | </span>
+      <span class="langSpan" id="hebOptionMob" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
     </div>
   </router-outlet>
 
@@ -25,10 +30,10 @@
       <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">Home</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/categories']" routerLinkActive="router-link-active">Packs</span>
+      <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">Packs</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/store']" routerLinkActive="router-link-active">DJ Mixes</span>
+      <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">DJ Sets</span>
       <br>
       <br>
       <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">About</span>
@@ -43,10 +48,10 @@
       <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">דף בית</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/categories']" routerLinkActive="router-link-active">חבילות</span>
+      <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">חבילות</span>
       <br>
       <br>
-      <span class="links" [routerLink]="['/store']" routerLinkActive="router-link-active">מיקסים</span>
+      <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">סטים</span>
       <br>
       <br>
       <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">אודות</span>

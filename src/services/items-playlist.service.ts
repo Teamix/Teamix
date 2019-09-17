@@ -7,1328 +7,1535 @@ export class ItemsPlaylistService {
 
   constructor() { }
 
+
+  private teamixSelectedVol1 =
+    '3 Are Legend & W&W - Khaleesi (Extended Mix) - 11A-  130\n'
+    + 'A Boogie Wit Da Hoodie - Look Back At It (Ti?sto & SWACQ Remix) - 2A - 105\n'
+    + 'Aaliyah - Try Again (DJ Stressy Remix) - 1A - 100\n'
+    + 'Adventure Club & Crankdat ft Krewella - Next Life (YehMe2 Remix) - 9A - 76\n'
+    + 'Aevion - Lights Go Down (The Magician Edit) - 4A - 115\n'
+    + 'Afro B - Drogba (Joanna) (DJ Nasa Vip Redrum) - 10A - 108\n'
+    + 'Afro B - Drogba (Joanna) (Lincoln Baio All Night Bootleg) - 10A - 112\n'
+    + 'Alexey Sonar - Flight to Shambala (Sebastian Weikum Remix) - 10A - 124\n'
+    + 'ALMA - Lonely Night (Martin Solveig Remix) - 11A - 122\n'
+    + 'Alok & Seven - The Wall (Original Mix) - 12A - 123\n'
+    + 'Angemi & Futuristic Polar Bears - Odyssey (Extended Mix) - 2A - 129\n'
+    + 'Antranig & Chocolate Puma - Blam! (Extended Mix) - 4A - 125\n'
+    + 'Arun Verone - What You Doin\' (Extended Mix) - 1A - 124\n'
+    + 'ATB - 9PM (Till I Come) (Anton Liss & Andrew Rai VIP Club Mix) - 8A - 124\n'
+    + 'B3RROR - Paise (Original Mix) - 8A - 90\n'
+    + 'Bart Skils & Weska - Polarize (Extended Mix) - 4A - 128\n'
+    + 'Blink 182 - All The Small Things (Two Friends Remix) - 8B - 127\n'
+    + 'Block & Crown - Gettin\' Jiggy Wit It (Original Mix) - 10A - 120\n'
+    + 'Brooks ft Alida - Waiting For Love (Extended Mix) -3A - 128\n'
+    + 'Chico Rose - Pump It Up (Extended Mix) -7A - 123\n'
+    + 'Dave Winnel - Smoke Machine (Extended Mix) - 7A - 123\n'
+    + 'David Guetta & MORTEN ft Aloe Blacc - Never Be Alone (Extended Mix) - 11A - 126\n'
+    + 'Davido & Chris Brown  - Blow My Mind (Frequency X Redrum) - 6A - 106\n'
+    + 'Dimitri Vegas & Like Mike, David Guetta, Daddy Yankee, Afro Bros & Natti Natash - Instragram (Frequency X \'S.A.X.\' Mashup) - 1A - 128\n'
+    + 'DJ Snake & Sevenn - Loco Loco (Braaten & Chrit Leaf Mashup) - 11A - 125\n'
+    + 'DJ Snake feat Anitta & Sean Paul - Fuego (Da Phonk Club Edit) - 1A - 97\n'
+    + 'DJ Snake feat J Balvin, Tyga - Loco Contigo (Seelvio Remix) - 12A - 105\n'
+    + 'DJ Snake ft Burna Boy - No Option (Extended Mix) - 4A - 75\n'
+    + 'DJ Snake ft J Balvin & Tyga - Loco Contigo (Cedric Gervais Remix) - 11A - 124\n'
+    + 'DJ Snake, Sean Paul, & Anitta ft. Tainy - Fuego (Yousless Remix) - 1A - 105\n'
+    + 'Don Omar ft. Daddy Yankee - Hasta Abajo (Thombs Remix) - 6A - 100\n'
+    + 'Dua Lipa, Prince Fox - New Rules (Deville Pool Lounge Blend) - 8A - 120\n'
+    + 'Duke Dumont & Zak Abel - Power (Original Mix) - 4A - 122\n'
+    + 'Ed Sheeran ft. Khalid - Beautiful People (NOTD Remix) - 5B - 104\n'
+    + 'Edson Lopez - Kamikaze (Original Mix) - 4A - 120\n'
+    + 'Elderbrook & Rudimental - Something About You (Elderbrook VIP) - 10A - 123\n'
+    + 'Eli Brown - Searching For Someone (Original Mix) - 4A - 127\n'
+    + 'Ellie Goulding & Juice WRLD - Hate Me (R3hab Remix) - 4A - 124\n'
+    + 'Eminem vs Kelis - Without Milkshake (Alex Guesta Bootleg) - 7A -128\n'
+    + 'ETC!ETC! & Jay Silva - Curiosidad (Original Mix) - 1B - 108\n'
+    + 'Exodus & Saladin - Got My Body (Extended Mix) - 11A - 123\n'
+    + 'Felix Jaehn ft. Calum Scott - Love On Myself (Keanu Silva Remix) - 1A - 126\n'
+    + 'Felon - Crazy (Extended Mix) - 12A - 120\n'
+    + 'Fisher - Losing It (Argoon & Novik VIP Edit) - 6A - 125\n'
+    + 'Gorgon City & Kaskade ft Rome - Go Slow (Zoom.Like Remix) - 9A - 126\n'
+    + 'GTA & Moska - YYZ (Noizekid Remix) - 4A - 100\n'
+    + 'Hall & Oates - I Can\'t Go For That (No Can Do) (Simon Sinfield Remix) - 5A - 110\n'
+    + 'Hayden James & Naations - Nowhere To Go (Dom Dolla Remix) - 8A - 124\n'
+    + 'Jackal - Animal Style (Extended Mix) - 4A - 97\n'
+    + 'Jeremih - Down On Me (Greg Lassierra Remix) - 7A - 103\n'
+    + 'Johnny Prez - Chica Plastica (Luis R Club Edit) - 8A - 98\n'
+    + 'Josh Charm - Too Close For Comfort (Extended Mix) - 4A - 118\n'
+    + 'Kanye West & Lil Pump - I Love It (Freekill Remix) (Extended Mix) - 4A - 125\n'
+    + 'Kideko - Tribal Dance (Extended Mix) - 1A -126\n'
+    + 'Living Memories - I Can\'t Breathe (Extended Mix) - 10B - 131\n'
+    + 'Luca Debonaire & Lissat - Alors On Danse (Original Mix) - 4A - 128\n'
+    + 'Luca Olivotto - Ode To The Sun (Original Mix) - 11A - 120\n'
+    + 'M.O.P. ft. Busta Rhymes - Ante Up (SERO Ctrl Alt Del Bootleg) - 4A - 128\n'
+    + 'Madison Mars ft Little League - New Vibe Who Dis (Extended Mix) - 3A - 124\n'
+    + 'Marshmello & Yultron - Let\'s Get Down (Extended Mix) - 10A - 73\n'
+    + 'Mary J. Blige - Family Affair (Markus Poley & Nico Wod Remix) - 12A - 124\n'
+    + 'Meduza ft Goodboys - Piece of Your Heart (SABER Remix) - 3A - 126\n'
+    + 'Meduza, Sean Paul - Temperature Of Your Heart (Deville Blend) - 3A - 125\n'
+    + 'Mike Vale - Music Is The Answer (Ship Wrek Edit) - 1A - 124\n'
+    + 'Miley Cyrus - Mother\'s Daughter (R3hab Remix) - 1A - 97\n'
+    + 'Missy Elliot, R4, Party Favor & GTA - Work It Out (Elementz Bootleg) - 2A - 75\n'
+    + 'Murci, Rihanna - My Money (Original Mix) - 2A - 124\n'
+    + 'Mustard & Migos - Pure Water (Poetsen Remix) - 4A - 100\n'
+    + 'N.O.Y, Ohad - Zarzis (Original Mix) - 2B - 118\n'
+    + 'NAEMS, WCKD & Reverse Prime  - Caliente (Extended Mix) - 6A - 128\n'
+    + 'Netsky & Aloe Blacc - Snitch (Extended Mix) - 10A - 84\n'
+    + 'Nora En Pure - Come With Me (Passenger 10 Remix Edit) - 11A - 128\n'
+    + 'Panic At The Disco, Black Eyed Peas, Sidney Samson, Lil Jon - Where Is The Mutate High Hopes (Djs From Mars Bootleg) - 7B - 128\n'
+    + 'Pitbull, Daddy Yankee, Natti Natasha - No Lo Trates (shndo & Nitti Gritti Remix) - 1A - 104\n'
+    + 'Queen - Don\'t Stop Me Now (RAF MARCHESINI & HYDROGEN Bootleg Remix) - 4A - 128\n'
+    + 'R3HAB vs Vini Vici ft Pangea & Dego - Alive (Extended Mix) - 9A - 138\n'
+    + 'Richard Grey & Lissat - No Diggity (Original Mix) - 11A - 122\n'
+    + 'Rihanna & Drake vs Lucas & Steve & Deepend - What\'s My Name (Mister Gray Long Way Home Edit)  - 11B - 126\n'
+    + 'Rihanna, Drake, Chris Brown - Work & Wobble Up (Deville Mashup) - 1A - 95\n'
+    + 'ROSAL?A & Ozuna - Yo x Ti, Tu x Mi (J Medina Club Edit) - 2A - 102\n'
+    + 'Rudy UK - All Things Fade (Mark Slee\'s Forever Dub Mix)  - 2A - 121\n'
+    + 'RUFUS DU SOL - Solace (Lastlings Remix) - 8A - 124\n'
+    + 'Sebastian Ingrosso & Alesso - Calling (HXDE$ Remix) - 12B - 75\n'
+    + 'Sezer Ulker - Phaselis (Original Mix) - 6A - 116\n'
+    + 'Shawn Mendes & Camila Cabello - Se₪orita (Pisano & DreDay Remix) - 8A - 124\n'
+    + 'Shawn Mendes & Camila Cabello - Se?orita (SLTRY Remix) - 8A - 125\n'
+    + 'Steve Angello - Be (D.O.D Remix) - 11A - 124\n'
+    + 'Styline - FIRE! (Extended Mix) - 4A - 126\n'
+    + 'Taylor Swift - You Need To Calm Down (Clean Bandit Remix) - 10A - 95\n'
+    + 'Terror Fabulous ft Nadine Sutherland - Action (DJ Nasa Redrum) - 6A - 97\n'
+    + 'The Chainsmokers & Illenium ft. Lennon Stella - Takeaway (OutaMatic Remix) - 5A - 126\n'
+    + 'Timbaland feat Keri Hilson & D.O.E. - Give It To Me (BRANDON Bootleg) - 1A - 124\n'
+    + 'Timmy Trumpet - World At Our Feet (Deorro Remix) - 11A - 138\n'
+    + 'Tom & Collins, Jesus Navarro & Elsa Y Elmar - Malo (Tom & Collins Club Remix) - 10A - 123\n'
+    + 'Tommy Capretto - Ratchet (Extended Mix) -9A - 125\n'
+    + 'Tony Romera & Shermanology - All My Life (Extended Mix) - 6A - 118\n'
+    + 'TRACE - House Of Funk (Extended Mix) - 6A - 126\n'
+    + 'Train - Hey, Soul Sister (Robin Roij Remix) - 12B - 100\n'
+    + 'Tujamo x Jude & Frank - Getting Money x Clandestino (Daav One Mashup) - 11A - 125\n'
+    + 'Versus - 1988 (Extended Mix) - 7A -125\n';
+
+  private teamixSelectedVol2 =
+    '40 MiloMilo - Trumpeta (Original Mix) - 10A - 108\n'
+    + '50 Cent ft. Olivia - Candy Shop (DJ Santarosa Loco Contigo Blend) - 11A - 96\n'
+    + 'Afro B - Drogba (Joanna) (DJ Katch Remix) - 10A - 108\n'
+    + 'Alesso x Toby Green - Pressure x Be My Lover (Daav One Mashup) - 5A - 125\n'
+    + 'Alesson & SUMR CAMP - In The Middle (Extended Mix) - 8A - 123\n'
+    + 'Alok & Harrison - Tell Me Why (Extended Mix) - 10A - 123\n'
+    + 'Anuel AA, Daddy Yankee & Karol G ft. Ozuna & J Balvi - China (Jesus Fernandez Remix) - 8A - 105\n'
+    + 'Ashanti vs Ape Drums - Rock Wit U (DJ Nasa Bootleg) - 7A - 100\n'
+    + 'Avicii & Tom & Jame - I Could Be Something (Braaten & Chrit Leaf Mashup) - 11A - 126\n'
+    + 'Badjokes - Orion (Extended Mix) - 7A - 128\n'
+    + 'Bassjackers vs Jaxx & Vega - Limitless (Extended Mix) - 1A - 140\n'
+    + 'Becky Hill, Sigala - Wish You Well (eSQUIRE Extended Mix) - 11A - 123\n'
+    + 'Ben Delay, Superdope - Say My Name feat Alexandra Prince (Bassline Shizzle Edit) - 5A - 123\n'
+    + 'Benny Benassi, CID - Satisfaction Service Only (Javi Reina Mashup) - 8A - 126\n'
+    + 'Bhaskar, Kiko Franco - Vicious (Extended Mix with Isadora) - 5A - 124\n'
+    + 'Biscits - The Pressure (Extended Mix) - 4A - 124\n'
+    + 'Chemical Surf - Pararam (Original Mix) - 7A - 125\n'
+    + 'Chico Rose ft Afrojack - Sad (Extended Mix) - 2A - 125\n'
+    + 'Chris Brown & Drake - No Guidance (Don Mayor Edit) - 12A - 100\n'
+    + 'Chris Lorenzo - Every Morning (Extended Mix) - 4A - 128\n'
+    + 'Curtiba - Missing (Extended Mix) - 4A - 125\n'
+    + 'Daddy\'s Groove, Mariana BO - Mambara (Original Mix) - 12A - 128\n'
+    + 'DallasK - I Know (Extended Mix) - 3A - 122\n'
+    + 'Damien N-Drix x Eurythmics - Sweet Dreams OSHAB (Criminal Noise & Jean Luc Mashup) - 5A - 125\n'
+    + 'Darksidevinyl - Sawaa (Nikia\'s Afrotrance mix) - 11A - 122\n'
+    + 'David Guetta & Martin Solveig - Thing For You (David Guetta Remix) - 10B - 124\n'
+    + 'David Guetta & Martin Solveig - Thing For You (Tom Staar Remix) - 7A - 126\n'
+    + 'Dayvi & Victor Cardenas Feat Kelly Ruiz - Baila Conmigo (DJ OD Coolie ReDrum) - 11A - 128\n'
+    + 'Dayvi - Oh (Original Mix) - 6B or 6A - 128\n'
+    + 'De La Swing - Everyday (Extended Mix) - 6A - 124\n'
+    + 'Dee Montero - Ubuntu (Original Mix) - 4A - 120\n'
+    + 'Dennis Cartier, Ivan Cappello - Querida (Extended Mix) - 6A - 124\n'
+    + 'Deorro & Henry Fong ft Elvis Crespo - Pica (Laidback Luke Remix) - 2A - 128\n'
+    + 'Deorro, Elvis Crespo & Henry Fong  - Pica (Cat Dealers Remix) - 2A - 128\n'
+    + 'DJ Kosmas K - Beat de L\'Amour (Soulis Sarris Afrotouch) - 8A - 122\n'
+    + 'Don Diablo - Never Change (Extended Mix) - 9B - 126\n'
+    + 'Drake  - In My Feelings (Jazzy Rey Remix) - 4A - 105\n'
+    + 'Dzeko & DJ D-Sol ft Kool & The Gang - Down On It (Extended Mix) - 9A - 125\n'
+    + 'Earth n Days - Cumbia (Original Mix) - 9A - 124\n'
+    + 'Ella Eyre & Banx & Ranx ft Kiana Lede - Mama (Just Kiddin Remix) - 2A - 125\n'
+    + 'Ellis ft ILY - Falling Through (Extended Mix) - 6A - 112\n'
+    + 'Eminem - Without Me (HUGEL Remix) - 6A - 126\n'
+    + 'Frey - Turkish Showbiz (Original  Mix) - 4A - 124\n'
+    + 'Hardwell ft Richie Loop - Drop To The Floor (Extended Mix) - 7A - 128\n'
+    + 'HAWK (IT) - You Can Say (Original Mix) - 6A - 126\n'
+    + 'Hayden James & NAATIONS - Nowhere To Go (Michael Calfan Remix) - 10A - 122\n'
+    + 'Hever Jara, Reveh & Drezza, Sean Paul - Samoa Temperature (Javi Reina Reconstruction) - 6A - 122\n'
+    + 'helmut dubnitzky, Jackspot - Afrikanism - 6A - 122\n'
+    + 'HUGEL - House Music (Extended Mix) - 4A - 126\n'
+    + 'Jamie Jones & Darius Syrossian - Rushing (Extended Mix) - 8A - 128\n'
+    + 'John Christian & Juliette Claire - Club Bizarre (Extended Mix) - 9A - 125\n'
+    + 'Jon Lockley - Feel Real Good (Original Mix) - 9A - 125\n'
+    + 'Juliet Sikora - Beat Dancer (Extended Mix) - 7A - 125\n'
+    + 'Kokiri - Friends feat Joe Killington (Alphalove Extended Remix) - 11A - 124\n'
+    + 'Konshens vs M3B8 - Bruk Off Yuh Back (Mister Gray Murdara Edit) - 9A - 105\n'
+    + 'KURA & Syzz - Lightspeed (Extended Mix) - 9A - 128\n'
+    + 'Leeb  - Ella Me Olvido (Original Mix) - 8A - 128\n'
+    + 'Limpopo Rhythm, Candy Man - Dream (Original Mix) - 4A - 124\n'
+    + 'Lion King, Garmiani - King Of Africa 2019 (Deville & Brian Dawe Bootleg V.1) - 4A - 128\n'
+    + 'Lion King, Wiwek, Gregor Salto - King Of Africa 2019 (Deville & Brian Dawe Bootleg V.2) - 4A - 128\n'
+    + 'LMFAO vs Mike Williams - Party Rock Anthem (JD Live 2019 Bootleg) - 4A - 128\n'
+    + 'Loud Luxury - Body (Reed Streets Bootleg Trans 102-126) - 4A - 102\n'
+    + 'LUM, Gabry Ponte - Monster (Robin Schulz Remix) - 1A - 126\n'
+    + 'Major Lazer, Anitta - Make It Hot (Original Mix) - 3A - 97\n'
+    + 'Marc Palacios, DJ Kone - 7 Seas (Original Mix) - 5A - 123\n'
+    + 'Maximono - Odd Life (Extended Mix) - 9A - 124\n'
+    + 'Maya Days, Brannco - Push The Feeling On (Club Mix) - 10A - 124\n'
+    + 'Meduza, The White Stripes - Piece Of Your Heart (Frankie Steel \'7 Nation Army\' Bootleg) - 3A - 124\n'
+    + 'Michael Jackson - Wanna Be Startin\' Somethin\' (KAMARENA Remix) - 9A - 122\n'
+    + 'MiHi - Take Me To My House (Extended Mix) - 11A - 123\n'
+    + 'Mike Williams - Day Or Night (Original Mix) - 4A - 128\n'
+    + 'Mikey Moran - Right on My Soul (Original Mix) - 3A - 120\n'
+    + 'Moon Rocket - Beautiful (The Moon Mix) - 8A - 123\n'
+    + 'Murci, Rihanna - My Money (Original Mix) - 2A - 124\n'
+    + 'Mulya - Brick Talks (Sobek Remix) - 9A - 122\n'
+    + 'Nirvana - Smells Like Teen Spirit (Tiger Toast Remix) - 4A - 124\n'
+    + 'Norman Doray - Morning Light (Arno Cost Remix) - 11A - 124\n'
+    + 'Oomloud - Like That (Extended Mix) - 11A - 126\n'
+    + 'Pep & Rash - Da Fck You Lookin\' At! (Extended Mix) - 9A - 126\n'
+    + 'POP CULTUR & Hawk - Stoppin (Extended Mix) - 5B or 2A - 125\n'
+    + 'Rune RK, Firebeatz vs Mesto - Calabria vs Back & Forth (Crunkz Edit) - 2A - 128\n'
+    + 'Sam Smith, Mike Williams, Brooks - Jetlag Latch (Braaten & Chrit Leaf Mashup) - 4A - 128\n'
+    + 'Sean Paul - Get Busy (AyoGabs Remix) - 4A - 102\n'
+    + 'Shawn Mendes ft Camila Cabello - Senorita (JD Live Latin House Bootleg) - 8A - 126\n'
+    + 'Shelco Garcia & Teenwolf  - Burn It Up (Extended Mix) - 11A - 128\n'
+    + 'Simon Fava & Yvvan Back - Bailar (Extended Mix) - 1A - 126\n'
+    + 'Steff Da Campo & David Puentez x Timmy Trumpet - Everybody Freaks (David Puentez Mashup) - 8A - 128\n'
+    + 'Steve Angello - KNAS (BROHUG Remix) - 1B - 125\n'
+    + 'The Disco Boys - Around The World (Crminal Noise & Jean Luc Bootleg) - 8A - 128\n'
+    + 'The Knocks & Kah-lo - Awa Ni (MOTi Remix) - 12B - 123\n'
+    + 'The OtherZ, Kiko Franco, Ralk - Fogo (feat Maciel) (Original Mix) - 3A - 124\n'
+    + 'Timewarp - Space Glass - 8A - 124\n'
+    + 'Torren Foot & Double Agent - Blowin\' Up My Phone (Extended Mix) - 1A - 124\n'
+    + 'Tujamo - Hell Yeah (JD Live Run This Edit) - 9A - 126\n'
+    + 'Tujamo vs Lil Jon & LMFAO - Shots (DJ Nasa VIP Bootleg) - 11A - 128\n'
+    + 'Ummet Ozcan, Arem Ozguc & Arman Aydin - IZMIR (Extended Mix) - 11A - 128\n'
+    + 'Vinny Vibe & Kastra - Take Over Contol - 12A - 124\n'
+    + 'Westend - Friend Zone (Original Mix) - 11A - 125\n'
+    + 'Wiley feat Tory Lanez, Kranium & Dappy - My One (Shift K3Y Remix) - 11A - 126\n'
+    + 'Wiz Khalifa, DJ Snake, Mercer - We Dem Ill Boys (DREZZ Edit) - 1A - 128\n';
+
   private teamixVol1 =
-    "Beach Boii - Rude (DJ RooBen Edit)\n"
-    + "Bruno Mars X Cardi B X Bee Gees - Finesse Vs. Staying Alive (Serafin Finesse Edit - DJ RooBen Fix)\n"
-    + "Cardi B & 21 Savage - Bartier Cardi (Roe Hyams Extended mix)\n"
-    + "Cardi B Feat 21 Savage - Bartier Cardi (DJ RooBen Redrum)\n"
-    + "Cardi B Feat 21 Savage - Bartier Cardi (DJ RooBen Redrum)[Extended]\n"
-    + "Charlie Puth - How Long (TeaMix 1 Dudu A'S)\n"
-    + "Clean Bandit Ft. Julia Michaels - I Miss You (DJ RooBen Club Edit)\n"
-    + "Clean Bandit Ft. Julia Michaels - I Miss You (DJ RooBen Extended Club Edit)\n"
-    + "Dj Rapture Ft. Dozay - Jiggle (DJ RooBen Extended)\n"
-    + "DJ Snake & Lauv - A Different Way (DJ RooBen Redrum)\n"
-    + "Enrique Iglesias Ft. Bad Bunny - El Bano (DJ RooBen Edit)\n"
-    + "Enrique Iglesias Ft. Rotem Cohen & Descemer Bueno - Subeme La Radio (DJ RooBen Edit)\n"
-    + "Flo Rida, Maluma - Hola (Roe Hyams Redrum)\n"
-    + "Gucci Mane - Mall (DJ RooBen Redrum)\n"
-    + "Jason Derulo Ft. French Montana - Tip Toe ( Dj Sagiv Alfasi Edit )\n"
-    + "Jason Derulo Ft. French Montana - Tip Toe (DJ RooBen Redrum)\n"
-    + "Migos - Superstars (DJ RooBen Extended)\n"
-    + "סטטיק ובן אל תבורי - נמסטה(Dj Sagiv Extended)\n"
-    + "עידו ונה - היי בייב (TeaMix 1 Dudu A'S)\n"
-    + "שרית חדד - אמן (TeaMix 1 Dudu A'S)\n";
+    'Beach Boii - Rude (DJ RooBen Edit)\n'
+    + 'Bruno Mars X Cardi B X Bee Gees - Finesse Vs. Staying Alive (Serafin Finesse Edit - DJ RooBen Fix)\n'
+    + 'Cardi B & 21 Savage - Bartier Cardi (Roe Hyams Extended mix)\n'
+    + 'Cardi B Feat 21 Savage - Bartier Cardi (DJ RooBen Redrum)\n'
+    + 'Cardi B Feat 21 Savage - Bartier Cardi (DJ RooBen Redrum)[Extended]\n'
+    + 'Charlie Puth - How Long (TeaMix 1 Dudu A\'S)\n'
+    + 'Clean Bandit Ft. Julia Michaels - I Miss You (DJ RooBen Club Edit)\n'
+    + 'Clean Bandit Ft. Julia Michaels - I Miss You (DJ RooBen Extended Club Edit)\n'
+    + 'Dj Rapture Ft. Dozay - Jiggle (DJ RooBen Extended)\n'
+    + 'DJ Snake & Lauv - A Different Way (DJ RooBen Redrum)\n'
+    + 'Enrique Iglesias Ft. Bad Bunny - El Bano (DJ RooBen Edit)\n'
+    + 'Enrique Iglesias Ft. Rotem Cohen & Descemer Bueno - Subeme La Radio (DJ RooBen Edit)\n'
+    + 'Flo Rida, Maluma - Hola (Roe Hyams Redrum)\n'
+    + 'Gucci Mane - Mall (DJ RooBen Redrum)\n'
+    + 'Jason Derulo Ft. French Montana - Tip Toe ( Dj Sagiv Alfasi Edit )\n'
+    + 'Jason Derulo Ft. French Montana - Tip Toe (DJ RooBen Redrum)\n'
+    + 'Migos - Superstars (DJ RooBen Extended)\n'
+    + 'סטטיק ובן אל תבורי - נמסטה(Dj Sagiv Extended)\n'
+    + 'עידו ונה - היי בייב (TeaMix 1 Dudu A\'S)\n'
+    + 'שרית חדד - אמן (TeaMix 1 Dudu A\'S)\n';
 
   private teamixVol2 =
-    "BlocBoy JB feat. Drake - Look Alive (TeaMix 2 - Sagiv Alfasi Transitions 100-70)\n"
-    + "Clean Bandit - I Miss You (TeaMix 2 - Dudu A'S Redrum)\n"
-    + "Daniel Yafe - If It's Love (TeaMix 2 - Daniel Zadka Remix - RooBen Edit)\n"
-    + "Drake - God's Plan (TeaMix 2 - Roe Hyams Short Edit)\n"
-    + "Eliad - Weekend (TeaMix 2 - Dudu A'S Redrum)\n"
-    + "Farruko El Micha - Fuego (TeaMix 2 - Roe Hyams Extended Mix)\n"
-    + "Gucci Mane - Smiling in the Drought (TeaMix 2 - RooBen Redrum)\n"
-    + "Honorebel ft Charly Black, Pitbull & Julie Elody - Your Love (TeaMix 2 - RooBen Extended)\n"
-    + "Huncho Jack, Travis Scott & Quavo Feat Takeoff - Eye 2 Eye (TeaMix 2 - RooBen Redrum)\n"
-    + "Inna - Me Gusta (TeaMix 2 - Sagiv Alfasi Edit)\n"
-    + "Ivri Lider X Stephane- Moogzam (TeaMix 2 - RooBen Extended)\n"
-    + "J Balvin & Pitbull Feat. Camila Cabello - Hey Ma (TeaMix 2 - More D' More Edit)\n"
-    + "J. Balvin, Jeon, Anitta - Machika (TeaMix 2 - RooBen Edit)\n"
-    + "Jay Rock, Kendrick Lamar, Future, James Blake - King's Dead (TeaMix 2 - Sagiv Alfasi Extended)\n"
-    + "Lior Narkis Feat. Vivo - Full Moon (TeaMix 2 - RooBen Fix)\n"
-    + "Luis Fonsi & Demi Lovato - Echame La Culpa (TeaMix 2 - Nejtrino & Baur Dudu A'S Edit)\n"
-    + "Migos - Superstars (TeaMix 2 - Roe Hyams Redrum)\n"
-    + "Nasrin Kadri - Tomru Lo (TeaMix 2 - RooBen Extended)\n"
-    + "Reik Ft. Wisin & Ozuna - Me Niego (TeaMix 2 - RooBen Edit)\n"
-    + "Romeo Santos Feat. Ozuna - Sobredosis (TeaMix 2 - RooBen Club Mix)\n"
-    + "Romeo Santos Feat. Ozuna - Sobredosis (TeaMix 2 - RooBen Extended Club Mix)\n"
-    + "Sean Paul & David Guetta feat. Becky G- Mad Love (TeaMix 2 - Sagiv Alfasi Edit)\n"
-    + "Sofia Reyes, De La Ghetto, Jason Derulo - 1, 2, 3 (TeaMix 2 - RooBen Edit)\n"
-    + "Zafrir Ifrach - Sweet Dream (TeaMix 2 - Dudu A'S Edit)\n";
+    'BlocBoy JB feat. Drake - Look Alive (TeaMix 2 - Sagiv Alfasi Transitions 100-70)\n'
+    + 'Clean Bandit - I Miss You (TeaMix 2 - Dudu A\'S Redrum)\n'
+    + 'Daniel Yafe - If It\'s Love (TeaMix 2 - Daniel Zadka Remix - RooBen Edit)\n'
+    + 'Drake - God\'s Plan (TeaMix 2 - Roe Hyams Short Edit)\n'
+    + 'Eliad - Weekend (TeaMix 2 - Dudu A\'S Redrum)\n'
+    + 'Farruko El Micha - Fuego (TeaMix 2 - Roe Hyams Extended Mix)\n'
+    + 'Gucci Mane - Smiling in the Drought (TeaMix 2 - RooBen Redrum)\n'
+    + 'Honorebel ft Charly Black, Pitbull & Julie Elody - Your Love (TeaMix 2 - RooBen Extended)\n'
+    + 'Huncho Jack, Travis Scott & Quavo Feat Takeoff - Eye 2 Eye (TeaMix 2 - RooBen Redrum)\n'
+    + 'Inna - Me Gusta (TeaMix 2 - Sagiv Alfasi Edit)\n'
+    + 'Ivri Lider X Stephane- Moogzam (TeaMix 2 - RooBen Extended)\n'
+    + 'J Balvin & Pitbull Feat. Camila Cabello - Hey Ma (TeaMix 2 - More D\' More Edit)\n'
+    + 'J. Balvin, Jeon, Anitta - Machika (TeaMix 2 - RooBen Edit)\n'
+    + 'Jay Rock, Kendrick Lamar, Future, James Blake - King\'s Dead (TeaMix 2 - Sagiv Alfasi Extended)\n'
+    + 'Lior Narkis Feat. Vivo - Full Moon (TeaMix 2 - RooBen Fix)\n'
+    + 'Luis Fonsi & Demi Lovato - Echame La Culpa (TeaMix 2 - Nejtrino & Baur Dudu A\'S Edit)\n'
+    + 'Migos - Superstars (TeaMix 2 - Roe Hyams Redrum)\n'
+    + 'Nasrin Kadri - Tomru Lo (TeaMix 2 - RooBen Extended)\n'
+    + 'Reik Ft. Wisin & Ozuna - Me Niego (TeaMix 2 - RooBen Edit)\n'
+    + 'Romeo Santos Feat. Ozuna - Sobredosis (TeaMix 2 - RooBen Club Mix)\n'
+    + 'Romeo Santos Feat. Ozuna - Sobredosis (TeaMix 2 - RooBen Extended Club Mix)\n'
+    + 'Sean Paul & David Guetta feat. Becky G- Mad Love (TeaMix 2 - Sagiv Alfasi Edit)\n'
+    + 'Sofia Reyes, De La Ghetto, Jason Derulo - 1, 2, 3 (TeaMix 2 - RooBen Edit)\n'
+    + 'Zafrir Ifrach - Sweet Dream (TeaMix 2 - Dudu A\'S Edit)\n';
 
   private teamixVol3 =
-    "BlocBoy JB Ft. Drake - Look Alive (TeaMix 3 - Roe Hyams Extended)\n"
-    + "Buddy , A$AP Ferg - Black (TeaMix 3 - Sagiv Alfasi Edit)\n"
-    + "Dudu Aharon - Baby (TeaMix 3 - Dudu A'S Redrum)\n"
-    + "Enrique Iglesias Ft. Bad Bunny & Natti Natasha - El Bano (Remix) (TeaMix 3 - RooBen Edit)\n"
-    + "Hoodcelebrityy - Walking Trophy (TeaMix 3 - RooBen Redrum) \n"
-    + "Iggy Azalea - Mo Bounce (TeaMix 3 - More D'More Edit)\n"
-    + "Katriks & Doron Biton - Gucci And Prada (TeaMix 3 - Dudu A'S Redrum)\n"
-    + "Lil Dicky Ft. Chris Brown - Freaky Friday (TeaMix 3 - Sagiv Alfasi Acapella In Edit)\n"
-    + "Lil Dicky Ft. Chris Brown - Freaky Friday (TeaMix 3 - Sagiv Alfasi Extended) Hook 1st\n"
-    + "Luis Fonsi & Demi Lovato - Echame La Culpa (Not On You Remix) (TeaMix 3 - RooBen Edit)\n"
-    + "Migos - Narcos (TeaMix 3 - Roe Hyams Extended)\n"
-    + "Moshe Peretz & Nasrin Kadri - Haino Shnaim (TeaMix 3 - Dudu A'S Redrum)\n"
-    + "Natti Natasha Ft. RKM & Ken-Y - Tonta (TeaMix 3 - RooBen Edit)\n"
-    + "Nicky Jam x J. Balvin - X (Equis) (TeaMix 3 - Dudu A'S Edit)\n"
-    + "Peled - Ahavtit (TeaMix 3 - RooBen Redrum)\n"
-    + "Ramz - Barking (TeaMix 3 - Sagiv Alfasi Edit)\n"
-    + "Rich The Kid - Plug Walk (TeaMix 3 - Roe Hyams Extended)\n"
-    + "Rich The Kid Ft. Kendrick Lamar - New Freezer (TeaMix 3 - Roe Hyams Extended)\n"
-    + "Rotem Cohen ft. Descemer Bueno - Como El Agua (TeaMix 3 - RooBen Club Mix)\n"
-    + "Stephane Legar & Itay Levi - Maman (TeaMix 3 - RooBen Extended) - Fix\n"
-    + "Vini Vici & Timmy Trumpet Ft. Symphonic - 100 (TeaMix 3 - Sagiv Alfasi Short Edit)\n"
-    + "Lior Narkis feat. Vivo - Full Moon (TeaMix 3 - Aviel Mymon Edit)\n"
-    + "Yakir Ganon & Mor Ben Yair - Ya' Mama (TeaMix 3 - Aviel Mymon Edit)\n"
-    + "Zafrir Ifrach - Sultan (TeaMix 3 - Aviel Mymon Edit)\n";
+    'BlocBoy JB Ft. Drake - Look Alive (TeaMix 3 - Roe Hyams Extended)\n'
+    + 'Buddy , A$AP Ferg - Black (TeaMix 3 - Sagiv Alfasi Edit)\n'
+    + 'Dudu Aharon - Baby (TeaMix 3 - Dudu A\'S Redrum)\n'
+    + 'Enrique Iglesias Ft. Bad Bunny & Natti Natasha - El Bano (Remix) (TeaMix 3 - RooBen Edit)\n'
+    + 'Hoodcelebrityy - Walking Trophy (TeaMix 3 - RooBen Redrum) \n'
+    + 'Iggy Azalea - Mo Bounce (TeaMix 3 - More D\'More Edit)\n'
+    + 'Katriks & Doron Biton - Gucci And Prada (TeaMix 3 - Dudu A\'S Redrum)\n'
+    + 'Lil Dicky Ft. Chris Brown - Freaky Friday (TeaMix 3 - Sagiv Alfasi Acapella In Edit)\n'
+    + 'Lil Dicky Ft. Chris Brown - Freaky Friday (TeaMix 3 - Sagiv Alfasi Extended) Hook 1st\n'
+    + 'Luis Fonsi & Demi Lovato - Echame La Culpa (Not On You Remix) (TeaMix 3 - RooBen Edit)\n'
+    + 'Migos - Narcos (TeaMix 3 - Roe Hyams Extended)\n'
+    + 'Moshe Peretz & Nasrin Kadri - Haino Shnaim (TeaMix 3 - Dudu A\'S Redrum)\n'
+    + 'Natti Natasha Ft. RKM & Ken-Y - Tonta (TeaMix 3 - RooBen Edit)\n'
+    + 'Nicky Jam x J. Balvin - X (Equis) (TeaMix 3 - Dudu A\'S Edit)\n'
+    + 'Peled - Ahavtit (TeaMix 3 - RooBen Redrum)\n'
+    + 'Ramz - Barking (TeaMix 3 - Sagiv Alfasi Edit)\n'
+    + 'Rich The Kid - Plug Walk (TeaMix 3 - Roe Hyams Extended)\n'
+    + 'Rich The Kid Ft. Kendrick Lamar - New Freezer (TeaMix 3 - Roe Hyams Extended)\n'
+    + 'Rotem Cohen ft. Descemer Bueno - Como El Agua (TeaMix 3 - RooBen Club Mix)\n'
+    + 'Stephane Legar & Itay Levi - Maman (TeaMix 3 - RooBen Extended) - Fix\n'
+    + 'Vini Vici & Timmy Trumpet Ft. Symphonic - 100 (TeaMix 3 - Sagiv Alfasi Short Edit)\n'
+    + 'Lior Narkis feat. Vivo - Full Moon (TeaMix 3 - Aviel Mymon Edit)\n'
+    + 'Yakir Ganon & Mor Ben Yair - Ya\' Mama (TeaMix 3 - Aviel Mymon Edit)\n'
+    + 'Zafrir Ifrach - Sultan (TeaMix 3 - Aviel Mymon Edit)\n';
 
   private teamixVol4 =
-    "21 Savage ft. Metro Boomin - X Bitch (TeaMix 4 - RooBen Redrum) Acapella In\n"
-    + "21 Savage ft. Metro Boomin - X Bitch (TeaMix 4 - RooBen Redrum)\n"
-    + "Beyonce - Single Ladies 17 (TeaMix 4 - Dudu A'S Edit)\n"
-    + "Cardi B ft Bad Bunny & J Balvin - I Like It (TeaMix 4 - RooBen Extended)\n"
-    + "Cardi B ft. Migos - Drip (TeaMix 4 - RooBen Extended)\n"
-    + "Carnage Ft Lil Yachty - Mase in '97 (TeaMix 4 - Roe Hyams Extended)\n"
-    + "Descemer Bueno & Enrique Iglesias Ft. El Micha - Nos Fuimos Lejos (TeaMix 4 - RooBen Edit)\n"
-    + "DJ Khaled Ft. Rihanna - Wild Thoughts (TeaMix 4 - Dudu A'S Edit)\n"
-    + "Empire Cast Feat. Yazz & Timbaland - Dynasty (TeaMix 4 - More D'More Edit)\n"
-    + "Fais - Know You Better (TeaMix 4 - Dudu A'S Redrum)\n"
-    + "Famous Dex Ft A$ap Rocky - Pick it Up (TeaMix 4 - Roe Hyams Extended)\n"
-    + "Iamsu - On My Own (TeaMix 4 - RooBen Extended)\n"
-    + "Logic & Marshmello - Everyday (TeaMix 4 - Sagiv Alfasi Edit)\n"
-    + "Maddix, KEVU Vs. Netta - Bang Toy (TeaMix 4 - Sagiv Alfasi Mushup)\n"
-    + "Migos Feat. Drake - Walk It Talk It (TeaMix 4 - RooBen Redrum)\n"
-    + "Netta - Toy (TeaMix 4 - Ran Ziv & Tal Mor - Dudu A'S Edit)\n"
-    + "Nicki Minaj - Chun-Li (TeaMix 4 - Sagiv Alfasi Edit)\n"
-    + "Prince Royce - El Clavo (TeaMix 4 - Sagiv Alfasi Edit )\n"
-    + "Sean Paul & Major Lazer - Tip Pon It (TeaMix 4 - Roe Hyams Extended)\n"
-    + "Sean Paul feat Major Lazer - Tip Pon It (TeaMix 4 - Sagiv Alfasi Edit)\n"
-    + "Sofia Reyes Feat. Jason Derulo & De La Ghetto - 1, 2, 3 (TeaMix 4 - More D'More Edit)\n"
-    + "Stephane Legar & Itay Levi - MAMAN (TeaMix 4 - Dudu A'S Redrum)\n"
-    + "The Kemist & DJ BrainDeaD - Mayhem (TeaMix 4 - RooBen Edit)\n"
-    + "Tinashe Ft. Ty Dolla Sign & French Montana - Me So Bad (TeaMix 4 - RooBen Redrum)\n";
+    '21 Savage ft. Metro Boomin - X Bitch (TeaMix 4 - RooBen Redrum) Acapella In\n'
+    + '21 Savage ft. Metro Boomin - X Bitch (TeaMix 4 - RooBen Redrum)\n'
+    + 'Beyonce - Single Ladies 17 (TeaMix 4 - Dudu A\'S Edit)\n'
+    + 'Cardi B ft Bad Bunny & J Balvin - I Like It (TeaMix 4 - RooBen Extended)\n'
+    + 'Cardi B ft. Migos - Drip (TeaMix 4 - RooBen Extended)\n'
+    + 'Carnage Ft Lil Yachty - Mase in \'97 (TeaMix 4 - Roe Hyams Extended)\n'
+    + 'Descemer Bueno & Enrique Iglesias Ft. El Micha - Nos Fuimos Lejos (TeaMix 4 - RooBen Edit)\n'
+    + 'DJ Khaled Ft. Rihanna - Wild Thoughts (TeaMix 4 - Dudu A\'S Edit)\n'
+    + 'Empire Cast Feat. Yazz & Timbaland - Dynasty (TeaMix 4 - More D\'More Edit)\n'
+    + 'Fais - Know You Better (TeaMix 4 - Dudu A\'S Redrum)\n'
+    + 'Famous Dex Ft A$ap Rocky - Pick it Up (TeaMix 4 - Roe Hyams Extended)\n'
+    + 'Iamsu - On My Own (TeaMix 4 - RooBen Extended)\n'
+    + 'Logic & Marshmello - Everyday (TeaMix 4 - Sagiv Alfasi Edit)\n'
+    + 'Maddix, KEVU Vs. Netta - Bang Toy (TeaMix 4 - Sagiv Alfasi Mushup)\n'
+    + 'Migos Feat. Drake - Walk It Talk It (TeaMix 4 - RooBen Redrum)\n'
+    + 'Netta - Toy (TeaMix 4 - Ran Ziv & Tal Mor - Dudu A\'S Edit)\n'
+    + 'Nicki Minaj - Chun-Li (TeaMix 4 - Sagiv Alfasi Edit)\n'
+    + 'Prince Royce - El Clavo (TeaMix 4 - Sagiv Alfasi Edit )\n'
+    + 'Sean Paul & Major Lazer - Tip Pon It (TeaMix 4 - Roe Hyams Extended)\n'
+    + 'Sean Paul feat Major Lazer - Tip Pon It (TeaMix 4 - Sagiv Alfasi Edit)\n'
+    + 'Sofia Reyes Feat. Jason Derulo & De La Ghetto - 1, 2, 3 (TeaMix 4 - More D\'More Edit)\n'
+    + 'Stephane Legar & Itay Levi - MAMAN (TeaMix 4 - Dudu A\'S Redrum)\n'
+    + 'The Kemist & DJ BrainDeaD - Mayhem (TeaMix 4 - RooBen Edit)\n'
+    + 'Tinashe Ft. Ty Dolla Sign & French Montana - Me So Bad (TeaMix 4 - RooBen Redrum)\n';
 
   private teamixVol5 =
-    "Avior Malasa - Diamond (TeaMix 5 - Dudu A'S Redrum)\n"
-    + "Diplo, French Montana & Lil Pump ft Zhavia Ward - Welcome To The Party (TeaMix 5 - RooBen Extended)\n"
-    + "DJ Snake X Siks John Walt X Julian Jordan - The Magenta Riddim Sky (TeaMix 5 - Sagiv Alfasi Transition) 100-128\n"
-    + "Eliad - Heavens (TeaMix 5 - Sagiv Alfasi Redrum)\n"
-    + "Enrique Iglesias feat. Bad Bunny - El Bano (TeaMix 5 - Dudu A'S Redrum)\n"
-    + "Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum) (Extended)\n"
-    + "Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum) Hook 1st\n"
-    + "Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum)\n"
-    + "Ivri Lider - My Queen (TeaMix 5 - Dudu A'S Redrum)\n"
-    + "Kid Ink - One Time (TeaMix 5 - RooBen Extended)\n"
-    + "Major Lazer & Moti - Boom (Fizo Remix - TeaMix 5 - Dudu A'S Edit)\n"
-    + "Maor Edri - Allah Ma'ak (TeaMix 5 - RooBen Short Edit)\n"
-    + "Metallica - Enter Sandman (TeaMix 5 - Joel Fletcher & Reece Low - RooBen Short Edit)\n"
-    + "Michael Swissa & Young Heffner - Pashtida (TeaMix 5 - Roe Hyams Extended)\n"
-    + "MR.BLACK x Diego Miranda X Tiesto XDzeko Ft. Preme & Post Malone & The Kemist - Boomshakalak Jackie Chan (TeaMix 5 - Sagiv Alfasi MashUp)\n"
-    + "Post Malone & 21 Savage - Rockstar (Nejtrino & Baur Remix - TeaMix 5 - Dudu A'S Edit)\n"
-    + "The Weeknd feat. Kendric Lamar - Pray For Me (TeaMix 5 - Roe Hyams Edit) (Kendric First)\n"
-    + "The Weeknd feat. Kendric Lamar - Pray For Me (TeaMix 5 - Roe Hyams Edit)\n"
-    + "Tiesto & Dzeko ft Premo & Post Malone - Jackie Chan (TeaMix 5 - Roe Hyams Edit)\n"
-    + "Tiesto, KSHMR, Jewelz & Sparks - Secret VS. I Can Fly (TeaMix 5 - RooBen Mashup)\n"
-    + "Tyga Ft. Offset - Taste (TeaMix 5 - RooBen Extended)\n"
-    + "YBN Nahmir - Bounce Out With That (TeaMix 5 - Roe Hyams Edit)\n";
+    'Avior Malasa - Diamond (TeaMix 5 - Dudu A\'S Redrum)\n'
+    + 'Diplo, French Montana & Lil Pump ft Zhavia Ward - Welcome To The Party (TeaMix 5 - RooBen Extended)\n'
+    + 'DJ Snake X Siks John Walt X Julian Jordan - The Magenta Riddim Sky (TeaMix 5 - Sagiv Alfasi Transition) 100-128\n'
+    + 'Eliad - Heavens (TeaMix 5 - Sagiv Alfasi Redrum)\n'
+    + 'Enrique Iglesias feat. Bad Bunny - El Bano (TeaMix 5 - Dudu A\'S Redrum)\n'
+    + 'Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum) (Extended)\n'
+    + 'Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum) Hook 1st\n'
+    + 'Future Ft. Nicki Minaj - You Da Baddest (TeaMix 5 - RooBen Redrum)\n'
+    + 'Ivri Lider - My Queen (TeaMix 5 - Dudu A\'S Redrum)\n'
+    + 'Kid Ink - One Time (TeaMix 5 - RooBen Extended)\n'
+    + 'Major Lazer & Moti - Boom (Fizo Remix - TeaMix 5 - Dudu A\'S Edit)\n'
+    + 'Maor Edri - Allah Ma\'ak (TeaMix 5 - RooBen Short Edit)\n'
+    + 'Metallica - Enter Sandman (TeaMix 5 - Joel Fletcher & Reece Low - RooBen Short Edit)\n'
+    + 'Michael Swissa & Young Heffner - Pashtida (TeaMix 5 - Roe Hyams Extended)\n'
+    + 'MR.BLACK x Diego Miranda X Tiesto XDzeko Ft. Preme & Post Malone & The Kemist - Boomshakalak Jackie Chan (TeaMix 5 - Sagiv Alfasi MashUp)\n'
+    + 'Post Malone & 21 Savage - Rockstar (Nejtrino & Baur Remix - TeaMix 5 - Dudu A\'S Edit)\n'
+    + 'The Weeknd feat. Kendric Lamar - Pray For Me (TeaMix 5 - Roe Hyams Edit) (Kendric First)\n'
+    + 'The Weeknd feat. Kendric Lamar - Pray For Me (TeaMix 5 - Roe Hyams Edit)\n'
+    + 'Tiesto & Dzeko ft Premo & Post Malone - Jackie Chan (TeaMix 5 - Roe Hyams Edit)\n'
+    + 'Tiesto, KSHMR, Jewelz & Sparks - Secret VS. I Can Fly (TeaMix 5 - RooBen Mashup)\n'
+    + 'Tyga Ft. Offset - Taste (TeaMix 5 - RooBen Extended)\n'
+    + 'YBN Nahmir - Bounce Out With That (TeaMix 5 - Roe Hyams Edit)\n';
 
   private teamixVol6 =
-    "6IX9INE - Tati (TeaMix 6 - Roe Hyams Intro)\n"
-    + "Borgeous X Wiz Khalifa - All That Dem Boyz (TeaMix 6 - Sagiv Alfasi Mash-Up) (140 - 155 Transition)\n"
-    + "BURNS x Maluma x Rae Sremmurd - Hands On Me (TeaMix 6 - Doron Shitrit Edit)\n"
-    + "David Guetta & Showtek - Your Love (TeaMix 6 - RooBen Edit)\n"
-    + "Drake - I'm Upset (TeaMix 6 - Roe Hyams Intro)\n"
-    + "French Montana & Remy Ma - New Thang (TeaMix 6 - Sagiv Alfasi Edit)\n"
-    + "Gente de Zona - Te Duele (TeaMix 6 - RooBen Edit)\n"
-    + "Gil Vain - Colors (TeaMix 6 - Dudu A'S Redrum)\n"
-    + "Lil Skies - Welcome To The Rodeo (TeaMix 6 - Roe Hyams Extended)\n"
-    + "Luis Fonsi, Stefflon Don - Calypso (TeaMix 6 - Dudu A'S Edit) V2\n"
-    + "Luis Fonsi, Stefflon Don - Calypso (TeaMix 6 - Dudu A'S Edit)\n"
-    + "LunchMoney Lewis - Who's Up (TeaMix 6 - Doron Shitrit Extended)\n"
-    + "Marshmello & Anne-Marie - Friends (Deejay Killer Remix- TeaMix 6 - Dudu A'S Edit)\n"
-    + "Nicki Minaj feat Lil Wayne - Rich Sex (TeaMix 6 - Sagiv Alfasi Edit)\n"
-    + "Nicki Minaj ft Ariana Grande - Bed (TeaMix 6 - RooBen Redrum)\n"
-    + "Nicky Jam & J Balvin - X (TeaMix 6 - RooBen Mashup)\n"
-    + "Ramz - Barking (TeaMix 6 - Doron Shitrit Edit)\n"
-    + "Shakira Ft. Maluma - Clandestino (TeaMix 6 - Doron Shitrit Power Edit)\n"
-    + "Spankox - To The Club (Hoox Remix - TeaMix 6 - Dudu A'S Edit)\n"
-    + "Tee Grizzley ft Chris Brown - Fuck It Off (TeaMix 6 - RooBen Extended)\n"
-    + "Tory Lanez ft Ozuna - Pa Mi (TeaMix 6 - RooBen Redrum)\n"
-    + "YALO - Waiting For You (TeaMix 6 - RooBen Redrum)\n"
-    + "Yellow Claw, MC Kekel, Lil Debbie, Bok Nero, MC Gustta - To the Max (TeaMix 6 - Sagiv Alfasi Edit)\n";
+    '6IX9INE - Tati (TeaMix 6 - Roe Hyams Intro)\n'
+    + 'Borgeous X Wiz Khalifa - All That Dem Boyz (TeaMix 6 - Sagiv Alfasi Mash-Up) (140 - 155 Transition)\n'
+    + 'BURNS x Maluma x Rae Sremmurd - Hands On Me (TeaMix 6 - Doron Shitrit Edit)\n'
+    + 'David Guetta & Showtek - Your Love (TeaMix 6 - RooBen Edit)\n'
+    + 'Drake - I\'m Upset (TeaMix 6 - Roe Hyams Intro)\n'
+    + 'French Montana & Remy Ma - New Thang (TeaMix 6 - Sagiv Alfasi Edit)\n'
+    + 'Gente de Zona - Te Duele (TeaMix 6 - RooBen Edit)\n'
+    + 'Gil Vain - Colors (TeaMix 6 - Dudu A\'S Redrum)\n'
+    + 'Lil Skies - Welcome To The Rodeo (TeaMix 6 - Roe Hyams Extended)\n'
+    + 'Luis Fonsi, Stefflon Don - Calypso (TeaMix 6 - Dudu A\'S Edit) V2\n'
+    + 'Luis Fonsi, Stefflon Don - Calypso (TeaMix 6 - Dudu A\'S Edit)\n'
+    + 'LunchMoney Lewis - Who\'s Up (TeaMix 6 - Doron Shitrit Extended)\n'
+    + 'Marshmello & Anne-Marie - Friends (Deejay Killer Remix- TeaMix 6 - Dudu A\'S Edit)\n'
+    + 'Nicki Minaj feat Lil Wayne - Rich Sex (TeaMix 6 - Sagiv Alfasi Edit)\n'
+    + 'Nicki Minaj ft Ariana Grande - Bed (TeaMix 6 - RooBen Redrum)\n'
+    + 'Nicky Jam & J Balvin - X (TeaMix 6 - RooBen Mashup)\n'
+    + 'Ramz - Barking (TeaMix 6 - Doron Shitrit Edit)\n'
+    + 'Shakira Ft. Maluma - Clandestino (TeaMix 6 - Doron Shitrit Power Edit)\n'
+    + 'Spankox - To The Club (Hoox Remix - TeaMix 6 - Dudu A\'S Edit)\n'
+    + 'Tee Grizzley ft Chris Brown - Fuck It Off (TeaMix 6 - RooBen Extended)\n'
+    + 'Tory Lanez ft Ozuna - Pa Mi (TeaMix 6 - RooBen Redrum)\n'
+    + 'YALO - Waiting For You (TeaMix 6 - RooBen Redrum)\n'
+    + 'Yellow Claw, MC Kekel, Lil Debbie, Bok Nero, MC Gustta - To the Max (TeaMix 6 - Sagiv Alfasi Edit)\n';
 
   private teamixVol7 =
-    "50 Cent - P.I.M.P. (Hedegaard Remix TeaMix 7 - IdoM Edit)\n"
-    + "Arcangel Ft. Bad Bunny - Original (TeaMix 7 - RooBen Intro)\n"
-    + "Avicii & Merk & Kremont - Without You (TeaMix 7 - Roe Hyams Short Edit)\n"
-    + "Bebe Rexha - Self Control (TeaMix 7 - Dudu A'S Redrum)\n"
-    + "Cardi B & Bad Bunny & J Balvin - I Like It (Dillon Francis Remix- TeaMix 7 - Sagiv Alfasi Edit)\n"
-    + "Charly Black - More Gal (TeaMix 7 - RooBen Intro)\n"
-    + "DJ Snake X Lil Jon - Turn Down For Axum Style (TeaMix 7 - Doron Shitrit Mash-Up)\n"
-    + "Drake - Gods Plan (TeaMix 7 - IdoM Edit) 128-77\n"
-    + "Drake - In My Feelings (TeaMix 7 - Doron Shitrit Intro)\n"
-    + "Iggy Azalea ft Tyga - Kream (TeaMix 7 - Sagiv Alfasi Intro)\n"
-    + "Iggy Azalea ft Tyga X Far East Movement- Kream Like a G6 (TeaMix 7 - Sagiv Alfasi Mash-Up)\n"
-    + "J balvin - Bonita (TeaMix 7 - Roe Hyams Intro)\n"
-    + "J Balvin, Jowell & Randy feat. Nicky Jam, Wisin, Yandel, Ozuna - Bonita (TeaMix 7 - Doron Shitrit Redrum)\n"
-    + "Kritical Ft. Eric Tucker & Nick Nack - Cabana (TeaMix 7 - RooBen Intro)\n"
-    + "Lil Pump - Drug Addicts (TeaMix 7 - Sagiv Alfasi Redrum)\n"
-    + "Robin Schulz - Oh Child (TeaMix 7 - Sagiv Alfasi Redrum)\n"
-    + "Stephane Legar - Comme Ci Comme ?a (TeaMix 7 - Roe Hyams Intro)\n"
-    + "Ty Dolla $ign, 6LACK, Khalid - OTW (TeaMix 7 - Doron Shitrit Intro)\n"
-    + "Tyga Feat. Offset - Taste (TeaMix 7 - IdoM Intro)\n"
-    + "אייל גולן - אסתדר לבד (TeaMix 7 - Dudu A'S Redrum)\n"
-    + "ליאור נרקיס - איתי לוי & VIVO - מסיבת רווקים (TeaMix 7 - Dudu A'S Darbuka Redrum)\n"
-    + "ליאור נרקיס & איתי לוי & VIVO - מסיבת רווקים (Dj Niso Slob Remix - TeaMix 7 - Doron Shitrit Darbuka Edit)\n"
-    + "צביקה ברנד & 242 מארחים את אקסום - מסיבת רחוב (TeaMix 7 - RooBen Edit)\n";
+    '50 Cent - P.I.M.P. (Hedegaard Remix TeaMix 7 - IdoM Edit)\n'
+    + 'Arcangel Ft. Bad Bunny - Original (TeaMix 7 - RooBen Intro)\n'
+    + 'Avicii & Merk & Kremont - Without You (TeaMix 7 - Roe Hyams Short Edit)\n'
+    + 'Bebe Rexha - Self Control (TeaMix 7 - Dudu A\'S Redrum)\n'
+    + 'Cardi B & Bad Bunny & J Balvin - I Like It (Dillon Francis Remix- TeaMix 7 - Sagiv Alfasi Edit)\n'
+    + 'Charly Black - More Gal (TeaMix 7 - RooBen Intro)\n'
+    + 'DJ Snake X Lil Jon - Turn Down For Axum Style (TeaMix 7 - Doron Shitrit Mash-Up)\n'
+    + 'Drake - Gods Plan (TeaMix 7 - IdoM Edit) 128-77\n'
+    + 'Drake - In My Feelings (TeaMix 7 - Doron Shitrit Intro)\n'
+    + 'Iggy Azalea ft Tyga - Kream (TeaMix 7 - Sagiv Alfasi Intro)\n'
+    + 'Iggy Azalea ft Tyga X Far East Movement- Kream Like a G6 (TeaMix 7 - Sagiv Alfasi Mash-Up)\n'
+    + 'J balvin - Bonita (TeaMix 7 - Roe Hyams Intro)\n'
+    + 'J Balvin, Jowell & Randy feat. Nicky Jam, Wisin, Yandel, Ozuna - Bonita (TeaMix 7 - Doron Shitrit Redrum)\n'
+    + 'Kritical Ft. Eric Tucker & Nick Nack - Cabana (TeaMix 7 - RooBen Intro)\n'
+    + 'Lil Pump - Drug Addicts (TeaMix 7 - Sagiv Alfasi Redrum)\n'
+    + 'Robin Schulz - Oh Child (TeaMix 7 - Sagiv Alfasi Redrum)\n'
+    + 'Stephane Legar - Comme Ci Comme ?a (TeaMix 7 - Roe Hyams Intro)\n'
+    + 'Ty Dolla $ign, 6LACK, Khalid - OTW (TeaMix 7 - Doron Shitrit Intro)\n'
+    + 'Tyga Feat. Offset - Taste (TeaMix 7 - IdoM Intro)\n'
+    + 'אייל גולן - אסתדר לבד (TeaMix 7 - Dudu A\'S Redrum)\n'
+    + 'ליאור נרקיס - איתי לוי & VIVO - מסיבת רווקים (TeaMix 7 - Dudu A\'S Darbuka Redrum)\n'
+    + 'ליאור נרקיס & איתי לוי & VIVO - מסיבת רווקים (Dj Niso Slob Remix - TeaMix 7 - Doron Shitrit Darbuka Edit)\n'
+    + 'צביקה ברנד & 242 מארחים את אקסום - מסיבת רחוב (TeaMix 7 - RooBen Edit)\n';
 
   private teamixVol8 =
-    "6ix9ine ft Nicki Minaj - FEFE (TeaMix 8 - Sagiv Alfasi Redrum)\n"
-    + "Alvaro Soler - La Cintura (TeaMix 8 - Sagiv Alfasi Redrum)\n"
-    + "Aya Nakamura - Djadja (TeaMix 8 - Dudu A'S Redrum)\n"
-    + "Descemer Bueno & Enrique Iglesias - Nos Fuimos Lejos (TeaMix 8 - Dudu A'S Redrum)\n"
-    + "DJ Khaled feat. Justin Bieber - No Brainer (TeaMix 8 - IdoM Redrum)\n"
-    + "Drake - In My Feelings (TeaMix 8 - RooBen Redrum) (Extended)\n"
-    + "Drake - In My Feelings (TeaMix 8 - RooBen Redrum)\n"
-    + "El Chombo - Dame Tu Papi Chulo (TeaMix 8 - IdoM Edit)\n"
-    + "Jerry Rivera Ft. Yandel - Mira (TeaMix 8 - RooBen & Simon Extended)\n"
-    + "Maître Gims Ft. Lil Wayne - Corazón (TeaMix 8 - Sagiv Alfasi Redrum)\n"
-    + "Maluma - Mala M?a (TeaMix 8 - Doron Shitrit Remix)\n"
-    + "Omar Rudberg feat. Elias Hurtig - La Mesa (TeaMix 8 - Sagiv Alfasi Redrum)\n"
-    + "Wolfine & Maluma - Bella (TeaMix 8 - Dudu A'S Edit)\n"
-    + "אביאור מלסה - כמה כמה (TeaMix 8 - RooBen Edit)\n"
-    + "סאבלימינל מארח את עמית שגיא - חופשי (TeaMix 8 - Dudu A'S Redrum)\n"
-    + "עדן חסון - שיכורים (TeaMix 8 - RooBen Edit) (Extended)\n"
-    + "עדן חסון - שיכורים (TeaMix 8 - RooBen Edit) (Hook 1st)\n"
-    + "עדן חסון - שיכורים (TeaMix 8 - RooBen Edit)\n"
-    + "קטריקס ודורון ביטון - בחופים של תאילנד (TeaMix 8 - Dudu A'S Edit)\n"
-    + "קריזמו - מאמין (TeaMix 8 - RooBen Edit)\n";
+    '6ix9ine ft Nicki Minaj - FEFE (TeaMix 8 - Sagiv Alfasi Redrum)\n'
+    + 'Alvaro Soler - La Cintura (TeaMix 8 - Sagiv Alfasi Redrum)\n'
+    + 'Aya Nakamura - Djadja (TeaMix 8 - Dudu A\'S Redrum)\n'
+    + 'Descemer Bueno & Enrique Iglesias - Nos Fuimos Lejos (TeaMix 8 - Dudu A\'S Redrum)\n'
+    + 'DJ Khaled feat. Justin Bieber - No Brainer (TeaMix 8 - IdoM Redrum)\n'
+    + 'Drake - In My Feelings (TeaMix 8 - RooBen Redrum) (Extended)\n'
+    + 'Drake - In My Feelings (TeaMix 8 - RooBen Redrum)\n'
+    + 'El Chombo - Dame Tu Papi Chulo (TeaMix 8 - IdoM Edit)\n'
+    + 'Jerry Rivera Ft. Yandel - Mira (TeaMix 8 - RooBen & Simon Extended)\n'
+    + 'Maître Gims Ft. Lil Wayne - Corazón (TeaMix 8 - Sagiv Alfasi Redrum)\n'
+    + 'Maluma - Mala M?a (TeaMix 8 - Doron Shitrit Remix)\n'
+    + 'Omar Rudberg feat. Elias Hurtig - La Mesa (TeaMix 8 - Sagiv Alfasi Redrum)\n'
+    + 'Wolfine & Maluma - Bella (TeaMix 8 - Dudu A\'S Edit)\n'
+    + 'אביאור מלסה - כמה כמה (TeaMix 8 - RooBen Edit)\n'
+    + 'סאבלימינל מארח את עמית שגיא - חופשי (TeaMix 8 - Dudu A\'S Redrum)\n'
+    + 'עדן חסון - שיכורים (TeaMix 8 - RooBen Edit) (Extended)\n'
+    + 'עדן חסון - שיכורים (TeaMix 8 - RooBen Edit) (Hook 1st)\n'
+    + 'עדן חסון - שיכורים (TeaMix 8 - RooBen Edit)\n'
+    + 'קטריקס ודורון ביטון - בחופים של תאילנד (TeaMix 8 - Dudu A\'S Edit)\n'
+    + 'קריזמו - מאמין (TeaMix 8 - RooBen Edit)\n';
 
   private teamixVol9 =
-    "Alex Sensation Ft. Nicky Jam - La Diabla (TeaMix 9 - Dudu A'S Redrum)\n"
-    + "Barachi Ft. Tory Lanez - Wifey (TeaMix 9 - RooBen Aca In)\n"
-    + "Dan Balan feat. Marley Waters - Numa Numa 2 (TeaMix 9 - RooBen Intro)\n"
-    + "David Guetta & Steve Aoki ft. Lil Uzi Vert, G-Easy & Molly Mall - Motto (TeaMix 9 - DJ Kuper Transition 100-85)\n"
-    + "David Guetta, Bebe Rexha, J Balvin - Say My Name (TeaMix 9 - DJ Kuper 'Only J Balvin' Edit)\n"
-    + "DJ Khaled ft. Drake - For Free (TeaMix 9 - DJ Kuper 'On n On' Edit)\n"
-    + "DJ Polique ft The Chaze - Dancer (TeaMix 9 - RooBen Intro) (Hook 1st)\n"
-    + "DJ Polique ft The Chaze - Dancer (TeaMix 9 - RooBen Intro)\n"
-    + "DJ Snake feat Selena Gomez, Cardi B & Ozuna - Taki Taki (TeaMix 9 - IdoM Edit)\n"
-    + "Dj Snake ft. Selena Gomez ,Cardi B & Ozuna - Taki Taki (TeaMix 9 - Sagiv Alfasi Redrum)\n"
-    + "Jonn Hart feat Too Short - Whistle (TeaMix 9 - RooBen Intro)\n"
-    + "Kanye West & Lil Pump X Banza & Kjuus- I Love It (TeaMix 9 - RooBen Transition 104-124)\n"
-    + "Kanye West feat Lil Pump & Adele Givens - I Love It (TeaMix 9 - IdoM Intro)\n"
-    + "Lil Pump ft. Kanye West - I Love It (TeaMix 9 - DJ Kuper Transition 90-104)\n"
-    + "Nio Garcia & Casper Magico - Quien Diria (TeaMix 9 - Sagiv Alfasi Redrum)\n"
-    + "Ozuna - Devuelveme (TeaMix 9 - RooBen Intro)\n"
-    + "Pitbull, El Chombo Y Karol G ft Cutty Ranks - Dame Tu Cosita (TeaMix 9 - RooBen Intro)\n"
-    + "Rak Su Banx Ranx - Pyro Ting (TeaMix 9 - Sagiv Alfasi Redrum)\n"
-    + "Ryder & Seno ft. El Nikko -Mami (TeaMix 9 - Sagiv Alfasi Redrum Edit)\n"
-    + "The Ultras Ft. Noa Kirel - Cinderella (TeaMix 9 - RooBen Edit)\n"
-    + "Timmy Trumpet, Lady Bee - Trumpets (TeaMix 9 - RooBen Intro)\n"
-    + "Travis Scott ft Drake - Sicko Mode (TeaMix 9 - RooBen Intro Edit) (Drake Only)\n"
-    + "עומר אדם - רחוק מכולם (TeaMix 9 - Dudu A'S Edit)\n"
-    + "עומר אדם - רחוק מכולם (TeaMix 9 - RooBen Redrum) (Intro) 60\n"
-    + "עומר אדם - רחוק מכולם (TeaMix 9 - RooBen Redrum) 60\n";
+    'Alex Sensation Ft. Nicky Jam - La Diabla (TeaMix 9 - Dudu A\'S Redrum)\n'
+    + 'Barachi Ft. Tory Lanez - Wifey (TeaMix 9 - RooBen Aca In)\n'
+    + 'Dan Balan feat. Marley Waters - Numa Numa 2 (TeaMix 9 - RooBen Intro)\n'
+    + 'David Guetta & Steve Aoki ft. Lil Uzi Vert, G-Easy & Molly Mall - Motto (TeaMix 9 - DJ Kuper Transition 100-85)\n'
+    + 'David Guetta, Bebe Rexha, J Balvin - Say My Name (TeaMix 9 - DJ Kuper \'Only J Balvin\' Edit)\n'
+    + 'DJ Khaled ft. Drake - For Free (TeaMix 9 - DJ Kuper \'On n On\' Edit)\n'
+    + 'DJ Polique ft The Chaze - Dancer (TeaMix 9 - RooBen Intro) (Hook 1st)\n'
+    + 'DJ Polique ft The Chaze - Dancer (TeaMix 9 - RooBen Intro)\n'
+    + 'DJ Snake feat Selena Gomez, Cardi B & Ozuna - Taki Taki (TeaMix 9 - IdoM Edit)\n'
+    + 'Dj Snake ft. Selena Gomez ,Cardi B & Ozuna - Taki Taki (TeaMix 9 - Sagiv Alfasi Redrum)\n'
+    + 'Jonn Hart feat Too Short - Whistle (TeaMix 9 - RooBen Intro)\n'
+    + 'Kanye West & Lil Pump X Banza & Kjuus- I Love It (TeaMix 9 - RooBen Transition 104-124)\n'
+    + 'Kanye West feat Lil Pump & Adele Givens - I Love It (TeaMix 9 - IdoM Intro)\n'
+    + 'Lil Pump ft. Kanye West - I Love It (TeaMix 9 - DJ Kuper Transition 90-104)\n'
+    + 'Nio Garcia & Casper Magico - Quien Diria (TeaMix 9 - Sagiv Alfasi Redrum)\n'
+    + 'Ozuna - Devuelveme (TeaMix 9 - RooBen Intro)\n'
+    + 'Pitbull, El Chombo Y Karol G ft Cutty Ranks - Dame Tu Cosita (TeaMix 9 - RooBen Intro)\n'
+    + 'Rak Su Banx Ranx - Pyro Ting (TeaMix 9 - Sagiv Alfasi Redrum)\n'
+    + 'Ryder & Seno ft. El Nikko -Mami (TeaMix 9 - Sagiv Alfasi Redrum Edit)\n'
+    + 'The Ultras Ft. Noa Kirel - Cinderella (TeaMix 9 - RooBen Edit)\n'
+    + 'Timmy Trumpet, Lady Bee - Trumpets (TeaMix 9 - RooBen Intro)\n'
+    + 'Travis Scott ft Drake - Sicko Mode (TeaMix 9 - RooBen Intro Edit) (Drake Only)\n'
+    + 'עומר אדם - רחוק מכולם (TeaMix 9 - Dudu A\'S Edit)\n'
+    + 'עומר אדם - רחוק מכולם (TeaMix 9 - RooBen Redrum) (Intro) 60\n'
+    + 'עומר אדם - רחוק מכולם (TeaMix 9 - RooBen Redrum) 60\n';
 
   private teamixVol10 =
-    "Andrea Damante ft. Rich The kid & Ray J - Rub It (TeaMix 10 - DJ Kuper Intro) (ShortCut)\n"
-    + "Anuel AA - Quiere Beber (TeaMix 10 - RooBen Redrum)\n"
-    + "Anuel AA ft Zion - Hipocrita (TeaMix 10 - RooBen Redrum)\n"
-    + "Bad Bunny feat. Drake - Mia (TeaMix 10 - IdoM Intro Edit)\n"
-    + "Bad Bunny feat. Drake - Mia (TeaMix 10 - RooBen Transition Redrum) 80-100\n"
-    + "Chyno Miranda ft J Balvin - El Peor (TeaMix 10 - RooBen Redrum)\n"
-    + "Drake Ft. Giggs - KMT (TeaMix 10 - RooBen Intro)\n"
-    + "Future and Juice WRLD feat Nicki Minaj - Transformer (TeaMix 10 - RooBen Intro)\n"
-    + "Future and Juice WRLD feat Nicki Minaj - Transformer (TeaMix 10 - RooBen Transition) 100-78.5\n"
-    + "Future Ft. Juice WRLD - Fine China (TeaMix 10 - RooBen Intro Transition) 100-83\n"
-    + "Future Ft. Juice WRLD - Fine China (TeaMix 10 - RooBen Intro)\n"
-    + "Kodak Black ft Travis Scott & Offset - ZEZE (TeaMix 10 - DJ Kuper Intro)\n"
-    + "Lil Pump ft Lil Uzi Vert - Multi Millionaire (TeaMix 10 - RooBen Redrum)\n"
-    + "Lil Pump ft Lil Uzi Vert - Multi Millionaire (TeaMix 10 - RooBen Transition Redrum) 100-73\n"
-    + "Lil Wayne - Uproar (TeaMix 10 - DJ Kuper Intro)\n"
-    + "MC Kekel e MC Rita - Amor de Verdade (TeaMix 10 - RooBen Redrum)\n"
-    + "Nicky Jam Ft. Steve Aoki - Jaleo (TeaMix 10 - Dudu A'S Redrum)\n"
-    + "Ozuna Ft. Akon - Comentale (TeaMix 10 - Dudu A'S Redrum)\n"
-    + "Rihanna  Jay-Z - Umbrella Gama x Noisey Boys (TeaMix 10 - IdoM Edit)\n"
-    + "Stefflon Don - Crunch Time (TeaMix 10 - DJ Kuper Intro)\n"
-    + "Wiz Khalifa ft. Lil Skies - Fr Fr (TeaMix 10 - DJ Kuper Intro)\n"
-    + "גיל ויין - ככה לומדים להעריך (TeaMix 10 - Dudu A'S Redrum)\n"
-    + "דוד פארוק - חגורה שחורה (TeaMix 10 - RooBen Intro)\n"
-    + "סטפן לגר - מרסי (TeaMix 10 - RooBen Redrum)\n"
-    + "עדן בן זקן - מקסיקו (TeaMix 10 - RooBen Reggaeton Edit)\n"
-    + "עדן חסון - מתפוצץ לי הראש (TeaMix 10 - Dudu A'S Redrum)\n"
-    + "רינת בר & חיילי הנקמה - אחת מאלף (TeaMix 10 - Dudu A'S & RooBen Redrum)\n";
+    'Andrea Damante ft. Rich The kid & Ray J - Rub It (TeaMix 10 - DJ Kuper Intro) (ShortCut)\n'
+    + 'Anuel AA - Quiere Beber (TeaMix 10 - RooBen Redrum)\n'
+    + 'Anuel AA ft Zion - Hipocrita (TeaMix 10 - RooBen Redrum)\n'
+    + 'Bad Bunny feat. Drake - Mia (TeaMix 10 - IdoM Intro Edit)\n'
+    + 'Bad Bunny feat. Drake - Mia (TeaMix 10 - RooBen Transition Redrum) 80-100\n'
+    + 'Chyno Miranda ft J Balvin - El Peor (TeaMix 10 - RooBen Redrum)\n'
+    + 'Drake Ft. Giggs - KMT (TeaMix 10 - RooBen Intro)\n'
+    + 'Future and Juice WRLD feat Nicki Minaj - Transformer (TeaMix 10 - RooBen Intro)\n'
+    + 'Future and Juice WRLD feat Nicki Minaj - Transformer (TeaMix 10 - RooBen Transition) 100-78.5\n'
+    + 'Future Ft. Juice WRLD - Fine China (TeaMix 10 - RooBen Intro Transition) 100-83\n'
+    + 'Future Ft. Juice WRLD - Fine China (TeaMix 10 - RooBen Intro)\n'
+    + 'Kodak Black ft Travis Scott & Offset - ZEZE (TeaMix 10 - DJ Kuper Intro)\n'
+    + 'Lil Pump ft Lil Uzi Vert - Multi Millionaire (TeaMix 10 - RooBen Redrum)\n'
+    + 'Lil Pump ft Lil Uzi Vert - Multi Millionaire (TeaMix 10 - RooBen Transition Redrum) 100-73\n'
+    + 'Lil Wayne - Uproar (TeaMix 10 - DJ Kuper Intro)\n'
+    + 'MC Kekel e MC Rita - Amor de Verdade (TeaMix 10 - RooBen Redrum)\n'
+    + 'Nicky Jam Ft. Steve Aoki - Jaleo (TeaMix 10 - Dudu A\'S Redrum)\n'
+    + 'Ozuna Ft. Akon - Comentale (TeaMix 10 - Dudu A\'S Redrum)\n'
+    + 'Rihanna  Jay-Z - Umbrella Gama x Noisey Boys (TeaMix 10 - IdoM Edit)\n'
+    + 'Stefflon Don - Crunch Time (TeaMix 10 - DJ Kuper Intro)\n'
+    + 'Wiz Khalifa ft. Lil Skies - Fr Fr (TeaMix 10 - DJ Kuper Intro)\n'
+    + 'גיל ויין - ככה לומדים להעריך (TeaMix 10 - Dudu A\'S Redrum)\n'
+    + 'דוד פארוק - חגורה שחורה (TeaMix 10 - RooBen Intro)\n'
+    + 'סטפן לגר - מרסי (TeaMix 10 - RooBen Redrum)\n'
+    + 'עדן בן זקן - מקסיקו (TeaMix 10 - RooBen Reggaeton Edit)\n'
+    + 'עדן חסון - מתפוצץ לי הראש (TeaMix 10 - Dudu A\'S Redrum)\n'
+    + 'רינת בר & חיילי הנקמה - אחת מאלף (TeaMix 10 - Dudu A\'S & RooBen Redrum)\n';
 
   private teamixVol11 =
-    "6ix9ine ft. Tory Lanez - KIKA (TeaMix 11 - DJ Kuper Intro)\n"
-    + "Alex Mica feat. D.E.P. & Kalif - Latina loca (TeaMix 11 - RooBen Intro)\n"
-    + "Arabian Trap - Bad Boy (TeaMix 11 - Saqiv Alfasi Redrum)\n"
-    + "Arabian trap X ATC - Bad Boy Around The World (TeaMix 11 - Saqiv Alfasi Mashup)\n"
-    + "Aya Nakamura - Djadja (TeaMix 11 - RooBen Mashup)\n"
-    + "Bebe Rexha - I'm a Mess (TeaMix 11 - RooBen Reggaeton Edit)\n"
-    + "Caza & Famke Louise - Slide (TeaMix 11 - RooBen Redrum)\n"
-    + "DaniLeigh Ft. Lil Baby - Lil Bebe (Remix) (TeaMix 11 - DJ Kuper Intro)\n"
-    + "DDG ft YBN Nahmir, G Herbo & Blac Youngsta - Run It Up (TeaMix 11 - DJ Kuper Intro)\n"
-    + "D-Lo ft. Tyga - Get Her Tho (TeaMix 11 - DJ Kuper Intro)\n"
-    + "Dua Lipa, BLACKPINK - Kiss and Make Up (TeaMix 11 - RooBen Intro)\n"
-    + "Kelly Rowland - Kelly (TeaMix 11 - DJ Kuper Intro)\n"
-    + "Kris Kross Amsterdam X Ally Brooke X Messiah - Vamonos (TeaMix 11 - Sagiv Alfasi Redrum)\n"
-    + "Lukas Graham - Love Someone (TeaMix 11 - RooBen Redrum)\n"
-    + "Nicki Minaj - Barbie Tingz (TeaMix 11 - DJ Kuper Edit)\n"
-    + "Pardison Fontaine ft Cardi B - Backin It Up (TeaMix 11 - Dj Sagiv Alfasi Intro)\n"
-    + "Travis Scott ft. Kendrick Lamar - Goosebumps (TeaMix 11 - DJ Kuper Intro)\n"
-    + "Travis Scott ft. Kendrick Lamar - Goosebumps (TeaMix 11 - DJ Kuper Transition) 100-65\n"
-    + "Tyga ft. Nicki Minaj - Dip (TeaMix 11 - Sagiv Alfasi Intro)\n"
-    + "XXXTENTACION - Look At Me (TeaMix 11 - DJ Kuper Intro)\n"
-    + "טאליסמן - זנזיבר (TeaMix 11 - Dudu A'S Juju Intro)\n"
-    + "נתי - מחרוזת שירי חנוכה (TeaMix 11 - Dudu A'S Redrum)\n"
-    + "עומר אדם, מארינה מקסימליאן, נדב גדג' ומה קשור - לרקוד ולזוז (TeaMix 11 - RooBen Edit) 105 -134\n"
-    + "עומר אדם, מארינה מקסימליאן, נדב גדג' ומה קשור - לרקוד ולזוז (TeaMix 11 - RooBen Edit) 105\n"
-    + "רגב הוד - אחרי כל הסופות (TeaMix 11 - Dudu A'S Redrum)\n";
+    '6ix9ine ft. Tory Lanez - KIKA (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'Alex Mica feat. D.E.P. & Kalif - Latina loca (TeaMix 11 - RooBen Intro)\n'
+    + 'Arabian Trap - Bad Boy (TeaMix 11 - Saqiv Alfasi Redrum)\n'
+    + 'Arabian trap X ATC - Bad Boy Around The World (TeaMix 11 - Saqiv Alfasi Mashup)\n'
+    + 'Aya Nakamura - Djadja (TeaMix 11 - RooBen Mashup)\n'
+    + 'Bebe Rexha - I\'m a Mess (TeaMix 11 - RooBen Reggaeton Edit)\n'
+    + 'Caza & Famke Louise - Slide (TeaMix 11 - RooBen Redrum)\n'
+    + 'DaniLeigh Ft. Lil Baby - Lil Bebe (Remix) (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'DDG ft YBN Nahmir, G Herbo & Blac Youngsta - Run It Up (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'D-Lo ft. Tyga - Get Her Tho (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'Dua Lipa, BLACKPINK - Kiss and Make Up (TeaMix 11 - RooBen Intro)\n'
+    + 'Kelly Rowland - Kelly (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'Kris Kross Amsterdam X Ally Brooke X Messiah - Vamonos (TeaMix 11 - Sagiv Alfasi Redrum)\n'
+    + 'Lukas Graham - Love Someone (TeaMix 11 - RooBen Redrum)\n'
+    + 'Nicki Minaj - Barbie Tingz (TeaMix 11 - DJ Kuper Edit)\n'
+    + 'Pardison Fontaine ft Cardi B - Backin It Up (TeaMix 11 - Dj Sagiv Alfasi Intro)\n'
+    + 'Travis Scott ft. Kendrick Lamar - Goosebumps (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'Travis Scott ft. Kendrick Lamar - Goosebumps (TeaMix 11 - DJ Kuper Transition) 100-65\n'
+    + 'Tyga ft. Nicki Minaj - Dip (TeaMix 11 - Sagiv Alfasi Intro)\n'
+    + 'XXXTENTACION - Look At Me (TeaMix 11 - DJ Kuper Intro)\n'
+    + 'טאליסמן - זנזיבר (TeaMix 11 - Dudu A\'S Juju Intro)\n'
+    + 'נתי - מחרוזת שירי חנוכה (TeaMix 11 - Dudu A\'S Redrum)\n'
+    + 'עומר אדם, מארינה מקסימליאן, נדב גדג\' ומה קשור - לרקוד ולזוז (TeaMix 11 - RooBen Edit) 105 -134\n'
+    + 'עומר אדם, מארינה מקסימליאן, נדב גדג\' ומה קשור - לרקוד ולזוז (TeaMix 11 - RooBen Edit) 105\n'
+    + 'רגב הוד - אחרי כל הסופות (TeaMix 11 - Dudu A\'S Redrum)\n';
 
   private teamixVol12 =
-    "Ciara - Level Up (DJ Kuper 'Fuck It Up Edit) 153\n"
-    + "Clean Bandit - Solo (Aviel Mymon Edit) 105\n"
-    + "DaniLeigh ft YBN Nahmir & YG - Can't Relate (RooBen Intro) 80\n"
-    + "Drake - Keke (DJ Kuper 'Do You Love Me' Edit) 70-95\n"
-    + "Flipp Dinero - Leave Me Alone (RooBen Intro) 75\n"
-    + "Hardwell ft Conor Maynard & Snoop Dogg - How You Love Me (RooBen Intro) 105\n"
-    + "Ilkay Sencan - Do It (Syco Fix) 108\n"
-    + "Jason Derulo & David Guetta ft Nicki Minaj & Willy William - Goodbye (DJ Kuper Intro) 103\n"
-    + "Kojo Funds - Check (feat. RAYE) (DJ Kuper Intro) 94\n"
-    + "Marwa Loud - Billet (RooBen Intro) 97\n"
-    + "Massari Feat. Raja Kumari - Miss Fatty (Buskilaz Remix - Aviel Mymon Fix) 100\n"
-    + "Pitbull ft Rhea - Ocean To Ocean (RooBen Intro) 105\n"
-    + "Post Malone - Wow (Aviel Mymon Intro) 100\n"
-    + "Quavo - WORKINME (DJ Kuper 'Lil Jon Energy' Transition) 85-75\n"
-    + "Rich The Kid - Splashin (DJ Kuper Intro) 100\n"
-    + "Saweetie - Pissed (RooBen Intro) 93\n"
-    + "Sheck Wes - Mo Bamba (Aviel Mymon Intro) 73\n"
-    + "Sneakk ft Tyga & YG - Spray (RooBen Intro) 96\n"
-    + "T-Jones - Ali (RooBen Intro) 77.5\n"
-    + "YFN Lucci & Rich Homie Quan ft Garren - Live That Life (RooBen Intro) 73\n"
-    + "YFN Lucci & Rich Homie Quan ft Garren - Live That Life (RooBen Transition) 100-73\n"
-    + "YFN Lucci ft Rich The Kid - Double Up (RooBen Intro) 71\n"
-    + "אייל גולן - טירוף מתוק (RooBen Reggaeton Edit) 105\n"
-    + "טליסמאן - דור ה YY (Syco Fix) 132\n"
-    + "עומר אדם, מארינה מקסימליאן, נדב גדג' ומה קשור - לרקוד ולזוז (Syco Fix) 94 - 120\n";
+    'Ciara - Level Up (DJ Kuper \'Fuck It Up Edit) 153\n'
+    + 'Clean Bandit - Solo (Aviel Mymon Edit) 105\n'
+    + 'DaniLeigh ft YBN Nahmir & YG - Can\'t Relate (RooBen Intro) 80\n'
+    + 'Drake - Keke (DJ Kuper \'Do You Love Me\' Edit) 70-95\n'
+    + 'Flipp Dinero - Leave Me Alone (RooBen Intro) 75\n'
+    + 'Hardwell ft Conor Maynard & Snoop Dogg - How You Love Me (RooBen Intro) 105\n'
+    + 'Ilkay Sencan - Do It (Syco Fix) 108\n'
+    + 'Jason Derulo & David Guetta ft Nicki Minaj & Willy William - Goodbye (DJ Kuper Intro) 103\n'
+    + 'Kojo Funds - Check (feat. RAYE) (DJ Kuper Intro) 94\n'
+    + 'Marwa Loud - Billet (RooBen Intro) 97\n'
+    + 'Massari Feat. Raja Kumari - Miss Fatty (Buskilaz Remix - Aviel Mymon Fix) 100\n'
+    + 'Pitbull ft Rhea - Ocean To Ocean (RooBen Intro) 105\n'
+    + 'Post Malone - Wow (Aviel Mymon Intro) 100\n'
+    + 'Quavo - WORKINME (DJ Kuper \'Lil Jon Energy\' Transition) 85-75\n'
+    + 'Rich The Kid - Splashin (DJ Kuper Intro) 100\n'
+    + 'Saweetie - Pissed (RooBen Intro) 93\n'
+    + 'Sheck Wes - Mo Bamba (Aviel Mymon Intro) 73\n'
+    + 'Sneakk ft Tyga & YG - Spray (RooBen Intro) 96\n'
+    + 'T-Jones - Ali (RooBen Intro) 77.5\n'
+    + 'YFN Lucci & Rich Homie Quan ft Garren - Live That Life (RooBen Intro) 73\n'
+    + 'YFN Lucci & Rich Homie Quan ft Garren - Live That Life (RooBen Transition) 100-73\n'
+    + 'YFN Lucci ft Rich The Kid - Double Up (RooBen Intro) 71\n'
+    + 'אייל גולן - טירוף מתוק (RooBen Reggaeton Edit) 105\n'
+    + 'טליסמאן - דור ה YY (Syco Fix) 132\n'
+    + 'עומר אדם, מארינה מקסימליאן, נדב גדג\' ומה קשור - לרקוד ולזוז (Syco Fix) 94 - 120\n';
 
   private teamixVol13 =
-    "A Boogie Wit Da Hoodie - Look Back At It (RooBen Intro)\n"
-    + "Aya Nakamura - La Dot (RooBen Redrum)\n"
-    + "Beyonce & Jay-Z - Apesh#T (Nasa Redrum) (DJ Kuper Fix)\n"
-    + "Ciara - Level Up (Roman Kuper Intro)\n"
-    + "DJ Spinking ft. Tyga, A$ap Ferg, Jeremih, Velous - Adult Swim (DJ Kuper Edit) V3\n"
-    + "Dua Lipa & Blackpink - Kiss And Make Up (Dudu A'S Redrum)\n"
-    + "Jidenna ft. Roman Gianarthur - Classic Man (DJ Kuper Intro)\n"
-    + "Jonn Hart ft Too Short & Juelz Santana - Whistle (DJ Kuper Intro)\n"
-    + "Kid Ink ft. Dej Loaf - Be Real (DJ Kuper Intro)\n"
-    + "Kid Ink, Lil Wayne, Saweetie - YUSO (DJ Kuper Intro)\n"
-    + "Kid Ink, Rich The Kid - No Budget (DJ Kuper Intro)\n"
-    + "Lil Pump - Butterfly Doors (Syco Intro)\n"
-    + "Migos - Fight Night (DJ Kuper Intro)\n"
-    + "Nicki Minaj & Anuel AA FT. Bantu - Familia (DJ Kuper Intro)\n"
-    + "Sheck Wes - Mo Bamba (DJ Kuper Intro)\n"
-    + "Starboy feat. Wizkid, Ceeza Milli, Spotless & Terri - Soco (DJ Kuper Intro)\n"
-    + "Sting vs. Craig David - Rise & Fall Of My Heart (DJ Kuper 'Wedding' Edit)\n"
-    + "Tony T, Alba Kras & Gal Malka - Jiggy Jiggy (Dudu A'S Redrum)\n"
-    + "Travis Porter ft. Tyga - Ayy Ladies (DJ Kuper Edit)\n"
-    + "Tyga ft. Offset - Taste (DJ Kuper ShortCut) v3\n"
-    + "Vegedream - Ramenez La Coupe (Buskilaz Remix - RooBen Fix)\n"
-    + "אודימן ,עידו בי וצוקי - קקדו (Dudu A'S Redrum)\n"
-    + "מושיקו מור - טיפוס של חורף (Dudu A'S Redrum)\n"
-    + "סטטיק ובן אל תבורי עם עדן בן זקן וסטפן לגר - יאסו (Dudu A'S Redrum)\n"
-    + "סטטיק ובן אל תבורי עם עדן בן זקן וסטפן לגר - יאסו (RooBen Redrum)\n"
-    + "צגאי בוי - ג׳וסי (אווו) (Syco Intro)\n"
-    + "צגאי בוי - האשטאג מוד (Syco Intro) V1\n"
-    + "צגאי בוי - האשטאג מוד (Syco Intro) V2\n";
+    'A Boogie Wit Da Hoodie - Look Back At It (RooBen Intro)\n'
+    + 'Aya Nakamura - La Dot (RooBen Redrum)\n'
+    + 'Beyonce & Jay-Z - Apesh#T (Nasa Redrum) (DJ Kuper Fix)\n'
+    + 'Ciara - Level Up (Roman Kuper Intro)\n'
+    + 'DJ Spinking ft. Tyga, A$ap Ferg, Jeremih, Velous - Adult Swim (DJ Kuper Edit) V3\n'
+    + 'Dua Lipa & Blackpink - Kiss And Make Up (Dudu A\'S Redrum)\n'
+    + 'Jidenna ft. Roman Gianarthur - Classic Man (DJ Kuper Intro)\n'
+    + 'Jonn Hart ft Too Short & Juelz Santana - Whistle (DJ Kuper Intro)\n'
+    + 'Kid Ink ft. Dej Loaf - Be Real (DJ Kuper Intro)\n'
+    + 'Kid Ink, Lil Wayne, Saweetie - YUSO (DJ Kuper Intro)\n'
+    + 'Kid Ink, Rich The Kid - No Budget (DJ Kuper Intro)\n'
+    + 'Lil Pump - Butterfly Doors (Syco Intro)\n'
+    + 'Migos - Fight Night (DJ Kuper Intro)\n'
+    + 'Nicki Minaj & Anuel AA FT. Bantu - Familia (DJ Kuper Intro)\n'
+    + 'Sheck Wes - Mo Bamba (DJ Kuper Intro)\n'
+    + 'Starboy feat. Wizkid, Ceeza Milli, Spotless & Terri - Soco (DJ Kuper Intro)\n'
+    + 'Sting vs. Craig David - Rise & Fall Of My Heart (DJ Kuper \'Wedding\' Edit)\n'
+    + 'Tony T, Alba Kras & Gal Malka - Jiggy Jiggy (Dudu A\'S Redrum)\n'
+    + 'Travis Porter ft. Tyga - Ayy Ladies (DJ Kuper Edit)\n'
+    + 'Tyga ft. Offset - Taste (DJ Kuper ShortCut) v3\n'
+    + 'Vegedream - Ramenez La Coupe (Buskilaz Remix - RooBen Fix)\n'
+    + 'אודימן ,עידו בי וצוקי - קקדו (Dudu A\'S Redrum)\n'
+    + 'מושיקו מור - טיפוס של חורף (Dudu A\'S Redrum)\n'
+    + 'סטטיק ובן אל תבורי עם עדן בן זקן וסטפן לגר - יאסו (Dudu A\'S Redrum)\n'
+    + 'סטטיק ובן אל תבורי עם עדן בן זקן וסטפן לגר - יאסו (RooBen Redrum)\n'
+    + 'צגאי בוי - ג׳וסי (אווו) (Syco Intro)\n'
+    + 'צגאי בוי - האשטאג מוד (Syco Intro) V1\n'
+    + 'צגאי בוי - האשטאג מוד (Syco Intro) V2\n';
 
   private teamixVol14 =
-    "6ix9ine ft. Tory Lanez - KIKA (DJ Kuper Intro) (V2)\n"
-    + "Andrey Exx, Pushkarev feat. Stromae - Keep the ALORS ON DANSE (IdoM Mashup)\n"
-    + "Ariana Grande - 7 Rings (RooBen Redrum)\n"
-    + "Artbat - Upperground (Dudu A'S Edit)\n"
-    + "Blueface ft YG - Thotiana (RooBen Intro)\n"
-    + "Busta Rhymes - Touch It (Kuper Edit)\n"
-    + "Coeus - Solar (DJ Kuper Short Edit) (V2)\n"
-    + "DaR & DoR - Going Nowhere (DJ Kuper Edit)\n"
-    + "Dynoro & Gigi D'Agostino - In My Mind (German Avny & Mike Tsoff Remix - IdoM EDIT)\n"
-    + "Eden Hason - Hey DJ (Syco Intro)\n"
-    + "Ella Mai - Trip (XMiX Remix) (DJ Kuper Fix)\n"
-    + "Fisher - Losing It America (Dudu A'S Short Edit)\n"
-    + "Future - Stick to the Models (Syco Intro)\n"
-    + "G-Eazy ft. Yo Gotti & YBN Nahmir - 1942 (Syco Intro)\n"
-    + "Ghoss - Cut Up (RooBen Intro)\n"
-    + "Kris Kross Amsterdam X Ally Brooke X Messiah - Vamonos (Sagiv Alfasi Redrum - Syco Hook 1st)\n"
-    + "Lil Pump ft Lil Wayne - Be Like Me (RooBen Intro)\n"
-    + "Lil Pump ft Lil Wayne - Be Like Me (RooBen Transition) 80-104\n"
-    + "Meek Mill ft. Cardi B - On Me (DJ Kuper Transition) 100-66\n"
-    + "Natti Natasha - Toca Toca (RooBen Intro)\n"
-    + "Nicki Minaj & Anuel AA FT. Bantu - Familia (DJ Kuper Intro)\n"
-    + "O.T. Genasis - Bae (Syco Intro)\n"
-    + "Raja Kumari - Shook (RooBen Intro)\n"
-    + "Rauf & Faik - детство (Rakurs & Eddie G Remix - Syco Fix)\n"
-    + "Sak Noel & Lil Jon - Demasiado Loca (RooBen Intro)\n"
-    + "Sneakk ft Tyga & YG - Spray (DJ Kuper Intro)\n"
-    + "Stylo - Indian Spirit (IdoM Edit)\n"
-    + "Wiley, Stefflon Don & Sean Paul ft Idris Elba - Boasty (RooBen Intro)\n"
-    + "Wiley, Stefflon Don & Sean Paul FT. Idris Elba - Boasty (DJ Kuper Intro)\n"
-    + "אופק אדנק - עושים ת'בלאגן (RooBen Intro)\n"
-    + "אופק אדנק - עושים ת'בלאגן (RooBen Transition) 100-82\n"
-    + "מרגי Mergui - הזוג הזה (IdoM Intro)\n"
-    + "נועה קירל - דראם (Dudu A'S Redrum)\n"
-    + "סטטיק ובן אל תבורי & עדן בן זקן - יאסו (Syco Intro)\n"
-    + "עדן חסון - היי די.ג'יי (RooBen Redrum) Fix\n"
-    + "עומר אדם - חברות שלך 1+2 (RooBen Transition) 100-110\n"
-    + "עומר אדם - חברות שלך 2 (IdoM Intro)\n"
-    + "עומר אדם - חברות שלך 2 (RooBen Intro) Hook 1st\n"
-    + "עומר אדם - חברות שלך 2 (RooBen Intro)\n"
-    + "עידן רייכל & טריפל - ואם תבואי אליי (Danny Gitelss Shape Edit - Syco Fix) V1\n"
-    + "עידן רייכל & טריפל - ואם תבואי אליי (Danny Gitelss Shape Edit - Syco Fix) V2\n"
-    + "רון נשר עידו ונה ובן קיסר - דייט עם תימני (Dudu A'S Redrum)\n";
+    '6ix9ine ft. Tory Lanez - KIKA (DJ Kuper Intro) (V2)\n'
+    + 'Andrey Exx, Pushkarev feat. Stromae - Keep the ALORS ON DANSE (IdoM Mashup)\n'
+    + 'Ariana Grande - 7 Rings (RooBen Redrum)\n'
+    + 'Artbat - Upperground (Dudu A\'S Edit)\n'
+    + 'Blueface ft YG - Thotiana (RooBen Intro)\n'
+    + 'Busta Rhymes - Touch It (Kuper Edit)\n'
+    + 'Coeus - Solar (DJ Kuper Short Edit) (V2)\n'
+    + 'DaR & DoR - Going Nowhere (DJ Kuper Edit)\n'
+    + 'Dynoro & Gigi D\'Agostino - In My Mind (German Avny & Mike Tsoff Remix - IdoM EDIT)\n'
+    + 'Eden Hason - Hey DJ (Syco Intro)\n'
+    + 'Ella Mai - Trip (XMiX Remix) (DJ Kuper Fix)\n'
+    + 'Fisher - Losing It America (Dudu A\'S Short Edit)\n'
+    + 'Future - Stick to the Models (Syco Intro)\n'
+    + 'G-Eazy ft. Yo Gotti & YBN Nahmir - 1942 (Syco Intro)\n'
+    + 'Ghoss - Cut Up (RooBen Intro)\n'
+    + 'Kris Kross Amsterdam X Ally Brooke X Messiah - Vamonos (Sagiv Alfasi Redrum - Syco Hook 1st)\n'
+    + 'Lil Pump ft Lil Wayne - Be Like Me (RooBen Intro)\n'
+    + 'Lil Pump ft Lil Wayne - Be Like Me (RooBen Transition) 80-104\n'
+    + 'Meek Mill ft. Cardi B - On Me (DJ Kuper Transition) 100-66\n'
+    + 'Natti Natasha - Toca Toca (RooBen Intro)\n'
+    + 'Nicki Minaj & Anuel AA FT. Bantu - Familia (DJ Kuper Intro)\n'
+    + 'O.T. Genasis - Bae (Syco Intro)\n'
+    + 'Raja Kumari - Shook (RooBen Intro)\n'
+    + 'Rauf & Faik - детство (Rakurs & Eddie G Remix - Syco Fix)\n'
+    + 'Sak Noel & Lil Jon - Demasiado Loca (RooBen Intro)\n'
+    + 'Sneakk ft Tyga & YG - Spray (DJ Kuper Intro)\n'
+    + 'Stylo - Indian Spirit (IdoM Edit)\n'
+    + 'Wiley, Stefflon Don & Sean Paul ft Idris Elba - Boasty (RooBen Intro)\n'
+    + 'Wiley, Stefflon Don & Sean Paul FT. Idris Elba - Boasty (DJ Kuper Intro)\n'
+    + 'אופק אדנק - עושים ת\'בלאגן (RooBen Intro)\n'
+    + 'אופק אדנק - עושים ת\'בלאגן (RooBen Transition) 100-82\n'
+    + 'מרגי Mergui - הזוג הזה (IdoM Intro)\n'
+    + 'נועה קירל - דראם (Dudu A\'S Redrum)\n'
+    + 'סטטיק ובן אל תבורי & עדן בן זקן - יאסו (Syco Intro)\n'
+    + 'עדן חסון - היי די.ג\'יי (RooBen Redrum) Fix\n'
+    + 'עומר אדם - חברות שלך 1+2 (RooBen Transition) 100-110\n'
+    + 'עומר אדם - חברות שלך 2 (IdoM Intro)\n'
+    + 'עומר אדם - חברות שלך 2 (RooBen Intro) Hook 1st\n'
+    + 'עומר אדם - חברות שלך 2 (RooBen Intro)\n'
+    + 'עידן רייכל & טריפל - ואם תבואי אליי (Danny Gitelss Shape Edit - Syco Fix) V1\n'
+    + 'עידן רייכל & טריפל - ואם תבואי אליי (Danny Gitelss Shape Edit - Syco Fix) V2\n'
+    + 'רון נשר עידו ונה ובן קיסר - דייט עם תימני (Dudu A\'S Redrum)\n';
 
   private teamixVol15 =
-    "Armin van Buuren - Turn It Up (Aviel Mymon Fix)\n"
-    + "ARTBAT - Upperground (Aviel Mymon Fix)\n"
-    + "Agnez Mo ft. Chris Brown & Juicy J - Overdose (TSD Remix - DJ Kuper Edit)\n"
-    + "Ardian Bujupi Ft. Farruko y Xhensila - Cika Cika (RooBen Intro)\n"
-    + "Ariana Grande - 7 Rings (Robert Cristian Remix - Dudu A'S Edit)\n"
-    + "ATB X Roei Malka - 9PM (RooBen Mashup)\n"
-    + "Bolier, Trobi - In The Water (Sagiv Alfasi Edit)\n"
-    + "Camila Cabello - Havana (Sagi Kariv Remix - Dudu A'S Edit)\n"
-    + "Carlos Vives Ft. Wisin - Si Me Das Tu Amor (RooBen Intro) Hook 1st\n"
-    + "Carlos Vives Ft. Wisin - Si Me Das Tu Amor (RooBen Intro)\n"
-    + "Clean Bandit feat. Ellie Goulding - Mama (Syco Edit) V1\n"
-    + "Clean Bandit feat. Ellie Goulding - Mama (Syco Edit) V2\n"
-    + "Confieso - F4ST (Sagiv Alfasi Edit)\n"
-    + "Diplo - Oh Maria (Syco Intro)\n"
-    + "Drake - One Dance (Moshe Buskila - Dudu A'S Intro)\n"
-    + "Eleni Foureira - Fuego (DJ Kuper Edit)\n"
-    + "German Avny & Mike Tsoff - Believe (Extended Mix)\n"
-    + "German Avny & Mike Tsoff - Believe (Radio Mix)\n"
-    + "Hellm8 vs. SMVGGLERS - Freedom (Sagiv Alfasi Short Edit)\n"
-    + "?Insideeus - Bubble On Me (RooBen Intro)\n"
-    + "J Balvin - Ay Vamos (RooBen Redrum)\n"
-    + "Jenia & Jinga & Sagi Kariv - TakaDoom (RooBen Mashup)\n"
-    + "Krept & Konan ft Jeremih - Freak Of The Week (DJ Kuper Intro)\n"
-    + "Lady Gaga Ft. Bradley Cooper - Shallow (Nesco Remix - A'S Edit)\n"
-    + "Maluma - HP (RooBen Intro)\n"
-    + "Marwa Loud - Bad Boy (DJ Kuper Edit)\n"
-    + "Migos ft. Lil Uzi Vert - Bad And Boujee (DJ Kuper Transition) 80-63\n"
-    + "Nacho - Nadie Sabe (RooBen Intro)\n"
-    + "Nicky Jam Ft. Ozuna - Te Robare (RooBen Redrum)\n"
-    + "Offer Nissim - Esther (Dudu A'S Edit)\n"
-    + "Ozuna Feat. Akon - Coméntale (Aviel Mymon Intro)\n"
-    + "Rauf & Faik - Детство (Rakurs & Eddie G Remix - Syco Fix)\n"
-    + "Shakedown - At Night (Purple Disco Machine Extended Remix - IdoM Edit)\n"
-    + "Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V1\n"
-    + "Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V2\n"
-    + "Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V3\n"
-    + "Sllash & Doppe - Aguella (Aviel Mymon Fix)\n"
-    + "Technotronic - Pump Up The Jam 19 (Sergey Kutsuev Remix - Dudu A'S Edit) 125 BPM\n"
-    + "The Weeknd - I Cant Feel My Face (DJ Kuper Transition) 125-108\n"
-    + "Tropkillaz Ft. J Balvin, Anitta y MC Zaac - Bola Rebola (RooBen Intro)\n"
-    + "The Prince Karma - Later Bitches (Aviel Mymon Intro)\n"
-    + "Tyga - Rack City (DJ Kuper Edit)\n"
-    + "Wyclef Jean & Missy Elliott - Party To Damascus (DJ Kuper Intro)\n"
-    + "אייל גולן - הפוך מהיקום (Dudu A'S Redrum)\n"
-    + "אייל גולן ועופר ניסים - לא מבינה עברית (Guy Raz Remix - Dudu A'S Edit)\n"
-    + "אניה בוקשטיין ועופר ניסים - רוקדת (RooBen Fix)\n"
-    + "דודו אהרון - הלב שלי על מאתיים (RooBen Mashup) V2\n"
-    + "דודו אהרון - הלב שלי על מאתיים (RooBen Mashup) V3\n"
-    + "עדן בן זקן - תגיד לי (RooBen Mashup)\n"
-    + "עומר אדם - תגידי לי שטוב לך (BlazE & Matan Amar Remix - RooBen Short Edit)\n"
-    + "עדן חסון - שיכורים (Mor David X Yonatan Harlev - Aviel Mymon Fix)\n";
+    'Armin van Buuren - Turn It Up (Aviel Mymon Fix)\n'
+    + 'ARTBAT - Upperground (Aviel Mymon Fix)\n'
+    + 'Agnez Mo ft. Chris Brown & Juicy J - Overdose (TSD Remix - DJ Kuper Edit)\n'
+    + 'Ardian Bujupi Ft. Farruko y Xhensila - Cika Cika (RooBen Intro)\n'
+    + 'Ariana Grande - 7 Rings (Robert Cristian Remix - Dudu A\'S Edit)\n'
+    + 'ATB X Roei Malka - 9PM (RooBen Mashup)\n'
+    + 'Bolier, Trobi - In The Water (Sagiv Alfasi Edit)\n'
+    + 'Camila Cabello - Havana (Sagi Kariv Remix - Dudu A\'S Edit)\n'
+    + 'Carlos Vives Ft. Wisin - Si Me Das Tu Amor (RooBen Intro) Hook 1st\n'
+    + 'Carlos Vives Ft. Wisin - Si Me Das Tu Amor (RooBen Intro)\n'
+    + 'Clean Bandit feat. Ellie Goulding - Mama (Syco Edit) V1\n'
+    + 'Clean Bandit feat. Ellie Goulding - Mama (Syco Edit) V2\n'
+    + 'Confieso - F4ST (Sagiv Alfasi Edit)\n'
+    + 'Diplo - Oh Maria (Syco Intro)\n'
+    + 'Drake - One Dance (Moshe Buskila - Dudu A\'S Intro)\n'
+    + 'Eleni Foureira - Fuego (DJ Kuper Edit)\n'
+    + 'German Avny & Mike Tsoff - Believe (Extended Mix)\n'
+    + 'German Avny & Mike Tsoff - Believe (Radio Mix)\n'
+    + 'Hellm8 vs. SMVGGLERS - Freedom (Sagiv Alfasi Short Edit)\n'
+    + '?Insideeus - Bubble On Me (RooBen Intro)\n'
+    + 'J Balvin - Ay Vamos (RooBen Redrum)\n'
+    + 'Jenia & Jinga & Sagi Kariv - TakaDoom (RooBen Mashup)\n'
+    + 'Krept & Konan ft Jeremih - Freak Of The Week (DJ Kuper Intro)\n'
+    + 'Lady Gaga Ft. Bradley Cooper - Shallow (Nesco Remix - A\'S Edit)\n'
+    + 'Maluma - HP (RooBen Intro)\n'
+    + 'Marwa Loud - Bad Boy (DJ Kuper Edit)\n'
+    + 'Migos ft. Lil Uzi Vert - Bad And Boujee (DJ Kuper Transition) 80-63\n'
+    + 'Nacho - Nadie Sabe (RooBen Intro)\n'
+    + 'Nicky Jam Ft. Ozuna - Te Robare (RooBen Redrum)\n'
+    + 'Offer Nissim - Esther (Dudu A\'S Edit)\n'
+    + 'Ozuna Feat. Akon - Coméntale (Aviel Mymon Intro)\n'
+    + 'Rauf & Faik - Детство (Rakurs & Eddie G Remix - Syco Fix)\n'
+    + 'Shakedown - At Night (Purple Disco Machine Extended Remix - IdoM Edit)\n'
+    + 'Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V1\n'
+    + 'Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V2\n'
+    + 'Shasha - Shasha Sar Lah (Buskilaz Remix - Syco Fix) V3\n'
+    + 'Sllash & Doppe - Aguella (Aviel Mymon Fix)\n'
+    + 'Technotronic - Pump Up The Jam 19 (Sergey Kutsuev Remix - Dudu A\'S Edit) 125 BPM\n'
+    + 'The Weeknd - I Cant Feel My Face (DJ Kuper Transition) 125-108\n'
+    + 'Tropkillaz Ft. J Balvin, Anitta y MC Zaac - Bola Rebola (RooBen Intro)\n'
+    + 'The Prince Karma - Later Bitches (Aviel Mymon Intro)\n'
+    + 'Tyga - Rack City (DJ Kuper Edit)\n'
+    + 'Wyclef Jean & Missy Elliott - Party To Damascus (DJ Kuper Intro)\n'
+    + 'אייל גולן - הפוך מהיקום (Dudu A\'S Redrum)\n'
+    + 'אייל גולן ועופר ניסים - לא מבינה עברית (Guy Raz Remix - Dudu A\'S Edit)\n'
+    + 'אניה בוקשטיין ועופר ניסים - רוקדת (RooBen Fix)\n'
+    + 'דודו אהרון - הלב שלי על מאתיים (RooBen Mashup) V2\n'
+    + 'דודו אהרון - הלב שלי על מאתיים (RooBen Mashup) V3\n'
+    + 'עדן בן זקן - תגיד לי (RooBen Mashup)\n'
+    + 'עומר אדם - תגידי לי שטוב לך (BlazE & Matan Amar Remix - RooBen Short Edit)\n'
+    + 'עדן חסון - שיכורים (Mor David X Yonatan Harlev - Aviel Mymon Fix)\n';
 
   private teamixVol16 =
-    "4 Strings vs. Sick Inviduals & Holl & Rush - Take Me Away (German Avny Mashup)\n"
-    + "Age Of Love - The Age Of Love (Solomun Renaissance - Gidi Assayag Edit)\n"
-    + "Age Of Wena Paradise (Gavri Blend X Or Pilo - Aviel Mymon Intro Edit)\n"
-    + "Alan Walker, Sabrina Carpenter & Farruko - On My Way (Mike Tsoff & German Avny Remix)\n"
-    + "Arm In Arm - Hunger For Your Vibe (Moonwalk Remix - Gidi Assayag Edit)\n"
-    + "ARTBAT - Upperground (Gidi Assayag Edit)\n"
-    + "Avicii ft Aloe Blacc - SOS (RooBen Intro)\n"
-    + "Chris Brown ft. Nicki Minaj & G-Eazy - Wobble Up (DJ Kuper Intro)\n"
-    + "City Girls - Act Up (RooBen Intro)\n"
-    + "Cola X Trance 7 (Aviel Mymon Power Edit)\n"
-    + "Dennis Lloyd - Never Go Back (RooBen Private Redrum)\n"
-    + "Duke Dumont - Red Light Green Light (IdoM Edit)\n"
-    + "Eleni Foureira - Fuego (DJ Kuper Edit)\n"
-    + "Infected Mushroom, WARRIORS vs. Rozalla - Becoming Insane (German Avny Mashup)\n"
-    + "Jayh - Fluister (RooBen Edit)\n"
-    + "Loni - Loneliness (Gidi Assayag Edit)\n"
-    + "Madonna Ft. Maluma - Medellín (RooBen Redrum)\n"
-    + "Marshmello, Tyga & Chris Brown - Light It Up (DJ Kuper Intro)\n"
-    + "Natti Natasha Y Anitta - Te Lo Dije (RooBen Intro)\n"
-    + "Niels Van Gogh - Pulverturm (Tiesto Remix - Gidi Assayag Edit)\n"
-    + "Offer Nissim - Alone (German Avny Mashup)\n"
-    + "Post Malone & Swae Lee - Sunflower (Panic City Remix - DJ Kuper Fix)\n"
-    + "Rej3ctz - Baby Shark (Twerk Remix - Tommy K. & DJ Kuper Edit)\n"
-    + "Sagiv Alfasi - Independence Day (Israel VS Dana)\n"
-    + "Saturator X עומר אדם -יעשו לנו כבוד (Sagiv Alfasi Mashup)\n"
-    + "Space Motion - Epic (Gidi Assayag Edit)\n"
-    + "ToMix & Genish - Lam Gana Poo (RooBen Fix)\n"
-    + "Tyga - Goddamn (RooBen Intro)\n"
-    + "Warp brothers and Aquagen vs. Alexx Slam - Blade (German Avny Mashup)\n"
-    + "Zivert - Life (German Avny & Mike Tsoff Remix)\n"
-    + "אייל גולן - לרקוד כמו משוגע (Daniel Remix - Dudu A'S Edit)\n"
-    + "אייל גולן - שיכור בלילות (Dudu A'S Darbuka Remix)\n"
-    + "אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - RooBen Fix)\n"
-    + "אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - Syco Edit) V2\n"
-    + "אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - Syco Edit)\n"
-    + "אייל גולן X Vivo - לרקוד כמו משוגע (Daniel Remix - Aviel Mymon Fix)\n"
-    + "איתי לוי - קעקוע על הלב (Daniel Remix - Aviel Mymon Fix)\n"
-    + "יעל מאס מארחת את צגאי בוי - גודטיים (RooBen Intro)\n"
-    + "מושיקו מור - תסביכים (Kobi Shaltiel Remix - Syco Fix) V1\n"
-    + "מושיקו מור - תסביכים (Kobi Shaltiel Remix - Syco Fix) V2\n"
-    + "מירי מסיקה - מפחד עלייך (DANIELRemix - RooBen Fix)\n"
-    + "משה פרץ - מתי (Dudu A'S Redrum)\n"
-    + "נוי פדלון - מפחיד (IdoM & Roby Fayer Intro)\n"
-    + "נוי פדלון - מפחיד (RooBen Intro) Hook 1st\n"
-    + "נתן גושן - מתגעגעת (Dudu A'S Redrum)\n"
-    + "סטפן לגר ואופק המלאך - יום הולדת (RooBen Intro)\n"
-    + "עומר אדם - יעשו לנו כבוד (Gidi Assayag Remix)\n"
-    + "עומר אדם - יעשו לנו כבוד (Mor David Remix - Syco Fix)\n"
-    + "צפריר יפרח וסמואל שובל - דרבוקה (Dudu A'S Long Edit)\n"
-    + "צפריר יפרח וסמואל שובל - דרבוקה (Dudu A'S Short Edit)\n"
-    + "שרית חדד ועופר ניסים - SHUFUNI (Aviel Mymon Intro)\n";
+    '4 Strings vs. Sick Inviduals & Holl & Rush - Take Me Away (German Avny Mashup)\n'
+    + 'Age Of Love - The Age Of Love (Solomun Renaissance - Gidi Assayag Edit)\n'
+    + 'Age Of Wena Paradise (Gavri Blend X Or Pilo - Aviel Mymon Intro Edit)\n'
+    + 'Alan Walker, Sabrina Carpenter & Farruko - On My Way (Mike Tsoff & German Avny Remix)\n'
+    + 'Arm In Arm - Hunger For Your Vibe (Moonwalk Remix - Gidi Assayag Edit)\n'
+    + 'ARTBAT - Upperground (Gidi Assayag Edit)\n'
+    + 'Avicii ft Aloe Blacc - SOS (RooBen Intro)\n'
+    + 'Chris Brown ft. Nicki Minaj & G-Eazy - Wobble Up (DJ Kuper Intro)\n'
+    + 'City Girls - Act Up (RooBen Intro)\n'
+    + 'Cola X Trance 7 (Aviel Mymon Power Edit)\n'
+    + 'Dennis Lloyd - Never Go Back (RooBen Private Redrum)\n'
+    + 'Duke Dumont - Red Light Green Light (IdoM Edit)\n'
+    + 'Eleni Foureira - Fuego (DJ Kuper Edit)\n'
+    + 'Infected Mushroom, WARRIORS vs. Rozalla - Becoming Insane (German Avny Mashup)\n'
+    + 'Jayh - Fluister (RooBen Edit)\n'
+    + 'Loni - Loneliness (Gidi Assayag Edit)\n'
+    + 'Madonna Ft. Maluma - Medellín (RooBen Redrum)\n'
+    + 'Marshmello, Tyga & Chris Brown - Light It Up (DJ Kuper Intro)\n'
+    + 'Natti Natasha Y Anitta - Te Lo Dije (RooBen Intro)\n'
+    + 'Niels Van Gogh - Pulverturm (Tiesto Remix - Gidi Assayag Edit)\n'
+    + 'Offer Nissim - Alone (German Avny Mashup)\n'
+    + 'Post Malone & Swae Lee - Sunflower (Panic City Remix - DJ Kuper Fix)\n'
+    + 'Rej3ctz - Baby Shark (Twerk Remix - Tommy K. & DJ Kuper Edit)\n'
+    + 'Sagiv Alfasi - Independence Day (Israel VS Dana)\n'
+    + 'Saturator X עומר אדם -יעשו לנו כבוד (Sagiv Alfasi Mashup)\n'
+    + 'Space Motion - Epic (Gidi Assayag Edit)\n'
+    + 'ToMix & Genish - Lam Gana Poo (RooBen Fix)\n'
+    + 'Tyga - Goddamn (RooBen Intro)\n'
+    + 'Warp brothers and Aquagen vs. Alexx Slam - Blade (German Avny Mashup)\n'
+    + 'Zivert - Life (German Avny & Mike Tsoff Remix)\n'
+    + 'אייל גולן - לרקוד כמו משוגע (Daniel Remix - Dudu A\'S Edit)\n'
+    + 'אייל גולן - שיכור בלילות (Dudu A\'S Darbuka Remix)\n'
+    + 'אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - RooBen Fix)\n'
+    + 'אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - Syco Edit) V2\n'
+    + 'אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - Syco Edit)\n'
+    + 'אייל גולן X Vivo - לרקוד כמו משוגע (Daniel Remix - Aviel Mymon Fix)\n'
+    + 'איתי לוי - קעקוע על הלב (Daniel Remix - Aviel Mymon Fix)\n'
+    + 'יעל מאס מארחת את צגאי בוי - גודטיים (RooBen Intro)\n'
+    + 'מושיקו מור - תסביכים (Kobi Shaltiel Remix - Syco Fix) V1\n'
+    + 'מושיקו מור - תסביכים (Kobi Shaltiel Remix - Syco Fix) V2\n'
+    + 'מירי מסיקה - מפחד עלייך (DANIELRemix - RooBen Fix)\n'
+    + 'משה פרץ - מתי (Dudu A\'S Redrum)\n'
+    + 'נוי פדלון - מפחיד (IdoM & Roby Fayer Intro)\n'
+    + 'נוי פדלון - מפחיד (RooBen Intro) Hook 1st\n'
+    + 'נתן גושן - מתגעגעת (Dudu A\'S Redrum)\n'
+    + 'סטפן לגר ואופק המלאך - יום הולדת (RooBen Intro)\n'
+    + 'עומר אדם - יעשו לנו כבוד (Gidi Assayag Remix)\n'
+    + 'עומר אדם - יעשו לנו כבוד (Mor David Remix - Syco Fix)\n'
+    + 'צפריר יפרח וסמואל שובל - דרבוקה (Dudu A\'S Long Edit)\n'
+    + 'צפריר יפרח וסמואל שובל - דרבוקה (Dudu A\'S Short Edit)\n'
+    + 'שרית חדד ועופר ניסים - SHUFUNI (Aviel Mymon Intro)\n';
 
   private teamixVol17 =
-    "Alan Walker, Sabrina Carpenter & Farruko - On My Way (RooBen Redrum) 97\n"
-    + "Alex Guesta - Akachi (Sagiv Alfasi Edit )\n"
-    + "Ava Max - Sweet But Psycho (Dark & Adrian - Dudu A'S Edit)\n"
-    + "Backstreet Boys X Krajno - I Want It In Anatolia Way (Skeletron - IdoM Edit)\n"
-    + "Blastoyz, Reality Test - Kabalah (Sagiv Alfasi Edit)\n"
-    + "Corinda, AfroTura - Aso (RooBen Fix)\n"
-    + "Daddy Yankee x Balkan Beat Box - Shaky Shaky (IdoM Edit)\n"
-    + "Daniel Portman - Casa Rumba (Sagiv Alfasi Edit)\n"
-    + "Dimitri Vegas, Like Mike, Liquid Soul, Vini Vici - Untz Untz (Sagiv Alfasi Edit)\n"
-    + "DJ Snake Ft. Selena , Cardi B & Ozuna - Taki Taki (Sharon Yosefov - A'S Intro)\n"
-    + "DJ Snake x Ozuna x Cardi B x Lowderz & Zuffo - Taki Taki Blend (IdoM EDIT) 125-100\n"
-    + "Dor Mor - Clock (Gidi Assayag Edit)\n"
-    + "Dua Lipa X Thomas Gold - One Kiss Orinoco (Aviel Mymon Mashup)\n"
-    + "Ed Sheeran & Justin Bieber - I Don't Care (RooBen Redrum)\n"
-    + "French Montana ft. Blueface & Lil Tjay - Slide (DJ Kuper Intro)\n"
-    + "Gigi D'Agostino - In My Mind (German Avny & Mike Tsoff - Gidi Assayag Edit)\n"
-    + "Hechizeros Band vs DJ Willie - El Sonidito (Make Some Noise Bootleg - Gidi Assayag Edit)\n"
-    + "Kanye West & Lil Pump Vs. The Kemist & Braindead Ft. Nyanda - I Love It (Dudu A'S Fix)\n"
-    + "KAZKA - Cry (R3HAB Remix - RooBen Power Edit)\n"
-    + "Loni - Loneliness (Sagiv Alfasi Edit )\n"
-    + "Losless - Synecku - (Gidi Assayag Long Edit)\n"
-    + "Losless - Synecku - (Gidi Assayag Short Edit)\n"
-    + "Luca Hanni - She Got Me (RooBen Redrum) Eurovision 2019\n"
-    + "Lunay Ft Daddy Yankee & Bad Bunny - Soltera (RooBen Intro)\n"
-    + "Mahmood - Soldi (Denis First - Dudu A'S Edit)\n"
-    + "Mahmood - Soldi (Denis First Remix - Gidi Assayag Edit)\n"
-    + "Mahmood - Soldi (Syco Intro)\n"
-    + "Maitre Gims ft. Maluma - Hola Senorita (RooBen Redrum\n"
-    + "Mann ft. 50 Cent - Buzzin (Remix) (DJ Kuper Edit)\n"
-    + "Marshmello, Chris Brown, Tyga - Light It Up (DALI Intro)\n"
-    + "Marshmello, Tyga & Chris Brown - Light It Up (DJ Kuper Intro)\n"
-    + "Marshmello, Tyga & Chris Brown - Light It Up (Gidi Assayag Acapella Out Edit)\n"
-    + "Meek Mill ft. Ella Mai - 24_7 (DJ Kuper Intro)\n"
-    + "Monolink - Return to Oz (Artbat Remix - Gidi Assayag Long Edit)\n"
-    + "Monolink - Return to Oz (Artbat Remix - Gidi Assayag Short Edit)\n"
-    + "Moonwalk - Galactic (Stil Vor Talent Remix - Aviel Mymon Edit)\n"
-    + "Netta VS Lil Jon - Bassa Mind (Sagi Atia & ShPiz Intro - Aviel Mymon Edit)\n"
-    + "Olivier Giacomotto - Bipolar Star (Victor Ruiz Remix - Aviel Mymon Fix)\n"
-    + "OT Genasis - Bae (DJ Kuper Transition) 80-101\n"
-    + "Panic! At The Disco - High Hopes (RooBen Private Mashup)\n"
-    + "Tokyo Drift X Tempera (Aviel Mymon Edit)\n"
-    + "Trance Wax & Omer Adam - Trance 7 (DJ Kuper 'Tagidi Li She Tov' Edit)\n"
-    + "Tyga - Goddamn (DALI Intro) V1\n"
-    + "Tyga - Goddamn (DALI Intro) V2\n"
-    + "WW x Vini Vici - SHAMELESS Chakra (MANI - IdoM Edit)\n"
-    + "Zedd, Katy Perry - 365 (German Avny & Mike Tsoff Remix)\n"
-    + "ZENA - Like It (RooBen Redrum) Eurovision 2019\n"
-    + "מושיקו מור - הניחי לי (RooBen Intro Redrum)\n"
-    + "מושיקו מור - הניחי לי (RooBen Redrum)\n"
-    + "עדן חסון - כפיות (Mor David Remix - IdoM Edit)\n"
-    + "עומר אדם - יעשו לנו כבוד (Shon Hen Remix - Aviel Mymon Edit)\n"
-    + "פאר טסי - מי אני (Dudu A'S Redrum)\n";
+    'Alan Walker, Sabrina Carpenter & Farruko - On My Way (RooBen Redrum) 97\n'
+    + 'Alex Guesta - Akachi (Sagiv Alfasi Edit )\n'
+    + 'Ava Max - Sweet But Psycho (Dark & Adrian - Dudu A\'S Edit)\n'
+    + 'Backstreet Boys X Krajno - I Want It In Anatolia Way (Skeletron - IdoM Edit)\n'
+    + 'Blastoyz, Reality Test - Kabalah (Sagiv Alfasi Edit)\n'
+    + 'Corinda, AfroTura - Aso (RooBen Fix)\n'
+    + 'Daddy Yankee x Balkan Beat Box - Shaky Shaky (IdoM Edit)\n'
+    + 'Daniel Portman - Casa Rumba (Sagiv Alfasi Edit)\n'
+    + 'Dimitri Vegas, Like Mike, Liquid Soul, Vini Vici - Untz Untz (Sagiv Alfasi Edit)\n'
+    + 'DJ Snake Ft. Selena , Cardi B & Ozuna - Taki Taki (Sharon Yosefov - A\'S Intro)\n'
+    + 'DJ Snake x Ozuna x Cardi B x Lowderz & Zuffo - Taki Taki Blend (IdoM EDIT) 125-100\n'
+    + 'Dor Mor - Clock (Gidi Assayag Edit)\n'
+    + 'Dua Lipa X Thomas Gold - One Kiss Orinoco (Aviel Mymon Mashup)\n'
+    + 'Ed Sheeran & Justin Bieber - I Don\'t Care (RooBen Redrum)\n'
+    + 'French Montana ft. Blueface & Lil Tjay - Slide (DJ Kuper Intro)\n'
+    + 'Gigi D\'Agostino - In My Mind (German Avny & Mike Tsoff - Gidi Assayag Edit)\n'
+    + 'Hechizeros Band vs DJ Willie - El Sonidito (Make Some Noise Bootleg - Gidi Assayag Edit)\n'
+    + 'Kanye West & Lil Pump Vs. The Kemist & Braindead Ft. Nyanda - I Love It (Dudu A\'S Fix)\n'
+    + 'KAZKA - Cry (R3HAB Remix - RooBen Power Edit)\n'
+    + 'Loni - Loneliness (Sagiv Alfasi Edit )\n'
+    + 'Losless - Synecku - (Gidi Assayag Long Edit)\n'
+    + 'Losless - Synecku - (Gidi Assayag Short Edit)\n'
+    + 'Luca Hanni - She Got Me (RooBen Redrum) Eurovision 2019\n'
+    + 'Lunay Ft Daddy Yankee & Bad Bunny - Soltera (RooBen Intro)\n'
+    + 'Mahmood - Soldi (Denis First - Dudu A\'S Edit)\n'
+    + 'Mahmood - Soldi (Denis First Remix - Gidi Assayag Edit)\n'
+    + 'Mahmood - Soldi (Syco Intro)\n'
+    + 'Maitre Gims ft. Maluma - Hola Senorita (RooBen Redrum\n'
+    + 'Mann ft. 50 Cent - Buzzin (Remix) (DJ Kuper Edit)\n'
+    + 'Marshmello, Chris Brown, Tyga - Light It Up (DALI Intro)\n'
+    + 'Marshmello, Tyga & Chris Brown - Light It Up (DJ Kuper Intro)\n'
+    + 'Marshmello, Tyga & Chris Brown - Light It Up (Gidi Assayag Acapella Out Edit)\n'
+    + 'Meek Mill ft. Ella Mai - 24_7 (DJ Kuper Intro)\n'
+    + 'Monolink - Return to Oz (Artbat Remix - Gidi Assayag Long Edit)\n'
+    + 'Monolink - Return to Oz (Artbat Remix - Gidi Assayag Short Edit)\n'
+    + 'Moonwalk - Galactic (Stil Vor Talent Remix - Aviel Mymon Edit)\n'
+    + 'Netta VS Lil Jon - Bassa Mind (Sagi Atia & ShPiz Intro - Aviel Mymon Edit)\n'
+    + 'Olivier Giacomotto - Bipolar Star (Victor Ruiz Remix - Aviel Mymon Fix)\n'
+    + 'OT Genasis - Bae (DJ Kuper Transition) 80-101\n'
+    + 'Panic! At The Disco - High Hopes (RooBen Private Mashup)\n'
+    + 'Tokyo Drift X Tempera (Aviel Mymon Edit)\n'
+    + 'Trance Wax & Omer Adam - Trance 7 (DJ Kuper \'Tagidi Li She Tov\' Edit)\n'
+    + 'Tyga - Goddamn (DALI Intro) V1\n'
+    + 'Tyga - Goddamn (DALI Intro) V2\n'
+    + 'WW x Vini Vici - SHAMELESS Chakra (MANI - IdoM Edit)\n'
+    + 'Zedd, Katy Perry - 365 (German Avny & Mike Tsoff Remix)\n'
+    + 'ZENA - Like It (RooBen Redrum) Eurovision 2019\n'
+    + 'מושיקו מור - הניחי לי (RooBen Intro Redrum)\n'
+    + 'מושיקו מור - הניחי לי (RooBen Redrum)\n'
+    + 'עדן חסון - כפיות (Mor David Remix - IdoM Edit)\n'
+    + 'עומר אדם - יעשו לנו כבוד (Shon Hen Remix - Aviel Mymon Edit)\n'
+    + 'פאר טסי - מי אני (Dudu A\'S Redrum)\n';
 
   private teamixVol18 =
-    "Exclusive :\n"
-    + "\n"
-    + "Chen Leiba - Leibailar (Shon Hen Official Remix).wav\n"
-    + "Chen Leiba - Leibailar (Shon Hen Remix - RooBen Fix).mp3\n"
-    + "Chen Leiba Ft.Tomer Aaron - Mabruk Alekha (Original Mix).mp3\n"
-    + "Chen Leiba, Chen Mantsoor, Sivan - Electrafied (Extended).mp3\n"
-    + "Eli Arbiv, Chen Leiba - Nothing's Stopping Me (Extended).mp3\n"
-    + "German Avny - Gaya (Extended Mix).mp3\n"
-    + "German Avny - Gaya (Original Mix).mp3\n"
-    + "\n"
-    + "Hip Hop - Dancehall - Pop :\n"
-    + "\n"
-    + "Charly Black X Nicky Jam & J Balvin X RooBen - Party X (Aviel Mymon Edit).mp3\n"
-    + "Kamaiyah ft. Tyga & Quavo - Windows (DJ Kuper Transition) (Tyga First) 80-100.mp3\n"
-    + "Kanye West Lil Pump X Usher - I Love it Yeah (Sagiv Alfasi Break Mash-up).mp3\n"
-    + "King Deco X Sean Paul - Castaway (Don't Leave Me) (RooBen Edit).mp3\n"
-    + "Lil Nas X - Old Town Road (DJ Kuper Aca In).mp3\n"
-    + "Lil Nas X - Old Town Road (RooBen Redrum) Acapella In.mp3\n"
-    + "Meek Mill ft. Ella Mai - 24_7 (DJ Kuper Intro).mp3\n"
-    + "Nicki Minaj X Mr Vegas - Megatron (RooBen Edit).mp3\n"
-    + "OT Genasis - Bae (DJ Kuper Transition) 80-101.mp3\n"
-    + "Starboy - Soco (DJ Kuper Aca In).mp3\n"
-    + "Tyga ft. J Balvin & Chris Brown - Haute (DJ Kuper Intro).mp3\n"
-    + "Young Thug ft. J. Cole & Travis Scott - The London (DJ Kuper Transition) 75-98.mp3\n"
-    + "\n"
-    + "Reggaeton :\n"
-    + "\n"
-    + "Borja Rubio Y Juan Magan - Y Si Te Beso, Que (RooBen Intro) Hook 1st.mp3\n"
-    + "Borja Rubio Y Juan Magan - Y Si Te Beso, Que (RooBen Intro).mp3\n"
-    + "Jhay Cortez, J Balvin Y Bad Bunny - No Me Conoce (RooBen Intro) Hook 1st.mp3\n"
-    + "Maluma - HP (Mor David Remix - Itay Ben Senyor Fix).mp3\n"
-    + "Taki Taki X הניחי לי (Or Pilo Mashup - Itay Ben Senyor Fix).mp3\n"
-    + "\n"
-    + "Techno - Electo House - Mashup :\n"
-    + "\n"
-    + "Age Of Love - The Age Of Love (Solomun Renaissance - Gidi Assayag Edit).mp3\n"
-    + "Alex Guesta, Benzly Hype, Raphael - Dance 4 Me (Paul Jockey Remix - Sagiv Alfasi Edit).mp3\n"
-    + "Bipolar Star (Victor Ruiz Remix - Itay Ben Senyor Fix).mp3\n"
-    + "El Mundo Zazou - Can You See What I See Elfenberg Remix (Sagiv Alfasi Edit).mp3\n"
-    + "Evokings - On The Floor (Aviel Mymon Fix).wav\n"
-    + "Extinct X Jax Jones - Lose Yourself (Jonni M Mashup - Aviel Mymon ReWork Edit).mp3\n"
-    + "Gettoblaster - Future Funk (Itay Ben Senyor Fix).mp3\n"
-    + "Hardwell & Franky Rizardo - Asteroid (Aviel Mymon Edit).mp3\n"
-    + "Jako Vs Work (Ofek Yom Tov & Roie Malka Mash - Itay Ben Senyor Fix).mp3\n"
-    + "Jenia & Jinga - Takadoom (Lidor Zirk Remix - Itay Ben Senyor Edit).mp3\n"
-    + "Komodo - (I Just) Died In Your Arms (German Avny & Mike Tsoff Remix).mp3\n"
-    + "K£ra - Gogo (Nathan Thomson Remix - Itay Ben Senyor Fix).mp3\n"
-    + "Layton Giordani - Drumcode (Itay Ben Senyor Fix).mp3\n"
-    + "Meduza ft. Goodboys - Piece Of Your Heart (Syco Edit).mp3\n"
-    + "Sunnery James Ryan Marciano - Yeke Yeke (Sagiv Alfasi Avira Edit).mp3\n"
-    + "Timmy Trumpet x Cardi B - I Like Al Pacino (Aviel Mymon Mashup).mp3\n"
-    + "Zafrir Ifrach - Mama Daili ft. Naj (Syco Extended).mp3\n"
-    + "\n"
-    + "ישראלי - מזרחי - דאנס :\n"
-    + "\n"
-    + "Ido Shoam & Hovevi Tzion - Rotze Banot (Syco Edit).mp3\n"
-    + "Mor Avrahami ft Izhar Cohen - Abanibi (Sagiv Alfasi Edit).mp3\n"
-    + "Netta - Nana Banana (MASH Remix - Syco Fix) V1.mp3\n"
-    + "Netta - Nana Banana (MASH Remix - Syco Fix) V2.mp3\n"
-    + "Netta - Nana Banana (MASH Remix - Syco Fix) V3.mp3\n"
-    + "Stephane Legar - Kapara (Rotem Baum Rmx - Syco Edit) V1.mp3\n"
-    + "Stephane Legar - Kapara (Rotem Baum Rmx - Syco Edit) V2.mp3\n"
-    + "אגם בוחבוט - בננות (RooBen Redrum)\n"
-    + "אדיר גץ וקריזמו - אובססיון (RooBen Intro) Acapella In\n"
-    + "אדיר גץ וקריזמו - אובססיון (RooBen Intro) Hook 1st\n"
-    + "אדיר גץ וקריזמו - אובססיון (RooBen Intro)\n"
-    + "אייל גולן - אוסף עוד געגוע (Dudu A'S Redrum)\n"
-    + "אייל גולן ובניה ברבי - ממה את מפחדת (Eli Arbiv Intro Remix - Itay Ben Senyor Fix)\n"
-    + "אייל גולן ובניה ברבי - ממה את מפחדת (Eli Arbiv Remix - Itay Ben Senyor Fix)\n"
-    + "איתי לוי - קעקוע על הלב (DANIEL Remix - Itay Ben Senyor Fix)\n"
-    + "אליעד - מסע (Dudu A'S Redrum)\n"
-    + "אליעד - מסע (Sharon Yosefov - Dudu A'S No Drop Edit)\n"
-    + "אליעד - מסע (Yosefov Remix - Itay Ben Senyor Fix) V2\n"
-    + "אליעד - מסע (Yosefov Remix - Itay Ben Senyor Fix)\n"
-    + "גל מלכה & אקסום & אבי היילו - לה לה (RooBen Private Edit)\n"
-    + "דודו אהרון ואיתי לוי - השמחה שלנו (Sharon Yosefov Remix - Itay Ben Senyor Fix)\n"
-    + "נועה קירל - חצוף (RooBen Edit)\n"
-    + "סטטיק ובן אל תבורי - בננות (Dudu A'S Redrum)\n"
-    + "עדן בן זקן - תגיד לי (Yohan Cohen Remix - Itay Ben Senyor Fix)\n"
-    + "עדן בן זקן & עדן חסון - שונה מהנוף (Dudu A'S Redrum)\n"
-    + "עדן בן זקן & עדן חסון - שונה מהנוף (RooBen Redrum)\n"
-    + "עדן חסון - איך את אוהבת (Mor David Remix - Itay Ben Senyor Fix)\n"
-    + "עדן חסון - אין יותר מועדונים (Alon Mix & Yaki - E Remix - Itay Ben Senyor Fix)\n"
-    + "עומר אדם - טמפרטורה (Dudu A'S Redrum)\n"
-    + "עומר אדם - יעשו לנו כבוד (RooBen Private Mashup)\n"
-    + "עומר אדם - תתן לה פרחים (Dudu A'S Redrum)\n"
-    + "עומר-אדם - לרקוד ולזוז (Sharon Yosefov Remix - Sagiv Alfasi Edit) 105-128\n";
+    'Exclusive :\n'
+    + '\n'
+    + 'Chen Leiba - Leibailar (Shon Hen Official Remix).wav\n'
+    + 'Chen Leiba - Leibailar (Shon Hen Remix - RooBen Fix).mp3\n'
+    + 'Chen Leiba Ft.Tomer Aaron - Mabruk Alekha (Original Mix).mp3\n'
+    + 'Chen Leiba, Chen Mantsoor, Sivan - Electrafied (Extended).mp3\n'
+    + 'Eli Arbiv, Chen Leiba - Nothing\'s Stopping Me (Extended).mp3\n'
+    + 'German Avny - Gaya (Extended Mix).mp3\n'
+    + 'German Avny - Gaya (Original Mix).mp3\n'
+    + '\n'
+    + 'Hip Hop - Dancehall - Pop :\n'
+    + '\n'
+    + 'Charly Black X Nicky Jam & J Balvin X RooBen - Party X (Aviel Mymon Edit).mp3\n'
+    + 'Kamaiyah ft. Tyga & Quavo - Windows (DJ Kuper Transition) (Tyga First) 80-100.mp3\n'
+    + 'Kanye West Lil Pump X Usher - I Love it Yeah (Sagiv Alfasi Break Mash-up).mp3\n'
+    + 'King Deco X Sean Paul - Castaway (Don\'t Leave Me) (RooBen Edit).mp3\n'
+    + 'Lil Nas X - Old Town Road (DJ Kuper Aca In).mp3\n'
+    + 'Lil Nas X - Old Town Road (RooBen Redrum) Acapella In.mp3\n'
+    + 'Meek Mill ft. Ella Mai - 24_7 (DJ Kuper Intro).mp3\n'
+    + 'Nicki Minaj X Mr Vegas - Megatron (RooBen Edit).mp3\n'
+    + 'OT Genasis - Bae (DJ Kuper Transition) 80-101.mp3\n'
+    + 'Starboy - Soco (DJ Kuper Aca In).mp3\n'
+    + 'Tyga ft. J Balvin & Chris Brown - Haute (DJ Kuper Intro).mp3\n'
+    + 'Young Thug ft. J. Cole & Travis Scott - The London (DJ Kuper Transition) 75-98.mp3\n'
+    + '\n'
+    + 'Reggaeton :\n'
+    + '\n'
+    + 'Borja Rubio Y Juan Magan - Y Si Te Beso, Que (RooBen Intro) Hook 1st.mp3\n'
+    + 'Borja Rubio Y Juan Magan - Y Si Te Beso, Que (RooBen Intro).mp3\n'
+    + 'Jhay Cortez, J Balvin Y Bad Bunny - No Me Conoce (RooBen Intro) Hook 1st.mp3\n'
+    + 'Maluma - HP (Mor David Remix - Itay Ben Senyor Fix).mp3\n'
+    + 'Taki Taki X הניחי לי (Or Pilo Mashup - Itay Ben Senyor Fix).mp3\n'
+    + '\n'
+    + 'Techno - Electo House - Mashup :\n'
+    + '\n'
+    + 'Age Of Love - The Age Of Love (Solomun Renaissance - Gidi Assayag Edit).mp3\n'
+    + 'Alex Guesta, Benzly Hype, Raphael - Dance 4 Me (Paul Jockey Remix - Sagiv Alfasi Edit).mp3\n'
+    + 'Bipolar Star (Victor Ruiz Remix - Itay Ben Senyor Fix).mp3\n'
+    + 'El Mundo Zazou - Can You See What I See Elfenberg Remix (Sagiv Alfasi Edit).mp3\n'
+    + 'Evokings - On The Floor (Aviel Mymon Fix).wav\n'
+    + 'Extinct X Jax Jones - Lose Yourself (Jonni M Mashup - Aviel Mymon ReWork Edit).mp3\n'
+    + 'Gettoblaster - Future Funk (Itay Ben Senyor Fix).mp3\n'
+    + 'Hardwell & Franky Rizardo - Asteroid (Aviel Mymon Edit).mp3\n'
+    + 'Jako Vs Work (Ofek Yom Tov & Roie Malka Mash - Itay Ben Senyor Fix).mp3\n'
+    + 'Jenia & Jinga - Takadoom (Lidor Zirk Remix - Itay Ben Senyor Edit).mp3\n'
+    + 'Komodo - (I Just) Died In Your Arms (German Avny & Mike Tsoff Remix).mp3\n'
+    + 'K£ra - Gogo (Nathan Thomson Remix - Itay Ben Senyor Fix).mp3\n'
+    + 'Layton Giordani - Drumcode (Itay Ben Senyor Fix).mp3\n'
+    + 'Meduza ft. Goodboys - Piece Of Your Heart (Syco Edit).mp3\n'
+    + 'Sunnery James Ryan Marciano - Yeke Yeke (Sagiv Alfasi Avira Edit).mp3\n'
+    + 'Timmy Trumpet x Cardi B - I Like Al Pacino (Aviel Mymon Mashup).mp3\n'
+    + 'Zafrir Ifrach - Mama Daili ft. Naj (Syco Extended).mp3\n'
+    + '\n'
+    + 'ישראלי - מזרחי - דאנס :\n'
+    + '\n'
+    + 'Ido Shoam & Hovevi Tzion - Rotze Banot (Syco Edit).mp3\n'
+    + 'Mor Avrahami ft Izhar Cohen - Abanibi (Sagiv Alfasi Edit).mp3\n'
+    + 'Netta - Nana Banana (MASH Remix - Syco Fix) V1.mp3\n'
+    + 'Netta - Nana Banana (MASH Remix - Syco Fix) V2.mp3\n'
+    + 'Netta - Nana Banana (MASH Remix - Syco Fix) V3.mp3\n'
+    + 'Stephane Legar - Kapara (Rotem Baum Rmx - Syco Edit) V1.mp3\n'
+    + 'Stephane Legar - Kapara (Rotem Baum Rmx - Syco Edit) V2.mp3\n'
+    + 'אגם בוחבוט - בננות (RooBen Redrum)\n'
+    + 'אדיר גץ וקריזמו - אובססיון (RooBen Intro) Acapella In\n'
+    + 'אדיר גץ וקריזמו - אובססיון (RooBen Intro) Hook 1st\n'
+    + 'אדיר גץ וקריזמו - אובססיון (RooBen Intro)\n'
+    + 'אייל גולן - אוסף עוד געגוע (Dudu A\'S Redrum)\n'
+    + 'אייל גולן ובניה ברבי - ממה את מפחדת (Eli Arbiv Intro Remix - Itay Ben Senyor Fix)\n'
+    + 'אייל גולן ובניה ברבי - ממה את מפחדת (Eli Arbiv Remix - Itay Ben Senyor Fix)\n'
+    + 'איתי לוי - קעקוע על הלב (DANIEL Remix - Itay Ben Senyor Fix)\n'
+    + 'אליעד - מסע (Dudu A\'S Redrum)\n'
+    + 'אליעד - מסע (Sharon Yosefov - Dudu A\'S No Drop Edit)\n'
+    + 'אליעד - מסע (Yosefov Remix - Itay Ben Senyor Fix) V2\n'
+    + 'אליעד - מסע (Yosefov Remix - Itay Ben Senyor Fix)\n'
+    + 'גל מלכה & אקסום & אבי היילו - לה לה (RooBen Private Edit)\n'
+    + 'דודו אהרון ואיתי לוי - השמחה שלנו (Sharon Yosefov Remix - Itay Ben Senyor Fix)\n'
+    + 'נועה קירל - חצוף (RooBen Edit)\n'
+    + 'סטטיק ובן אל תבורי - בננות (Dudu A\'S Redrum)\n'
+    + 'עדן בן זקן - תגיד לי (Yohan Cohen Remix - Itay Ben Senyor Fix)\n'
+    + 'עדן בן זקן & עדן חסון - שונה מהנוף (Dudu A\'S Redrum)\n'
+    + 'עדן בן זקן & עדן חסון - שונה מהנוף (RooBen Redrum)\n'
+    + 'עדן חסון - איך את אוהבת (Mor David Remix - Itay Ben Senyor Fix)\n'
+    + 'עדן חסון - אין יותר מועדונים (Alon Mix & Yaki - E Remix - Itay Ben Senyor Fix)\n'
+    + 'עומר אדם - טמפרטורה (Dudu A\'S Redrum)\n'
+    + 'עומר אדם - יעשו לנו כבוד (RooBen Private Mashup)\n'
+    + 'עומר אדם - תתן לה פרחים (Dudu A\'S Redrum)\n'
+    + 'עומר-אדם - לרקוד ולזוז (Sharon Yosefov Remix - Sagiv Alfasi Edit) 105-128\n';
 
-  private teamixVol19 = "Exclusive :\n"
-    + "\n"
-    + "Arthur Project - Akabee [Original Mix].mp3\n"
-    + "Arthur Project - Akabee [Radio Mix].mp3\n"
-    + "Arthur Project - Akabee [Radio Vocal Mix].mp3\n"
-    + "Arthur Project - Akabee [Vocal Mix].mp3\n"
-    + "Arthur Project - Touch and press Play (Extended Version).mp3\n"
-    + "Arthur Project - Touch and press Play.mp3\n"
-    + "Denis First & Reznikov & Bright Sparks - Shameless (Mike Tsoff & German Avny Remix).mp3\n"
-    + "Fetty Wap ft Nicki Minaj - Like A Star (RooBen Remix).mp3\n"
-    + "Jax Jones, Martin Solveig, Madison Beer - All Day And Night (German Avny & Mike Tsoff Remix).mp3\n"
-    + "Mahmood - Soldi (Aviel Mymon Transition) 100 - 128.mp3\n"
-    + "Netta X Bad Bunny, Ozuna, Nicky Jam - BassaBote (Aviel Mymon Edit) V2.mp3\n"
-    + "\n"
-    + "Hip Hop - Dancehall - Pop :\n"
-    + "\n"
-    + "Atomic - Te De Campana (Buskilaz Remix - Syco Fix).mp3\n"
-    + "Balkan Beat Box & DJ Tokuc feat. Tommy Gunz  - Hermetico Saxophone (Aviel Mymon Brake Edit).mp3\n"
-    + "BrainDeaD - Boom Shakalarma (Aviel Mymon Intro Edit).mp3\n"
-    + "DJ Snake X Lauv - A Different Way Magenta (Aviel Mymon Mashup).mp3\n"
-    + "Drake ft. Rick Ross - Money In The Grave (DJ Kuper Edit) V2.mp3\n"
-    + "J. Balvin, Willy William & 50 Cent & Tyga & Offset - Gente Candy Taste (Aviel Mymon Mashup).mp3\n"
-    + "Jason Derulo Feat. 2 Chainz - Talk Dirty (Buskilaz Remix - Syco Fix).mp3\n"
-    + "Jeremih - Down On Me (DALI Edit) .mp3\n"
-    + "Kendrik Lamar - Humble (DALI 'migos' Intro).mp3\n"
-    + "Lil Pump & Kanye - I love it (Aviel Mymon Prv Edit 2019).mp3\n"
-    + "Netta VS Lil Jon - Bassa Mind (Sagi Atia & ShPiz Intro - Aviel Mymon Edit).mp3\n"
-    + "Soldi (DALI Private) WOW.mp3\n"
-    + "Taiwan MC Ft. Paloma Pradal - Catalina (Gidi Assayag Edit).mp3\n"
-    + "Tory Lanez ,Quavo & Tyga - Broke Leg (DJ Kuper Club Edit).mp3\n"
-    + "\n"
-    + "Reggaeton :\n"
-    + "\n"
-    + "Anuel AA ft Daddy Yankee, Karol G, J Balvin & Ozuna - China (RooBen Intro).mp3\n"
-    + "Anuel AA, Daddy Yankee, Karol G, Ozuna & J. Balvin - China (Dudu A'S Redrum).mp3\n"
-    + "Anuel AA, Ozuna - China (Dj Nev Rmx - Itay Ben Senyor Fix).mp3\n"
-    + "Daddy Yankee & Snow - Con Calma (Dj Nev Rmx - Itay Ben Senyor Fix).mp3\n"
-    + "DJ Snake ft J Balvin & Tyga - Loco Contigo (Aviel Mymon Acapella Edit).mp3\n"
-    + "\n"
-    + "Remixes :\n"
-    + "\n"
-    + "Ally Brooke ft A Boogie Wit Da Hoodie - Lips Dont Lie (R3hab Remix).mp3\n"
-    + "Billie Eilish - Bad Guy (HUGEL Remix).mp3\n"
-    + "Dirty Vegas - Days Go By (CamelPhat Remix).mp3\n"
-    + "Ed Sheeran & Justin Bieber - I Don't Care (Jonas Blue Remix).mp3\n"
-    + "Eminem  - The Real Slim Shady (DJ Catch Remix).mp3\n"
-    + "Ferreck Dawn, Robosonic & Nikki Ambers - In My Arms (Meduza Remix) Clean.mp3\n"
-    + "Gwen Stefani - Rich Girl (Jacka Remix).mp3\n"
-    + "KVSH, The Otherz, FROEDE - Can't Get Over You (Extended Mix).mp3\n"
-    + "Mark Morrison  - Return of the Mack (KAMARENA Remix).mp3\n"
-    + "Meduza - Piece Of Your Heart (Dj Dark & MD Dj Remix) [Extended].mp3\n"
-    + "Meduza - Piece Of Your Heart (Dj Dark & MD Dj Remix).mp3\n"
-    + "Meduza - Piece Of Your Heart (Matthew Hill Remix).mp3\n"
-    + "Shawn Mendes, Camila Cabello - Senorita (Dj Dark & MD Dj Remix) [Extended].mp3\n"
-    + "Shawn Mendes, Camila Cabello - Senorita (Dj Dark & MD Dj Remix).mp3\n"
-    + "Steve Angello & Laidback Luke - Be (D.O.D Remix).mp3\n"
-    + "\n"
-    + "Singles - סינגלים : \n"
-    + "\n"
-    + "A$AP Ferg ft MadeinTYO - Wam.mp3\n"
-    + "Akon - Wakanda.mp3\n"
-    + "Anuel AA ft Daddy Yankee, Karol G, J Balvin & Ozuna - China.mp3\n"
-    + "Davido - Fall.mp3\n"
-    + "Ed Sheeran & Travis Scott - Antisocial.mp3\n"
-    + "Ed Sheeran ft Meek Mill & A Boogie Wit Da Hoodie - 1000 Nights.mp3\n"
-    + "Ed Sheeran ft Stormzy - Take Me Back To London.mp3\n"
-    + "Iggy Azalea ft Kash Doll - Fuck It Up.mp3\n"
-    + "Jhay Cortez - Imaginaste.mp3\n"
-    + "Justin Quiles  - Otra Vez.mp3\n"
-    + "King Deco ft Mr. Vegas - Castaway (Remix).mp3\n"
-    + "Mau & Ricky ft Camilo - La Boca.mp3\n"
-    + "YBN Nahmir ft City Girls & Tyga - Fuck It Up.mp3\n"
-    + "Yomel El Meloso & Jankobow - Guin Guin.mp3\n"
-    + "Yonee ft Jacco Bmbino & Leftside - Get Down.mp3\n"
-    + "\n"
-    + "Techno - Electo House - Mashup : \n"
-    + "\n"
-    + "A-Mase & Sharliz - Diamonds (Dudu A'S Edit).mp3\n"
-    + "Adam Beyer, Green Velvet, Layton Giordani - Space Date (Pleasurekraft Remix - Syco Fix).mp3\n"
-    + "AfterU - Dushanbe (DJ Kuper Edit).mp3\n"
-    + "Alesso X Avicii feat Aloe Blacc - SOS Alesso (IdoM Fix).mp3\n"
-    + "Amsterdam (Aviel Mymon Fix).mp3\n"
-    + "Armin van Buuren & Quintino - This Is What It Feels Like teQno  (Aviel Mymon Mashup).mp3\n"
-    + "Armin Van Buuren - Blah Blah Blah (BrainDead Intro - Itay Ben Senyor Fix).mp3\n"
-    + "ARTBAT - Element (Aviel Mymon Edit).mp3\n"
-    + "Cristian Marchi, Luis Rodriguez - Get Get Down (Doron Shitrit Edit).mp3\n"
-    + "Darude - Feel the beat (Aviel Mymon Power Edit) V2.mp3\n"
-    + "DJ Antoine X SAMRA - This Time (Ido Keshet Edit).wav\n"
-    + "Evanescence & Meduza - Bring Me Body (Braaten & Chrit Leaf Mashup -  IdoM Fix).mp3\n"
-    + "Gettoblaster - Future Funk (Aviel Mymon Edit).mp3\n"
-    + "Jenia Tarsol - Takadoom (DJ Kuper Blend).mp3\n"
-    + "Kevin de Vries - Aratak (Aviel Mymon Fix).mp3\n"
-    + "Mahmood - Soldi (Bar Matari & RooBen Remix - Aviel Mymon Intro Edit).mp3\n"
-    + "Mahmood - Soldi (Bar Matari & RooBen Remix).mp3\n"
-    + "Meduza X Eeemus -  Piece Of Your Heart X Checkmate (Aviel Mymon Mashup).mp3\n"
-    + "MOGUA & TouchTalk - Aciiid Laws (Aviel Mymon Mashup).mp3\n"
-    + "NWYR - Artificial Intelligence (Itay Ben Senyor Fix).mp3\n"
-    + "Oliver Koletzki & Niko Schwind - Subati - Andhim's Electrica Cucar Gidi Assayag Edit.mp3\n"
-    + "Rebuke - Along Came Polly (Gidi Assayag Edit).mp3\n"
-    + "Samra, Undercover X Samira Said - Biorhythm Mazal (Ido Keshet Edit).mp3\n"
-    + "Sllash Doppe - Savanna (IdoM ShortCut).mp3\n"
-    + "Space Motion X Meduza - Piece Of Your Epic (Ido Keshet Edit).mp3\n"
-    + "Stereo Express - Agatha (Gidi Assayag Edit).mp3\n"
-    + "Summer Cem - Tamam Tamam (S?leyman Kaya Remix - IdoM Edit).mp3\n"
-    + "Summer Cem - TMM TMM (Ilkay Sencan Remix - RooBen Edit).mp3\n"
-    + "Super Flu - Acumulee (Gidi Assayag Edit).mp3\n"
-    + "The-Drill Leo Blanco Remix (Itay Ben Senyor Fix).mp3\n"
-    + "\n"
-    + "ישראלי - מזרחי - דאנס : \n"
-    + "\n"
-    + "Eden Ben Zaken & Vivo - מאורסת (Aviel Mymon Edit 2019)\n"
-    + "Netta - Nana Banana (Liran Hasson Remix - Itay Ben Senyor Fix)\n"
-    + "אופק אדנק - טן טן טן (RooBen Redrum)\n"
-    + "אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - IdoM Edit)\n"
-    + "אייל גולן - ג'ונגל (Yonatan Harlev 2019 Remix - Aviel Mymon Edit)\n"
-    + "אייל גולן - ג'ונגל (Yonatan Harlev 2019 Remix - Itay Ben Senyor Fix)\n"
-    + "אייל גולן ובניה ברבי - ממה את מפחדת (Shon Hen Remix - Itay Ben Senyor Fix)\n"
-    + "איתי לוי - טכנו (Alon Mix & Yaki-E. - A'S Edit)\n"
-    + "איתי לוי - טכנו (Alon mix Remix - Itay Ben Senyor Fix)\n"
-    + "איתי מולו & שאנטי וטזרה - קודם כל (RooBen Redrum)\n"
-    + "אליעד - מסע (Sharon Yosefov Remix - Aviel Mymon Fix)\n"
-    + "מושיקו מור - הניחי לי (RooBen - Itay Ben Senyor Fix)\n"
-    + "מושיקו מור - הניחי לי (RooBen Intro - Itay Ben Senyor Fix)\n"
-    + "סטפן לגר-כפרה (Doron Shitrit Remix - Itay Ben Senyor Fix)\n"
-    + "סטפן לגר-כפרה (Doron Shitrit Remix) V2\n"
-    + "עדן בן זקן & עדן חסון - שונה מהנוף (Yosefov Remix - Itay Ben Senyor Fix)\n"
-    + "עדן בן זקן - תרימו (Jetfire Wedding Edit - Itay Ben Senyor Fix)\n"
-    + "עדן בן זקן ועדן חסון - שונה מהנוף (Roi Harush - Dudu A'S Edit)\n"
-    + "עדן חסון - איך את אוהבת (Doron Shitrit Remix) V3\n"
-    + "עומר אדם - טמפרטורה (Doron Shitrit Remix) V2\n"
-    + "עומר אדם - טמפרטורה (Doron Shitrit Remix) V5\n"
-    + "עומר אדם - טמפרטורה X מקרנה (Doron Shitrit Remix) Fixed\n"
-    + "עומר אדם - יעשו לנו כבוד (Loren Benisty Remix - Gidi Assayag Edit)\n"
-    + "עומר אדם - יעשו לנו כבוד (M!rel & Lubinski Remix - Aviel Mymon Edit)\n"
-    + "עומר אדם - יעשו לנו כבוד - Loren Benisty Remix (Gidi Assayag Darbuka) Intro\n"
-    + "עומר אדם - רק תגידו לה ( DEAN BARAK INTRO REMIX - Itay Ben Senyor Fix)\n"
-    + "עומר אדם - שני משוגעים (Gidi Assayag Darbuka Remix) V2\n"
-    + "רועי סנדלר - הכל בסדר (Eden Shalev Remix - Aviel Mymon Edit)\n";
+  private teamixVol19 = 'Exclusive :\n'
+    + '\n'
+    + 'Arthur Project - Akabee [Original Mix].mp3\n'
+    + 'Arthur Project - Akabee [Radio Mix].mp3\n'
+    + 'Arthur Project - Akabee [Radio Vocal Mix].mp3\n'
+    + 'Arthur Project - Akabee [Vocal Mix].mp3\n'
+    + 'Arthur Project - Touch and press Play (Extended Version).mp3\n'
+    + 'Arthur Project - Touch and press Play.mp3\n'
+    + 'Denis First & Reznikov & Bright Sparks - Shameless (Mike Tsoff & German Avny Remix).mp3\n'
+    + 'Fetty Wap ft Nicki Minaj - Like A Star (RooBen Remix).mp3\n'
+    + 'Jax Jones, Martin Solveig, Madison Beer - All Day And Night (German Avny & Mike Tsoff Remix).mp3\n'
+    + 'Mahmood - Soldi (Aviel Mymon Transition) 100 - 128.mp3\n'
+    + 'Netta X Bad Bunny, Ozuna, Nicky Jam - BassaBote (Aviel Mymon Edit) V2.mp3\n'
+    + '\n'
+    + 'Hip Hop - Dancehall - Pop :\n'
+    + '\n'
+    + 'Atomic - Te De Campana (Buskilaz Remix - Syco Fix).mp3\n'
+    + 'Balkan Beat Box & DJ Tokuc feat. Tommy Gunz  - Hermetico Saxophone (Aviel Mymon Brake Edit).mp3\n'
+    + 'BrainDeaD - Boom Shakalarma (Aviel Mymon Intro Edit).mp3\n'
+    + 'DJ Snake X Lauv - A Different Way Magenta (Aviel Mymon Mashup).mp3\n'
+    + 'Drake ft. Rick Ross - Money In The Grave (DJ Kuper Edit) V2.mp3\n'
+    + 'J. Balvin, Willy William & 50 Cent & Tyga & Offset - Gente Candy Taste (Aviel Mymon Mashup).mp3\n'
+    + 'Jason Derulo Feat. 2 Chainz - Talk Dirty (Buskilaz Remix - Syco Fix).mp3\n'
+    + 'Jeremih - Down On Me (DALI Edit) .mp3\n'
+    + 'Kendrik Lamar - Humble (DALI \'migos\' Intro).mp3\n'
+    + 'Lil Pump & Kanye - I love it (Aviel Mymon Prv Edit 2019).mp3\n'
+    + 'Netta VS Lil Jon - Bassa Mind (Sagi Atia & ShPiz Intro - Aviel Mymon Edit).mp3\n'
+    + 'Soldi (DALI Private) WOW.mp3\n'
+    + 'Taiwan MC Ft. Paloma Pradal - Catalina (Gidi Assayag Edit).mp3\n'
+    + 'Tory Lanez ,Quavo & Tyga - Broke Leg (DJ Kuper Club Edit).mp3\n'
+    + '\n'
+    + 'Reggaeton :\n'
+    + '\n'
+    + 'Anuel AA ft Daddy Yankee, Karol G, J Balvin & Ozuna - China (RooBen Intro).mp3\n'
+    + 'Anuel AA, Daddy Yankee, Karol G, Ozuna & J. Balvin - China (Dudu A\'S Redrum).mp3\n'
+    + 'Anuel AA, Ozuna - China (Dj Nev Rmx - Itay Ben Senyor Fix).mp3\n'
+    + 'Daddy Yankee & Snow - Con Calma (Dj Nev Rmx - Itay Ben Senyor Fix).mp3\n'
+    + 'DJ Snake ft J Balvin & Tyga - Loco Contigo (Aviel Mymon Acapella Edit).mp3\n'
+    + '\n'
+    + 'Remixes :\n'
+    + '\n'
+    + 'Ally Brooke ft A Boogie Wit Da Hoodie - Lips Dont Lie (R3hab Remix).mp3\n'
+    + 'Billie Eilish - Bad Guy (HUGEL Remix).mp3\n'
+    + 'Dirty Vegas - Days Go By (CamelPhat Remix).mp3\n'
+    + 'Ed Sheeran & Justin Bieber - I Don\'t Care (Jonas Blue Remix).mp3\n'
+    + 'Eminem  - The Real Slim Shady (DJ Catch Remix).mp3\n'
+    + 'Ferreck Dawn, Robosonic & Nikki Ambers - In My Arms (Meduza Remix) Clean.mp3\n'
+    + 'Gwen Stefani - Rich Girl (Jacka Remix).mp3\n'
+    + 'KVSH, The Otherz, FROEDE - Can\'t Get Over You (Extended Mix).mp3\n'
+    + 'Mark Morrison  - Return of the Mack (KAMARENA Remix).mp3\n'
+    + 'Meduza - Piece Of Your Heart (Dj Dark & MD Dj Remix) [Extended].mp3\n'
+    + 'Meduza - Piece Of Your Heart (Dj Dark & MD Dj Remix).mp3\n'
+    + 'Meduza - Piece Of Your Heart (Matthew Hill Remix).mp3\n'
+    + 'Shawn Mendes, Camila Cabello - Senorita (Dj Dark & MD Dj Remix) [Extended].mp3\n'
+    + 'Shawn Mendes, Camila Cabello - Senorita (Dj Dark & MD Dj Remix).mp3\n'
+    + 'Steve Angello & Laidback Luke - Be (D.O.D Remix).mp3\n'
+    + '\n'
+    + 'Singles - סינגלים : \n'
+    + '\n'
+    + 'A$AP Ferg ft MadeinTYO - Wam.mp3\n'
+    + 'Akon - Wakanda.mp3\n'
+    + 'Anuel AA ft Daddy Yankee, Karol G, J Balvin & Ozuna - China.mp3\n'
+    + 'Davido - Fall.mp3\n'
+    + 'Ed Sheeran & Travis Scott - Antisocial.mp3\n'
+    + 'Ed Sheeran ft Meek Mill & A Boogie Wit Da Hoodie - 1000 Nights.mp3\n'
+    + 'Ed Sheeran ft Stormzy - Take Me Back To London.mp3\n'
+    + 'Iggy Azalea ft Kash Doll - Fuck It Up.mp3\n'
+    + 'Jhay Cortez - Imaginaste.mp3\n'
+    + 'Justin Quiles  - Otra Vez.mp3\n'
+    + 'King Deco ft Mr. Vegas - Castaway (Remix).mp3\n'
+    + 'Mau & Ricky ft Camilo - La Boca.mp3\n'
+    + 'YBN Nahmir ft City Girls & Tyga - Fuck It Up.mp3\n'
+    + 'Yomel El Meloso & Jankobow - Guin Guin.mp3\n'
+    + 'Yonee ft Jacco Bmbino & Leftside - Get Down.mp3\n'
+    + '\n'
+    + 'Techno - Electo House - Mashup : \n'
+    + '\n'
+    + 'A-Mase & Sharliz - Diamonds (Dudu A\'S Edit).mp3\n'
+    + 'Adam Beyer, Green Velvet, Layton Giordani - Space Date (Pleasurekraft Remix - Syco Fix).mp3\n'
+    + 'AfterU - Dushanbe (DJ Kuper Edit).mp3\n'
+    + 'Alesso X Avicii feat Aloe Blacc - SOS Alesso (IdoM Fix).mp3\n'
+    + 'Amsterdam (Aviel Mymon Fix).mp3\n'
+    + 'Armin van Buuren & Quintino - This Is What It Feels Like teQno  (Aviel Mymon Mashup).mp3\n'
+    + 'Armin Van Buuren - Blah Blah Blah (BrainDead Intro - Itay Ben Senyor Fix).mp3\n'
+    + 'ARTBAT - Element (Aviel Mymon Edit).mp3\n'
+    + 'Cristian Marchi, Luis Rodriguez - Get Get Down (Doron Shitrit Edit).mp3\n'
+    + 'Darude - Feel the beat (Aviel Mymon Power Edit) V2.mp3\n'
+    + 'DJ Antoine X SAMRA - This Time (Ido Keshet Edit).wav\n'
+    + 'Evanescence & Meduza - Bring Me Body (Braaten & Chrit Leaf Mashup -  IdoM Fix).mp3\n'
+    + 'Gettoblaster - Future Funk (Aviel Mymon Edit).mp3\n'
+    + 'Jenia Tarsol - Takadoom (DJ Kuper Blend).mp3\n'
+    + 'Kevin de Vries - Aratak (Aviel Mymon Fix).mp3\n'
+    + 'Mahmood - Soldi (Bar Matari & RooBen Remix - Aviel Mymon Intro Edit).mp3\n'
+    + 'Mahmood - Soldi (Bar Matari & RooBen Remix).mp3\n'
+    + 'Meduza X Eeemus -  Piece Of Your Heart X Checkmate (Aviel Mymon Mashup).mp3\n'
+    + 'MOGUA & TouchTalk - Aciiid Laws (Aviel Mymon Mashup).mp3\n'
+    + 'NWYR - Artificial Intelligence (Itay Ben Senyor Fix).mp3\n'
+    + 'Oliver Koletzki & Niko Schwind - Subati - Andhim\'s Electrica Cucar Gidi Assayag Edit.mp3\n'
+    + 'Rebuke - Along Came Polly (Gidi Assayag Edit).mp3\n'
+    + 'Samra, Undercover X Samira Said - Biorhythm Mazal (Ido Keshet Edit).mp3\n'
+    + 'Sllash Doppe - Savanna (IdoM ShortCut).mp3\n'
+    + 'Space Motion X Meduza - Piece Of Your Epic (Ido Keshet Edit).mp3\n'
+    + 'Stereo Express - Agatha (Gidi Assayag Edit).mp3\n'
+    + 'Summer Cem - Tamam Tamam (S?leyman Kaya Remix - IdoM Edit).mp3\n'
+    + 'Summer Cem - TMM TMM (Ilkay Sencan Remix - RooBen Edit).mp3\n'
+    + 'Super Flu - Acumulee (Gidi Assayag Edit).mp3\n'
+    + 'The-Drill Leo Blanco Remix (Itay Ben Senyor Fix).mp3\n'
+    + '\n'
+    + 'ישראלי - מזרחי - דאנס : \n'
+    + '\n'
+    + 'Eden Ben Zaken & Vivo - מאורסת (Aviel Mymon Edit 2019)\n'
+    + 'Netta - Nana Banana (Liran Hasson Remix - Itay Ben Senyor Fix)\n'
+    + 'אופק אדנק - טן טן טן (RooBen Redrum)\n'
+    + 'אייל גולן & בניה ברבי - ממה את מפחדת (Raz Moyal Remix - IdoM Edit)\n'
+    + 'אייל גולן - ג\'ונגל (Yonatan Harlev 2019 Remix - Aviel Mymon Edit)\n'
+    + 'אייל גולן - ג\'ונגל (Yonatan Harlev 2019 Remix - Itay Ben Senyor Fix)\n'
+    + 'אייל גולן ובניה ברבי - ממה את מפחדת (Shon Hen Remix - Itay Ben Senyor Fix)\n'
+    + 'איתי לוי - טכנו (Alon Mix & Yaki-E. - A\'S Edit)\n'
+    + 'איתי לוי - טכנו (Alon mix Remix - Itay Ben Senyor Fix)\n'
+    + 'איתי מולו & שאנטי וטזרה - קודם כל (RooBen Redrum)\n'
+    + 'אליעד - מסע (Sharon Yosefov Remix - Aviel Mymon Fix)\n'
+    + 'מושיקו מור - הניחי לי (RooBen - Itay Ben Senyor Fix)\n'
+    + 'מושיקו מור - הניחי לי (RooBen Intro - Itay Ben Senyor Fix)\n'
+    + 'סטפן לגר-כפרה (Doron Shitrit Remix - Itay Ben Senyor Fix)\n'
+    + 'סטפן לגר-כפרה (Doron Shitrit Remix) V2\n'
+    + 'עדן בן זקן & עדן חסון - שונה מהנוף (Yosefov Remix - Itay Ben Senyor Fix)\n'
+    + 'עדן בן זקן - תרימו (Jetfire Wedding Edit - Itay Ben Senyor Fix)\n'
+    + 'עדן בן זקן ועדן חסון - שונה מהנוף (Roi Harush - Dudu A\'S Edit)\n'
+    + 'עדן חסון - איך את אוהבת (Doron Shitrit Remix) V3\n'
+    + 'עומר אדם - טמפרטורה (Doron Shitrit Remix) V2\n'
+    + 'עומר אדם - טמפרטורה (Doron Shitrit Remix) V5\n'
+    + 'עומר אדם - טמפרטורה X מקרנה (Doron Shitrit Remix) Fixed\n'
+    + 'עומר אדם - יעשו לנו כבוד (Loren Benisty Remix - Gidi Assayag Edit)\n'
+    + 'עומר אדם - יעשו לנו כבוד (M!rel & Lubinski Remix - Aviel Mymon Edit)\n'
+    + 'עומר אדם - יעשו לנו כבוד - Loren Benisty Remix (Gidi Assayag Darbuka) Intro\n'
+    + 'עומר אדם - רק תגידו לה ( DEAN BARAK INTRO REMIX - Itay Ben Senyor Fix)\n'
+    + 'עומר אדם - שני משוגעים (Gidi Assayag Darbuka Remix) V2\n'
+    + 'רועי סנדלר - הכל בסדר (Eden Shalev Remix - Aviel Mymon Edit)\n';
 
   public teamixLatinVol1 =
-  "Abrina - Cuentalo (TeaMix Latin 1 - RooBen Intro)\n"
-+"C. Tangana Ft. Becky G- Booty (TeaMix Latin 1 - RooBen Edit)\n"
-+"Chacal - No Volvere (TeaMix Latin 1 - RooBen Intro)\n"
-+"CNCO ft Meghan Trainor & Sean Paul - Hey DJ (TeaMix Latin 1 - RooBen Intro)\n"
-+"El Alfa ft Cardi B - Mi Mami (TeaMix Latin 1 - RooBen Intro)\n"
-+"Farruko ft Daddy Yankee, Sean Paul & Akon - Inolvidable (Remix) (TeaMix Latin 1 - RooBen Intro)\n"
-+"Greeicy Ft. Anitta - Jacuzzi (TeaMix Latin 1 - RooBen Edit)\n"
-+"J Balvin - Reggaeton (TeaMix Latin 1 - RooBen Redrum)\n"
-+"Jennifer Lopez & Bad Bunny - Te Guste (TeaMix Latin 1 - RooBen Intro)\n"
-+"Juhn Y Amenazzy - Nadie Sabe (TeaMix Latin 1 - RooBen Intro)\n"
-+"Justin Quiles ft Plan B - Si Tu (TeaMix Latin 1 - RooBen Intro)\n"
-+"Mau Y Ricky, Manuel Turizo Y Camilo - Desconocidos (TeaMix Latin 1 - RooBen Intro)\n"
-+"Natti Natasha Ft. Becky G, Nio Garcia Y Casper - Sin Pijama (Remix) (TeaMix Latin 1 - RooBen Edit)\n"
-+"Nio Garcia Ft. Casper Magico y Darell - Te Bote (TeaMix Latin 1 - Dudu A'S Redrum)\n"
-+"Ozuna ft Akon - Comentale (TeaMix Latin 1 - RooBen Edit)\n"
-+"Ozuna ft RKM Y Ken Y - Besos Mojados (TeaMix Latin 1 - RooBen Edit)\n"
-+"Ozuna Ft. Lunay, Rauw Alejandro Y Lyanno – Luz Apaga (TeaMix Latin 1 - RooBen Edit))\n"
-+"Reykon Ft. Cosculluela - Domingo (TeaMix Latin 1 - RooBen Edit)\n"
-+"TINI Y Sebastian Yatra - Quiero Volver (TeaMix Latin 1 - RooBen Edit)\n"
-+"Tito El Bambino Ft. Zion y Lennox - Entre Tu y Yo (TeaMix Latin 1 - RooBen Edit)\n"
-+"Wolfine - Le Pido A Dios (TeaMix Latin 1 - RooBen Intro)\n"
-+"Yenddi Ft. Abraham Mateo, De La Ghetto, Jon Z - Bom Bom (TeaMix Latin 1 - RooBen Edit)\n";
+    'Abrina - Cuentalo (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'C. Tangana Ft. Becky G- Booty (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Chacal - No Volvere (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'CNCO ft Meghan Trainor & Sean Paul - Hey DJ (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'El Alfa ft Cardi B - Mi Mami (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Farruko ft Daddy Yankee, Sean Paul & Akon - Inolvidable (Remix) (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Greeicy Ft. Anitta - Jacuzzi (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'J Balvin - Reggaeton (TeaMix Latin 1 - RooBen Redrum)\n'
+    + 'Jennifer Lopez & Bad Bunny - Te Guste (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Juhn Y Amenazzy - Nadie Sabe (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Justin Quiles ft Plan B - Si Tu (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Mau Y Ricky, Manuel Turizo Y Camilo - Desconocidos (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Natti Natasha Ft. Becky G, Nio Garcia Y Casper - Sin Pijama (Remix) (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Nio Garcia Ft. Casper Magico y Darell - Te Bote (TeaMix Latin 1 - Dudu A\'S Redrum)\n'
+    + 'Ozuna ft Akon - Comentale (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Ozuna ft RKM Y Ken Y - Besos Mojados (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Ozuna Ft. Lunay, Rauw Alejandro Y Lyanno – Luz Apaga (TeaMix Latin 1 - RooBen Edit))\n'
+    + 'Reykon Ft. Cosculluela - Domingo (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'TINI Y Sebastian Yatra - Quiero Volver (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Tito El Bambino Ft. Zion y Lennox - Entre Tu y Yo (TeaMix Latin 1 - RooBen Edit)\n'
+    + 'Wolfine - Le Pido A Dios (TeaMix Latin 1 - RooBen Intro)\n'
+    + 'Yenddi Ft. Abraham Mateo, De La Ghetto, Jon Z - Bom Bom (TeaMix Latin 1 - RooBen Edit)\n';
 
   public teamixLatinVol2 =
-  "6ix9ine ft Anuel AA - MALA (TeaMix Latin 2 - RooBen Edit) 105\n"
-+"6ix9ine Ft. Anuel AA - Bebe (TeaMix Latin 2 - Dudu A'S Redrum) 106\n"
-+"Alaya Ft. Zion Y Lennox - Tocamelo (TeaMix Latin 2 - RooBen Edit) 105\n"
-+"Atomic - Te De Campana (TeaMix Latin 2 - Buskilaz Remix - Dudu A'S Brake Edit) 105\n"
-+"Becky G. Ft. Natti Natasha - Sin Pijama (TeaMix Latin 2 - Juan Alcaraz Remix - Dudu A'S Power Edit) 102\n"
-+"CNCO - Reggaeton Lento (TeaMix Latin 2 - Dudu A'S Redrum) 105\n"
-+"Daddy Yankee - Dura (TeaMix Latin 2 - Juan Alcaraz Remix - Dudu A'S Edit) 100\n"
-+"Daddy Yankee ft Anuel AA - Adictiva (TeaMix Latin 2 - RooBen Intro) 99\n"
-+"Fonseca Y Cali Y El Dandee - Volver A Verte (TeaMix Latin 2 - RooBen Intro) 92\n"
-+"Green Cookie ft Rafa Pabon Y Myke Towers - Pierdete (TeaMix Latin 2 - RooBen Intro) 98\n"
-+"J Balvin - Reggaeton (TeaMix Latin 2 - Sagiv Alfasi Intro) 88\n"
-+"Jennifer Lopez feat Bad Bunny - Te Guste (Sagiv Alfasi Intro) 72\n"
-+"Karol G. Ft. Maluma - Creeme (TeaMix Latin 2 - Dudu A'S Redrum) 102\n"
-+"Leslie Grace Y Farina - Lunes A Jueves (TeaMix Latin 2 - RooBen Intro) 95\n"
-+"MTZ Manuel Turizo - Sola (TeaMix Latin 2 - RooBen Intro) 93\n"
-+"Nacho & Manuel Turizo - Dejalo (TeaMix Latin 2 - RooBen Edit) 105\n"
-+"Nacho & Manuel Turizo - Dejalo (TeaMix Latin 2 - RooBen Intro) Hook 1st 95\n"
-+"Nicky Jam Ft. J. Balvin - X (TeaMix Latin 2 - Dudu A'S Redrum) Aca In 105\n"
-+"Nio Garcia ft Ozuna & Bad Bunny - Te Bote (TeaMix Latin 2 - RooBen Redrum) 100\n"
-+"Tomas The Latin Boy Y Chyno Miranda - Roce (TeaMix Latin 2 - RooBen Intro) 94\n"
-+"V-One Ft. Mau Y Ricky - Aventura (TeaMix Latin 2 - RooBen Edit) 105\n"
-+"Wisin & Yandel - Guaya (TeaMix Latin 2 - RooBen Intro) 98\n"
-+"Wisin y Yandel Ft. Ozuna - Callao (TeaMix Latin 2 - RooBen Intro) 92\n";
+    '6ix9ine ft Anuel AA - MALA (TeaMix Latin 2 - RooBen Edit) 105\n'
+    + '6ix9ine Ft. Anuel AA - Bebe (TeaMix Latin 2 - Dudu A\'S Redrum) 106\n'
+    + 'Alaya Ft. Zion Y Lennox - Tocamelo (TeaMix Latin 2 - RooBen Edit) 105\n'
+    + 'Atomic - Te De Campana (TeaMix Latin 2 - Buskilaz Remix - Dudu A\'S Brake Edit) 105\n'
+    + 'Becky G. Ft. Natti Natasha - Sin Pijama (TeaMix Latin 2 - Juan Alcaraz Remix - Dudu A\'S Power Edit) 102\n'
+    + 'CNCO - Reggaeton Lento (TeaMix Latin 2 - Dudu A\'S Redrum) 105\n'
+    + 'Daddy Yankee - Dura (TeaMix Latin 2 - Juan Alcaraz Remix - Dudu A\'S Edit) 100\n'
+    + 'Daddy Yankee ft Anuel AA - Adictiva (TeaMix Latin 2 - RooBen Intro) 99\n'
+    + 'Fonseca Y Cali Y El Dandee - Volver A Verte (TeaMix Latin 2 - RooBen Intro) 92\n'
+    + 'Green Cookie ft Rafa Pabon Y Myke Towers - Pierdete (TeaMix Latin 2 - RooBen Intro) 98\n'
+    + 'J Balvin - Reggaeton (TeaMix Latin 2 - Sagiv Alfasi Intro) 88\n'
+    + 'Jennifer Lopez feat Bad Bunny - Te Guste (Sagiv Alfasi Intro) 72\n'
+    + 'Karol G. Ft. Maluma - Creeme (TeaMix Latin 2 - Dudu A\'S Redrum) 102\n'
+    + 'Leslie Grace Y Farina - Lunes A Jueves (TeaMix Latin 2 - RooBen Intro) 95\n'
+    + 'MTZ Manuel Turizo - Sola (TeaMix Latin 2 - RooBen Intro) 93\n'
+    + 'Nacho & Manuel Turizo - Dejalo (TeaMix Latin 2 - RooBen Edit) 105\n'
+    + 'Nacho & Manuel Turizo - Dejalo (TeaMix Latin 2 - RooBen Intro) Hook 1st 95\n'
+    + 'Nicky Jam Ft. J. Balvin - X (TeaMix Latin 2 - Dudu A\'S Redrum) Aca In 105\n'
+    + 'Nio Garcia ft Ozuna & Bad Bunny - Te Bote (TeaMix Latin 2 - RooBen Redrum) 100\n'
+    + 'Tomas The Latin Boy Y Chyno Miranda - Roce (TeaMix Latin 2 - RooBen Intro) 94\n'
+    + 'V-One Ft. Mau Y Ricky - Aventura (TeaMix Latin 2 - RooBen Edit) 105\n'
+    + 'Wisin & Yandel - Guaya (TeaMix Latin 2 - RooBen Intro) 98\n'
+    + 'Wisin y Yandel Ft. Ozuna - Callao (TeaMix Latin 2 - RooBen Intro) 92\n';
 
   public teamixLatinVol3 =
-  "Aitana Ft. Lele Pons – Telefono (RooBen Intro) 86\n"
-+"Anuel AA - Amanece (RooBen Intro) 94\n"
-+"Anuel AA Ft Karol G - Secreto (RooBen Redrum) 92\n"
-+"Bad Bunny Ft. Drake & Sean Paul - Mia (RooBen Intro) 97\n"
-+"El Micha Ft. Wisin - Mala Mala (RooBen Intro) 98\n"
-+"Natti Natasha - Me Gusta (RooBen Intro) 96\n"
-+"Nicky Jam Ft. J Balvin, Maluma y Ozuna - X (Remix) (DJ Kuper Edit) 95\n"
-+"Ozuna Ft Bad Bunny & Nicky Jam - Te Bote (Mula & Nev Vs SamoBB - IdoM Edit) 105\n"
-+"Wisin & Yandel - Guaya (RooBen Intro) 98\n"
-+"Wisin & Yandel - Me Danas La Mente (RooBen Intro) 90\n"
-+"Wisin & Yandel - Recuerdo (RooBen Intro) 86\n"
-+"Wisin & Yandel – Reggaeton en lo Oscuro (RooBen Intro) 92\n"
-+"Wisin & Yandel - Te Dije Que Iba a Pasar (RooBen Intro) 98\n"
-+"Wisin & Yandel - Tu Tienes (RooBen Intro) 89\n"
-+"Wisin & Yandel - Veo Veo (RooBen Intro) 93\n"
-+"Wisin & Yandel Ft Farruko - Ojala (RooBen Intro) 84\n"
-+"Wisin & Yandel Ft. Bad Bunny - Dame Algo (RooBen Intro) 93\n"
-+"Wisin & Yandel Ft. Romeo Santos - Aullando (RooBen Intro) 90\n"
-+"Wisin & Yandel Ft. Zion & Lennox - Deseo (RooBen Intro) 90\n"
-+"Wisin & Yandel, Miky Woodz - Mi Intencion (RooBen Intro) 70\n"
-+"Wisin y Yandel Ft. Maluma - La Luz (RooBen Intro) 97\n";
+    'Aitana Ft. Lele Pons – Telefono (RooBen Intro) 86\n'
+    + 'Anuel AA - Amanece (RooBen Intro) 94\n'
+    + 'Anuel AA Ft Karol G - Secreto (RooBen Redrum) 92\n'
+    + 'Bad Bunny Ft. Drake & Sean Paul - Mia (RooBen Intro) 97\n'
+    + 'El Micha Ft. Wisin - Mala Mala (RooBen Intro) 98\n'
+    + 'Natti Natasha - Me Gusta (RooBen Intro) 96\n'
+    + 'Nicky Jam Ft. J Balvin, Maluma y Ozuna - X (Remix) (DJ Kuper Edit) 95\n'
+    + 'Ozuna Ft Bad Bunny & Nicky Jam - Te Bote (Mula & Nev Vs SamoBB - IdoM Edit) 105\n'
+    + 'Wisin & Yandel - Guaya (RooBen Intro) 98\n'
+    + 'Wisin & Yandel - Me Danas La Mente (RooBen Intro) 90\n'
+    + 'Wisin & Yandel - Recuerdo (RooBen Intro) 86\n'
+    + 'Wisin & Yandel – Reggaeton en lo Oscuro (RooBen Intro) 92\n'
+    + 'Wisin & Yandel - Te Dije Que Iba a Pasar (RooBen Intro) 98\n'
+    + 'Wisin & Yandel - Tu Tienes (RooBen Intro) 89\n'
+    + 'Wisin & Yandel - Veo Veo (RooBen Intro) 93\n'
+    + 'Wisin & Yandel Ft Farruko - Ojala (RooBen Intro) 84\n'
+    + 'Wisin & Yandel Ft. Bad Bunny - Dame Algo (RooBen Intro) 93\n'
+    + 'Wisin & Yandel Ft. Romeo Santos - Aullando (RooBen Intro) 90\n'
+    + 'Wisin & Yandel Ft. Zion & Lennox - Deseo (RooBen Intro) 90\n'
+    + 'Wisin & Yandel, Miky Woodz - Mi Intencion (RooBen Intro) 70\n'
+    + 'Wisin y Yandel Ft. Maluma - La Luz (RooBen Intro) 97\n';
 
   public teamixLatinVol4 =
-  "Dayami La Musa Osmani Garcia La Voz - Bumper (Syco Intro)\n"
-+"Don Omar ft. Tego Calderon - Bandolero (Syco Intro)\n"
-+"Golpe a Golpe Ft. Justin Quiles - Conmigo (RooBen Intro)\n"
-+"J Alvarez - Tu Juguete (RooBen Intro)\n"
-+"Joey Montana Y Nacho - Rosas O Espinas (Remix) (RooBen Intro)\n"
-+"Karol G Ft. J Balvin and Nicky Jam - Mi Cama (Remix) (Aviel Mymon Intro)\n"
-+"Lunay Ft. Lyanno, Anuel AA, Brytiago & Alex Rose - A Solas (RooBen Intro)\n"
-+"Maluma Ft. Becky G Y Anitta - Mala Mia (RooBen Intro)\n"
-+"Mc's Zaac & Jerry - Bumbum Granada (Syco Intro)\n"
-+"Natti Natasha - Lamento Tu Perdida (RooBen Intro) Hook 1st\n"
-+"Natti Natasha - Lamento Tu Perdida (RooBen Intro)\n"
-+"Nicky Jam Ft. Amenazzy & Farruko - Baby (RooBen Intro)\n"
-+"Nio Garcia - La Perpetua (RooBen Intro)\n"
-+"Ozuna - Baila Baila Baila (RooBen Intro)\n"
-+"Ozuna - Baila Baila Baila (Syco Edit)\n"
-+"Ozuna - Baila Baila Baila (Syco Intro)\n"
-+"Ozuna Ft. Wisin & Yandel - Quiero Mas (RooBen Intro)\n"
-+"Pitbull & El Chombo - Dame Tu Cosita (Aviel Mymon Intro)\n"
-+"Rvssian, Farruko Y J Balvin vs Dr. Dre - Ponle (DJ Kuper Intro)\n"
-+"Trebol Clan Ft. Kenny Man - Ni Gucci Ni Prada (RooBen Intro)\n"
-+"Wisin & Yandel - La Luz (Dudu A'S Redrum)\n"
-+"Wolfine Ft. Maluma - Bella (RooBen Intro)\n"
-+"Yomil y El Dany - Chona (RooBen Intro)\n";
+    'Dayami La Musa Osmani Garcia La Voz - Bumper (Syco Intro)\n'
+    + 'Don Omar ft. Tego Calderon - Bandolero (Syco Intro)\n'
+    + 'Golpe a Golpe Ft. Justin Quiles - Conmigo (RooBen Intro)\n'
+    + 'J Alvarez - Tu Juguete (RooBen Intro)\n'
+    + 'Joey Montana Y Nacho - Rosas O Espinas (Remix) (RooBen Intro)\n'
+    + 'Karol G Ft. J Balvin and Nicky Jam - Mi Cama (Remix) (Aviel Mymon Intro)\n'
+    + 'Lunay Ft. Lyanno, Anuel AA, Brytiago & Alex Rose - A Solas (RooBen Intro)\n'
+    + 'Maluma Ft. Becky G Y Anitta - Mala Mia (RooBen Intro)\n'
+    + 'Mc\'s Zaac & Jerry - Bumbum Granada (Syco Intro)\n'
+    + 'Natti Natasha - Lamento Tu Perdida (RooBen Intro) Hook 1st\n'
+    + 'Natti Natasha - Lamento Tu Perdida (RooBen Intro)\n'
+    + 'Nicky Jam Ft. Amenazzy & Farruko - Baby (RooBen Intro)\n'
+    + 'Nio Garcia - La Perpetua (RooBen Intro)\n'
+    + 'Ozuna - Baila Baila Baila (RooBen Intro)\n'
+    + 'Ozuna - Baila Baila Baila (Syco Edit)\n'
+    + 'Ozuna - Baila Baila Baila (Syco Intro)\n'
+    + 'Ozuna Ft. Wisin & Yandel - Quiero Mas (RooBen Intro)\n'
+    + 'Pitbull & El Chombo - Dame Tu Cosita (Aviel Mymon Intro)\n'
+    + 'Rvssian, Farruko Y J Balvin vs Dr. Dre - Ponle (DJ Kuper Intro)\n'
+    + 'Trebol Clan Ft. Kenny Man - Ni Gucci Ni Prada (RooBen Intro)\n'
+    + 'Wisin & Yandel - La Luz (Dudu A\'S Redrum)\n'
+    + 'Wolfine Ft. Maluma - Bella (RooBen Intro)\n'
+    + 'Yomil y El Dany - Chona (RooBen Intro)\n';
 
   public teamixLatinVol5 =
-  "Alaya Ft. Zion y Lennox - Tocamelo (RooBen Intro)\n"
-+"Carlos Baute ft Farina - Compro Minutos (RooBen Intro)\n"
-+"CNCO Ft. Prince Royce - Llegaste Tu (RooBen Intro) Hook 1st\n"
-+"Daddy Yankee Ft. Snow - Con Calma (RooBen Edit) 105\n"
-+"Daddy Yankee Ft. Snow - Con Calma (RooBen Edit) Snow 1st\n"
-+"Daddy Yankee Ft. Snow - Con Calma (RooBen Intro) 94\n"
-+"Daddy Yankee Ft. Snow - Con Calma (RooBen Intro) Snow 1st\n"
-+"J Alvarez, Pusho & Benny Benni - Baila Mami (RooBen Intro)\n"
-+"Jowell & Randy ft Manuel Turizo - Dile La Verdad (RooBen Intro)\n"
-+"Lerica, Belinda - Un Traguito (RooBen Intro) Hook 1st\n"
-+"Lerica, Belinda - Un Traguito (RooBen Intro)\n"
-+"Luis Fonsi Ft. Ozuna - Imposible (RooBen Intro)\n"
-+"MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V1\n"
-+"MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V2\n"
-+"MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V3\n"
-+"Nicky Jam - Estrella (RooBen Intro) Hook 1st\n"
-+"Nicky Jam - Estrella (RooBen Intro)\n"
-+"Rauw Alejandro Y Nicky Jam - Que Le De (RooBen Intro)\n"
-+"Reykon Ft. Cosculluela - Domingo (RooBen Intro) Hook 1st\n"
-+"Reykon Ft. Cosculluela - Domingo (RooBen Intro)\n"
-+"Silvestre Dangond feat. Nicky Jam - Casate Conmigo (RooBen Intro) Hook 1st\n"
-+"Urband 5 - Te Quiero Mas (RooBen Intro)\n"
-+"V-One Ft. Mau Y Ricky - Aventura (RooBen Intro) Hook 1st\n"
-+"V-One Ft. Mau Y Ricky - Aventura (RooBen Intro)\n"
-+"Yandel - Sumba Yandel (RooBen Intro) Hook 1st\n"
-+"Yandel - Sumba Yandel (RooBen Intro)\n";
+    'Alaya Ft. Zion y Lennox - Tocamelo (RooBen Intro)\n'
+    + 'Carlos Baute ft Farina - Compro Minutos (RooBen Intro)\n'
+    + 'CNCO Ft. Prince Royce - Llegaste Tu (RooBen Intro) Hook 1st\n'
+    + 'Daddy Yankee Ft. Snow - Con Calma (RooBen Edit) 105\n'
+    + 'Daddy Yankee Ft. Snow - Con Calma (RooBen Edit) Snow 1st\n'
+    + 'Daddy Yankee Ft. Snow - Con Calma (RooBen Intro) 94\n'
+    + 'Daddy Yankee Ft. Snow - Con Calma (RooBen Intro) Snow 1st\n'
+    + 'J Alvarez, Pusho & Benny Benni - Baila Mami (RooBen Intro)\n'
+    + 'Jowell & Randy ft Manuel Turizo - Dile La Verdad (RooBen Intro)\n'
+    + 'Lerica, Belinda - Un Traguito (RooBen Intro) Hook 1st\n'
+    + 'Lerica, Belinda - Un Traguito (RooBen Intro)\n'
+    + 'Luis Fonsi Ft. Ozuna - Imposible (RooBen Intro)\n'
+    + 'MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V1\n'
+    + 'MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V2\n'
+    + 'MC Gustta e MC DG - Abusadamente (Kubass Afro Remix - Syco Intro) V3\n'
+    + 'Nicky Jam - Estrella (RooBen Intro) Hook 1st\n'
+    + 'Nicky Jam - Estrella (RooBen Intro)\n'
+    + 'Rauw Alejandro Y Nicky Jam - Que Le De (RooBen Intro)\n'
+    + 'Reykon Ft. Cosculluela - Domingo (RooBen Intro) Hook 1st\n'
+    + 'Reykon Ft. Cosculluela - Domingo (RooBen Intro)\n'
+    + 'Silvestre Dangond feat. Nicky Jam - Casate Conmigo (RooBen Intro) Hook 1st\n'
+    + 'Urband 5 - Te Quiero Mas (RooBen Intro)\n'
+    + 'V-One Ft. Mau Y Ricky - Aventura (RooBen Intro) Hook 1st\n'
+    + 'V-One Ft. Mau Y Ricky - Aventura (RooBen Intro)\n'
+    + 'Yandel - Sumba Yandel (RooBen Intro) Hook 1st\n'
+    + 'Yandel - Sumba Yandel (RooBen Intro)\n';
 
   public teamixThrowbackVol1 =
-  "2Pac - All About U (TeaMix Throwback 1 - Extended).mp3\n"
-+"2Pac - California Love (TeaMix Throwback 1 - Extended).mp3\n"
-+"2Pac - Hit 'Em Up (TeaMix Throwback 1 - Extended).mp3\n"
-+"3 Doors Down - Here Without You (TeaMix Throwback 1 - RooBen Redrum).mp3\n"
-+"Akon Feat Lil Wayne - Im So Paid (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"Chris Brown ft Kevin McCall - Strip (TeaMix Throwback 1 - Extended).mp3\n"
-+"Clyde Ft. Lil Frees - Get Low (TeaMix Throwback 1 - RooBen Remix).mp3\n"
-+"DJ BOBO - Love Is All Around  (TeaMix Throwback 1 - Edit).mp3\n"
-+"DJ Jazzy Jeff & The Fresh Prince - The Fresh Prince Of Bel Air (TeaMix Throwback 1 - Extended).mp3\n"
-+"Dr. Dre Feat. Nokturnal - Bad Intentions (TeaMix Throwback 1 - Extended).mp3\n"
-+"Eva feat. Lupe Fiasco - Slow Down (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"IYAZ - Replay (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"Jizzo - Boombox (TeaMix Throwback 1 - RooBen Redrum).mp3\n"
-+"Kyd - Move Bitch (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"Lil Kim - Whoa (TeaMix Throwback 1 - Extended).mp3\n"
-+"Lil' Wayne - Fireman (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"Michael Jackson - Billie Jean (TeaMix Throwback 1 - Extended).mp3\n"
-+"Missy Elliot - We Run This (TeaMix Throwback 1 - Extended).mp3\n"
-+"Nelly - Just A Dream (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"Nu World Hustle - Fresh (TeaMix Throwback 1 - Extended).mp3\n"
-+"Plies - Pants Hang Low (TeaMix Throwback 1 - Extended).mp3\n"
-+"R.Kelly - Ignition Remix (TeaMix Throwback 1 - Extended).mp3\n"
-+"S.H.M Feat. Pharrell, Flo Rida & LMFAO  - One (TeaMix Throwback 1 - RooBen Intro).mp3\n"
-+"T.I Feat. Nelly - Get Loose (TeaMix Throwback 1 - Extended).mp3\n"
-+"The Notorious B.I.G - Nasty Girl (TeaMix Throwback 1 - Extended).mp3\n"
-+"Wiz Khalifa - Black & Yellow (TeaMix Throwback 1 - RooBen Edit).mp3\n"
-+"T-Pain Ft. Teddy Verseti - Church (TeaMix Throwback 1 - RooBen Edit).mp3\n";
+    '2Pac - All About U (TeaMix Throwback 1 - Extended).mp3\n'
+    + '2Pac - California Love (TeaMix Throwback 1 - Extended).mp3\n'
+    + '2Pac - Hit \'Em Up (TeaMix Throwback 1 - Extended).mp3\n'
+    + '3 Doors Down - Here Without You (TeaMix Throwback 1 - RooBen Redrum).mp3\n'
+    + 'Akon Feat Lil Wayne - Im So Paid (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'Chris Brown ft Kevin McCall - Strip (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Clyde Ft. Lil Frees - Get Low (TeaMix Throwback 1 - RooBen Remix).mp3\n'
+    + 'DJ BOBO - Love Is All Around  (TeaMix Throwback 1 - Edit).mp3\n'
+    + 'DJ Jazzy Jeff & The Fresh Prince - The Fresh Prince Of Bel Air (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Dr. Dre Feat. Nokturnal - Bad Intentions (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Eva feat. Lupe Fiasco - Slow Down (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'IYAZ - Replay (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'Jizzo - Boombox (TeaMix Throwback 1 - RooBen Redrum).mp3\n'
+    + 'Kyd - Move Bitch (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'Lil Kim - Whoa (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Lil\' Wayne - Fireman (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'Michael Jackson - Billie Jean (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Missy Elliot - We Run This (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Nelly - Just A Dream (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'Nu World Hustle - Fresh (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Plies - Pants Hang Low (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'R.Kelly - Ignition Remix (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'S.H.M Feat. Pharrell, Flo Rida & LMFAO  - One (TeaMix Throwback 1 - RooBen Intro).mp3\n'
+    + 'T.I Feat. Nelly - Get Loose (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'The Notorious B.I.G - Nasty Girl (TeaMix Throwback 1 - Extended).mp3\n'
+    + 'Wiz Khalifa - Black & Yellow (TeaMix Throwback 1 - RooBen Edit).mp3\n'
+    + 'T-Pain Ft. Teddy Verseti - Church (TeaMix Throwback 1 - RooBen Edit).mp3\n';
 
   public teamixThrowbackVol2 =
-  "Akon Ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 2 - Dudu A'S Redrum).mp3\n"
-+"Baby Boy Da Prince - The Way I Live (TeaMix Throwback 2 - RooBen Aca In).mp3\n"
-+"C&C Music Factory - Gonna Make You Sweat (Everybody Dance Now) (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Chris Brown - Yo (Excuse Me Miss) (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Christina Aguilera - What A Girl Wants (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Estelle ft Kanye West - American Boy (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Fergie ft Will.I.Am - Fergalicious (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Jermaine Dupri ft Jay-Z - Money Ain't A Thang (TeaMix Throwback 2 - RooBen Aca In).mp3\n"
-+"Ludacris ft Lil' Fate & Shawna - P-Poppin (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Mase ft Puff Daddy & Kelly Price - Feel So Good (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Montell Jordan & Puff Daddy - This Is How We Do It (TeaMix Throwback 2 - Dudu A'S Edit).mp3\n"
-+"Nelly - Ride With Me (TeaMix Throwback 2 - Dudu A'S Edit).mp3\n"
-+"Pretty Ricky - Your Body (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"R. Kelly - Burn It Up (TeaMix Throwback 2 - Dudu A'S Edit).mp3\n"
-+"Rihanna Ft. Jay Z - Umbrella (TeaMix Throwback 2 - Dudu A'S Edit).mp3\n"
-+"Sean Paul - Give It Up To Me (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Sir Mix-A-Lot - Posse On Broadway (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Snoop Dogg - Still A G Thang (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"T Pain - Up Down X Crazy In Love X California Love (TeaMix Throwback 2 - Doron Shitrit PartyBreak).mp3\n"
-+"Usher - You Make Me Wanna (TeaMix Throwback 2 - RooBen Intro).mp3\n"
-+"Yung Joc ft Nitti - It's Goin' Down (TeaMix Throwback 2 - RooBen Aca In).mp3\n"
-+"Yung Joc ft Nitti - It's Goin' Down (TeaMix Throwback 2 - RooBen Intro).mp3\n";
+    'Akon Ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 2 - Dudu A\'S Redrum).mp3\n'
+    + 'Baby Boy Da Prince - The Way I Live (TeaMix Throwback 2 - RooBen Aca In).mp3\n'
+    + 'C&C Music Factory - Gonna Make You Sweat (Everybody Dance Now) (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Chris Brown - Yo (Excuse Me Miss) (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Christina Aguilera - What A Girl Wants (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Estelle ft Kanye West - American Boy (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Fergie ft Will.I.Am - Fergalicious (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Jermaine Dupri ft Jay-Z - Money Ain\'t A Thang (TeaMix Throwback 2 - RooBen Aca In).mp3\n'
+    + 'Ludacris ft Lil\' Fate & Shawna - P-Poppin (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Mase ft Puff Daddy & Kelly Price - Feel So Good (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Montell Jordan & Puff Daddy - This Is How We Do It (TeaMix Throwback 2 - Dudu A\'S Edit).mp3\n'
+    + 'Nelly - Ride With Me (TeaMix Throwback 2 - Dudu A\'S Edit).mp3\n'
+    + 'Pretty Ricky - Your Body (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'R. Kelly - Burn It Up (TeaMix Throwback 2 - Dudu A\'S Edit).mp3\n'
+    + 'Rihanna Ft. Jay Z - Umbrella (TeaMix Throwback 2 - Dudu A\'S Edit).mp3\n'
+    + 'Sean Paul - Give It Up To Me (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Sir Mix-A-Lot - Posse On Broadway (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Snoop Dogg - Still A G Thang (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'T Pain - Up Down X Crazy In Love X California Love (TeaMix Throwback 2 - Doron Shitrit PartyBreak).mp3\n'
+    + 'Usher - You Make Me Wanna (TeaMix Throwback 2 - RooBen Intro).mp3\n'
+    + 'Yung Joc ft Nitti - It\'s Goin\' Down (TeaMix Throwback 2 - RooBen Aca In).mp3\n'
+    + 'Yung Joc ft Nitti - It\'s Goin\' Down (TeaMix Throwback 2 - RooBen Intro).mp3\n';
 
   public teamixThrowbackVol3 =
-  "Anastacia - Paid My Dues (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Audio Push - Teach Me How To Jerk (TeaMix Throwback 3 - RooBen Intro)\n"
-+"B2K ft P. Diddy - Bump, Bump, Bump (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Backstreet Boys ft Clipse - The Call (The Neptunes Remix) (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Britney Spears - Toxic (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Chris Brown ft. T-Pain - Kiss Kiss (DJ Kuper Intro)\n"
-+"Chris Brown ft. Tyga - Holla At Me (DJ Kuper Intro) (Short Cut)\n"
-+"Ice Cube - Friday (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Ice Cube ft Das EFX - Check Yo Self (Remix) (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Juelz Santana - There It Go (The Whistle Song) (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Kanye West - Gold Digger (DJ Kuper Edit)\n"
-+"Lil Bow Wow ft Snoop Dogg - Bow Wow (That's My Name) (Remix) (RooBen Intro)\n"
-+"Lumidee - Never Leave You (TeaMix Throwback 3 - Dudu A'S Edit)\n"
-+"Ricky Martin Ft Daddy Yankee - Drop It On Me (TeaMix Throwback 3 - Dudu A'S Edit)\n"
-+"Robbie Williams - Rock DJ (TeaMix Throwback 3 - RooBen Intro)\n"
-+"Shakira - Hips Dont Lie (TeaMix Throwback 3 - Dudu A'S Edit)\n"
-+"Soulja Boy ft. Sammie - Kiss Me Thru The Phone (DJ Kuper Intro)\n"
-+"Taylor Swift - Blank Space (TeaMix Throwback 3 - Dudu A'S Edit)\n"
-+"Timbaland Ft Nelly Furtado - Give It To Me (DJ Kuper Edit)\n"
-+"Westside Connection - Bow Down (TeaMix Throwback 3 - RooBen Intro)\n";
+    'Anastacia - Paid My Dues (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Audio Push - Teach Me How To Jerk (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'B2K ft P. Diddy - Bump, Bump, Bump (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Backstreet Boys ft Clipse - The Call (The Neptunes Remix) (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Britney Spears - Toxic (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Chris Brown ft. T-Pain - Kiss Kiss (DJ Kuper Intro)\n'
+    + 'Chris Brown ft. Tyga - Holla At Me (DJ Kuper Intro) (Short Cut)\n'
+    + 'Ice Cube - Friday (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Ice Cube ft Das EFX - Check Yo Self (Remix) (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Juelz Santana - There It Go (The Whistle Song) (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Kanye West - Gold Digger (DJ Kuper Edit)\n'
+    + 'Lil Bow Wow ft Snoop Dogg - Bow Wow (That\'s My Name) (Remix) (RooBen Intro)\n'
+    + 'Lumidee - Never Leave You (TeaMix Throwback 3 - Dudu A\'S Edit)\n'
+    + 'Ricky Martin Ft Daddy Yankee - Drop It On Me (TeaMix Throwback 3 - Dudu A\'S Edit)\n'
+    + 'Robbie Williams - Rock DJ (TeaMix Throwback 3 - RooBen Intro)\n'
+    + 'Shakira - Hips Dont Lie (TeaMix Throwback 3 - Dudu A\'S Edit)\n'
+    + 'Soulja Boy ft. Sammie - Kiss Me Thru The Phone (DJ Kuper Intro)\n'
+    + 'Taylor Swift - Blank Space (TeaMix Throwback 3 - Dudu A\'S Edit)\n'
+    + 'Timbaland Ft Nelly Furtado - Give It To Me (DJ Kuper Edit)\n'
+    + 'Westside Connection - Bow Down (TeaMix Throwback 3 - RooBen Intro)\n';
 
   public teamixThrowbackVol4 =
-  "50 Cent ft Lloyd Banks, Young Buck & Snoop Dogg - P.I.M.P. (G-Unit Remix) (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Akon - Bananza (Belly Dancer) (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Akon ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n"
-+"B2K ft Fabolous - Badaboom (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Beyonce & Shakira - Beautiful Liar (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Beyonce - Beautiful Liar (Spanish Version) (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Black Eyed Peas feat. Justin Timbertlake - Where Is The Love (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n"
-+"Bob Marley & Lauryn Hill - Turn Your Lights Down Low (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Britney Spears - Piece Of Me (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Busta Rhymes ft Rampage - Woo Hah!! Got You All In Check (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Cham - Vitamin S (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Debut De Soiree - Nuit De Folie (TeaMix Throwback 4 -Dudu A'S Edit).mp3\n"
-+"Flo Rida ft Will.I.Am - In The Ayer (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Kevin Lyttle ft Madzart - Turn Me On (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Lil Jon & The East Side Boyz ft Lil Scrappy - What U Gon' Do (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Lil Mama - Lip Gloss (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"MC Hammer - Pumps & A Bump (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Mohombi - Bumpy Ride (TeaMix Throwback 4 -Dudu A'S Rmx).mp3\n"
-+"Ne Yo - One In A Million (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n"
-+"Ray Charles - Hit The Road Jack (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Red Peters - The Closing Song (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Rich Gang ft Young Thug Rich Homie Quan - Lifestyle (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n"
-+"Ryan Paris - Dolce Vita (TeaMix Throwback 4 -Dudu A'S Edit).mp3\n"
-+"Tom Jones - It's Not Unusual (TeaMix Throwback 4 - RooBen Intro).mp3\n"
-+"Tyga ft. Young Thug - Hookah (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n"
-+"Whitney Houston - So Emotional (TeaMix Throwback 4 - RooBen Intro).mp3\n";
+    '50 Cent ft Lloyd Banks, Young Buck & Snoop Dogg - P.I.M.P. (G-Unit Remix) (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Akon - Bananza (Belly Dancer) (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Akon ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
+    + 'B2K ft Fabolous - Badaboom (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Beyonce & Shakira - Beautiful Liar (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Beyonce - Beautiful Liar (Spanish Version) (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Black Eyed Peas feat. Justin Timbertlake - Where Is The Love (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
+    + 'Bob Marley & Lauryn Hill - Turn Your Lights Down Low (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Britney Spears - Piece Of Me (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Busta Rhymes ft Rampage - Woo Hah!! Got You All In Check (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Cham - Vitamin S (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Debut De Soiree - Nuit De Folie (TeaMix Throwback 4 -Dudu A\'S Edit).mp3\n'
+    + 'Flo Rida ft Will.I.Am - In The Ayer (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Kevin Lyttle ft Madzart - Turn Me On (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Lil Jon & The East Side Boyz ft Lil Scrappy - What U Gon\' Do (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Lil Mama - Lip Gloss (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'MC Hammer - Pumps & A Bump (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Mohombi - Bumpy Ride (TeaMix Throwback 4 -Dudu A\'S Rmx).mp3\n'
+    + 'Ne Yo - One In A Million (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
+    + 'Ray Charles - Hit The Road Jack (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Red Peters - The Closing Song (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Rich Gang ft Young Thug Rich Homie Quan - Lifestyle (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
+    + 'Ryan Paris - Dolce Vita (TeaMix Throwback 4 -Dudu A\'S Edit).mp3\n'
+    + 'Tom Jones - It\'s Not Unusual (TeaMix Throwback 4 - RooBen Intro).mp3\n'
+    + 'Tyga ft. Young Thug - Hookah (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
+    + 'Whitney Houston - So Emotional (TeaMix Throwback 4 - RooBen Intro).mp3\n';
 
   public teamixThrowbackVol5 =
-  "2Pac ft Nate Dogg & Eminem - Thugs Get Lonely Too (TeaMix Throwback 5 - RooBen Intro) 82\n"
-+"50 Cent - Disco Inferno (TeaMix Throwback 5 - DJ Kuper Intro) 97\n"
-+"Akon - Sorry, Blame It On Me (TeaMix Throwback 5 - RooBen Intro) 88\n"
-+"Coolio - 1-2-3-4 (Sumpin' New) (TeaMix Throwback 5 - RooBen Intro) 115\n"
-+"Craig David ft. Sting - Rise & Fall (TeaMix Throwback 5 - DJ Kuper Intro) 84\n"
-+"D12 - My Band (TeaMix Throwback 5 - RooBen Aca In) 120\n"
-+"D12 - Purple Pills (TeaMix Throwback 5 - RooBen Intro) 63\n"
-+"David Banner - Play (TeaMix Throwback 5 - RooBen Intro) 95\n"
-+"Eminem - Not Afraid (TeaMix Throwback 5 - RooBen Intro) 86\n"
-+"Eminem - Not Afraid (TeaMix Throwback 5 - RooBen Intro) Hook 1st 86\n"
-+"Jamie Foxx ft T-Pain - Blame It (TeaMix Throwback 5 - RooBen Intro) 88\n"
-+"Jennifer Lopez ft LL Cool J - All I Have (TeaMix Throwback 5 - RooBen Intro) 83\n"
-+"Kanye West - Heartless (TeaMix Throwback 5 - DJ Kuper Intro) (V2) 88\n"
-+"Lil Mama Feat. T-Pain & Chris Brown - Shawty Get Loose (TeaMix Throwback 5 - RooBen Re-Edit) 115\n"
-+"Mamad - Zoremet Al HaLabel (TeaMix Throwback 5 - RooBen Re-Edit) 88\n"
-+"Nelly - Tippin In Da Club (TeaMix Throwback 5 - DJ Kuper Intro) 100\n"
-+"Soulkey ft. Ruff - BPM (TeaMix Throwback 5 - RooBen Remix) 95\n"
-+"T.I Feat. Nelly - Get Loose (TeaMix Throwback 5 - RooBen Intro) 97\n"
-+"The Offspring - Pretty Fly (For A White Guy) (TeaMix Throwback 5 - RooBen Intro) 143\n"
-+"Yung Berg ft Junior - Sexy Lady (TeaMix Throwback 5 - RooBen Intro) 93\n";
+    '2Pac ft Nate Dogg & Eminem - Thugs Get Lonely Too (TeaMix Throwback 5 - RooBen Intro) 82\n'
+    + '50 Cent - Disco Inferno (TeaMix Throwback 5 - DJ Kuper Intro) 97\n'
+    + 'Akon - Sorry, Blame It On Me (TeaMix Throwback 5 - RooBen Intro) 88\n'
+    + 'Coolio - 1-2-3-4 (Sumpin\' New) (TeaMix Throwback 5 - RooBen Intro) 115\n'
+    + 'Craig David ft. Sting - Rise & Fall (TeaMix Throwback 5 - DJ Kuper Intro) 84\n'
+    + 'D12 - My Band (TeaMix Throwback 5 - RooBen Aca In) 120\n'
+    + 'D12 - Purple Pills (TeaMix Throwback 5 - RooBen Intro) 63\n'
+    + 'David Banner - Play (TeaMix Throwback 5 - RooBen Intro) 95\n'
+    + 'Eminem - Not Afraid (TeaMix Throwback 5 - RooBen Intro) 86\n'
+    + 'Eminem - Not Afraid (TeaMix Throwback 5 - RooBen Intro) Hook 1st 86\n'
+    + 'Jamie Foxx ft T-Pain - Blame It (TeaMix Throwback 5 - RooBen Intro) 88\n'
+    + 'Jennifer Lopez ft LL Cool J - All I Have (TeaMix Throwback 5 - RooBen Intro) 83\n'
+    + 'Kanye West - Heartless (TeaMix Throwback 5 - DJ Kuper Intro) (V2) 88\n'
+    + 'Lil Mama Feat. T-Pain & Chris Brown - Shawty Get Loose (TeaMix Throwback 5 - RooBen Re-Edit) 115\n'
+    + 'Mamad - Zoremet Al HaLabel (TeaMix Throwback 5 - RooBen Re-Edit) 88\n'
+    + 'Nelly - Tippin In Da Club (TeaMix Throwback 5 - DJ Kuper Intro) 100\n'
+    + 'Soulkey ft. Ruff - BPM (TeaMix Throwback 5 - RooBen Remix) 95\n'
+    + 'T.I Feat. Nelly - Get Loose (TeaMix Throwback 5 - RooBen Intro) 97\n'
+    + 'The Offspring - Pretty Fly (For A White Guy) (TeaMix Throwback 5 - RooBen Intro) 143\n'
+    + 'Yung Berg ft Junior - Sexy Lady (TeaMix Throwback 5 - RooBen Intro) 93\n';
 
   public teamixThrowbackVol6 =
-  "Akon ft Eminem - Smack That (RooBen Intro).mp3\n"
-+"Baby Bash ft Frankie J - Suga Suga (RooBen Intro).mp3\n"
-+"Bad Boy's Da Band - Bad Boy This Bad Boy That (RooBen Intro).mp3\n"
-+"Beyonce - Get Me Bodied (RooBen Intro).mp3\n"
-+"Eazy-E ft B.G. Knocc Out & Dresta - Real Muthaphuckkin G's (RooBen Intro).mp3\n"
-+"Erick Sermon feat. Redman - React (RooBen Intro).mp3\n"
-+"Fat Joe - What's Luv (RooBen Intro).mp3\n"
-+"Ja Rule - Clap Back (RooBen Intro).mp3\n"
-+"Jermaine Dupri feat. Ludacris - Welcome To Atlanta (DJ Kuper Intro).mp3\n"
-+"Justin Bieber - Boyfriend (DJ Kuper Acap Out Edit).mp3\n"
-+"N.O.R.E. ft Pharrell - Nothin' (DJ Kuper Extended Mix).mp3\n"
-+"Nelly - Dilemma (Syco Intro).mp3\n"
-+"Nelly - Grillz (RooBen Intro) Hook 1st.mp3\n"
-+"Nelly - Grillz (RooBen Intro).mp3\n"
-+"New Boyz - Youre A Jerk (DJ Kuper Short Edit).mp3\n"
-+"Potzee - Dat Girl (DJ Kuper Extended Mix).mp3\n"
-+"Sean Paul - We Be Burnin (DJ Kuper Intro).mp3\n"
-+"Teror Squad Ft. Lil John - Lean Back (DJ Kuper Edit).mp3\n"
-+"Too Short ft Lil Jon - Shake That Monkey (Syco Intro) Hook 1st.mp3\n"
-+"Too Short ft Lil Jon - Shake That Monkey (Syco Intro).mp3\n";
+    'Akon ft Eminem - Smack That (RooBen Intro).mp3\n'
+    + 'Baby Bash ft Frankie J - Suga Suga (RooBen Intro).mp3\n'
+    + 'Bad Boy\'s Da Band - Bad Boy This Bad Boy That (RooBen Intro).mp3\n'
+    + 'Beyonce - Get Me Bodied (RooBen Intro).mp3\n'
+    + 'Eazy-E ft B.G. Knocc Out & Dresta - Real Muthaphuckkin G\'s (RooBen Intro).mp3\n'
+    + 'Erick Sermon feat. Redman - React (RooBen Intro).mp3\n'
+    + 'Fat Joe - What\'s Luv (RooBen Intro).mp3\n'
+    + 'Ja Rule - Clap Back (RooBen Intro).mp3\n'
+    + 'Jermaine Dupri feat. Ludacris - Welcome To Atlanta (DJ Kuper Intro).mp3\n'
+    + 'Justin Bieber - Boyfriend (DJ Kuper Acap Out Edit).mp3\n'
+    + 'N.O.R.E. ft Pharrell - Nothin\' (DJ Kuper Extended Mix).mp3\n'
+    + 'Nelly - Dilemma (Syco Intro).mp3\n'
+    + 'Nelly - Grillz (RooBen Intro) Hook 1st.mp3\n'
+    + 'Nelly - Grillz (RooBen Intro).mp3\n'
+    + 'New Boyz - Youre A Jerk (DJ Kuper Short Edit).mp3\n'
+    + 'Potzee - Dat Girl (DJ Kuper Extended Mix).mp3\n'
+    + 'Sean Paul - We Be Burnin (DJ Kuper Intro).mp3\n'
+    + 'Teror Squad Ft. Lil John - Lean Back (DJ Kuper Edit).mp3\n'
+    + 'Too Short ft Lil Jon - Shake That Monkey (Syco Intro) Hook 1st.mp3\n'
+    + 'Too Short ft Lil Jon - Shake That Monkey (Syco Intro).mp3\n';
 
   public teamixThrowbackVol7 =
-  "B-Hamp - Do The Ricky Bobby (TeaMix Intro).mp3\n"
-+"Bubba Sparxxx & Ying Yang Twins - Ms. New Booty (RooBen Edit).mp3\n"
-+"Capone-N-Noreaga ft Lexxus & Wayne Wonder - Anything Goes (TeaMix Intro).mp3\n"
-+"Christina Milian - Dip It Low (TeaMix Intro).mp3\n"
-+"Enriko - Turn Up The Music (RooBen Edit).mp3\n"
-+"Ice Cube - ?Do Your Thang (RooBen & Dor Ben Hamo Edit).mp3\n"
-+"Ice Cube ft Mack 10 & Ms. Toi - You Can Do It (TeaMix Intro).mp3\n"
-+"Ja Rule - Holla Holla (TeaMix Intro).mp3\n"
-+"Jay Sean ft Lil Jon & Sean Paul - Do You Remember (TeaMix Intro).mp3\n"
-+"Jay-Z - La-La-La (Excuse Me Miss Again) (TeaMix Intro).mp3\n"
-+"Keri Hilson Ft Lil Wayne - Turnin Me On (RooBen Edit).mp3\n"
-+"Konshens - Gal A Bubble (TeaMix Intro).mp3\n"
-+"Kyd & Axum - Kesef (RooBen Edit).mp3\n"
-+"Kyd - Move Bitch (RooBen Edit).mp3\n"
-+"KYD - Punish Me (RooBen Edit).mp3\n"
-+"Lil Frees Ft. AdreNaline - Do This Do That (RooBen Edit).mp3\n"
-+"Lil Frees Ft. Clyde - Tonight (RooBen Redrum).mp3\n"
-+"Lil Keke - Money In The City (RooBen Edit).mp3\n"
-+"Maino ft T-Pain - All The Above (TeaMix Intro).mp3\n"
-+"Ne-Yo - Do You (TeaMix Intro).mp3\n"
-+"New Boyz ft Tyga - Cricketz (TeaMix Intro).mp3\n"
-+"Savage Ft. Soulja Boy & Lil Jon - Swing (RooBen Edit).mp3\n"
-+"Sean Paul - Gimme The Light (TeaMix Intro).mp3\n"
-+"Snoop Dogg ft Nate Dogg & Xzibit - Bitch Please (TeaMix Intro).mp3\n"
-+"Stephen Marcos - Put It Up (RooBen Remix).mp3\n"
-+"T.W.D.Y ft Too Short, Rappin 4-Tay, Captain Save Em & Mac Mall - Player's Holiday (TeaMix Intro).mp3\n"
-+"The Game ft Lil Wayne - My Life (TeaMix Intro).mp3\n";
+    'B-Hamp - Do The Ricky Bobby (TeaMix Intro).mp3\n'
+    + 'Bubba Sparxxx & Ying Yang Twins - Ms. New Booty (RooBen Edit).mp3\n'
+    + 'Capone-N-Noreaga ft Lexxus & Wayne Wonder - Anything Goes (TeaMix Intro).mp3\n'
+    + 'Christina Milian - Dip It Low (TeaMix Intro).mp3\n'
+    + 'Enriko - Turn Up The Music (RooBen Edit).mp3\n'
+    + 'Ice Cube - ?Do Your Thang (RooBen & Dor Ben Hamo Edit).mp3\n'
+    + 'Ice Cube ft Mack 10 & Ms. Toi - You Can Do It (TeaMix Intro).mp3\n'
+    + 'Ja Rule - Holla Holla (TeaMix Intro).mp3\n'
+    + 'Jay Sean ft Lil Jon & Sean Paul - Do You Remember (TeaMix Intro).mp3\n'
+    + 'Jay-Z - La-La-La (Excuse Me Miss Again) (TeaMix Intro).mp3\n'
+    + 'Keri Hilson Ft Lil Wayne - Turnin Me On (RooBen Edit).mp3\n'
+    + 'Konshens - Gal A Bubble (TeaMix Intro).mp3\n'
+    + 'Kyd & Axum - Kesef (RooBen Edit).mp3\n'
+    + 'Kyd - Move Bitch (RooBen Edit).mp3\n'
+    + 'KYD - Punish Me (RooBen Edit).mp3\n'
+    + 'Lil Frees Ft. AdreNaline - Do This Do That (RooBen Edit).mp3\n'
+    + 'Lil Frees Ft. Clyde - Tonight (RooBen Redrum).mp3\n'
+    + 'Lil Keke - Money In The City (RooBen Edit).mp3\n'
+    + 'Maino ft T-Pain - All The Above (TeaMix Intro).mp3\n'
+    + 'Ne-Yo - Do You (TeaMix Intro).mp3\n'
+    + 'New Boyz ft Tyga - Cricketz (TeaMix Intro).mp3\n'
+    + 'Savage Ft. Soulja Boy & Lil Jon - Swing (RooBen Edit).mp3\n'
+    + 'Sean Paul - Gimme The Light (TeaMix Intro).mp3\n'
+    + 'Snoop Dogg ft Nate Dogg & Xzibit - Bitch Please (TeaMix Intro).mp3\n'
+    + 'Stephen Marcos - Put It Up (RooBen Remix).mp3\n'
+    + 'T.W.D.Y ft Too Short, Rappin 4-Tay, Captain Save Em & Mac Mall - Player\'s Holiday (TeaMix Intro).mp3\n'
+    + 'The Game ft Lil Wayne - My Life (TeaMix Intro).mp3\n';
 
   public teamixDanceVol1 =
-  "Antoine Clamaran & Tristan Garner - Cancun Paradise (TeaMix Dance 1 - Dudu A'S Edit)\n"
-+"AvAlanche & Mogli - Sahara (TeaMix Dance 1 - Dudu A'S Edit)\n"
-+"Buskilaz Ft. Ofek Yom Tov - Danya (TeaMix Dance 1 - Dudu A'S Fix)\n"
-+"J Balvin Ft. Michael Brun - Positivo (TeaMix Dance 1 - RooBen Club Edit)\n"
-+"Lior Narkis - Full Moon (Amar's Remix - TeaMix Dance 1 - RooBen Fix)\n"
-+"Offir Amsalem - Kabookim (TeaMix Dance 1 - Dudu A'S Edit)\n"
-+"Yinon Yahel & Mor Avrahami - Naya (TeaMix Dance 1 - Dudu A'S Mashup)\n"
-+"אייל גולן ומשה פרץ - הולכים להשתגע (TeaMix Dance 1 - RooBen Mashup)\n"
-+"איתי לוי וסטאפן - מאמו (Loren Benisty - TeaMix Dance 1 - Dudu A'S Short Edit)\n"
-+"דודו אהרון ועומרי 69 סגל - חתונה של השמחות (TeaMix Dance 1 - RooBen Extended V2)\n"
-+"דודו אהרון ועומרי 69 סגל - חתונה של השמחות (TeaMix Dance 1 - RooBen Extended)\n"
-+"ליאור נרקיס - מהרסת (TeaMix Dance 1 - Dudu A'S & RooBen Edit)\n"
-+"מוטי טקה ואריסה - טוקור (TeaMix Dance 1 - RooBen Fix)\n"
-+"עדן חסון - שמישהו יעצור אותי (Amar's Remix - TeaMix Dance 1 - RooBen Fix)\n"
-+"פאר טסי ופבלו רוזנברג - משהו מתוק (TeaMix Dance 1 - RooBen Fix)\n"
-+"קטריקס ודורון ביטון & קייט ואור - פריטי בוי (TeaMix Dance 1 - RooBen Edit)\n";
+    'Antoine Clamaran & Tristan Garner - Cancun Paradise (TeaMix Dance 1 - Dudu A\'S Edit)\n'
+    + 'AvAlanche & Mogli - Sahara (TeaMix Dance 1 - Dudu A\'S Edit)\n'
+    + 'Buskilaz Ft. Ofek Yom Tov - Danya (TeaMix Dance 1 - Dudu A\'S Fix)\n'
+    + 'J Balvin Ft. Michael Brun - Positivo (TeaMix Dance 1 - RooBen Club Edit)\n'
+    + 'Lior Narkis - Full Moon (Amar\'s Remix - TeaMix Dance 1 - RooBen Fix)\n'
+    + 'Offir Amsalem - Kabookim (TeaMix Dance 1 - Dudu A\'S Edit)\n'
+    + 'Yinon Yahel & Mor Avrahami - Naya (TeaMix Dance 1 - Dudu A\'S Mashup)\n'
+    + 'אייל גולן ומשה פרץ - הולכים להשתגע (TeaMix Dance 1 - RooBen Mashup)\n'
+    + 'איתי לוי וסטאפן - מאמו (Loren Benisty - TeaMix Dance 1 - Dudu A\'S Short Edit)\n'
+    + 'דודו אהרון ועומרי 69 סגל - חתונה של השמחות (TeaMix Dance 1 - RooBen Extended V2)\n'
+    + 'דודו אהרון ועומרי 69 סגל - חתונה של השמחות (TeaMix Dance 1 - RooBen Extended)\n'
+    + 'ליאור נרקיס - מהרסת (TeaMix Dance 1 - Dudu A\'S & RooBen Edit)\n'
+    + 'מוטי טקה ואריסה - טוקור (TeaMix Dance 1 - RooBen Fix)\n'
+    + 'עדן חסון - שמישהו יעצור אותי (Amar\'s Remix - TeaMix Dance 1 - RooBen Fix)\n'
+    + 'פאר טסי ופבלו רוזנברג - משהו מתוק (TeaMix Dance 1 - RooBen Fix)\n'
+    + 'קטריקס ודורון ביטון & קייט ואור - פריטי בוי (TeaMix Dance 1 - RooBen Edit)\n';
 
   public teamixDanceVol2 =
-  "Armin van Buuren - Blah Blah Blah (TeaMix Dance 2 - IdoM Edit) 132-138\n"
-+"Axwell Ingrosso - How Do You Feel Right Now (TeaMix Dance 2 - IdoM Edit)\n"
-+"Campsite Dream - Kiss Me (TeaMix Dance 2 - Dudu A'S Extended)\n"
-+"Dj Rocky - Who! (TeaMix Dance 2 -Dudu A'S Edit)\n"
-+"DJ Snake X Sean Paul - A Different Busy Magenta  (Sdnx Fram Edit - TeaMix Dance 2 - IdoM Edit)\n"
-+"Eylon Avivi - Mumbai (TeaMix Dance 2 -Dudu A'S Edit)\n"
-+"Federico Scavo - Without You (TeaMix Dance 2 - RooBen Fix)\n"
-+"Flo Rida - Sweet Sensation (TeaMix Dance 2 -Doron Shitrit Extended)\n"
-+"Godlips - Bella Ciao (TeaMix Dance 2 - Dudu A'S Edit)\n"
-+"Ido Shoam - Colombiana (TeaMix Dance 2 - Doron Shitrit Mash-Up)\n"
-+"Ido Shoam - Colombiana (TeaMix Dance 2 - RooBen Power Edit)\n"
-+"Jetfire & Karmatek - Living On The Edge (TeaMix Dance 2 - Sagiv Alfasi Edit)\n"
-+"Kill The Buzz & Badd Dimes - Dirty Drums (TeaMix Dance 2 - IdoM Mash-Up)\n"
-+"KURA X Jimmy Clash X SHM X MR.BLACK - Young Invincible Miami 2 Antidote  (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n"
-+"Michael Mind Project X Bodybangers X David Guetta & Showtek - Show Me Your Love (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n"
-+"Militia X  Mory Kante - Take Me Yeke (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n"
-+"Sagi Abitbul & Soriani Ft. M'Barka Ben Taleb - Idrab (TeaMix Dance 2 - Dudu A'S Edit)\n"
-+"Stephane Legar - Comme Ci Comme ?a (TeaMix Dance 2 - RooBen Extended)\n"
-+"Tujamo X Sidney Samson X Rihanna - Bitch Have My Riverside (TeaMix Dance 2 - IdoM Mash)\n"
-+"Volkoder, Barja - I Want U (TeaMix Dance 2 - RooBen Fix)\n"
-+"אייל גולן ומשה פרץ - הולכים להשתגע (Ronen Cohen Remix - TeaMix Dance 2 - Doron Shitrit Fix)\n"
-+"אייל גולן ומשה פרץ - הולכים להשתגע (TeaMix Dance 2 - Dudu A'S Mashup)\n"
-+"דודו אהרון - חתונה של השמחות (TeaMix Dance 2 - Dudu A'S Mashup)\n"
-+"הראל סקעת - אם ננעלו (Yohan Cohen Remix - TeaMix Dance 2 - RooBen Fix)\n";
+    'Armin van Buuren - Blah Blah Blah (TeaMix Dance 2 - IdoM Edit) 132-138\n'
+    + 'Axwell Ingrosso - How Do You Feel Right Now (TeaMix Dance 2 - IdoM Edit)\n'
+    + 'Campsite Dream - Kiss Me (TeaMix Dance 2 - Dudu A\'S Extended)\n'
+    + 'Dj Rocky - Who! (TeaMix Dance 2 -Dudu A\'S Edit)\n'
+    + 'DJ Snake X Sean Paul - A Different Busy Magenta  (Sdnx Fram Edit - TeaMix Dance 2 - IdoM Edit)\n'
+    + 'Eylon Avivi - Mumbai (TeaMix Dance 2 -Dudu A\'S Edit)\n'
+    + 'Federico Scavo - Without You (TeaMix Dance 2 - RooBen Fix)\n'
+    + 'Flo Rida - Sweet Sensation (TeaMix Dance 2 -Doron Shitrit Extended)\n'
+    + 'Godlips - Bella Ciao (TeaMix Dance 2 - Dudu A\'S Edit)\n'
+    + 'Ido Shoam - Colombiana (TeaMix Dance 2 - Doron Shitrit Mash-Up)\n'
+    + 'Ido Shoam - Colombiana (TeaMix Dance 2 - RooBen Power Edit)\n'
+    + 'Jetfire & Karmatek - Living On The Edge (TeaMix Dance 2 - Sagiv Alfasi Edit)\n'
+    + 'Kill The Buzz & Badd Dimes - Dirty Drums (TeaMix Dance 2 - IdoM Mash-Up)\n'
+    + 'KURA X Jimmy Clash X SHM X MR.BLACK - Young Invincible Miami 2 Antidote  (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n'
+    + 'Michael Mind Project X Bodybangers X David Guetta & Showtek - Show Me Your Love (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n'
+    + 'Militia X  Mory Kante - Take Me Yeke (TeaMix Dance 2 - Sagiv Alfasi Mash-Up)\n'
+    + 'Sagi Abitbul & Soriani Ft. M\'Barka Ben Taleb - Idrab (TeaMix Dance 2 - Dudu A\'S Edit)\n'
+    + 'Stephane Legar - Comme Ci Comme ?a (TeaMix Dance 2 - RooBen Extended)\n'
+    + 'Tujamo X Sidney Samson X Rihanna - Bitch Have My Riverside (TeaMix Dance 2 - IdoM Mash)\n'
+    + 'Volkoder, Barja - I Want U (TeaMix Dance 2 - RooBen Fix)\n'
+    + 'אייל גולן ומשה פרץ - הולכים להשתגע (Ronen Cohen Remix - TeaMix Dance 2 - Doron Shitrit Fix)\n'
+    + 'אייל גולן ומשה פרץ - הולכים להשתגע (TeaMix Dance 2 - Dudu A\'S Mashup)\n'
+    + 'דודו אהרון - חתונה של השמחות (TeaMix Dance 2 - Dudu A\'S Mashup)\n'
+    + 'הראל סקעת - אם ננעלו (Yohan Cohen Remix - TeaMix Dance 2 - RooBen Fix)\n';
 
   public teamixDanceVol3 =
-  "ylen, Goshfather & B.E.P - SPREAD X My HUMPS (TeaMix Dance 3 - IdoM Mashup)\n"
-+"Bandi - Dim Dim (TeaMix Dance 3 - Roe Hyams Edit)\n"
-+"Barbatuques - Baiana (Cosme Martin & Christian Vila Remix - TeaMix Dance 3 - IdoM Edit)\n"
-+"Caleidescope Ft. Nik Felice - Lady (Filatov & Karas Remix - TeaMix Dance 3 - Dudu A'S Edit)\n"
-+"Calvin Harris & Dua Lipa - One Kiss (Amor Remix - TeaMix Dance 3 - Dudu A'S Edit)\n"
-+"Clean Bandit Ft. Demi Lovato - Solo (Amice Remix - TeaMix Dance 3 - Dudu A'S Edit)\n"
-+"David Guetta Ft. Sia - Flames (German & Mike Remix - TeaMix Dance 3 - Dudu A'S Edit)\n"
-+"Dimitri Vegas & Like Mike vs. W&W x Moguai - Arcade Mammoth (TeaMix Dance 3 - Sagiv Alfasi Edit)\n"
-+"Eli Brown - Sumatra (TeaMix Dance 3 - IdoM Edit )\n"
-+"Gadi Dahan & Omri Mordehai - Roohi (TeaMix Dance 3 - Sagiv Alfasi Edit)\n"
-+"Kaskade, Brohug, Mr. Tape, Madge - Fun (TeaMix Dance 3 - IdoM Edit)\n"
-+"Maroon 5 Ft. Cardi B - Girls Like You (MD Dj Remix - TeaMix Dance 3 - RooBen Fix)\n"
-+"New Players - Drop That Atom (TeaMix Dance 3 - IdoM Mashup)\n"
-+"Shorty - Canta Canta (TeaMix Dance 3 - IdoM Edit)\n"
-+"Tenova - Pump It Up (TeaMix Dance 3 - RooBen Fix)\n"
-+"Vermont & Bandi - Kazahi (TeaMix Dance 3 - Sagiv Alfasi Short Edit)\n"
-+"סטטיק ובן אל - גומיגם (TeaMix Dance 3 - Doron Shitrit & Koren Ohayon Short Edit)\n"
-+"סטטיק ובן אל תבורי - גומיגם (TeaMix Dance 3 - RooBen Extended)\n";
+    'ylen, Goshfather & B.E.P - SPREAD X My HUMPS (TeaMix Dance 3 - IdoM Mashup)\n'
+    + 'Bandi - Dim Dim (TeaMix Dance 3 - Roe Hyams Edit)\n'
+    + 'Barbatuques - Baiana (Cosme Martin & Christian Vila Remix - TeaMix Dance 3 - IdoM Edit)\n'
+    + 'Caleidescope Ft. Nik Felice - Lady (Filatov & Karas Remix - TeaMix Dance 3 - Dudu A\'S Edit)\n'
+    + 'Calvin Harris & Dua Lipa - One Kiss (Amor Remix - TeaMix Dance 3 - Dudu A\'S Edit)\n'
+    + 'Clean Bandit Ft. Demi Lovato - Solo (Amice Remix - TeaMix Dance 3 - Dudu A\'S Edit)\n'
+    + 'David Guetta Ft. Sia - Flames (German & Mike Remix - TeaMix Dance 3 - Dudu A\'S Edit)\n'
+    + 'Dimitri Vegas & Like Mike vs. W&W x Moguai - Arcade Mammoth (TeaMix Dance 3 - Sagiv Alfasi Edit)\n'
+    + 'Eli Brown - Sumatra (TeaMix Dance 3 - IdoM Edit )\n'
+    + 'Gadi Dahan & Omri Mordehai - Roohi (TeaMix Dance 3 - Sagiv Alfasi Edit)\n'
+    + 'Kaskade, Brohug, Mr. Tape, Madge - Fun (TeaMix Dance 3 - IdoM Edit)\n'
+    + 'Maroon 5 Ft. Cardi B - Girls Like You (MD Dj Remix - TeaMix Dance 3 - RooBen Fix)\n'
+    + 'New Players - Drop That Atom (TeaMix Dance 3 - IdoM Mashup)\n'
+    + 'Shorty - Canta Canta (TeaMix Dance 3 - IdoM Edit)\n'
+    + 'Tenova - Pump It Up (TeaMix Dance 3 - RooBen Fix)\n'
+    + 'Vermont & Bandi - Kazahi (TeaMix Dance 3 - Sagiv Alfasi Short Edit)\n'
+    + 'סטטיק ובן אל - גומיגם (TeaMix Dance 3 - Doron Shitrit & Koren Ohayon Short Edit)\n'
+    + 'סטטיק ובן אל תבורי - גומיגם (TeaMix Dance 3 - RooBen Extended)\n';
 
   public teamixDanceVol4 =
-  "Abel Ortiz - Amo la Vida (TeaMix Dance 4 - Sagiv Alfasi Edit)\n"
-+"Armin van Buuren, Alok, Vini Vici, Zafrir - UNITED (TeaMix Dance 4 - IdoM Edit)\n"
-+"Black Caviar - Lady (Hear Me Tonight) (TeaMix Dance 4 - Sagiv Alfasi Edit)\n"
-+"Calvin Harris & Sam Smith - Promises (Denis First & Reznikov - TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"Cardi B, Bad Bunny & J Balvin - I Like It (Carlos S. & Carlos M. - TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"Daft Punk - One More Time (Capital People Remix - TeaMix Dance 4 - RooBen Edit)\n"
-+"Dimitri Vegas & Like Mike - Wakanda (WARRIORS Remix -TeaMix Dance 4 - IdoM ShortCut)\n"
-+"Dynoro Gigi D’Agostino - In My Mind (TeaMix Dance 4 - IdoM Edit)\n"
-+"Freejak, Perfecto Allstarz - Reach Up (TeaMix Dance 4 - Sagiv Alfasi Edit)\n"
-+"Gadi Dahan & Omri Mordehai - Roohi (TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"Inna - Ruleta (Artem Splash - TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"Losless - Synecku (TeaMix Dance 4 - RooBen Fix)\n"
-+"Michael Feiner & Sagi Abitbul - Psy Or Bababa (TeaMix Dance 4 - Simon Mashup)\n"
-+"Nari Milani & Ranz - Triangle X Meknes (Delayers Remix - TeaMix Dance 4 - IdoM Mashup)\n"
-+"Netta - Toy (TeaMix Dance 4 - Simon Intro Show)\n"
-+"Omer Adam & OTIOT Vs Hardwell - 2 Meshugaim & Safari (TeaMix Dance 4 - Simon Mashup) V2\n"
-+"Sagi Abitbul & Soriani Ft. M'barka Ben Taleb - Idrab (TeaMix Dance 4 - Simon Edit)\n"
-+"The Black Eyed Peas - My Humps (Ilkay Sencan - TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"Willy William - La la la (TeaMix Dance 4 - Sagiv Alfasi Dub Edit)\n"
-+"Willy William - La la la (TeaMix Dance 4 - Sagiv Alfasi Edit )\n"
-+"אורי בן ארי - לפעמים (Mor Ben David Remix - TeaMix Dance 4 - IdoM Edit)\n"
-+"איב אנד ליר - סאלאם (TeaMix Dance 4 - Dudu A'S Edit)\n"
-+"עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mashup - TeaMix Dance 4 - RooBen Fix)\n";
+    'Abel Ortiz - Amo la Vida (TeaMix Dance 4 - Sagiv Alfasi Edit)\n'
+    + 'Armin van Buuren, Alok, Vini Vici, Zafrir - UNITED (TeaMix Dance 4 - IdoM Edit)\n'
+    + 'Black Caviar - Lady (Hear Me Tonight) (TeaMix Dance 4 - Sagiv Alfasi Edit)\n'
+    + 'Calvin Harris & Sam Smith - Promises (Denis First & Reznikov - TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'Cardi B, Bad Bunny & J Balvin - I Like It (Carlos S. & Carlos M. - TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'Daft Punk - One More Time (Capital People Remix - TeaMix Dance 4 - RooBen Edit)\n'
+    + 'Dimitri Vegas & Like Mike - Wakanda (WARRIORS Remix -TeaMix Dance 4 - IdoM ShortCut)\n'
+    + 'Dynoro Gigi D’Agostino - In My Mind (TeaMix Dance 4 - IdoM Edit)\n'
+    + 'Freejak, Perfecto Allstarz - Reach Up (TeaMix Dance 4 - Sagiv Alfasi Edit)\n'
+    + 'Gadi Dahan & Omri Mordehai - Roohi (TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'Inna - Ruleta (Artem Splash - TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'Losless - Synecku (TeaMix Dance 4 - RooBen Fix)\n'
+    + 'Michael Feiner & Sagi Abitbul - Psy Or Bababa (TeaMix Dance 4 - Simon Mashup)\n'
+    + 'Nari Milani & Ranz - Triangle X Meknes (Delayers Remix - TeaMix Dance 4 - IdoM Mashup)\n'
+    + 'Netta - Toy (TeaMix Dance 4 - Simon Intro Show)\n'
+    + 'Omer Adam & OTIOT Vs Hardwell - 2 Meshugaim & Safari (TeaMix Dance 4 - Simon Mashup) V2\n'
+    + 'Sagi Abitbul & Soriani Ft. M\'barka Ben Taleb - Idrab (TeaMix Dance 4 - Simon Edit)\n'
+    + 'The Black Eyed Peas - My Humps (Ilkay Sencan - TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'Willy William - La la la (TeaMix Dance 4 - Sagiv Alfasi Dub Edit)\n'
+    + 'Willy William - La la la (TeaMix Dance 4 - Sagiv Alfasi Edit )\n'
+    + 'אורי בן ארי - לפעמים (Mor Ben David Remix - TeaMix Dance 4 - IdoM Edit)\n'
+    + 'איב אנד ליר - סאלאם (TeaMix Dance 4 - Dudu A\'S Edit)\n'
+    + 'עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mashup - TeaMix Dance 4 - RooBen Fix)\n';
 
   public teamixDanceVol5 =
-  "Artbat - Target (TeaMix Dance 5 - DJ Kuper ShortCut)\n"
-+"Aya Nakamura - Djadja (Dj Dark & MD Dj Remix - TeaMix Dance 5 - RooBen Fix)\n"
-+"Bazzi vs EDX ft Camila Cabello - Beautiful (Bazzi vs EDX's Ibiza Sunrise Remix - TeaMix Dance 5 - RooBen Intro Edit)\n"
-+"Brando, Loud Luxury - Body (TeaMix Dance 5 - IdoM Edit)\n"
-+"Calvin Harris & Dua Lipa x Swedish House Mafia x Tiesto & Sevenn - ONE BOOM Kiss (Rudeejay & Da Brozz Mash-Boot - IdoM Fix)\n"
-+"Dj Snake Ft. Ozuna Cardi B & Selena Gomez - Taki Taki (TeaMix Dance 5 - RooBen Transition Edit) 124-100\n"
-+"Erly Tepshi - The Light Path (TeaMix Dance 5 - DJ Kuper ShortCut)\n"
-+"Erly Tepshi - Virgo (TeaMix Dance 5 - DJ Kuper ShortCut)\n"
-+"Fisher - Ya Kidding (TeaMix Dance 5 - Sagiv Alfasi Edit)\n"
-+"Freejak, Perfecto Allstarz X David Fesser X Alex Guesta   Reach Etnia Voodoo (TeaMix Dance 5 - Sagiv Alfasi MashUp)\n"
-+"Haze-M - Anupam (TeaMix Dance 5 - DJ Kuper ShortCut)\n"
-+"HRVY - I Wish You Were Here (TeaMix Dance 5 - RooBen Intro)\n"
-+"Jonas Blue ft Liam Payne & Lennon Stella - Polaroid (TeaMix Dance 5 - RooBen Intro Edit)\n"
-+"Le Cheval - Fandango (TeaMix Dance 5 - RooBen Intro Edit)\n"
-+"Pon De Floor x Pogo x Camelphat (TeaMix Dance 5 - IdoM MashUp )\n"
-+"Red Hot Chili Peppers - Can't Stop (PORAT Remix - TeaMix Dance 5 - IdoM Fix)\n"
-+"Riton, Kah-lo - Fake I.D (TeaMix Dance 5 - Sagiv Alfasi Club Edit)\n"
-+"Sandro Silva & Quintino - Epic (Garmiani Remix - TeaMix Dance 5 - RooBen 'Roof' Edit) Short\n"
-+"Sophie Francis - Weekend Love (TeaMix Dance 5 - RooBen Intro Edit)\n"
-+"Tiesto & Dzeko feat Preme & Post Malone - Jackie Chan (Keanu Silva Remix - TeaMix Dance 5 - RooBen Intro)\n"
-+"Ummet Ozcan & WAR - Low Rider (TeaMix Dance 5 - RooBen Fix)\n";
+    'Artbat - Target (TeaMix Dance 5 - DJ Kuper ShortCut)\n'
+    + 'Aya Nakamura - Djadja (Dj Dark & MD Dj Remix - TeaMix Dance 5 - RooBen Fix)\n'
+    + 'Bazzi vs EDX ft Camila Cabello - Beautiful (Bazzi vs EDX\'s Ibiza Sunrise Remix - TeaMix Dance 5 - RooBen Intro Edit)\n'
+    + 'Brando, Loud Luxury - Body (TeaMix Dance 5 - IdoM Edit)\n'
+    + 'Calvin Harris & Dua Lipa x Swedish House Mafia x Tiesto & Sevenn - ONE BOOM Kiss (Rudeejay & Da Brozz Mash-Boot - IdoM Fix)\n'
+    + 'Dj Snake Ft. Ozuna Cardi B & Selena Gomez - Taki Taki (TeaMix Dance 5 - RooBen Transition Edit) 124-100\n'
+    + 'Erly Tepshi - The Light Path (TeaMix Dance 5 - DJ Kuper ShortCut)\n'
+    + 'Erly Tepshi - Virgo (TeaMix Dance 5 - DJ Kuper ShortCut)\n'
+    + 'Fisher - Ya Kidding (TeaMix Dance 5 - Sagiv Alfasi Edit)\n'
+    + 'Freejak, Perfecto Allstarz X David Fesser X Alex Guesta   Reach Etnia Voodoo (TeaMix Dance 5 - Sagiv Alfasi MashUp)\n'
+    + 'Haze-M - Anupam (TeaMix Dance 5 - DJ Kuper ShortCut)\n'
+    + 'HRVY - I Wish You Were Here (TeaMix Dance 5 - RooBen Intro)\n'
+    + 'Jonas Blue ft Liam Payne & Lennon Stella - Polaroid (TeaMix Dance 5 - RooBen Intro Edit)\n'
+    + 'Le Cheval - Fandango (TeaMix Dance 5 - RooBen Intro Edit)\n'
+    + 'Pon De Floor x Pogo x Camelphat (TeaMix Dance 5 - IdoM MashUp )\n'
+    + 'Red Hot Chili Peppers - Can\'t Stop (PORAT Remix - TeaMix Dance 5 - IdoM Fix)\n'
+    + 'Riton, Kah-lo - Fake I.D (TeaMix Dance 5 - Sagiv Alfasi Club Edit)\n'
+    + 'Sandro Silva & Quintino - Epic (Garmiani Remix - TeaMix Dance 5 - RooBen \'Roof\' Edit) Short\n'
+    + 'Sophie Francis - Weekend Love (TeaMix Dance 5 - RooBen Intro Edit)\n'
+    + 'Tiesto & Dzeko feat Preme & Post Malone - Jackie Chan (Keanu Silva Remix - TeaMix Dance 5 - RooBen Intro)\n'
+    + 'Ummet Ozcan & WAR - Low Rider (TeaMix Dance 5 - RooBen Fix)\n';
 
   public teamixDanceVol6 =
-  "ARTBAT - Papillon (TeaMix Dance 6 - Sagiv Alfasi Edit )\n"
-+"Bougenvilla - Utami (TeaMix Dance 6 - Sagiv Alfasi Edit)\n"
-+"Bram Fidder - Thirsty feat AxR (TeaMix Dance 6 - Sagiv Alfasi Edit )\n"
-+"Bram Fidder Lydia Lucy - Like An 808 (TeaMix Dance 6 - Sagiv Alfasi Edit)\n"
-+"Damien N-Drix - Kobeba (TeaMix Dance 6 - Sagiv Alfasi Edit)\n"
-+"DJ Kass - Le Pons (TeaMix Dance 6 - RooBen Intro)\n"
-+"El Professor - Bella Safari (Skazi vs. Hardwell - TeaMix Dance 6 - IdoM Edit) 138-128\n"
-+"Florian Picasso - Glitch (TeaMix Dance 6 - DJ Kuper ShortCut)\n"
-+"Galavant - Mess (TeaMix Dance 6 - DJ Kuper Edit)\n"
-+"Gianni Blu - Work It (TeaMix Dance 6 - IdoM Fix)\n"
-+"Gianni Blu - Work It (TeaMix Dance 6 - Sagjv Alfasi Edit)\n"
-+"LUTRA X Aviados X Mash X OTIOT X Or Pilo X Ron Assulin - Damoba Vs. Mabruk (TeaMix Dance 6 - Dudu A'S Mashup)\n"
-+"Marnik & Smack - Gam Gam (TeaMix Dance 6 - IdoM Edit)\n"
-+"Max Zotti - Sputnik (TeaMix Dance 6 - Roman Kuper Edit)\n"
-+"Queen - Radio Ga Ga 18 (Barry Harris - TeaMix Dance 6 - Dudu A'S Edit)\n"
-+"Sean Paul Ft. Blu Cantrell - Breathe 18 (Damian Harrison - TeaMix Dance 6 - Dudu A'S Edit)\n"
-+"Sting - Desert Rose (German & Mike Remix - TeaMix Dance 6 - Dudu A'S Edit) 128 BPM\n"
-+"Swedish House Mafia vs Avicii - Dont You Worry Child vs Wake Me Up Axwell Ingrosso Mashup (TeaMix Dance 6 - IdoM Edit)\n"
-+"Toshi & Afro Warriors - Uyankenteza (TeaMix Dance 6 - LONI Remix - RooBen Fix)\n"
-+"Trikk - Vilara (TeaMix Dance 6 - DJ Kuper Edit)\n"
-+"Zedd X Bougenvilla - The Utami Middle (TeaMix Dance 6 - Sagiv Alfasi Mashup )\n"
-+"Zonderling Don Diablo Linkin Parrk - No Good VS Numb (Don Paolo Mashup - TeaMix Dance 6 - IdoM Edit)\n"
-+"דודו אהרון ואופק המלאך - הלב שלך בממתינה (Yonatan Harlev Remix - TeaMix Dance 6 - RooBen Fix)\n"
-+"עדן חסון - שיכורים (Nadav Sion Remix - TeaMix Dance 6 - Dudu A'S Edit)\n"
-+"שרית חדד - אמאלה ואבאלה (Tomer Segev Remix - TeaMix Dance 6 - Dudu A'S Edit)\n";
+    'ARTBAT - Papillon (TeaMix Dance 6 - Sagiv Alfasi Edit )\n'
+    + 'Bougenvilla - Utami (TeaMix Dance 6 - Sagiv Alfasi Edit)\n'
+    + 'Bram Fidder - Thirsty feat AxR (TeaMix Dance 6 - Sagiv Alfasi Edit )\n'
+    + 'Bram Fidder Lydia Lucy - Like An 808 (TeaMix Dance 6 - Sagiv Alfasi Edit)\n'
+    + 'Damien N-Drix - Kobeba (TeaMix Dance 6 - Sagiv Alfasi Edit)\n'
+    + 'DJ Kass - Le Pons (TeaMix Dance 6 - RooBen Intro)\n'
+    + 'El Professor - Bella Safari (Skazi vs. Hardwell - TeaMix Dance 6 - IdoM Edit) 138-128\n'
+    + 'Florian Picasso - Glitch (TeaMix Dance 6 - DJ Kuper ShortCut)\n'
+    + 'Galavant - Mess (TeaMix Dance 6 - DJ Kuper Edit)\n'
+    + 'Gianni Blu - Work It (TeaMix Dance 6 - IdoM Fix)\n'
+    + 'Gianni Blu - Work It (TeaMix Dance 6 - Sagjv Alfasi Edit)\n'
+    + 'LUTRA X Aviados X Mash X OTIOT X Or Pilo X Ron Assulin - Damoba Vs. Mabruk (TeaMix Dance 6 - Dudu A\'S Mashup)\n'
+    + 'Marnik & Smack - Gam Gam (TeaMix Dance 6 - IdoM Edit)\n'
+    + 'Max Zotti - Sputnik (TeaMix Dance 6 - Roman Kuper Edit)\n'
+    + 'Queen - Radio Ga Ga 18 (Barry Harris - TeaMix Dance 6 - Dudu A\'S Edit)\n'
+    + 'Sean Paul Ft. Blu Cantrell - Breathe 18 (Damian Harrison - TeaMix Dance 6 - Dudu A\'S Edit)\n'
+    + 'Sting - Desert Rose (German & Mike Remix - TeaMix Dance 6 - Dudu A\'S Edit) 128 BPM\n'
+    + 'Swedish House Mafia vs Avicii - Dont You Worry Child vs Wake Me Up Axwell Ingrosso Mashup (TeaMix Dance 6 - IdoM Edit)\n'
+    + 'Toshi & Afro Warriors - Uyankenteza (TeaMix Dance 6 - LONI Remix - RooBen Fix)\n'
+    + 'Trikk - Vilara (TeaMix Dance 6 - DJ Kuper Edit)\n'
+    + 'Zedd X Bougenvilla - The Utami Middle (TeaMix Dance 6 - Sagiv Alfasi Mashup )\n'
+    + 'Zonderling Don Diablo Linkin Parrk - No Good VS Numb (Don Paolo Mashup - TeaMix Dance 6 - IdoM Edit)\n'
+    + 'דודו אהרון ואופק המלאך - הלב שלך בממתינה (Yonatan Harlev Remix - TeaMix Dance 6 - RooBen Fix)\n'
+    + 'עדן חסון - שיכורים (Nadav Sion Remix - TeaMix Dance 6 - Dudu A\'S Edit)\n'
+    + 'שרית חדד - אמאלה ואבאלה (Tomer Segev Remix - TeaMix Dance 6 - Dudu A\'S Edit)\n';
 
   public teamixDanceVol7 =
-  "Age Of Wena Paradise (Gavri Blend - IdoM Edit) 128\n"
-+"Armand Pena - Se Va (Sagiv Alfasi Edit) 123\n"
-+"Biscits - Do It Like This (Dudu A'S Edit) 124\n"
-+"Bora, Danny Ores - Trippin (Sagiv Alfasi Edit) 126\n"
-+"Borin Again - Babiloniya (DJ Kuper Edit) 128\n"
-+"Calabria vs Work vs Alex Guesta (Alex Guesta Bootleg - IdoM Mash) 128\n"
-+"Chemical Surf, Vintage Culture - Feeling Good (Sagiv Alfasi Edit) 124\n"
-+"Coeus - Solar (DJ Kuper Short Edit) (V2) 121\n"
-+"David Guetta x Crime Zcene - Love Is Tribal  (Sagiv Alfasi Mashup) 128\n"
-+"Diana Ross - Upside Down (Kaktuz Remix - Dudu A'S Edit) 120\n"
-+"Dirty Kobeba Drums (Sagiv Alfasi Mashup) 128\n"
-+"Fatboy Slim - Praise You (Purple Disco Remix - Dudu A'S Edit) 121\n"
-+"FISHER (OZ) - Stop It (IdoM FIx) 124\n"
-+"Jax Jones ft Years & Years - Play (RooBen Intro) 125\n"
-+"Jewelz Scott & Bingo Players - Out Of My Flashbang (DJ Kuper Mashup) 128\n"
-+"Juan Magan, Deorro & MAKJ - Munequita Linda (RooBen Intro) 130\n"
-+"Nari Milani & TAKIRU - Triangle X Meknes X Saturator (Delayers Remix - IdoM Mash) 128\n"
-+"Oxia - Domino (Brigado Crew Remix - IdoM Fix) 125\n"
-+"Selena Gomez, Marshmello - Wolves (Quba Remix - Dudu A'S Edit) 124\n"
-+"Syntheticsax - Last Christmas (Dudu A'S Edit) 120\n"
-+"Trance Wax - Trance 7 (DJ Kuper Edit Edit) (V2) 128\n";
+    'Age Of Wena Paradise (Gavri Blend - IdoM Edit) 128\n'
+    + 'Armand Pena - Se Va (Sagiv Alfasi Edit) 123\n'
+    + 'Biscits - Do It Like This (Dudu A\'S Edit) 124\n'
+    + 'Bora, Danny Ores - Trippin (Sagiv Alfasi Edit) 126\n'
+    + 'Borin Again - Babiloniya (DJ Kuper Edit) 128\n'
+    + 'Calabria vs Work vs Alex Guesta (Alex Guesta Bootleg - IdoM Mash) 128\n'
+    + 'Chemical Surf, Vintage Culture - Feeling Good (Sagiv Alfasi Edit) 124\n'
+    + 'Coeus - Solar (DJ Kuper Short Edit) (V2) 121\n'
+    + 'David Guetta x Crime Zcene - Love Is Tribal  (Sagiv Alfasi Mashup) 128\n'
+    + 'Diana Ross - Upside Down (Kaktuz Remix - Dudu A\'S Edit) 120\n'
+    + 'Dirty Kobeba Drums (Sagiv Alfasi Mashup) 128\n'
+    + 'Fatboy Slim - Praise You (Purple Disco Remix - Dudu A\'S Edit) 121\n'
+    + 'FISHER (OZ) - Stop It (IdoM FIx) 124\n'
+    + 'Jax Jones ft Years & Years - Play (RooBen Intro) 125\n'
+    + 'Jewelz Scott & Bingo Players - Out Of My Flashbang (DJ Kuper Mashup) 128\n'
+    + 'Juan Magan, Deorro & MAKJ - Munequita Linda (RooBen Intro) 130\n'
+    + 'Nari Milani & TAKIRU - Triangle X Meknes X Saturator (Delayers Remix - IdoM Mash) 128\n'
+    + 'Oxia - Domino (Brigado Crew Remix - IdoM Fix) 125\n'
+    + 'Selena Gomez, Marshmello - Wolves (Quba Remix - Dudu A\'S Edit) 124\n'
+    + 'Syntheticsax - Last Christmas (Dudu A\'S Edit) 120\n'
+    + 'Trance Wax - Trance 7 (DJ Kuper Edit Edit) (V2) 128\n';
 
   public teamixDanceVol8 =
-  "Andrey Exx, Pushkarev - Keep the Funk (IdoM Edit)\n"
-+"Armin van Buuren - Blah Blah Blah (Syco Darbuka Mix)\n"
-+"Avicii x Mike Williams x Mesto  - Wait Another Nights (Sagiv Alfasi Mashup)\n"
-+"Bomba Estereo - Soy Yo (Doozie & MOJJO Remix - Sagiv Alfasi Edit)\n"
-+"Breach - JACK (TRFN x Kaan Pars Remix - Syco Fix)\n"
-+"Damien N-Drix - Hush Money (Sagiv Alfasi Edit)\n"
-+"Dimitri Vangelis & Wyman vs. Futuristic Polar Bears - Acid Drop (Sagiv Alfasi Edit)\n"
-+"El Profesor feat. Laura White  -  Ce Soir (Hugel Remix - Sagiv Alfasi Edit)\n"
-+"GAZIROVKA  - Black (Lavrushkin Remix - Syco Fix)\n"
-+"Komodo - I Just Died In Your Arms (Dave Marc & Magix - Dudu A'S Edit)\n"
-+"Lior Narkis Feat. Vivo - Full Moon X Rona (Waka Music Group Exclusive Editing 2019 - Aviel Mymon Edit)\n"
-+"Lucas & Steve - Adagio For Strings (Sagiv Alfasi Edit)\n"
-+"LVNDSCAPE VS Firebeatz- Yayamari Ipanema (Sagiv Alfasi Mashup)\n"
-+"MC Kevinho - Olha a Explos?o (MORTi Remix - Syco Fix)\n"
-+"Merk, Kremont - Sushi (Sagiv Alfasi Edit)\n"
-+"Oliver Koletzki & Niko Schwind - 15 Subati (Andhim's Electrica Cucar Remix - Aviel Mymon Fix)\n"
-+"Roberto Rios, Dan Sparks - Get It (DJ Kuper Edit)\n"
-+"Sofi Tukker - Batshit (Syco Edit)\n"
-+"Space Motion - Epic (Aviel Mymon Edit)\n"
-+"אדם - איזה עולם (IDAN & Alon Halperin Remix - Aviel Mymon Edit)\n"
-+"נוי פדלון - סוודר (Gadi Dahan & Omri Mordehai Remix - Syco Fix)\n"
-+"עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mash Up - Syco Fix) V1\n"
-+"עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mash Up - Syco Fix) V2\n"
-+"Havana - Lost you (German Avny & Mike Tsoff Remix) [Intro 2019]\n"
-+"Kazka - Cry (Plakala) (German Avny & Mike Tsoff Remix) [Intro 2019]\n";
+    'Andrey Exx, Pushkarev - Keep the Funk (IdoM Edit)\n'
+    + 'Armin van Buuren - Blah Blah Blah (Syco Darbuka Mix)\n'
+    + 'Avicii x Mike Williams x Mesto  - Wait Another Nights (Sagiv Alfasi Mashup)\n'
+    + 'Bomba Estereo - Soy Yo (Doozie & MOJJO Remix - Sagiv Alfasi Edit)\n'
+    + 'Breach - JACK (TRFN x Kaan Pars Remix - Syco Fix)\n'
+    + 'Damien N-Drix - Hush Money (Sagiv Alfasi Edit)\n'
+    + 'Dimitri Vangelis & Wyman vs. Futuristic Polar Bears - Acid Drop (Sagiv Alfasi Edit)\n'
+    + 'El Profesor feat. Laura White  -  Ce Soir (Hugel Remix - Sagiv Alfasi Edit)\n'
+    + 'GAZIROVKA  - Black (Lavrushkin Remix - Syco Fix)\n'
+    + 'Komodo - I Just Died In Your Arms (Dave Marc & Magix - Dudu A\'S Edit)\n'
+    + 'Lior Narkis Feat. Vivo - Full Moon X Rona (Waka Music Group Exclusive Editing 2019 - Aviel Mymon Edit)\n'
+    + 'Lucas & Steve - Adagio For Strings (Sagiv Alfasi Edit)\n'
+    + 'LVNDSCAPE VS Firebeatz- Yayamari Ipanema (Sagiv Alfasi Mashup)\n'
+    + 'MC Kevinho - Olha a Explos?o (MORTi Remix - Syco Fix)\n'
+    + 'Merk, Kremont - Sushi (Sagiv Alfasi Edit)\n'
+    + 'Oliver Koletzki & Niko Schwind - 15 Subati (Andhim\'s Electrica Cucar Remix - Aviel Mymon Fix)\n'
+    + 'Roberto Rios, Dan Sparks - Get It (DJ Kuper Edit)\n'
+    + 'Sofi Tukker - Batshit (Syco Edit)\n'
+    + 'Space Motion - Epic (Aviel Mymon Edit)\n'
+    + 'אדם - איזה עולם (IDAN & Alon Halperin Remix - Aviel Mymon Edit)\n'
+    + 'נוי פדלון - סוודר (Gadi Dahan & Omri Mordehai Remix - Syco Fix)\n'
+    + 'עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mash Up - Syco Fix) V1\n'
+    + 'עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mash Up - Syco Fix) V2\n'
+    + 'Havana - Lost you (German Avny & Mike Tsoff Remix) [Intro 2019]\n'
+    + 'Kazka - Cry (Plakala) (German Avny & Mike Tsoff Remix) [Intro 2019]\n';
 
   public teamixDanceVol9 =
-  "﻿﻿lex Guesta Vs Ilkay Sencan - let Ritual me (Sagiv Alfasi Mashup)\n"
-+"Andrey Exx, Pushkarev feat. Stromae - Keep the ALORS ON DANSE (IdoM Mashup)\n"
-+"Arcade X Legend (Saarco - Aviel Mymon Edit)\n"
-+"Armin Van Buuren & Vini Vici vs. USAI & Dirty Ducks - United (German Avny Mashup)\n"
-+"David Guetta (feat Bebe Rexha & J Balvin) - Say My Name (Lucas & Steve Remix - Sagiv Alfasi Edit)\n"
-+"Fatboy Slim - Praise You (Purple Disco Machine Remix - Sagiv Alfasi Edit)\n"
-+"Jenia & Jinga - Takadoom (Lidor Zirk Remix - DJ Kuper Edit) (V3)\n"
-+"Keanu Silva - King Of My Castle (Sagiv Alfasi Edit)\n"
-+"Kungs & Throttle - Disco Night (Sagiv Alfasi Edit)\n"
-+"Kyle Watson - Road Trips (Sagiv Alfasi Edit)\n"
-+"Little Mix - Strip (Syco Intro)\n"
-+"Marshmello & Anne Marie vs. Massivedrum - Friends (German Avny & Leo Bass Mashup) V.1\n"
-+"Me & My Toothbrush - Just Release Me (Sagiv Alfasi Edit)\n"
-+"Nothing Breaks Like a Heart (Martin Solveig Remix - Sagiv Alfasi Edit)\n"
-+"Offer Nissim X Tiesto - Haw X Tube (Aviel Mymon Mashup)\n"
-+"Rebuke - Along Came Polly (IdoM Edit)\n"
-+"Sarit Hadad & MaZeZe - One Kiss (IdoM Power Edit)\n"
-+"Sean Paul & David Guetta ft Becky G - Mad Love (GLOWINTHEDARK Remix - IdoM Edit)\n"
-+"Skazi - Party Don t Stop (Sagiv Alfasi Edit)\n"
-+"Space Motion & Ivan Gough - In My Epic Mind (DJ Kuper Mashup)\n"
-+"Trance Wax - 'Trance 7' (Aviel Mymon Edit)\n"
-+"Will Sparks x Maddix – Mangalam (Sagiv Alfasi Edit)\n"
-+"אביעד סהר - יא ליילי אינסטנבול (Dudu A'S Mashup)\n"
-+"איתי לוי - קירות (Mirel & Lubinski - Dudu A'S Edit)\n"
-+"איתי לוי - קירות (Mirel & Lubinski - Dudu A'S Intro Edit)\n"
-+"מושיק מור - טיפוס של חורף (Shlomi Maman - Dudu A'S Edit)\n"
-+"\n"
-+"Bonus:\n"
-+"3 Doors Down - Here Without You (German Avny & Mike Tsoff Remix)\n"
-+"Ariana Grande - No Tears Left To Cry (Mike Tsoff & German Avny Remix)\n"
-+"Aya Nakamura - Djadja (German Avny & Mike Tsoff Remix)\n"
-+"Clean Bandit Feat. Demi Lovato - Solo (Mike Tsoff & German Avny Remix)\n"
-+"Clean Bandit feat. Marina & The Diamonds & Luis Fonsi - Baby (Mike Tsoff & German Avny Remix)\n"
-+"David Guetta Feat. Sia - Flames (German Avny & Mike Tsoff Remix)\n"
-+"DJ Replace feat. Terro & Marco Musca - Can u Feel Me (Mike Tsoff & German Avny Official Remix)\n"
-+"Dynoro & Gigi D'Agostino - In My Mind (German Avny & Mike Tsoff Remix)\n"
-+"Ed Sheeran – Perfect (Mike Tsoff & German Avny Remix)\n"
-+"Hakan Akkus - I Can't Be (Mike Tsoff & German Avny Remix)\n"
-+"HAVANA feat. Yaar - I Lost You (German Avny & Mike Tsoff Official Remix)\n"
-+"Idan Raichel & Tripl - Ve'eem Tavo'ee Elay (Mike Tsoff & German Avny Remix)\n"
-+"Jonas Blue Ft. Jack & Jack - Rise (Mike Tsoff & German Avny Remix)\n"
-+"Kazka - Plakala (German Avny & Mike Tsoff Remix)\n"
-+"Maroon 5 feat. Cardi B - Girls Like You (Mike Tsoff & German Avny Remix)\n"
-+"MARUV & BOOSIN - Drunk Groove (Mike Tsoff & German Avny Remix)\n"
-+"Morandi - Kalinka (Mike Tsoff & German Avny Official Remix)\n"
-+"Offer Nissim Feat. Epiphony - Out Of My Skin (German Avny & Mike Tsoff Remix 2018)\n"
-+"Offer Nissim Feat. Maya - First Time (Mike Tsoff & German Avny Remix)\n"
-+"Sting - Desert Rose (German Avny & Mike Tsoff Remix)\n";
+    'lex Guesta Vs Ilkay Sencan - let Ritual me (Sagiv Alfasi Mashup)\n'
+    + 'Andrey Exx, Pushkarev feat. Stromae - Keep the ALORS ON DANSE (IdoM Mashup)\n'
+    + 'Arcade X Legend (Saarco - Aviel Mymon Edit)\n'
+    + 'Armin Van Buuren & Vini Vici vs. USAI & Dirty Ducks - United (German Avny Mashup)\n'
+    + 'David Guetta (feat Bebe Rexha & J Balvin) - Say My Name (Lucas & Steve Remix - Sagiv Alfasi Edit)\n'
+    + 'Fatboy Slim - Praise You (Purple Disco Machine Remix - Sagiv Alfasi Edit)\n'
+    + 'Jenia & Jinga - Takadoom (Lidor Zirk Remix - DJ Kuper Edit) (V3)\n'
+    + 'Keanu Silva - King Of My Castle (Sagiv Alfasi Edit)\n'
+    + 'Kungs & Throttle - Disco Night (Sagiv Alfasi Edit)\n'
+    + 'Kyle Watson - Road Trips (Sagiv Alfasi Edit)\n'
+    + 'Little Mix - Strip (Syco Intro)\n'
+    + 'Marshmello & Anne Marie vs. Massivedrum - Friends (German Avny & Leo Bass Mashup) V.1\n'
+    + 'Me & My Toothbrush - Just Release Me (Sagiv Alfasi Edit)\n'
+    + 'Nothing Breaks Like a Heart (Martin Solveig Remix - Sagiv Alfasi Edit)\n'
+    + 'Offer Nissim X Tiesto - Haw X Tube (Aviel Mymon Mashup)\n'
+    + 'Rebuke - Along Came Polly (IdoM Edit)\n'
+    + 'Sarit Hadad & MaZeZe - One Kiss (IdoM Power Edit)\n'
+    + 'Sean Paul & David Guetta ft Becky G - Mad Love (GLOWINTHEDARK Remix - IdoM Edit)\n'
+    + 'Skazi - Party Don t Stop (Sagiv Alfasi Edit)\n'
+    + 'Space Motion & Ivan Gough - In My Epic Mind (DJ Kuper Mashup)\n'
+    + 'Trance Wax - \'Trance 7\' (Aviel Mymon Edit)\n'
+    + 'Will Sparks x Maddix – Mangalam (Sagiv Alfasi Edit)\n'
+    + 'אביעד סהר - יא ליילי אינסטנבול (Dudu A\'S Mashup)\n'
+    + 'איתי לוי - קירות (Mirel & Lubinski - Dudu A\'S Edit)\n'
+    + 'איתי לוי - קירות (Mirel & Lubinski - Dudu A\'S Intro Edit)\n'
+    + 'מושיק מור - טיפוס של חורף (Shlomi Maman - Dudu A\'S Edit)\n'
+    + '\n'
+    + 'Bonus:\n'
+    + '3 Doors Down - Here Without You (German Avny & Mike Tsoff Remix)\n'
+    + 'Ariana Grande - No Tears Left To Cry (Mike Tsoff & German Avny Remix)\n'
+    + 'Aya Nakamura - Djadja (German Avny & Mike Tsoff Remix)\n'
+    + 'Clean Bandit Feat. Demi Lovato - Solo (Mike Tsoff & German Avny Remix)\n'
+    + 'Clean Bandit feat. Marina & The Diamonds & Luis Fonsi - Baby (Mike Tsoff & German Avny Remix)\n'
+    + 'David Guetta Feat. Sia - Flames (German Avny & Mike Tsoff Remix)\n'
+    + 'DJ Replace feat. Terro & Marco Musca - Can u Feel Me (Mike Tsoff & German Avny Official Remix)\n'
+    + 'Dynoro & Gigi D\'Agostino - In My Mind (German Avny & Mike Tsoff Remix)\n'
+    + 'Ed Sheeran – Perfect (Mike Tsoff & German Avny Remix)\n'
+    + 'Hakan Akkus - I Can\'t Be (Mike Tsoff & German Avny Remix)\n'
+    + 'HAVANA feat. Yaar - I Lost You (German Avny & Mike Tsoff Official Remix)\n'
+    + 'Idan Raichel & Tripl - Ve\'eem Tavo\'ee Elay (Mike Tsoff & German Avny Remix)\n'
+    + 'Jonas Blue Ft. Jack & Jack - Rise (Mike Tsoff & German Avny Remix)\n'
+    + 'Kazka - Plakala (German Avny & Mike Tsoff Remix)\n'
+    + 'Maroon 5 feat. Cardi B - Girls Like You (Mike Tsoff & German Avny Remix)\n'
+    + 'MARUV & BOOSIN - Drunk Groove (Mike Tsoff & German Avny Remix)\n'
+    + 'Morandi - Kalinka (Mike Tsoff & German Avny Official Remix)\n'
+    + 'Offer Nissim Feat. Epiphony - Out Of My Skin (German Avny & Mike Tsoff Remix 2018)\n'
+    + 'Offer Nissim Feat. Maya - First Time (Mike Tsoff & German Avny Remix)\n'
+    + 'Sting - Desert Rose (German Avny & Mike Tsoff Remix)\n';
 
   private itemsPlaylist: { [key: string]: string } = {
-    "teamixVol19": this.teamixVol19, "teamixVol18": this.teamixVol18, "teamixVol17": this.teamixVol17, "teamixVol16": this.teamixVol16,
-    "teamixVol15": this.teamixVol15, "teamixVol14": this.teamixVol14, "teamixVol13": this.teamixVol13, "teamixVol12": this.teamixVol12,
-    "teamixVol11": this.teamixVol11, "teamixVol10": this.teamixVol10, "teamixVol9": this.teamixVol9, "teamixVol8": this.teamixVol8,
-    "teamixVol7": this.teamixVol7, "teamixVol6": this.teamixVol6, "teamixVol5": this.teamixVol5, "teamixVol4": this.teamixVol4,
-    "teamixVol3": this.teamixVol3, "teamixVol2": this.teamixVol2, "teamixVol1": this.teamixVol1,
-    "teamixLatinVol1": this.teamixLatinVol1, "teamixLatinVol2": this.teamixLatinVol2, "teamixLatinVol3": this.teamixLatinVol3,
-    "teamixLatinVol4": this.teamixLatinVol4, "teamixLatinVol5": this.teamixLatinVol5,
-    "teamixThrowbackVol1": this.teamixThrowbackVol1, "teamixThrowbackVol2": this.teamixThrowbackVol2, "teamixThrowbackVol3": this.teamixThrowbackVol3,
-    "teamixThrowbackVol4": this.teamixThrowbackVol4, "teamixThrowbackVol5": this.teamixThrowbackVol5, "teamixThrowbackVol6": this.teamixThrowbackVol6,
-    "teamixThrowbackVol7": this.teamixThrowbackVol7,
-    "teamixDanceVol1": this.teamixDanceVol1, "teamixDanceVol2": this.teamixDanceVol2, "teamixDanceVol3": this.teamixDanceVol3,
-    "teamixDanceVol4": this.teamixDanceVol4, "teamixDanceVol5": this.teamixDanceVol5, "teamixDanceVol6": this.teamixDanceVol6,
-    "teamixDanceVol7": this.teamixDanceVol7, "teamixDanceVol8": this.teamixDanceVol8, "teamixDanceVol9": this.teamixDanceVol9
+    teamixSelectedVol1: this.teamixSelectedVol1, teamixSelectedVol2: this.teamixSelectedVol2,
+    teamixVol19: this.teamixVol19, teamixVol18: this.teamixVol18, teamixVol17: this.teamixVol17, teamixVol16: this.teamixVol16,
+    teamixVol15: this.teamixVol15, teamixVol14: this.teamixVol14, teamixVol13: this.teamixVol13, teamixVol12: this.teamixVol12,
+    teamixVol11: this.teamixVol11, teamixVol10: this.teamixVol10, teamixVol9: this.teamixVol9, teamixVol8: this.teamixVol8,
+    teamixVol7: this.teamixVol7, teamixVol6: this.teamixVol6, teamixVol5: this.teamixVol5, teamixVol4: this.teamixVol4,
+    teamixVol3: this.teamixVol3, teamixVol2: this.teamixVol2, teamixVol1: this.teamixVol1,
+    teamixLatinVol1: this.teamixLatinVol1, teamixLatinVol2: this.teamixLatinVol2, teamixLatinVol3: this.teamixLatinVol3,
+    teamixLatinVol4: this.teamixLatinVol4, teamixLatinVol5: this.teamixLatinVol5,
+    teamixThrowbackVol1: this.teamixThrowbackVol1, teamixThrowbackVol2: this.teamixThrowbackVol2,
+    teamixThrowbackVol3: this.teamixThrowbackVol3, teamixThrowbackVol4: this.teamixThrowbackVol4,
+    teamixThrowbackVol5: this.teamixThrowbackVol5, teamixThrowbackVol6: this.teamixThrowbackVol6,
+    teamixThrowbackVol7: this.teamixThrowbackVol7,
+    teamixDanceVol1: this.teamixDanceVol1, teamixDanceVol2: this.teamixDanceVol2, teamixDanceVol3: this.teamixDanceVol3,
+    teamixDanceVol4: this.teamixDanceVol4, teamixDanceVol5: this.teamixDanceVol5, teamixDanceVol6: this.teamixDanceVol6,
+    teamixDanceVol7: this.teamixDanceVol7, teamixDanceVol8: this.teamixDanceVol8, teamixDanceVol9: this.teamixDanceVol9
   };
 
 

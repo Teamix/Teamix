@@ -8,14 +8,15 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PoolComponent } from './pool/pool.component';
 import { PacksMenuComponent } from './packs-menu/packs-menu.component';
+import { DjSetsComponent } from './dj-sets/dj-sets.component';
 
 const routes: Routes = [
   { path:'' , component: HomePageComponent },
-  { path:'categories' , component: PacksMenuComponent },
+  // { path:'categories' , component: PacksMenuComponent },
   { path:'packs/:packsType' , component: LinksComponent },
   { path:'item/:package' , component: ItemLayoutComponent },
-  { path:'pool' , component: PoolComponent },
-  { path: 'store' , component:StoreComponent },
+  // { path:'pool' , component: PoolComponent },
+  { path:'sets' , component: DjSetsComponent },
   { path:'about' , component:AboutComponent },
   { path:'contact' , component:ContactComponent },
   { path:'**' , redirectTo: ''}

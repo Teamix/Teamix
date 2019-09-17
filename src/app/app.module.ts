@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PacksMenuComponent } from './packs-menu/packs-menu.component';
 import { MenuTabComponent } from './menu-tab/menu-tab.component';
 import { IconsTabComponent } from './icons-tab/icons-tab.component';
+import { DjSetsComponent } from './dj-sets/dj-sets.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { IconsTabComponent } from './icons-tab/icons-tab.component';
     FooterComponent,
     PacksMenuComponent,
     MenuTabComponent,
-    IconsTabComponent
+    IconsTabComponent,
+    DjSetsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,21 @@
 <div id="searchMainDiv">
 
-  <input id="searchSecDiv" type="text" maxlength="20" onkeydown="console.log('hello')">
-    <!-- need to add ngmodel and show the right choice in the div -->
-    <select id="dropDownDiv">
-      <option selected="true" class="option">All</option>
-      <option class="option">Latin</option>
-      <option class="option">Throw</option>
-      <option class="option">Dance</option>
-    </select>
-  </div>
+  <input id="searchSecDiv" type="text" maxlength="20" #searchDiv (keyup)="searchItem(searchDiv.value)"
+    placeholder="search">
+  <!-- need to add ngmodel and show the right choice in the div -->
+  <select id="genreSelect" (change)="genreChoice($event.srcElement.value, $event.srcElement)">
+    <option class="option" value="All">All</option>
+    <option class="option" value="Main">Main</option>
+    <option class="option" value="Selected">Selected</option>
+    <option class="option" value="Latin">Latin</option>
+    <option class="option" value="Throwback">Throwback</option>
+    <option class="option" value="Dance">Dance</option>
+  </select>
+</div>
 
 
 <div id="parentDiv">
-  <ul *ngFor="let item of linksService.getItems()" class="ul">
+  <ul *ngFor="let item of tmp" class="ul">
     <mat-card class="main" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active"
       (click)="singleItemChoice(item)">
       <mat-card-content class="content">

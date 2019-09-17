@@ -1,15 +1,15 @@
 <div *ngIf="languageService.getLanguage() === 'English'">
 
-  <span class="optionsEn"><p>Home</p></span> <span class="optionsEn"><p>About</p></span>
-  <span class="optionsEn"><p>Packs</p></span> <span class="optionsEn"><p>Contact</p></span>
-  <span class="optionsEn"><p>DJ Mixes</p></span> <span class="optionsEn" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span>
+  <span class="optionsEn" [routerLink]="['/']" routerLinkActive="router-link-active" ><p>Home</p></span> <span class="optionsEn" [routerLink]="['/about']" routerLinkActive="router-link-active" ><p>About</p></span>
+  <span class="optionsEn" [routerLink]="['/packs/all']" routerLinkActive="router-link-active" ><p>Packs</p></span> <span class="optionsEn" [routerLink]="['/contact']" routerLinkActive="router-link-active" ><p>Contact</p></span>
+  <span class="optionsEn" [routerLink]="['/sets']" routerLinkActive="router-link-active" ><p>DJ Sets</p></span> <span class="optionsEn" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span>
 
 </div>
 
 <div *ngIf="languageService.getLanguage() === 'Hebrew'">
 
-  <span class="optionsHeb"><p>אודות</p></span> <span class="optionsHeb"><p>דף בית</p></span>
-  <span class="optionsHeb"><p>צור קשר</p></span> <span class="optionsHeb"><p>חבילות</p></span>
-  <span class="optionsHeb" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span> <span class="optionsHeb"><p>מיקסים</p></span>
+  <span class="optionsHeb" [routerLink]="['/about']" routerLinkActive="router-link-active" ><p>אודות</p></span> <span class="optionsHeb" [routerLink]="['/']" routerLinkActive="router-link-active" ><p>דף בית</p></span>
+  <span class="optionsHeb" [routerLink]="['/contact']" routerLinkActive="router-link-active" ><p>צור קשר</p></span> <span class="optionsHeb" [routerLink]="['/packs/all']" routerLinkActive="router-link-active" ><p>חבילות</p></span>
+  <span class="optionsHeb" (click)="changeMyView()" *ngIf="mobileCheckService.getChangeViewButton()"><p>{{mobileCheckService.getChangeView()}}</p></span> <span class="optionsHeb" [routerLink]="['/sets']" routerLinkActive="router-link-active" ><p>סטים</p></span>
 
 </div>

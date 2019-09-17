@@ -23,12 +23,21 @@
   height: 100%;
   text-align: center;
 }
-.menuButtons{
+.menuButtonsEn{
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
 }
-.menuButtons:hover{
+.menuButtonsEn:hover{
   color: rgba(134, 131, 131, 0.568);
   font-weight: 800;
+}
+.menuButtonsHeb{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+}
+.menuButtonsHeb:hover{
+  color: rgba(134, 131, 131, 0.568);
+  font-weight: 500;
 }

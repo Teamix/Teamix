@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LanguageService } from './language.service';
 
-const mobileWindowSize = 700;
+const mobileWindowSize = 680;
 const landscapeWindowSize = 1000;
 
 @Injectable({
@@ -21,6 +21,11 @@ export class MobileCheckService {
   private mobileFlag = false;
   private changeView = "";
   private changeViewButton = false;
+  //need to configure the ofiicial words and use only variables
+  private hebMobileView = 'לתצוגת מובייל';
+  private hebDesktopView = 'לתצוגת מחשב';
+  private enMobileView = '';
+  private enDesktopView = '';
 
   public getChangeViewButton() {
     return this.changeViewButton;
@@ -62,7 +67,7 @@ export class MobileCheckService {
       // return true;
       this.mobileFlag = true;
       if (this.languageService.getLanguage() === 'Hebrew') {
-        this.changeView = "עיצוב רגיל"
+        this.changeView = "לתצוגת רגיל"
       } else {
         this.changeView = "Desktop View";
       }
@@ -72,7 +77,7 @@ export class MobileCheckService {
       // return false;
       this.mobileFlag = false;
       if (this.languageService.getLanguage() === 'Hebrew') {
-        this.changeView = "עיצוב מובייל"
+        this.changeView = "לתצוגת מובייל"
       } else {
         this.changeView = "Mobile View"
       }
@@ -84,15 +89,15 @@ export class MobileCheckService {
   public changeWebsiteView() {
     this.mobileFlag = !this.mobileFlag;
     window.scroll(0, 0);
-    if (this.changeView === 'Desktop View' || this.changeView === 'עיצוב רגיל') {
+    if (this.changeView === 'Desktop View' || this.changeView === 'לתצוגת רגיל') {
       if (this.languageService.getLanguage() === 'Hebrew') {
-        this.changeView = "עיצוב מובייל"
+        this.changeView = "לתצוגת מובייל"
       } else {
         this.changeView = "Mobile View";
       }
     } else {
       if (this.languageService.getLanguage() === 'Hebrew') {
-        this.changeView = "עיצוב רגיל"
+        this.changeView = "לתצוגת רגיל"
       } else {
         this.changeView = "Desktop View";
       }
@@ -102,12 +107,12 @@ export class MobileCheckService {
   public changeLang() {
     if (this.languageService.getLanguage() === 'Hebrew') {
       if (this.changeView === 'Desktop View') {
-        this.changeView = 'עיצוב רגיל';
+        this.changeView = 'לתצוגת רגיל';
       } else {
-        this.changeView = 'עיצוב מובייל';
+        this.changeView = 'לתצוגת מובייל';
       }
     } else {
-      if (this.changeView === 'עיצוב רגיל') {
+      if (this.changeView === 'לתצוגת רגיל') {
         this.changeView = 'Desktop View';
       } else {
         this.changeView = 'Mobile View';

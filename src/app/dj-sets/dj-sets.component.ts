@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MobileCheckService } from 'src/services/mobile-check.service';
+import { LanguageService } from 'src/services/language.service';
 
 @Component({
   selector: 'app-dj-sets',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DjSetsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }
 
   ngOnInit() {
   }

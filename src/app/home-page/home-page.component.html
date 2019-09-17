@@ -1,3 +1,4 @@
+
 <div id="parentDiv" *ngIf="!this.mobileCheckService.getIfMobile()">
   <ul *ngFor="let item of linksService.getItems()" class="ul">
     <mat-card class="mainCom" [routerLink]="['/item/' + item.packName]" routerLinkActive="router-link-active">

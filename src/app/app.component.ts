@@ -9,6 +9,8 @@ import { LanguageService } from 'src/services/language.service';
 })
 export class AppComponent {
 
+  public creators = 'YL Program and Web, MH Design, Teamix';
+
   constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }
 
   private title = 'TeamixSite';

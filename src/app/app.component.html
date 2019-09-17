@@ -10,14 +10,18 @@
     </div>
 
     <div id="langSelectorCom" *ngIf="!this.mobileCheckService.getIfMobile()">
-      <span class="langSpan" id="enOptionCom" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
+      <span class="langSpan" id="enOptionCom"
+        (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
       <span> | </span>
-      <span class="langSpan" id="hebOptionCom" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
+      <span class="langSpan" id="hebOptionCom"
+        (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
     </div>
     <div id="langSelectorMob" *ngIf="this.mobileCheckService.getIfMobile()">
-      <span class="langSpan" id="enOptionMob" (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
+      <span class="langSpan" id="enOptionMob"
+        (click)="languageService.setLanguage('English'); mobileCheckService.changeLang()">English</span>
       <span id="spaceSpanMob"> | </span>
-      <span class="langSpan" id="hebOptionMob" (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
+      <span class="langSpan" id="hebOptionMob"
+        (click)="languageService.setLanguage('Hebrew'); mobileCheckService.changeLang()">עברית</span>
     </div>
   </router-outlet>
 
@@ -79,10 +83,13 @@
 
   <div id="scrollUpButtonDivMobile" (click)="scrollUpNow()" *ngIf="buttonFlag && this.mobileCheckService.getIfMobile()">
     <img id="scrollUpButtonImgMobile" src="./assets/arrowUpWhite48dp2x.png">
-</div>
+  </div>
 
   <app-icons-tab id="icon"></app-icons-tab>
 
   <app-footer id="footer"></app-footer>
 
+  <div>
+      <span id="copyrightSpan"><a id="copyrightA">&copy; Copyright 2019</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank">YL Program & Web</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank">MH Design</a> | <a class="copyrightA" href="https://www.facebook.com/TeaMixx/" target="_blank">TeaMix</a></span>
+  </div>
 </div>

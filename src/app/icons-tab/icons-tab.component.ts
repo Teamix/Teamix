@@ -8,6 +8,7 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 })
 export class IconsTabComponent implements OnInit {
 
+
   public icons = [
     { iconImage: './assets/mediaIcons/facebookIcon.png', iconLink: 'https://www.facebook.com/TeaMixx/' },
     { iconImage: './assets/mediaIcons/instagramIcon.png', iconLink: 'https://www.instagram.com/teamix_il/' },

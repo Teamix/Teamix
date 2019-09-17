@@ -142,13 +142,15 @@
   width: 100%;
   height: 100px;
   background-color: black;
+  z-index: 1;
+  padding-bottom: 10px;
 }
 
 #menuTab {
   top: 0;
 }
 
-#langSelectorCom{
+#langSelectorCom {
   display: block;
   color: var(--font-color);
   width: 105px;
@@ -160,7 +162,7 @@
   right: 30px;
   top: 10px;
 }
-#langSelectorMob{
+#langSelectorMob {
   display: block;
   color: var(--font-color);
   width: fit-content;
@@ -173,25 +175,46 @@
   top: 10px;
 }
 
-.langSpan{
+.langSpan {
   cursor: pointer;
 }
 
-#enOptionCom{
+#enOptionCom {
   font-size: 14px;
 }
 
-#hebOptionCom{
+#hebOptionCom {
   font-size: 17px;
 }
-#enOptionMob{
+#enOptionMob {
   font-size: 9px;
 }
 
-#hebOptionMob{
+#hebOptionMob {
   font-size: 10px;
 }
 
-#spaceSpanMob{
+#spaceSpanMob {
   font-size: 10px;
+}
+
+#copyrightSpan {
+  display: block;
+  color: aliceblue;
+  font-size: 10px;
+  z-index: 99;
+  bottom: -85px;
+  text-align: center;
+  position: relative;
+}
+.copyrightA {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  cursor: pointer;
+}
+#copyrightA {
+  margin: 0px;
+  padding: 0px;
+  color: white;
 }

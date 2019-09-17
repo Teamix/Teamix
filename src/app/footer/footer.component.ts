@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
-  public changeMyView(){
+  public changeMyView() {
     this.mobileCheckService.changeWebsiteView();
   }
 

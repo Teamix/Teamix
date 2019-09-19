@@ -18,6 +18,16 @@ export class ContactComponent implements OnInit {
   public whatsappHeb = '0515144104';
   public whatsappEn = '+972515144104';
 
+  public contactUsHeb = ' : צור קשר';
+  public contactUsEn = 'Contact Us :';
+
+  public emailTextHeb = ' : אימייל';
+  public emailTextEn = 'Email : ';
+  public phoneTextHeb = ' : טלפון';
+  public phoneTextEn = 'Phone : ';
+  public whatsappTextHeb = ' : וואטסאפ';
+  public whatsappTextEn = 'WhatsApp : ';
+
 
 
   constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }

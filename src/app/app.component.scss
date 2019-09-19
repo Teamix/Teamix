@@ -127,6 +127,7 @@
   margin-top: 150px;
   text-align: center;
   z-index: 3;
+  font-size: 20px;
 }
 
 #main {
@@ -140,10 +141,10 @@
   top: 100;
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 115px;
   background-color: black;
   z-index: 1;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 #menuTab {
@@ -153,7 +154,7 @@
 #langSelectorCom {
   display: block;
   color: var(--font-color);
-  width: 105px;
+  width: fit-content;
   height: 30px;
   margin: 0px;
   padding: 0px;
@@ -162,6 +163,13 @@
   right: 30px;
   top: 10px;
 }
+#langSelectorCom :hover {
+  color: rgb(165, 164, 164);
+}
+#langSelectorCom :active {
+  color: var(--click-color);
+}
+
 #langSelectorMob {
   display: block;
   color: var(--font-color);
@@ -173,6 +181,10 @@
   position: absolute;
   right: 10px;
   top: 10px;
+
+}
+#langSelectorMob :hover {
+  text-decoration: underline;
 }
 
 .langSpan {
@@ -180,30 +192,40 @@
 }
 
 #enOptionCom {
-  font-size: 14px;
+  font-size: 19px;
 }
-
 #hebOptionCom {
-  font-size: 17px;
-}
-#enOptionMob {
-  font-size: 9px;
+  font-size: 20px;
 }
 
+#enOptionMob {
+  font-size: 15px;
+}
 #hebOptionMob {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 #spaceSpanMob {
   font-size: 10px;
 }
 
-#copyrightSpan {
+#copyrightSpanCom {
   display: block;
   color: aliceblue;
-  font-size: 10px;
+  font-size: 16px;
+  font-weight: 550;
   z-index: 99;
-  bottom: -85px;
+  bottom: -100px;
+  text-align: center;
+  position: relative;
+}
+#copyrightSpanMob {
+  display: block;
+  color: aliceblue;
+  font-size: 11px;
+  font-weight: 550;
+  z-index: 99;
+  bottom: -100px;
   text-align: center;
   position: relative;
 }

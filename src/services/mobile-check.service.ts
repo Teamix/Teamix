@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { LanguageService } from './language.service';
 
-const mobileWindowSize = 680;
+const mobileWindowSize = 700;
 const landscapeWindowSize = 1000;
 
 @Injectable({

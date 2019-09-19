@@ -1,27 +1,50 @@
-div{
-  display: grid;
+.mainDiv{
+  display: flex;
   color: white;
-  padding: 10px 50px 0px 50px;
-  grid-template-columns: repeat(2, 100px);
-  text-align: center;
-  column-gap: 0px;
+  width: 100%;
   justify-content: center;
-  row-gap: 5px;
+  text-align: center;
 }
+#leftOptionsDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0px 10px;
+}
+#rightOptionsDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0px 10px;
+}
+// div{
+//   display: grid;
+//   color: white;
+//   padding: 15px 50px 0px 50px;
+//   grid-template-columns: repeat(2, 100px);
+//   text-align: center;
+//   column-gap: 0px;
+//   justify-content: center;
+//   row-gap: 5px;
+// }
 .optionsEn{
   display: flex;
   justify-content: left;
   color: var(--font-color);
+  font-size: 18px;
+  margin: 2px;
 }
 .optionsHeb{
   display: flex;
   justify-content: center;
   color: var(--font-color);
+  font-size: 20px;
+  margin: 2px;
 }
 p{
+  // margin: 2px 0px 1px 2px;
   margin: 0px;
   padding: 0px;
   width: fit-content;
-  height: 19.2px;
+  height: fit-content;
+  text-align: left;
   cursor: pointer;
 }

@@ -35,12 +35,11 @@ export class AppComponent {
 
   @HostListener('window:resize')
   public resizewibdow() {
-    console.log(window.innerWidth);
     if (window.innerWidth < this.mobileCheckService.getMobileWindowSize()) {
       this.mobileCheckService.ifMobile();
-    }else if(window.innerWidth > this.mobileCheckService.getMobileWindowSize()+1 && window.innerWidth < this.mobileCheckService.getLandscapeWindowSize()) {
+    } else if (window.innerWidth > this.mobileCheckService.getMobileWindowSize() + 1 && window.innerWidth < this.mobileCheckService.getLandscapeWindowSize()) {
       this.mobileCheckService.changeViewButtonOption(true);
-    }else{
+    } else {
       this.mobileCheckService.ifMobile();
     }
   }

@@ -2,37 +2,37 @@
 
   <div class="secDivComEn" *ngIf="languageService.getLanguage()=== 'English'">
     <p>{{messageEn}}</p>
-    <p>Contact Us :</p>
+    <p class="contactUs">{{contactUsEn}}</p>
 
   </div>
 
   <br>
 
   <div class="secDivComEn" *ngIf="languageService.getLanguage() === 'English'">
-    <a class="contactLinks" href="mailto:service.teamix@gmail.com">Email : {{email}}</a>
+    <a class="contactLinks" href="mailto:service.teamix@gmail.com">{{emailTextEn}}<span class="contactItems">{{email}}</span></a>
     <br>
     <br>
-    <a class="contactLinks" href="tel:+972515144104">Phone : {{phoneEn}}</a>
+    <a class="contactLinks" href="tel:+972515144104">{{phoneTextEn}}<span class="contactItems">{{phoneEn}}</span></a>
     <br>
     <br>
-    <a class="contactLinks" href="https://wa.me/972515144104">WhatsApp : {{whatsappEn}}</a>
+    <a class="contactLinks" href="https://wa.me/972515144104">{{whatsappTextEn}}<span class="contactItems">{{whatsappEn}}</span></a>
   </div>
 
   <div class="secDivComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
       <p>{{messageHeb}}</p>
-      <p>: צור קשר</p>
+      <p class="contactUs">{{contactUsHeb}}</p>
     </div>
 
     <br>
 
   <div class="secDivComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
-    <a class="contactLinks" href="mailto:service.teamix@gmail.com">{{email}} : אימייל</a>
+    <a class="contactLinks" href="mailto:service.teamix@gmail.com"><span class="contactItems">{{email}}</span>{{emailTextHeb}}</a>
     <br>
     <br>
-    <a class="contactLinks" href="tel:+972515144104">{{phoneHeb}} : טלפון</a>
+    <a class="contactLinks" href="tel:+972515144104"><span class="contactItems">{{phoneHeb}}</span>{{phoneTextHeb}}</a>
     <br>
     <br>
-    <a class="contactLinks" href="https://wa.me/972515144104">{{whatsappHeb}} : וואטסאפ</a>
+    <a class="contactLinks" href="https://wa.me/972515144104"><span class="contactItems">{{whatsappHeb}}</span>{{whatsappTextHeb}}</a>
   </div>
 
 </div>
@@ -42,37 +42,37 @@
 
   <div class="secDivMobEn" *ngIf="languageService.getLanguage()=== 'English'">
     <p>{{messageEn}}</p>
-    <p>Contact Us :</p>
+    <p class="contactUs">{{contactUsEn}}</p>
 
   </div>
 
   <br>
 
   <div class="secDivMobEn" *ngIf="languageService.getLanguage() === 'English'">
-    <a class="contactLinks" href="mailto:service.teamix@gmail.com">Email : {{email}}</a>
+    <a class="contactLinks" href="mailto:service.teamix@gmail.com">{{emailTextEn}}<span class="contactItems">{{email}}</span></a>
     <br>
     <br>
-    <a class="contactLinks" href="tel:+972515144104">Phone : {{phoneEn}}</a>
+    <a class="contactLinks" href="tel:+972515144104">{{phoneTextEn}}<span class="contactItems">{{phoneEn}}</span></a>
     <br>
     <br>
-    <a class="contactLinks" href="https://wa.me/972515144104">WhatsApp : {{whatsappEn}}</a>
+    <a class="contactLinks" href="https://wa.me/972515144104">{{whatsappTextEn}}<span class="contactItems">{{whatsappEn}}</span></a>
   </div>
 
   <div class="secDivMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
       <p>{{messageHeb}}</p>
-      <p>: צור קשר</p>
+      <p class="contactUs">{{contactUsHeb}}</p>
     </div>
 
     <br>
 
   <div class="secDivMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">
-    <a class="contactLinks" href="mailto:service.teamix@gmail.com">{{email}} : אימייל</a>
+    <a class="contactLinks" href="mailto:service.teamix@gmail.com"><span class="contactItems">{{email}}</span>{{emailTextHeb}}</a>
     <br>
     <br>
-    <a class="contactLinks" href="tel:+972515144104">{{phoneHeb}} : טלפון</a>
+    <a class="contactLinks" href="tel:+972515144104"><span class="contactItems">{{phoneHeb}}</span>{{phoneTextHeb}}</a>
     <br>
     <br>
-    <a class="contactLinks" href="https://wa.me/972515144104">{{whatsappHeb}} : וואטסאפ</a>
+    <a class="contactLinks" href="https://wa.me/972515144104"><span class="contactItems">{{whatsappHeb}}</span>{{whatsappTextHeb}}</a>
   </div>
 
 </div>

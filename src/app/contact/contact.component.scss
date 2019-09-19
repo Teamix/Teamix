@@ -1,4 +1,4 @@
-#mainDivCom{
+#mainDivCom {
   // display: flex;
   color: whitesmoke;
   white-space: pre-line;
@@ -8,25 +8,39 @@
   text-align: center;
   font-size: 25px;
 }
-#mainDivMob{
-// display: flex;
-color: whitesmoke;
-white-space: pre-line;
-// flex-direction: column;
-// justify-content: center;
-// align-items: center;
-text-align: center;
-font-size: 15px;
+#mainDivMob {
+  // display: flex;
+  color: whitesmoke;
+  white-space: pre-line;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  text-align: center;
+  font-size: 15px;
 }
-#secDivComEn{
+#secDivComEn {
   // width: 250px;
   // text-align: left;
 }
-#secDivComHeb{
+#secDivComHeb {
   // width: 250px;
   // text-align: left;
 }
 
-.contactLinks{
+.contactLinks {
   color: aliceblue;
+  text-decoration: unset;
+}
+.contactLinks :active{
+  color: var(--click-color);
+}
+
+.contactItems {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: underline;
+}
+
+.contactUs {
+  text-decoration: underline;
 }

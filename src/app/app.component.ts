@@ -55,7 +55,9 @@ export class AppComponent {
   public menuCloseCheck() {
     let menu = document.querySelector("#nav-icon3");
     if (this.menuClickedFlag) {
-      menu.classList.remove("open");
+      if (menu != null) {
+        menu.classList.remove("open");
+      }
       this.menuFlag = false;
       this.menuClickedFlag = false;
     }

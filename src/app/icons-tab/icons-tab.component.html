@@ -3,8 +3,8 @@
     <ul *ngFor="let item of icons" class="ul" >
         <mat-card class="main">
             <mat-card-content class="content">
-                <a href="{{item.iconLink}}" target="_blank"><img src={{item.iconImage}} class="imgCom" *ngIf="!mobileCheckService.getIfMobile()"></a>
-                <a href="{{item.iconLink}}" target="_blank"><img src={{item.iconImage}} class="imgMobile" *ngIf="mobileCheckService.getIfMobile()"></a>
+                <a href="{{item.iconLink}}" target="_blank" rel="noopener noreferrer"><img src={{item.iconImage}} class="imgCom" *ngIf="!mobileCheckService.getIfMobile()"></a>
+                <a href="{{item.iconLink}}" target="_blank" rel="noopener noreferrer"><img src={{item.iconImage}} class="imgMobile" *ngIf="mobileCheckService.getIfMobile()"></a>
             </mat-card-content>
         </mat-card>
     </ul>

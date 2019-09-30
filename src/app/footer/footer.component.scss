@@ -48,3 +48,13 @@ p{
   text-align: left;
   cursor: pointer;
 }
+
+#facebookLikeButton{
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  width: 100px;
+  height: 20px;
+  right: 20%;
+  bottom: 50px;
+}

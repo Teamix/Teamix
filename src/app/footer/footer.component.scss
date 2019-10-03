@@ -49,12 +49,21 @@ p{
   cursor: pointer;
 }
 
-#facebookLikeButton{
+#facebookLikeButtonEn{
   display: flex;
   position: absolute;
   z-index: 99;
   width: 100px;
   height: 20px;
   right: 20%;
-  bottom: 50px;
+  bottom: 40px;
+}
+#facebookLikeButtonHeb{
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  width: 100px;
+  height: 20px;
+  left: 20%;
+  bottom: 35px;
 }

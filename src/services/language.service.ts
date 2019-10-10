@@ -8,6 +8,10 @@ export class LanguageService {
   private language = 'English';
   private languageOptions = ['Hebrew', 'English'];
 
+  private downloadMessage = "Hi I'm Interested In Package ";
+  private englishMessage = "Hi I'm Interested In Package ";
+  private hebrewMessage = "היי אני מעוניין בחבילה "
+
   constructor() { }
 
 
@@ -19,6 +23,11 @@ export class LanguageService {
       for (const item of this.languageOptions) {
         if (item.includes(newLanguage)) {
           this.language = item;
+          if(this.language === 'Hebrew'){
+            this.downloadMessage = this.hebrewMessage;
+          }else{
+            this.downloadMessage = this.englishMessage
+          }
           return;
         }
       }
@@ -27,6 +36,10 @@ export class LanguageService {
 
   public getLanguageOptions() {
     return this.languageOptions;
+  }
+
+  public getDownloadMessage(){
+    return this.downloadMessage;
   }
 
 

@@ -518,6 +518,108 @@ export class ItemsPlaylistService {
     + 'WO-CORE - Moon14 (Original Mix) - 7A - 122\n'
     + 'Young Dro & Frey - Fuck Dat Bitch (Spindiana Jones G-House Edit) - 4A - 124\n';
 
+  private teamixSelectedVol6 =
+    '50 Cent  - Just A Lil Bit (Team TNT & Robin Roij Remix) - 4A - 108\n'
+    + 'Adrian Alexander, The Antipodes - Zenith (Extended Mix) - 6A - 128\n'
+    + 'Adrian Roman, Dowden - Black Cloud (Original Mix) - 4A - 120\n'
+    + 'Afro B x Plumpy & Tres Mortimer  - Drogba (Joanna) (Action Jackson Edit) - 10A - 106\n'
+    + 'All In One - Perla Mamo (Daniel Lubinski & Din Gafni Remix) v2 - 1A - 128\n'
+    + 'Ambush ft Chuckie & Hardwell - Move It 2 the Drum (Exodus & Luca Testa Remix) - 6B - 128\n'
+    + 'Anna Lunoe & Nina Las Vegas - One Thirty (Extended Mix) - 4A - 130\n'
+    + 'Ariana Grande, Miley Cyrus & Lana Del Rey - Don\'t Call Me Angel (Charlie\'s Angel) (James Bowers Remix) - 5A - 125\n'
+    + 'Ariana Grande, Miley Cyrus & Lana Del Rey - Don\'t Call Me Angel (Charlie\'s Angel) (Tempo Elektrik Remix) - 5A - 124\n'
+    + 'Barbatuques - Baiana (Jack Back Club Remix) (Extended Mix) - 10B - 125\n'
+    + 'Born Dirty & BELLECOUR - Tokyo Bill (Extended Mix) - 2A - 125\n'
+    + 'Camila Cabello - Liar (Madsko Remix) - 10A - 102\n'
+    + 'Camila Cabello - Liar (PeteDown Flavor Mix) - 10A - 100\n'
+    + 'CAMO & Reverse Prime - Telling Me (Extended Mix) - 7A - 124\n'
+    + 'Chase Rice - Ready Set Roll (Naked Cowboy Club Mix) - 8B - 156\n'
+    + 'Chico Rose ft Afrojack - Sad (Extended Mix) - 2A - 125\n'
+    + 'Chris Brown feat Drake - No Guidance (DJ RODE Blend) - 12A - 98\n'
+    + 'Chris Brown feat Drake - No Guidance (HIRO Nola Bounce Edit) - 12A or 1A - 97\n'
+    + 'Christian Bonori - Dabih (Daniel Jaeger Remix) - 5A - 123\n'
+    + 'Christian Bonori - Indus (Beatamines Remix) - 10A - 124\n'
+    + 'Circle of Life - Dominacija (Original Mix) - 5A - 122\n'
+    + 'CITYZEN - Crunk (Extended Mix) - 9A - 123\n'
+    + 'Croatia Squad - Move That Body (Original Mix) - 2A - 126\n'
+    + 'Danileigh ft Chris Brown - Easy (Justin Credible Remix) - 9B - 100\n'
+    + 'Dave Darell - I Just Wanna Live (Deniz Koyu Remix) - 12A - 128\n'
+    + 'Denise, Chris Lorenzo, Puppah Nas-T - Work (Club Mix) - 11A - 128\n'
+    + 'Deniz Koyu - Tung! (Thomas Gold Remix) - 9B - 127\n'
+    + 'Desert Dwellers - One That Shows the Way (Original Mix) - 5A - 110\n'
+    + 'Dillon Francis ft Bunji Garlin - Bomboclat (Light It Up) (Extended Mix) - 4A - 150\n'
+    + 'Disciples & Eyelar - All Mine (Sonny Fodera Remix) - 9A - 123\n'
+    + 'DJ Damiloy Daniel - Sovereign King - 9A - 122\n'
+    + 'DJ Frequency X - Donde Estan (Original Mix) - 9A - 100\n'
+    + 'DJ Goozo, Massianello & DJ Dross  - Bomb (Original Mix) - 7A - 128\n'
+    + 'DJ Lady S - Mami Work (Original Mix) - 5A - 98\n'
+    + 'Don Omar - Virtual Diva (Alex Selas Remix) - 1A - 107\n'
+    + 'Dubdogz - Techno Prank (Extended Mix) - 9A - 124\n'
+    + 'Duke Dumont  - The Power (Leftwing  Kody Remix) - 4A - 124\n'
+    + 'Eddie Bitar, Anti Soshal feat Shanti People - Narayana (Original Mix) - 8A - 123\n'
+    + 'Elephant Heart - The Digital (Steve Aoki Remix) - 12A - 105\n'
+    + 'Eminem - Without Me (HUGEL Remix) - 6A - 126\n'
+    + 'Emmanuel Jal - Rahamah (Armonica Remix Vocal) - 11A - 121\n'
+    + 'Eric Prydz - Call On Me (Kepa Remix) - 11B - 124\n'
+    + 'Example - All Night (Origianl Mix) - 1A - 124\n'
+    + 'Fergie  - London Bridge (Madsko Remix) - 4A - 100\n'
+    + 'Fisher vs Ying Yang Twins & Pitbull  - Shake Your Little Beauty (DJ Jay Carpenter) - 3A - 125\n'
+    + 'Gabriel & Dresden ft Sub Teal - Coming On Strong (Extended Mix) - 3A - 128\n'
+    + 'Galantis - Holy Water (Extended Mix) - 12B - 126\n'
+    + 'Garmiani - AVA (Original Mix) - 4A - 109\n'
+    + 'Groove Delight & Evoxx - Horns 2.0 - 11A - 124\n'
+    + 'Hallex M - Pull Yourselves Together - 1A - 123\n'
+    + 'Hannes Wiehager - Transmission (Original Mix) - 6A - 124\n'
+    + 'Hernan Cerbello - 2020 feat Flow (Juan Lombardo Remix) - 7A - 123\n'
+    + 'J Swink - Hypnotized (Cosmic Boys Remix) - 4A - 128\n'
+    + 'Janet Jackson - All For You (Disco Fries Remix) - 9A - 126\n'
+    + 'Jax Jones ft. RAYE - You Don\'t Know Me (D\'Maduro Remix) - 10A - 125\n'
+    + 'Keanu Silva & Mo Falk - You Got The Love (Extended Mix) - 2A - 124\n'
+    + 'Landis - Hit The Flow (Extended Mix) - 11A - 128\n'
+    + 'Lizzo vs Nas - Good as Hell (Mighty\'s Then & Now Mix) - 4A - 96\n'
+    + 'Major Lazer ft J Blavin & El Alfa - Que Calor (Muzik Junkies Remix) - 6B - 128\n'
+    + 'Mark Funk - All Night Disco (Original Mix) - 9A - 123\n'
+    + 'Martin Ikin - Hooked (Extended Mix) - 4A - 126\n'
+    + 'Martin Solveig ft. Dragonette - Hello (Mr. M!X Remix) - 5B - 128\n'
+    + 'Matroda - Guest List (Extended Mix) - 9A - 124\n'
+    + 'Mha Iri, Andrea Signore - Road Rage (Original Mix) - 10A - 128\n'
+    + 'Mix & Noise & Jes?s Fern?ndez - Vazilando - 4A - 128\n'
+    + 'MOTi, Lady Bee ft Carla Monroe - Tribe (Original Mix) - 2A - 128\n'
+    + 'Nicola Fasano, Trillogee - Fuego de Cumbia (Original Mix)  - 3A - 126\n'
+    + 'Ninetoes - Volar La Pluma - 9A - 124\n'
+    + 'P. Diddy ft. Usher & Loon - I Need A Girl,  Pt. 1  (MMR Remix) - 9A - 100\n'
+    + 'Post Malone - Circles (PeteDown Club Mix) - 8B - 120\n'
+    + 'Post Malone feat DaBaby - Enemies (PeteDown Flavor Mix) - 2B - 150\n'
+    + 'Regard - Ride It (Extended Mix) - 7A - 118\n'
+    + 'Rihanna - Pon De Replay (MMR Remix) - 9A - 129\n'
+    + 'Rihanna - Umbrella (Robin Roij Remix) - 3B - 100\n'
+    + 'Robin Schulz ft. Harloe - All This Love (Paola Shea Remix) - 7A - 128\n'
+    + 'Salas & MJSTK - Baile - 7A - 126\n'
+    + 'Saweetie - My Type (Dillon Francis Remix) - 6A - 105\n'
+    + 'Sean Finn & Paul Jockey - Dare Me (Original Mix) - 9A - 124\n'
+    + 'Sean Paul - When It Comes To You (Keepin It Heale Remix) - 3A - 124\n'
+    + 'Shane 54 - Delirium feat Clara Sofie (Extended Mix) - 7A - 128\n'
+    + 'Shaun Frank ft Lexy Panterra - Where Do You Go (Dirty Palm Remix) - 1A - 128\n'
+    + 'Shawn Mendes & Camila Cabello - Se?orita (Kahikko Remix) - 8A - 125\n'
+    + 'Shawn Mendes, Camila Cabello vs Oliver Heldens & Riton - Senorita vs Turn Me On (WeDamnz Mashup) - 3A - 126\n'
+    + 'Ship Wrek - Wait For You - 4A - 128\n'
+    + 'Showtek, Sultan & Shepard - Way We Used 2 (David Puentez Remix) - 4A - 126\n'
+    + 'SIDEPIECE - Wanna See You (Original Mix) - 9A - 125\n'
+    + 'SKIY - The Guitar Track (Extended Mix) - 9A - 125\n'
+    + 'Space Motion & NekliFF - Laziness (Original Mix) - 6A - 124\n'
+    + 'Spankox - To The Club (Boris Smith Remix) - 4A - 124\n'
+    + 'Steeve (SVK) - Bounce (Original Mix) - 2A - 125\n'
+    + 'Steve Aoki & Will Sparks - Send It (Original Mix) - 9A - 124\n'
+    + 'The Sponges - Funked Up (Original Mix) - 11A - 124\n'
+    + 'Tommy Capretto - House Is A Feeling (Robbie Rivera Remix) - 3A - 124\n'
+    + 'Tujamo & Lukas Vane - Drop It (Smassh VIP Edit) - 4A - 126\n'
+    + 'TWISTERZ - Nasty (Extended Mix) - 8A - 125\n'
+    + 'Uncloak - Hollow (Morttagua Remix) - 8A - 123\n'
+    + 'Vakabular - What You Gonna Do (Original Mix) - 9A - 124\n'
+    + 'Yotto - Nova (Extended Mix) - 1A - 124\n'
+    + 'Young Bombs ft. Gigi - Loyal (Grynn Remix) - 4B - 104\n'
+    + 'Yves V ft Afrojack & Icona Pop - We Got That Cool (Chico Rose Remix) - 2A - 126\n';
+
   private teamixVol1 =
     'Beach Boii - Rude (DJ RooBen Edit)\n'
     + 'Bruno Mars X Cardi B X Bee Gees - Finesse Vs. Staying Alive (Serafin Finesse Edit - DJ RooBen Fix)\n'
@@ -1401,7 +1503,7 @@ export class ItemsPlaylistService {
     + 'קריזמו וקרלוס אמ סי - מיה (RooBen Redrum) - 7A - 97\n'
     + 'שחר סאול - השחר עולה (TeaMix Edit) - 7A - 100\n';
 
-  public teamixLatinVol1 =
+  private teamixLatinVol1 =
     'Abrina - Cuentalo (TeaMix Latin 1 - RooBen Intro)\n'
     + 'C. Tangana Ft. Becky G- Booty (TeaMix Latin 1 - RooBen Edit)\n'
     + 'Chacal - No Volvere (TeaMix Latin 1 - RooBen Intro)\n'
@@ -1425,7 +1527,7 @@ export class ItemsPlaylistService {
     + 'Wolfine - Le Pido A Dios (TeaMix Latin 1 - RooBen Intro)\n'
     + 'Yenddi Ft. Abraham Mateo, De La Ghetto, Jon Z - Bom Bom (TeaMix Latin 1 - RooBen Edit)\n';
 
-  public teamixLatinVol2 =
+  private teamixLatinVol2 =
     '6ix9ine ft Anuel AA - MALA (TeaMix Latin 2 - RooBen Edit) 105\n'
     + '6ix9ine Ft. Anuel AA - Bebe (TeaMix Latin 2 - Dudu A\'S Redrum) 106\n'
     + 'Alaya Ft. Zion Y Lennox - Tocamelo (TeaMix Latin 2 - RooBen Edit) 105\n'
@@ -1450,7 +1552,7 @@ export class ItemsPlaylistService {
     + 'Wisin & Yandel - Guaya (TeaMix Latin 2 - RooBen Intro) 98\n'
     + 'Wisin y Yandel Ft. Ozuna - Callao (TeaMix Latin 2 - RooBen Intro) 92\n';
 
-  public teamixLatinVol3 =
+  private teamixLatinVol3 =
     'Aitana Ft. Lele Pons – Telefono (RooBen Intro) 86\n'
     + 'Anuel AA - Amanece (RooBen Intro) 94\n'
     + 'Anuel AA Ft Karol G - Secreto (RooBen Redrum) 92\n'
@@ -1473,7 +1575,7 @@ export class ItemsPlaylistService {
     + 'Wisin & Yandel, Miky Woodz - Mi Intencion (RooBen Intro) 70\n'
     + 'Wisin y Yandel Ft. Maluma - La Luz (RooBen Intro) 97\n';
 
-  public teamixLatinVol4 =
+  private teamixLatinVol4 =
     'Dayami La Musa Osmani Garcia La Voz - Bumper (Syco Intro)\n'
     + 'Don Omar ft. Tego Calderon - Bandolero (Syco Intro)\n'
     + 'Golpe a Golpe Ft. Justin Quiles - Conmigo (RooBen Intro)\n'
@@ -1498,7 +1600,7 @@ export class ItemsPlaylistService {
     + 'Wolfine Ft. Maluma - Bella (RooBen Intro)\n'
     + 'Yomil y El Dany - Chona (RooBen Intro)\n';
 
-  public teamixLatinVol5 =
+  private teamixLatinVol5 =
     'Alaya Ft. Zion y Lennox - Tocamelo (RooBen Intro)\n'
     + 'Carlos Baute ft Farina - Compro Minutos (RooBen Intro)\n'
     + 'CNCO Ft. Prince Royce - Llegaste Tu (RooBen Intro) Hook 1st\n'
@@ -1632,7 +1734,7 @@ export class ItemsPlaylistService {
     + 'Wisin y Yandel ft Hector El Father - El Telefono - 10A - 90\n'
     + 'Yomo Ft. Jowell Y Marvel Boy - Plakata - 6A - 90\n';
 
-  public teamixThrowbackVol1 =
+  private teamixThrowbackVol1 =
     '2Pac - All About U (TeaMix Throwback 1 - Extended).mp3\n'
     + '2Pac - California Love (TeaMix Throwback 1 - Extended).mp3\n'
     + '2Pac - Hit \'Em Up (TeaMix Throwback 1 - Extended).mp3\n'
@@ -1661,7 +1763,7 @@ export class ItemsPlaylistService {
     + 'Wiz Khalifa - Black & Yellow (TeaMix Throwback 1 - RooBen Edit).mp3\n'
     + 'T-Pain Ft. Teddy Verseti - Church (TeaMix Throwback 1 - RooBen Edit).mp3\n';
 
-  public teamixThrowbackVol2 =
+  private teamixThrowbackVol2 =
     'Akon Ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 2 - Dudu A\'S Redrum).mp3\n'
     + 'Baby Boy Da Prince - The Way I Live (TeaMix Throwback 2 - RooBen Aca In).mp3\n'
     + 'C&C Music Factory - Gonna Make You Sweat (Everybody Dance Now) (TeaMix Throwback 2 - RooBen Intro).mp3\n'
@@ -1685,7 +1787,7 @@ export class ItemsPlaylistService {
     + 'Yung Joc ft Nitti - It\'s Goin\' Down (TeaMix Throwback 2 - RooBen Aca In).mp3\n'
     + 'Yung Joc ft Nitti - It\'s Goin\' Down (TeaMix Throwback 2 - RooBen Intro).mp3\n';
 
-  public teamixThrowbackVol3 =
+  private teamixThrowbackVol3 =
     'Anastacia - Paid My Dues (TeaMix Throwback 3 - RooBen Intro)\n'
     + 'Audio Push - Teach Me How To Jerk (TeaMix Throwback 3 - RooBen Intro)\n'
     + 'B2K ft P. Diddy - Bump, Bump, Bump (TeaMix Throwback 3 - RooBen Intro)\n'
@@ -1707,7 +1809,7 @@ export class ItemsPlaylistService {
     + 'Timbaland Ft Nelly Furtado - Give It To Me (DJ Kuper Edit)\n'
     + 'Westside Connection - Bow Down (TeaMix Throwback 3 - RooBen Intro)\n';
 
-  public teamixThrowbackVol4 =
+  private teamixThrowbackVol4 =
     '50 Cent ft Lloyd Banks, Young Buck & Snoop Dogg - P.I.M.P. (G-Unit Remix) (TeaMix Throwback 4 - RooBen Intro).mp3\n'
     + 'Akon - Bananza (Belly Dancer) (TeaMix Throwback 4 - RooBen Intro).mp3\n'
     + 'Akon ft. Snoop Dogg - I Wanna Fuck You (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
@@ -1735,7 +1837,7 @@ export class ItemsPlaylistService {
     + 'Tyga ft. Young Thug - Hookah (TeaMix Throwback 4 - DJ Kuper Intro).mp3\n'
     + 'Whitney Houston - So Emotional (TeaMix Throwback 4 - RooBen Intro).mp3\n';
 
-  public teamixThrowbackVol5 =
+  private teamixThrowbackVol5 =
     '2Pac ft Nate Dogg & Eminem - Thugs Get Lonely Too (TeaMix Throwback 5 - RooBen Intro) 82\n'
     + '50 Cent - Disco Inferno (TeaMix Throwback 5 - DJ Kuper Intro) 97\n'
     + 'Akon - Sorry, Blame It On Me (TeaMix Throwback 5 - RooBen Intro) 88\n'
@@ -1757,7 +1859,7 @@ export class ItemsPlaylistService {
     + 'The Offspring - Pretty Fly (For A White Guy) (TeaMix Throwback 5 - RooBen Intro) 143\n'
     + 'Yung Berg ft Junior - Sexy Lady (TeaMix Throwback 5 - RooBen Intro) 93\n';
 
-  public teamixThrowbackVol6 =
+  private teamixThrowbackVol6 =
     'Akon ft Eminem - Smack That (RooBen Intro).mp3\n'
     + 'Baby Bash ft Frankie J - Suga Suga (RooBen Intro).mp3\n'
     + 'Bad Boy\'s Da Band - Bad Boy This Bad Boy That (RooBen Intro).mp3\n'
@@ -1779,7 +1881,7 @@ export class ItemsPlaylistService {
     + 'Too Short ft Lil Jon - Shake That Monkey (Syco Intro) Hook 1st.mp3\n'
     + 'Too Short ft Lil Jon - Shake That Monkey (Syco Intro).mp3\n';
 
-  public teamixThrowbackVol7 =
+  private teamixThrowbackVol7 =
     'B-Hamp - Do The Ricky Bobby (TeaMix Intro).mp3\n'
     + 'Bubba Sparxxx & Ying Yang Twins - Ms. New Booty (RooBen Edit).mp3\n'
     + 'Capone-N-Noreaga ft Lexxus & Wayne Wonder - Anything Goes (TeaMix Intro).mp3\n'
@@ -1808,7 +1910,36 @@ export class ItemsPlaylistService {
     + 'T.W.D.Y ft Too Short, Rappin 4-Tay, Captain Save Em & Mac Mall - Player\'s Holiday (TeaMix Intro).mp3\n'
     + 'The Game ft Lil Wayne - My Life (TeaMix Intro).mp3\n';
 
-  public teamixDanceVol1 =
+  private teamixThrowbackVol8 =
+    '112 ft Supercat - Na Na Na Na (TeaMix Intro) - 2A - 99\n'
+    + '50 Cent - Straight To The Bank (TeaMix Intro) - 6A - 90\n'
+    + 'Athena Cage - Hey Hey (TeaMix Intro) - 11A - 98\n'
+    + 'B-Hamp - Do The Ricky Bobby (TeaMix Intro) - 7A - 150\n'
+    + 'Baby Boy Da Prince ft Mannie Fresh - Naw Meen (TeaMix Intro) - 4A - 87\n'
+    + 'Brandy ft Big Pun & Fat Joe - Top Of The World (Remix) (TeaMix Intro) - 1A - 98\n'
+    + 'Christina Milian - Dip It Low (TeaMix Intro) - 8A - 85\n'
+    + 'Daz Dillinger ft Rick Ross - On Some Real (TeaMix Intro) - 4A - 88\n'
+    + 'Everything But The Girl - Missing (Todd Terry Club Mix - TeaMix Edit) - 8A - 124\n'
+    + 'Fat Joe ft Triple Seis, Cuban Link & Big Pun - Bet Ya Man Can\'t (Triz) (TeaMix Intro) - 6A - 95\n'
+    + 'Gwen Stefani - Crash (TeaMix Intro) - 12A - 126\n'
+    + 'Gym Class Heroes ft Patrick Stump - Clothes Off!! (TeaMix Intro) - 2A - 115\n'
+    + 'Ja Rule - Holla Holla (TeaMix Intro) - 10A - 93\n'
+    + 'Kylie Minogue - Can\'t Get You Out Of My Head (TeaMix Intro) - 7A - 126\n'
+    + 'Lady Gaga - Bad Romance (TeaMix Intro) - 8A - 119\n'
+    + 'LL Cool J ft The-Dream - Baby (TeaMix Intro) - 8A - 100\n'
+    + 'Luniz ft Michael Marshall - I Got 5 On It (TeaMix Into) - 3A - 87\n'
+    + 'Luniz ft Michael Marshall, Spice 1, Richie Rich, Shock G, E-40 & Dru Down - I Got 5 On It (Remix) (TeaMix Intro) - 3A - 87\n'
+    + 'Maino ft T-Pain - All The Above (TeaMix Intro) - 5A - 150\n'
+    + 'Maino ft T-Pain - All The Above (TeaMix Intro) Hook 1st - 5A - 150\n'
+    + 'Maino ft. Swizz Beatz - Million Bucks (DJ Kuper Intro) - 1A - 98\n'
+    + 'Mark Morrison - Return Of The Mack (TeaMix Intro) - 7A - 95\n'
+    + 'Nelly - Flap Your Wings (TeaMix Intro) - 8A - 106\n'
+    + 'T.W.D.Y ft Too Short, Rappin 4-Tay, Captain Save Em & Mac Mall - Player\'s Holiday (TeaMix Intro) - 5B - 92\n'
+    + 'The Black Eyed Peas - Bebot (DJ Kuper Intro) - 7A - 107\n'
+    + 'Tiesto ft BT - Love Comes Again (TeaMix Intro) - 5A - 136\n'
+    + 'Tiesto ft BT - Love Comes Again (TeaMix Intro) Hook 1st - 5A - 136\n';
+
+  private teamixDanceVol1 =
     'Antoine Clamaran & Tristan Garner - Cancun Paradise (TeaMix Dance 1 - Dudu A\'S Edit)\n'
     + 'AvAlanche & Mogli - Sahara (TeaMix Dance 1 - Dudu A\'S Edit)\n'
     + 'Buskilaz Ft. Ofek Yom Tov - Danya (TeaMix Dance 1 - Dudu A\'S Fix)\n'
@@ -1826,7 +1957,7 @@ export class ItemsPlaylistService {
     + 'פאר טסי ופבלו רוזנברג - משהו מתוק (TeaMix Dance 1 - RooBen Fix)\n'
     + 'קטריקס ודורון ביטון & קייט ואור - פריטי בוי (TeaMix Dance 1 - RooBen Edit)\n';
 
-  public teamixDanceVol2 =
+  private teamixDanceVol2 =
     'Armin van Buuren - Blah Blah Blah (TeaMix Dance 2 - IdoM Edit) 132-138\n'
     + 'Axwell Ingrosso - How Do You Feel Right Now (TeaMix Dance 2 - IdoM Edit)\n'
     + 'Campsite Dream - Kiss Me (TeaMix Dance 2 - Dudu A\'S Extended)\n'
@@ -1852,7 +1983,7 @@ export class ItemsPlaylistService {
     + 'דודו אהרון - חתונה של השמחות (TeaMix Dance 2 - Dudu A\'S Mashup)\n'
     + 'הראל סקעת - אם ננעלו (Yohan Cohen Remix - TeaMix Dance 2 - RooBen Fix)\n';
 
-  public teamixDanceVol3 =
+  private teamixDanceVol3 =
     'ylen, Goshfather & B.E.P - SPREAD X My HUMPS (TeaMix Dance 3 - IdoM Mashup)\n'
     + 'Bandi - Dim Dim (TeaMix Dance 3 - Roe Hyams Edit)\n'
     + 'Barbatuques - Baiana (Cosme Martin & Christian Vila Remix - TeaMix Dance 3 - IdoM Edit)\n'
@@ -1872,7 +2003,7 @@ export class ItemsPlaylistService {
     + 'סטטיק ובן אל - גומיגם (TeaMix Dance 3 - Doron Shitrit & Koren Ohayon Short Edit)\n'
     + 'סטטיק ובן אל תבורי - גומיגם (TeaMix Dance 3 - RooBen Extended)\n';
 
-  public teamixDanceVol4 =
+  private teamixDanceVol4 =
     'Abel Ortiz - Amo la Vida (TeaMix Dance 4 - Sagiv Alfasi Edit)\n'
     + 'Armin van Buuren, Alok, Vini Vici, Zafrir - UNITED (TeaMix Dance 4 - IdoM Edit)\n'
     + 'Black Caviar - Lady (Hear Me Tonight) (TeaMix Dance 4 - Sagiv Alfasi Edit)\n'
@@ -1897,7 +2028,7 @@ export class ItemsPlaylistService {
     + 'איב אנד ליר - סאלאם (TeaMix Dance 4 - Dudu A\'S Edit)\n'
     + 'עומר אדם & מור אברהמי - רחוק מכולם (Gadi Dahan & Omri Mordehai Mashup - TeaMix Dance 4 - RooBen Fix)\n';
 
-  public teamixDanceVol5 =
+  private teamixDanceVol5 =
     'Artbat - Target (TeaMix Dance 5 - DJ Kuper ShortCut)\n'
     + 'Aya Nakamura - Djadja (Dj Dark & MD Dj Remix - TeaMix Dance 5 - RooBen Fix)\n'
     + 'Bazzi vs EDX ft Camila Cabello - Beautiful (Bazzi vs EDX\'s Ibiza Sunrise Remix - TeaMix Dance 5 - RooBen Intro Edit)\n'
@@ -1920,7 +2051,7 @@ export class ItemsPlaylistService {
     + 'Tiesto & Dzeko feat Preme & Post Malone - Jackie Chan (Keanu Silva Remix - TeaMix Dance 5 - RooBen Intro)\n'
     + 'Ummet Ozcan & WAR - Low Rider (TeaMix Dance 5 - RooBen Fix)\n';
 
-  public teamixDanceVol6 =
+  private teamixDanceVol6 =
     'ARTBAT - Papillon (TeaMix Dance 6 - Sagiv Alfasi Edit )\n'
     + 'Bougenvilla - Utami (TeaMix Dance 6 - Sagiv Alfasi Edit)\n'
     + 'Bram Fidder - Thirsty feat AxR (TeaMix Dance 6 - Sagiv Alfasi Edit )\n'
@@ -1947,7 +2078,7 @@ export class ItemsPlaylistService {
     + 'עדן חסון - שיכורים (Nadav Sion Remix - TeaMix Dance 6 - Dudu A\'S Edit)\n'
     + 'שרית חדד - אמאלה ואבאלה (Tomer Segev Remix - TeaMix Dance 6 - Dudu A\'S Edit)\n';
 
-  public teamixDanceVol7 =
+  private teamixDanceVol7 =
     'Age Of Wena Paradise (Gavri Blend - IdoM Edit) 128\n'
     + 'Armand Pena - Se Va (Sagiv Alfasi Edit) 123\n'
     + 'Biscits - Do It Like This (Dudu A\'S Edit) 124\n'
@@ -1970,7 +2101,7 @@ export class ItemsPlaylistService {
     + 'Syntheticsax - Last Christmas (Dudu A\'S Edit) 120\n'
     + 'Trance Wax - Trance 7 (DJ Kuper Edit Edit) (V2) 128\n';
 
-  public teamixDanceVol8 =
+  private teamixDanceVol8 =
     'Andrey Exx, Pushkarev - Keep the Funk (IdoM Edit)\n'
     + 'Armin van Buuren - Blah Blah Blah (Syco Darbuka Mix)\n'
     + 'Avicii x Mike Williams x Mesto  - Wait Another Nights (Sagiv Alfasi Mashup)\n'
@@ -1997,7 +2128,7 @@ export class ItemsPlaylistService {
     + 'Havana - Lost you (German Avny & Mike Tsoff Remix) [Intro 2019]\n'
     + 'Kazka - Cry (Plakala) (German Avny & Mike Tsoff Remix) [Intro 2019]\n';
 
-  public teamixDanceVol9 =
+  private teamixDanceVol9 =
     'lex Guesta Vs Ilkay Sencan - let Ritual me (Sagiv Alfasi Mashup)\n'
     + 'Andrey Exx, Pushkarev feat. Stromae - Keep the ALORS ON DANSE (IdoM Mashup)\n'
     + 'Arcade X Legend (Saarco - Aviel Mymon Edit)\n'
@@ -2047,9 +2178,36 @@ export class ItemsPlaylistService {
     + 'Offer Nissim Feat. Maya - First Time (Mike Tsoff & German Avny Remix)\n'
     + 'Sting - Desert Rose (German Avny & Mike Tsoff Remix)\n';
 
+  private teamixDanceVol10 =
+    'Armin van Buuren And Sunnery James & Ryan Marciano - You Are (Aviel Mymon Prv Edit) - 1A - 130\n'
+    + 'Blastoyz & Reality Test - Kabalah (Dudu A\'S Edit) - 9A - 138\n'
+    + 'Can\'t Stop (Aviel Fix) - 4A - 117\n'
+    + 'Fergie Vs. Gadi & Omri - If You Aint Got No Money (N9NE - IdoM Mashup) - 9A - 130\n'
+    + 'Haim Amar - Zurna (Dudu A\'S Fix) - 8A - 130\n'
+    + 'Ian Carey - Keep On Rising (Offaiah - Dudu A\'S Edit) - 2A - 125\n'
+    + 'Jenia Tarsol & Jinga - Hold Your Pony (Aviel Fix) - 7A - 120\n'
+    + 'Kino Todo - Gidafi Na (Aviel Fix) - 5A - 120\n'
+    + 'Lexa Hill - La Isla de Bes (AVIEL Stolero Edit) - 11A - 124\n'
+    + 'Mahmood - Soldi [Yohan Cohen Exclusive Remix] - 2A - 120\n'
+    + 'Matara - Buda (Aviel Edit) - 9A - 122\n'
+    + 'Meduza - Piece Of Your Heart (Vivo Remix - Aviel Mymon Fix) - 3A - 132\n'
+    + 'Sebjak & Fahlberg - Chateau (Aviel Fix) - 2A - 122\n'
+    + 'Sebjak & WILL K x Valentino Khan - Deep Down Smoke (Aviel Mymon Bootleg Edit) - 6A - 128\n'
+    + 'Shawn Mendes & Camila Cabello - Senorita (Amice - Dudu A\'S Edit) - 8A - 122\n'
+    + 'Space Motion & Kashovski - Hingo Feat. Idd Aziz (Aviel Fix) - 6A - 120\n'
+    + 'The Dril (Aviel Mymon Prv Rework) - 5A - 128\n'
+    + 'Tiesto, Jonas Blue & Rita Ora - Ritual (Amice - Dudu A\'S Edit) - 2A - 122\n'
+    + 'Venga Boys, Tiesto - Boom Boom Boom (JaeBea \'Boom\' Edit - TeaMix Fix) - 2B or 7A - 128\n'
+    + 'Y2K & Bbnos - Lalala (ilkan Gunuc - Dudu A\'S Edit) - 5A - 124\n'
+    + 'איתי לוי ועדן בן זקן - הזמן שלנו (Shon Hen - Dudu A\'S Edit) - 3A - 130\n'
+    + 'נועה קירל - פאוץ ( Dalit & Ran Ziv - Itay Ben Senyor Fix) - 7A - 128\n'
+    + 'עומר אדם - ניפגש בשמחות (Waka - Aviel Mymon Edit) - 12A - 130\n'
+    + 'עומר אדם - ניפגש בשמחות (Waka - IdoM Edit) - 12A - 130\n';
+
+
   private itemsPlaylist: { [key: string]: string } = {
     teamixSelectedVol1: this.teamixSelectedVol1, teamixSelectedVol2: this.teamixSelectedVol2, teamixSelectedVol3: this.teamixSelectedVol3,
-    teamixSelectedVol4: this.teamixSelectedVol4, teamixSelectedVol5: this.teamixSelectedVol5,
+    teamixSelectedVol4: this.teamixSelectedVol4, teamixSelectedVol5: this.teamixSelectedVol5, teamixSelectedVol6: this.teamixSelectedVol6,
     teamixVol20: this.teamixVol20,
     teamixVol19: this.teamixVol19, teamixVol18: this.teamixVol18, teamixVol17: this.teamixVol17, teamixVol16: this.teamixVol16,
     teamixVol15: this.teamixVol15, teamixVol14: this.teamixVol14, teamixVol13: this.teamixVol13, teamixVol12: this.teamixVol12,
@@ -2061,10 +2219,11 @@ export class ItemsPlaylistService {
     teamixThrowbackVol1: this.teamixThrowbackVol1, teamixThrowbackVol2: this.teamixThrowbackVol2,
     teamixThrowbackVol3: this.teamixThrowbackVol3, teamixThrowbackVol4: this.teamixThrowbackVol4,
     teamixThrowbackVol5: this.teamixThrowbackVol5, teamixThrowbackVol6: this.teamixThrowbackVol6,
-    teamixThrowbackVol7: this.teamixThrowbackVol7,
+    teamixThrowbackVol7: this.teamixThrowbackVol7, teamixThrowbackVol8: this.teamixThrowbackVol8,
     teamixDanceVol1: this.teamixDanceVol1, teamixDanceVol2: this.teamixDanceVol2, teamixDanceVol3: this.teamixDanceVol3,
     teamixDanceVol4: this.teamixDanceVol4, teamixDanceVol5: this.teamixDanceVol5, teamixDanceVol6: this.teamixDanceVol6,
-    teamixDanceVol7: this.teamixDanceVol7, teamixDanceVol8: this.teamixDanceVol8, teamixDanceVol9: this.teamixDanceVol9
+    teamixDanceVol7: this.teamixDanceVol7, teamixDanceVol8: this.teamixDanceVol8, teamixDanceVol9: this.teamixDanceVol9,
+    teamixDanceVol10: this.teamixDanceVol10
   };
 
 

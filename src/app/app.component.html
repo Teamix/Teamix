@@ -27,55 +27,45 @@
 
   <app-menu-tab id="menuTab" *ngIf="!this.mobileCheckService.getIfMobile()"></app-menu-tab>
 
+  <div id="mainContentDiv">
+    <router-outlet id="main">
+      <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'English')">
+        <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">Home</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">Packs</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">DJ Sets</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">About</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</span>
+        <br>
+        <br>
+      </div>
 
-  <br>
-  <router-outlet id="main">
-    <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'English')">
-      <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">Home</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">Packs</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">DJ Sets</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">About</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</span>
-      <br>
-      <br>
-    </div>
-
-    <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'Hebrew')">
-      <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">דף בית</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">חבילות</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">סטים</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">אודות</span>
-      <br>
-      <br>
-      <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">צור קשר</span>
-      <br>
-      <br>
-    </div>
-  </router-outlet>
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
+      <div id="menu" *ngIf="getMenuFlag() && (languageService.getLanguage() === 'Hebrew')">
+        <span class="links" [routerLink]="['/']" routerLinkActive="router-link-active">דף בית</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/packs/all']" routerLinkActive="router-link-active">חבילות</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/sets']" routerLinkActive="router-link-active">סטים</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/about']" routerLinkActive="router-link-active">אודות</span>
+        <br>
+        <br>
+        <span class="links" [routerLink]="['/contact']" routerLinkActive="router-link-active">צור קשר</span>
+        <br>
+        <br>
+      </div>
+    </router-outlet>
+  </div>
 
   <div id="scrollUpButtonDivCom" (click)="scrollUpNow()" *ngIf="buttonFlag && !this.mobileCheckService.getIfMobile()">
     <img id="scrollUpButtonImgCom" src="./assets/arrowUpWhite48dp2x.png">
@@ -90,7 +80,17 @@
   <app-footer id="footer"></app-footer>
 
   <div>
-      <span id="copyrightSpanCom" *ngIf="!this.mobileCheckService.getIfMobile()"><a id="copyrightA">&copy; Copyright 2019</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">YL Program & Web</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">MH Design</a> | <a class="copyrightA" href="https://www.facebook.com/TeaMixx/" target="_blank" rel="noopener noreferrer">TeaMix</a></span>
-      <span id="copyrightSpanMob" *ngIf="this.mobileCheckService.getIfMobile()"><a id="copyrightA">&copy; Copyright 2019</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">YL Program & Web</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">MH Design</a> | <a class="copyrightA" href="https://www.facebook.com/TeaMixx/" target="_blank" rel="noopener noreferrer">TeaMix</a></span>
+    <span id="copyrightSpanCom" *ngIf="!this.mobileCheckService.getIfMobile()"><a id="copyrightA">&copy; Copyright
+        2019</a> | <a class="copyrightA" href="https://www.facebook.com/TeaMixx/" target="_blank"
+        rel="noopener noreferrer">TeaMix</a> | <a class="copyrightA"
+        href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">YL Program &
+        Web</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank"
+        rel="noopener noreferrer">MH Design</a></span>
+    <span id="copyrightSpanMob" *ngIf="this.mobileCheckService.getIfMobile()"><a id="copyrightA">&copy; Copyright
+        2019</a> | <a class="copyrightA" href="https://www.facebook.com/TeaMixx/" target="_blank"
+        rel="noopener noreferrer">TeaMix</a> | <a class="copyrightA"
+        href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank" rel="noopener noreferrer">YL Program &
+        Web</a> | <a class="copyrightA" href="https://www.linkedin.com/in/yehoraz-levi-1359ab177" target="_blank"
+        rel="noopener noreferrer">MH Design</a></span>
   </div>
 </div>

@@ -2,7 +2,8 @@
     <ul *ngFor="let item of EnglishMenu" class="ul" >
         <mat-card class="main">
             <mat-card-content class="content">
-              <span class="menuButtonsEn" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
+              <span *ngIf="item.menuItem != 'Packs'" class="menuButtonsEn" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
+              <span *ngIf="item.menuItem === 'Packs'" class="menuButtonsEn" [routerLink]="['/' + item.pageLink + this.packGenreLink()]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
               <span *ngIf="item.menuItem != 'Contact'" style="margin-left: 35px">|</span>
             </mat-card-content>
         </mat-card>
@@ -13,7 +14,8 @@
   <ul *ngFor="let item of HebrewMenu" class="ul" >
       <mat-card class="main">
           <mat-card-content class="content">
-            <span class="menuButtonsHeb" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
+            <span *ngIf="item.menuItem != 'חבילות'" class="menuButtonsHeb" [routerLink]="['/' + item.pageLink]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
+            <span *ngIf="item.menuItem === 'חבילות'" class="menuButtonsHeb" [routerLink]="['/' + item.pageLink + this.packGenreLink()]" routerLinkActive="router-link-active">{{item.menuItem}}</span>
             <span *ngIf="item.menuItem != 'דף בית'" style="margin-left: 35px">|</span>
           </mat-card-content>
       </mat-card>

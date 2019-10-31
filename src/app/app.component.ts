@@ -11,7 +11,7 @@ export class AppComponent {
 
   public creators = 'YL Program and Web, MH Design, Teamix';
 
-  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { }
+  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { localStorage.setItem('choice', 'All'); }
 
   private title = 'TeamixSite';
   public ionScroll;

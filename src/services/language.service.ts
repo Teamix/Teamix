@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class LanguageService {
 
-  private language = 'English';
+  private language = localStorage.getItem('language') || 'English';
   private languageOptions = ['Hebrew', 'English'];
 
   private downloadMessage = "Hi I'm Interested In Package ";
@@ -22,6 +22,7 @@ export class LanguageService {
     if (!(this.language === newLanguage)) {
       for (const item of this.languageOptions) {
         if (item.includes(newLanguage)) {
+          localStorage.setItem('language', item);
           this.language = item;
           if(this.language === 'Hebrew'){
             this.downloadMessage = this.hebrewMessage;
@@ -41,7 +42,5 @@ export class LanguageService {
   public getDownloadMessage(){
     return this.downloadMessage;
   }
-
-
 
 }

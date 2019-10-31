@@ -7,6 +7,26 @@ export class ItemsPlaylistService {
 
   constructor() { }
 
+  private teamixClubBangersVol1 =
+  '50 Cent - In da Club (Vice Society Remix - Aviel Mymon Fix) - 1A - 123\n'
++'Audiojack - Inside My Head (Aviel Mymon Edit) - 5A - 125\n'
++'Azur - Isra (TheFirstStation Remix - Aviel Mymon Edit) - 7A - 123\n'
++'Dateless - Ever Work (Aviel Fix) - 8A - 123\n'
++'Dennis Lloyd - Nevermind (Ricardo Bugueno Remix - Aviel Mymon Edit) - 4A - 124\n'
++'Dvir Ben Kalifa - Hey Medro (Aviel Mymon Edit) V2 - 12B - 125\n'
++'Evokings - On The Floor (Aviel Mymon Fix) - 4A - 124\n'
++'Extinct X Jax Jones - Lose Yourself (Jonni M Mashup - Aviel Mymon ReWork Edit) - 6A - 128\n'
++'Hardwell & Franky Rizardo - Asteroid (Aviel Mymon Edit) - 5A - 128\n'
++'Hardwell - Smoke (Aviel Mymon Fix Fox) - 1A - 128\n'
++'I Square - Hey Sexy Lady (Chris Moody Remix - Aviel Mymon Mash - Up!) - 8A - 128\n'
++'Kanu & Chris Bowl - Stomp Your Feet (Aviel Mymon Edit) - 11A - 126\n'
++'LONI - Loneliness (OMER Remix - Aviel Edit) - 6A - 123\n'
++'Mark Knight & Funkagenda - Man With The Red Face (Hardwell Remix - Aviel Mymon Edit) - 4A - 127\n'
++'Pete ft Jem Cooke - So Long (Audiojack Remix - Aviel Mymon Edit) - 7A - 124\n'
++'Rebuke - The Pipe (Aviel Mymon Short Edit) V2 - 6A or 11A - 126\n'
++'The Prince Karma - Later Bitches (Aviel Mymon Extended) - 5A - 121\n'
++'Tort - Don\'t Laugh (Lol! Zion Beat Re-Work - Aviel Mymon Edit) - 1A - 128\n'
++'Will Sparks & The Similou - Rainbow Stylin\' (Aviel Mymon Fix) -7A - 125\n';
 
   private teamixSelectedVol1 =
     '3 Are Legend & W&W - Khaleesi (Extended Mix) - 11A-  130\n'
@@ -2410,6 +2430,7 @@ export class ItemsPlaylistService {
 
 
   private itemsPlaylist: { [key: string]: string } = {
+    teamixClubBangersVol1: this.teamixClubBangersVol1,
     teamixSelectedVol1: this.teamixSelectedVol1, teamixSelectedVol2: this.teamixSelectedVol2, teamixSelectedVol3: this.teamixSelectedVol3,
     teamixSelectedVol4: this.teamixSelectedVol4, teamixSelectedVol5: this.teamixSelectedVol5, teamixSelectedVol6: this.teamixSelectedVol6,
     teamixSelectedVol7: this.teamixSelectedVol7, teamixSelectedVol8: this.teamixSelectedVol8,

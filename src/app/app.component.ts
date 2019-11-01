@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { MobileCheckService } from 'src/services/mobile-check.service';
 import { LanguageService } from 'src/services/language.service';
+import { LinksService } from 'src/services/links.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,13 +13,12 @@ export class AppComponent {
 
   public creators = 'YL Program and Web, MH Design, Teamix';
 
-  constructor(public mobileCheckService: MobileCheckService, public languageService: LanguageService) { localStorage.setItem('choice', 'All'); }
+  constructor(public mobileCheckService: MobileCheckService, private linksService: LinksService, public languageService: LanguageService, private router: Router) { localStorage.setItem('choice', 'All'); }
 
   private title = 'TeamixSite';
   public ionScroll;
   public buttonFlag = false;
   public menuClickedFlag = false;
-
 
   public scrollUpNow() {
     window.scroll(0, 0);

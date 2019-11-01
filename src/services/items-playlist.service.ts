@@ -2453,6 +2453,10 @@ export class ItemsPlaylistService {
   };
 
 
+  public getItemFromPlayplist(item: string): string{
+    return this.itemsPlaylist[item];
+  }
+
   public getItemsPlaylist(): { [key: string]: string } {
     return this.itemsPlaylist;
   }

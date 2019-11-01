@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit, NgModule, HostListener } from '@angular/core';
 import { MatCardModule } from "@angular/material";
 import { ItemService } from 'src/services/item.service';
 import { LinksService } from 'src/services/links.service';
@@ -15,26 +15,27 @@ export class LinksComponent implements OnInit {
 
 
   public packGenre: string;
-  public choice = localStorage.getItem('choice') || "All";
+  public choice = "All";
   public list;
   public tmp;
 
   constructor(private itemService: ItemService, public linksService: LinksService, private route: ActivatedRoute, private router: Router, public mobileCheckService: MobileCheckService) {
-    this.packGenre = route.snapshot.params['packsType'];
+    this.packGenre = this.route.snapshot.params['packsType'];
   }
 
   ngOnInit() {
     if (this.linksService.checkGenre(this.packGenre)) {
       this.packGenre = this.packGenre.toLowerCase();
       if (!(this.packGenre === localStorage.getItem('choice'))) {
-        let tempChoice = this.packGenre.charAt(0).toUpperCase() + this.packGenre.substring(1);
+
+        const tempChoice = this.packGenre.charAt(0).toUpperCase() + this.packGenre.substring(1);
         localStorage.setItem('choice', tempChoice);
         this.choice = tempChoice;
       }
       this.linksService.setPacksGenre(this.packGenre);
       this.list = this.linksService.getItems();
       this.tmp = this.list;
-      let selection: any = document.querySelector('#genreSelect');
+      const selection: any = document.querySelector('#genreSelect');
       selection.value = this.choice;
     } else {
       this.router.navigate(['/']);
@@ -42,9 +43,22 @@ export class LinksComponent implements OnInit {
   }
 
   ngOnDestroy(): void {
-    //Called once, before the instance is destroyed.
-    //Add 'implements OnDestroy' to the class.
+    // Called once, before the instance is destroyed.
+    // Add 'implements OnDestroy' to the class.
     localStorage.removeItem('choice');
+  }
+
+  @HostListener('window:popstate')
+  public change() {
+    let urlpath: string = document.location.pathname
+    let choice = urlpath.charAt(7).toUpperCase() + urlpath.substring(8);
+    const selection: any = document.querySelector('#genreSelect');
+
+    if (selection.value !== choice) {
+      this.genreChoice(choice, selection);
+    } else {
+      window.history.back();
+    }
   }
 
 
@@ -57,7 +71,7 @@ export class LinksComponent implements OnInit {
     newChoice = newChoice.toLowerCase();
     this.packGenre = newChoice;
     this.router.navigate(['/packs/' + newChoice]);
-    // this.linksService.setPacksGenre(this.packName);
+    //this.linksService.setPacksGenre(this.packName);
     this.tmp = this.linksService.getItems();
     this.ngOnInit();
   }

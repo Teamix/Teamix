@@ -17,6 +17,7 @@ import { PacksMenuComponent } from './packs-menu/packs-menu.component';
 import { MenuTabComponent } from './menu-tab/menu-tab.component';
 import { IconsTabComponent } from './icons-tab/icons-tab.component';
 import { DjSetsComponent } from './dj-sets/dj-sets.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { DjSetsComponent } from './dj-sets/dj-sets.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,7 @@ import { PacksMenuComponent } from './packs-menu/packs-menu.component';
 import { DjSetsComponent } from './dj-sets/dj-sets.component';
 
 const routes: Routes = [
-  { path:'' , component: HomePageComponent },
+  { path:'home' , component: HomePageComponent },
   // { path:'categories' , component: PacksMenuComponent },
   { path:'packs/:packsType' , component: LinksComponent },
   { path:'item/:package' , component: ItemLayoutComponent },
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path:'sets' , component: PoolComponent },
   { path:'about' , component:AboutComponent },
   { path:'contact' , component:ContactComponent },
-  { path:'**' , redirectTo: ''}
+  { path:'**' , redirectTo: 'home'}
 ];
 
 @NgModule({

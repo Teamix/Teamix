@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LanguageService } from 'src/services/language.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-tab',
@@ -18,13 +19,13 @@ export class MenuTabComponent implements OnInit {
     { menuItem: 'סטים', pageLink: 'sets' }, { menuItem: 'חבילות', pageLink: 'packs/' }, { menuItem: 'דף בית', pageLink: 'home' }
   ];
 
-  constructor(public languageService: LanguageService) { }
+  constructor(public languageService: LanguageService, private router: Router) { }
 
   ngOnInit() {
   }
 
-public packGenreLink(){
-  return localStorage.getItem('choice') || 'All';
+public packGenreLink() {
+  this.router.navigate(['packs/' + localStorage.getItem('choice') || 'All']);
 }
 
 }

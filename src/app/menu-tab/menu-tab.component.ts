@@ -24,8 +24,8 @@ export class MenuTabComponent implements OnInit {
   ngOnInit() {
   }
 
-public packGenreLink() {
-  this.router.navigate(['packs/' + localStorage.getItem('choice') || 'All']);
-}
+  public packGenreLink() {
+    this.router.navigate(['packs/' + (localStorage.getItem('choice') || 'All')]);
+  }
 
 }

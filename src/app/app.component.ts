@@ -3,6 +3,8 @@ import { MobileCheckService } from 'src/services/mobile-check.service';
 import { LanguageService } from 'src/services/language.service';
 import { LinksService } from 'src/services/links.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,12 @@ export class AppComponent {
 
   public creators = 'YL Program and Web, MH Design, Teamix';
 
-  constructor(public mobileCheckService: MobileCheckService, private linksService: LinksService, public languageService: LanguageService, private router: Router) { localStorage.setItem('choice', 'All'); }
+  items: Observable<any>;
+
+
+  constructor(public mobileCheckService: MobileCheckService, private linksService: LinksService, public languageService: LanguageService, private router: Router) {
+    localStorage.setItem('choice', 'All');
+  }
 
   private title = 'TeamixSite';
   public ionScroll;

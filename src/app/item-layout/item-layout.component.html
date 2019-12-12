@@ -1,81 +1,84 @@
 <br>
-<div id="mainDiv" *ngIf="check && !mobileCheckService.getIfMobile()">
-  <br>
-  <img src="{{itemService.getSingleItem().img}}" width="300px" height="300px">
-  <br>
-  <br>
-  <div class="priceDivCom">
-    <span class="priceSpanComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">₪
-      {{itemService.getSingleItem().price}} : מחיר</span>
-    <span class="priceSpanComEn" *ngIf="languageService.getLanguage() === 'English'">Price :
-      {{itemService.getSingleItem().price}} ₪</span>
+<ul class="noNeed" *ngFor="let item of this.linksService.getItems()">
+  {{this.linksService.checkItems(itemName)}}
+  <div class="noNeed" *ngIf="item.packName === this.itemName">
+    <div id="mainDiv" *ngIf="!mobileCheckService.getIfMobile()">
+      <br>
+      <img src="{{item.img}}" width="300px" height="300px">
+      <br>
+      <br>
+      <div class="priceDivCom">
+        <span class="priceSpanComHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">₪
+          {{item.price}} : מחיר</span>
+        <span class="priceSpanComEn" *ngIf="languageService.getLanguage() === 'English'">Price :
+          {{item.price}} ₪</span>
+      </div>
+      <br>
+      <br>
+      <!-- <a href="{{item.link}}" target="_blank"> -->
+
+      <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{item.packName}}">
+        <button id="downloadButtonCom">Download/הורדה</button>
+      </a>
+      <!-- </a> -->
+      <br>
+      <br>
+      <br>
+      <div id="secondDivCom">
+        <span id="playlistSpan">{{item.playlist}}</span>
+      </div>
+
+      <br>
+      <br>
+      <!-- <a href="{{item.link}}" target="_blank"> -->
+      <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{item.packName}}">
+        <button id="downloadButtonCom">Download/הורדה</button>
+      </a>
+      <!-- </a> -->
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+    <div id="mainDiv" *ngIf="check && mobileCheckService.getIfMobile()">
+      <br>
+      <img class="images" src={{item.img}}>
+      <br>
+      <br>
+      <div class="priceDivMob">
+        <span class="priceSpanMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">₪
+          {{item.price}} : מחיר</span>
+        <span class="priceSpanMobEn" *ngIf="languageService.getLanguage() === 'English'">Price :
+          {{item.price}} ₪</span>
+      </div>
+      <br>
+      <br>
+      <!-- <a href="{{item.link}}" target="_blank"> -->
+      <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{item.packName}}">
+        <button id="downloadButtonMobile">Download/הורדה</button>
+      </a>
+      <!-- </a> -->
+      <br>
+      <br>
+      <br>
+      <div id="secondDivMobile">
+        <span id="playlistSpan">{{item.playlist}}</span>
+      </div>
+
+      <br>
+      <br>
+      <!-- <a href="{{item.link}}" target="_blank"> -->
+      <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{item.packName}}">
+        <button id="downloadButtonMobile">Download/הורדה</button>
+      </a>
+      <!-- </a> -->
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
   </div>
-  <br>
-  <br>
-  <!-- <a href="{{itemService.getSingleItem().link}}" target="_blank"> -->
-
-  <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{itemService.getSingleItem().packName}}" >
-    <button id="downloadButtonCom">Download/הורדה</button>
-  </a>
-  <!-- </a> -->
-  <br>
-  <br>
-  <br>
-  <div id="secondDivCom">
-    <span id="playlistSpan">{{itemService.getSingleItem().playlist}}</span>
-  </div>
-
-  <br>
-  <br>
-  <!-- <a href="{{itemService.getSingleItem().link}}" target="_blank"> -->
-  <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{itemService.getSingleItem().packName}}">
-    <button id="downloadButtonCom">Download/הורדה</button>
-  </a>
-  <!-- </a> -->
-  <br>
-  <br>
-  <br>
-  <br>
-
-</div>
-
-<div id="mainDiv" *ngIf="check && mobileCheckService.getIfMobile()">
-  <br>
-  <img class="images" src={{itemService.getSingleItem().img}}>
-  <br>
-  <br>
-  <div class="priceDivMob">
-    <span class="priceSpanMobHeb" *ngIf="languageService.getLanguage() === 'Hebrew'">₪
-      {{itemService.getSingleItem().price}} : מחיר</span>
-    <span class="priceSpanMobEn" *ngIf="languageService.getLanguage() === 'English'">Price :
-      {{itemService.getSingleItem().price}} ₪</span>
-  </div>
-  <br>
-  <br>
-  <!-- <a href="{{itemService.getSingleItem().link}}" target="_blank"> -->
-  <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{itemService.getSingleItem().packName}}">
-    <button id="downloadButtonMobile">Download/הורדה</button>
-  </a>
-  <!-- </a> -->
-  <br>
-  <br>
-  <br>
-  <div id="secondDivMobile">
-    <span id="playlistSpan">{{itemService.getSingleItem().playlist}}</span>
-  </div>
-
-  <br>
-  <br>
-  <!-- <a href="{{itemService.getSingleItem().link}}" target="_blank"> -->
-  <a href="https://wa.me/972515144104?text={{languageService.getDownloadMessage()}}{{itemService.getSingleItem().packName}}">
-    <button id="downloadButtonMobile">Download/הורדה</button>
-  </a>
-  <!-- </a> -->
-  <br>
-  <br>
-  <br>
-  <br>
-
-</div>
-
-<h2 *ngIf="!check">Must Choose An Item First!</h2>
+</ul>

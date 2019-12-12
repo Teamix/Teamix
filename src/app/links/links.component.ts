@@ -21,6 +21,8 @@ export class LinksComponent implements OnInit {
 
   constructor(private itemService: ItemService, public linksService: LinksService, private route: ActivatedRoute, private router: Router, public mobileCheckService: MobileCheckService) {
     this.packGenre = this.route.snapshot.params['packsType'];
+    //this line was added VVVVVVVVVVVVVVVVVV
+    localStorage.removeItem('choice');
   }
 
   ngOnInit() {
@@ -63,7 +65,7 @@ export class LinksComponent implements OnInit {
 
 
   public singleItemChoice(item: any) {
-    this.itemService.setSingleItem(item);
+    this.linksService.setSingleItem(item);
   }
 
   public genreChoice(newChoice: string, selection) {

@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LinksService {
 
   public genreList = [
-    'all', 'selected', 'issue', 'latin', 'throwback', 'dance', 'clubbangers'
+    'all', 'selected', 'issue', 'latin', 'throwback', 'dance', 'hiphoponly'
   ];
 
   public numOfLinks = this.parseItems();

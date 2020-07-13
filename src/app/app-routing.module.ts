@@ -18,7 +18,7 @@ const routes: Routes = [
   // { path:'pool' , component: PoolComponent },
   { path:'sets' , component: DjSetsComponent },
   // { path:'sets' , component: PoolComponent },
-  { path:'about' , component:AboutComponent },
+  // { path:'about' , component:AboutComponent },
   { path:'contact' , component:ContactComponent },
   { path:'**' , redirectTo: 'home'}
 ];
